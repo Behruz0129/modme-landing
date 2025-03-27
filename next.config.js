@@ -4,8 +4,6 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: "/modme-landing",
-    assetPrefix: "/modme-landing/",
     eslint: {
         ignoreDuringBuilds: true,
     },
