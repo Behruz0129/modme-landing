@@ -1,15 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 import HeroSection from "@/components/HeroSection";
 import ClientsSection from "@/components/ClientsSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import WithdrawMethodSection from "@/components/WithdrawMethodSection";
 import AdvantagesSection from "@/components/AdvantagesSection";
 import StatisticsSection from "@/components/StatisticsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FAQSection from "@/components/FAQSection";
+
+const TestimonialsSection = dynamic(
+    () => import("@/components/TestimonialsSection"),
+    {
+        loading: () => (
+            <div className="min-h-screen bg-white flex items-center justify-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#ff8000]"></div>
+            </div>
+        ),
+        ssr: false,
+    }
+);
+
+const WithdrawMethodSection = dynamic(
+    () => import("@/components/WithdrawMethodSection"),
+    {
+        loading: () => (
+            <div className="min-h-screen bg-white flex items-center justify-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#ff8000]"></div>
+            </div>
+        ),
+        ssr: false,
+    }
+);
+
+const FAQSection = dynamic(() => import("@/components/FAQSection"), {
+    loading: () => (
+        <div className="min-h-screen bg-white flex items-center justify-center">
+            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#ff8000]"></div>
+        </div>
+    ),
+    ssr: false,
+});
 
 export default function Home() {
     return (

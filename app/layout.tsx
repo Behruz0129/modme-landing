@@ -1,13 +1,26 @@
 import Navbar from "@/components/layout/Navbar";
-import type { Metadata } from "next";
+import Footer from "@/components/layout/Footer";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    themeColor: "#0a0a0a",
+};
+
 export const metadata: Metadata = {
-    title: "ModMe - O'quv markazingizni keyingi bosqichga olib chiqing!",
-    description: "ModMe - O'quv markazlari uchun CRM tizimi",
+    title: "Modme - O'quv markazingizni keyingi bosqichga olib chiqing!",
+    description:
+        "Modme - O'quv markazlari uchun CRM tizimi. O'quv jarayonini avtomatlashtiring, o'quvchilarni boshqaring va natijalarni kuzating.",
+    keywords:
+        "o'quv markazi, CRM, o'quv jarayoni, o'quvchilar boshqaruvi, o'quv tizimi",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
@@ -16,10 +29,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="uz">
             <body className={inter.className}>
                 <Navbar />
                 {children}
+                <Footer />
             </body>
         </html>
     );

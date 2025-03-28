@@ -72,8 +72,12 @@ const MenuButton = ({
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const pathname = usePathname();
-    const isGamificationPage = pathname === "/gamification";
+    const pathname = usePathname() || "";
+    
+    // Pathname oxirida slash bo'lsa uni olib tashlash
+    const normalizedPathname = pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
+    
+    const isGamificationPage = normalizedPathname === "/gamification";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -84,7 +88,7 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Mobile menu ochilganda body scrollni blokлаш
+    // Mobile menu ochilganda body scrollni bloklash
     useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = "hidden";
@@ -96,30 +100,37 @@ const Navbar = () => {
         };
     }, [isMobileMenuOpen]);
 
+    // Sahifa o'zgarganda mobile menuni yopish
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+    }, [pathname]);
+
+    // Navbar background class
+    const navbarBgClass = isGamificationPage
+        ? (isScrolled ? "bg-[#0a0a0a]/95 backdrop-blur-sm" : "bg-[#0a0a0a]")
+        : (isScrolled ? "bg-white/90 backdrop-blur-sm" : "bg-transparent");
+
+    // Mobile menu background class  
+    const mobileMenuBgClass = isGamificationPage
+        ? "bg-[#0a0a0a]/95 backdrop-blur-md"
+        : (isScrolled ? "bg-white/90 backdrop-blur-md" : "bg-white/95 backdrop-blur-md");
+
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-[89px] ${
-                isGamificationPage
-                    ? "bg-[#0a0a0a]/95 backdrop-blur-sm"
-                    : isScrolled
-                    ? "bg-white/90 backdrop-blur-sm"
-                    : "bg-transparent"
-            }`}
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-[89px] ${navbarBgClass}`}
         >
             <div className="max-w-[1200px] mx-auto px-4 h-full">
                 <div className="flex items-center justify-between h-full">
                     {/* Logo */}
                     <Link href="/" className="relative w-[120px] h-[40px]">
                         <Image
-                            src={
-                                isGamificationPage
-                                    ? "/images/logo-light.svg"
-                                    : "/images/logo.svg"
-                            }
-                            alt="ModMe"
+                            src={isGamificationPage ? "/images/logo-light.webp" : "/images/logo.webp"}
+                            alt="Modme"
                             fill
                             className="object-contain"
                             priority
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
                         />
                     </Link>
 
@@ -213,13 +224,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.2 }}
-                            className={`absolute top-[89px] left-0 right-0 z-40 ${
-                                isGamificationPage
-                                    ? "bg-[#0a0a0a]/95 backdrop-blur-md"
-                                    : isScrolled
-                                    ? "bg-white/90 backdrop-blur-md"
-                                    : "bg-white/95 backdrop-blur-md"
-                            } lg:hidden`}
+                            className={`absolute top-[89px] left-0 right-0 z-40 ${mobileMenuBgClass} lg:hidden`}
                         >
                             <div className="container mx-auto px-4 py-4">
                                 <div className="flex flex-col space-y-4">
@@ -229,7 +234,9 @@ const Navbar = () => {
                                             key={link.name}
                                             href={link.href}
                                             className={`text-lg font-medium ${
-                                                isGamificationPage
+                                                pathname === link.href
+                                                    ? "text-[#ff8000]"
+                                                    : isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
                                                     : "text-gray-800 hover:text-black"
                                             } transition-colors py-2`}
@@ -248,8 +255,9 @@ const Navbar = () => {
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
+                                                    : "text-gray-600 hover:text-gray-900"
+                                            }`}
+                                            aria-label="Call support"
                                         >
                                             <Phone size={24} />
                                         </a>
@@ -258,8 +266,9 @@ const Navbar = () => {
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
+                                                    : "text-gray-600 hover:text-gray-900"
+                                            }`}
+                                            aria-label="Telegram"
                                         >
                                             <Send size={24} />
                                         </a>
@@ -268,26 +277,27 @@ const Navbar = () => {
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
+                                                    : "text-gray-600 hover:text-gray-900"
+                                            }`}
+                                            aria-label="Instagram"
                                         >
                                             <Instagram size={24} />
                                         </a>
                                     </div>
 
-                                    {/* CTA Button */}
-                                    <Button
-                                        className={`w-full ${
-                                            isGamificationPage
-                                                ? "bg-[#ff8000] hover:bg-[#ff9831]"
-                                                : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
-                                        } text-white rounded-lg py-3 px-6 text-lg font-medium active:scale-95 transition-all cursor-pointer`}
-                                        onClick={() =>
-                                            setIsMobileMenuOpen(false)
-                                        }
-                                    >
-                                        Demo olish
-                                    </Button>
+                                    {/* Mobile Demo Button */}
+                                    <div className="pt-2">
+                                        <Button
+                                            className={`${
+                                                isGamificationPage
+                                                    ? "bg-[#ff8000] hover:bg-[#ff9831]"
+                                                    : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
+                                            } text-white w-full`}
+                                            size="lg"
+                                        >
+                                            Demo olish
+                                        </Button>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

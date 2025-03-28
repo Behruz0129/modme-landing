@@ -10,7 +10,7 @@ const testimonials = [
         id: 1,
         name: "Aziza Karimova",
         position: "O'quv markazi direktori",
-        avatar: "/avatars/avatar1.jpg",
+        avatar: "/images/avatars/avatar1.webp",
         comment:
             "Modme platformasi bizning o'quv markazimizni to'liq digitalizatsiya qildi. Endi barcha jarayonlar avtomatlashtirilgan va tizimli.",
         center: "Smart Education",
@@ -19,7 +19,7 @@ const testimonials = [
         id: 2,
         name: "Jasur Rahimov",
         position: "O'qituvchi",
-        avatar: "/avatars/avatar2.jpg",
+        avatar: "/images/avatars/avatar2.webp",
         comment:
             "Platforma orqali darslarni tashkil qilish va o'quvchilarni nazorat qilish juda qulay. Vaqt tejamkorligi katta.",
         center: "Global Education",
@@ -28,7 +28,7 @@ const testimonials = [
         id: 3,
         name: "Malika Yusupova",
         position: "Administrator",
-        avatar: "/avatars/avatar3.jpg",
+        avatar: "/images/avatars/avatar3.webp",
         comment:
             "Modme tizimi orqali to'lovlarni qabul qilish va hisobotlarni tayyorlash juda oson. Mijozlar ham mamnun.",
         center: "Bright Future",
@@ -37,7 +37,7 @@ const testimonials = [
         id: 4,
         name: "Dilshod Toshmatov",
         position: "O'quv markazi asoschisi",
-        avatar: "/avatars/avatar4.jpg",
+        avatar: "/images/avatars/avatar4.webp",
         comment:
             "Platforma bizga yangi filiallarimizni samarali boshqarish imkonini berdi. Barcha ma'lumotlar bir joyda.",
         center: "Elite Education",
@@ -46,7 +46,7 @@ const testimonials = [
         id: 5,
         name: "Nargiza Alimova",
         position: "O'qituvchi",
-        avatar: "/avatars/avatar5.jpg",
+        avatar: "/images/avatars/avatar5.webp",
         comment:
             "Darslarni tashkil qilish, uy vazifalarini berish va baholash jarayoni juda qulay. O'quvchilar ham platformani yaxshi ko'rishadi.",
         center: "Success Academy",
@@ -55,7 +55,7 @@ const testimonials = [
         id: 6,
         name: "Shahzod Rahimov",
         position: "O'quv markazi direktori",
-        avatar: "/avatars/avatar6.jpg",
+        avatar: "/images/avatars/avatar6.webp",
         comment:
             "Modme platformasi bizga zamonaviy ta'lim berish imkonini berdi. Barcha jarayonlar shaffof va tizimli.",
         center: "Modern Education",
@@ -103,6 +103,8 @@ const TestimonialsSection = () => {
                                             alt={testimonial.name}
                                             fill
                                             className="object-cover"
+                                            placeholder="blur"
+                                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                     </div>
                                     <div>
