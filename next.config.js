@@ -4,13 +4,6 @@ const nextConfig = {
     output: "export",
     images: {
         unoptimized: true,
-        domains: ['example.com'], // agar tashqi manbalardan rasm bo'lsa
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: '**',
-            },
-        ],
     },
     eslint: {
         ignoreDuringBuilds: true,
