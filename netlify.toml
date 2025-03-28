@@ -1,13 +1,10 @@
 [build]
-  command = "npm ci --legacy-peer-deps && next build"
+  command = "npm run build"
   publish = "out"
 
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
-  NPM_FLAGS = "--legacy-peer-deps"
-  NETLIFY_USE_YARN = "false"
-  NEXT_TELEMETRY_DISABLED = "1"
 
 [[redirects]]
   from = "/*"
