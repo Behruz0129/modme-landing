@@ -5,14 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Instagram, Send, Menu, X } from "lucide-react";
+import { Phone, Instagram, Send } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
     { name: "Biz haqimizda", href: "/about" },
     { name: "Narxlar", href: "/prices" },
     { name: "Gamifikatsiya", href: "/gamification" },
-    { name: "FAQ", href: "#" },
+    { name: "Qo'llab-quvvatlash", href: "/support" },
 ];
 
 // Hamburger menu animatsiya komponenti
@@ -73,7 +73,15 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
-    const isGamificationPage = pathname === "/gamification";
+
+    // Gamification page ni tekshirish
+    const isGamificationPage = pathname?.startsWith("/gamification");
+
+    // Pathname va isGamificationPage ni tekshirish
+    useEffect(() => {
+        console.log("Current pathname:", pathname);
+        console.log("isGamificationPage:", isGamificationPage);
+    }, [pathname, isGamificationPage]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -84,7 +92,7 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Mobile menu ochilganda body scrollni blokлаш
+    // Mobile menu ochilganda body scrollni bloklash
     useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = "hidden";
