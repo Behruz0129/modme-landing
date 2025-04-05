@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Instagram, Send } from "lucide-react";
+import { Headset, Instagram } from "lucide-react";
+import { FaTelegramPlane } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -138,7 +139,7 @@ const Navbar = () => {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`text-lg font-medium transition-colors ${
+                                className={`text-lg font-medium transition-all relative group ${
                                     pathname === link.href
                                         ? "text-[#ff8000]"
                                         : isGamificationPage
@@ -147,6 +148,15 @@ const Navbar = () => {
                                 }`}
                             >
                                 {link.name}
+                                <span
+                                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
+                                        pathname === link.href
+                                            ? "bg-[#ff8000] w-full"
+                                            : isGamificationPage
+                                            ? "bg-[#ff8000]"
+                                            : "bg-gray-900"
+                                    }`}
+                                />
                             </Link>
                         ))}
                     </div>
@@ -155,7 +165,8 @@ const Navbar = () => {
                     <div className="hidden lg:flex items-center space-x-6">
                         {/* Support Icon */}
                         <a
-                            href="#"
+                            href="tel:787771100"
+                            target="_blank"
                             className={`${
                                 isGamificationPage
                                     ? "text-white hover:text-[#ff8000]"
@@ -163,12 +174,13 @@ const Navbar = () => {
                             } cursor-pointer transition-colors`}
                             aria-label="Call support"
                         >
-                            <Phone size={24} />
+                            <Headset size={24} />
                         </a>
 
                         {/* Telegram Icon */}
                         <a
-                            href="#"
+                            href="https://t.me/modme_uz"
+                            target="_blank"
                             className={`${
                                 isGamificationPage
                                     ? "text-white hover:text-[#ff8000]"
@@ -176,12 +188,13 @@ const Navbar = () => {
                             } cursor-pointer transition-colors`}
                             aria-label="Telegram"
                         >
-                            <Send size={24} />
+                            <FaTelegramPlane size={24} />
                         </a>
 
                         {/* Instagram Icon */}
                         <a
-                            href="#"
+                            href="https://www.instagram.com/modme_uz/"
+                            target="_blank"
                             className={`${
                                 isGamificationPage
                                     ? "text-white hover:text-[#ff8000]"
@@ -193,16 +206,18 @@ const Navbar = () => {
                         </a>
 
                         {/* Demo Button */}
-                        <Button
-                            className={`${
-                                isGamificationPage
-                                    ? "bg-[#ff8000] hover:bg-[#ff9831]"
-                                    : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
-                            } text-white`}
-                            size="lg"
-                        >
-                            Demo olish
-                        </Button>
+                        <Link href="/demo" className="cursor-pointer">
+                            <Button
+                                className={`${
+                                    isGamificationPage
+                                        ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
+                                        : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
+                                } text-white cursor-pointer`}
+                                size="lg"
+                            >
+                                Demo olish
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -236,43 +251,53 @@ const Navbar = () => {
                                         <Link
                                             key={link.name}
                                             href={link.href}
-                                            className={`text-lg font-medium ${
+                                            className={`text-lg font-medium relative overflow-hidden group ${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
                                                     : "text-gray-800 hover:text-black"
-                                            } transition-colors py-2`}
+                                            } transition-all py-2`}
                                             onClick={() =>
                                                 setIsMobileMenuOpen(false)
                                             }
                                         >
                                             {link.name}
+                                            <span
+                                                className={`absolute bottom-0 left-0 w-full h-0.5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                                                    isGamificationPage
+                                                        ? "bg-[#ff8000]"
+                                                        : "bg-black"
+                                                }`}
+                                            />
                                         </Link>
                                     ))}
 
                                     {/* Mobile social links */}
                                     <div className="flex justify-start space-x-6 py-4">
                                         <a
-                                            href="#"
+                                            href="tel:787771100"
+                                            target="_blank"
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
                                                     : "text-gray-700 hover:text-gray-900"
                                             } transition-colors`}
                                         >
-                                            <Phone size={24} />
+                                            <Headset size={24} />
                                         </a>
                                         <a
-                                            href="#"
+                                            href="https://t.me/modme_uz"
+                                            target="_blank"
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
                                                     : "text-gray-700 hover:text-gray-900"
                                             } transition-colors`}
                                         >
-                                            <Send size={24} />
+                                            <FaTelegramPlane size={24} />
                                         </a>
                                         <a
-                                            href="#"
+                                            href="https://www.instagram.com/modme_uz/"
+                                            target="_blank"
                                             className={`${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
@@ -284,18 +309,23 @@ const Navbar = () => {
                                     </div>
 
                                     {/* CTA Button */}
-                                    <Button
-                                        className={`w-full ${
-                                            isGamificationPage
-                                                ? "bg-[#ff8000] hover:bg-[#ff9831]"
-                                                : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
-                                        } text-white rounded-lg py-3 px-6 text-lg font-medium active:scale-95 transition-all cursor-pointer`}
-                                        onClick={() =>
-                                            setIsMobileMenuOpen(false)
-                                        }
+                                    <Link
+                                        href="/demo"
+                                        className="cursor-pointer"
                                     >
-                                        Demo olish
-                                    </Button>
+                                        <Button
+                                            className={`w-full ${
+                                                isGamificationPage
+                                                    ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
+                                                    : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
+                                            } text-white rounded-lg py-3 px-6 text-lg font-medium active:scale-95 transition-all cursor-pointer`}
+                                            onClick={() =>
+                                                setIsMobileMenuOpen(false)
+                                            }
+                                        >
+                                            Demo olish
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

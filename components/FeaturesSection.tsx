@@ -71,13 +71,13 @@ const FeaturesSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12 mb-14 md:mb-16 lg:mb-20">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] max-w-md lg:max-w-lg">
-                            Muammolardan halos bo'ling.
+                            Muammolarni unuting!{" "}
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
-                            Jarayonlarni soddalashtiring, natijalarga e'tibor
-                            qarating! O'quvchilarni ro'yxatdan o'tkazish, jadval
-                            tuzish va to'lovlarni boshqarish Modme bilan
-                            osonlashadi.
+                            Dars jadvalidan moliyagacha bo’lgan barcha
+                            jarayonlarni to’liq tizimlashtiring, qo’lda
+                            qilinadigan ishlarni avtomatlashtiring va nazoratni
+                            o’z qo’lingizga oling!
                         </p>
                     </div>
                 </ScrollAnimation>

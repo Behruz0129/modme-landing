@@ -111,11 +111,11 @@ const ClientsSection = () => {
                     transition={getTransition(0.1)}
                 >
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
-                        Yetakchi o'quv markazlarining ishonchli hamkori.
+                        Yuzlab o’quv markazlarining ishonchli hamkori.
                     </h2>
                     <p className="text-base md:text-lg text-[#a8a8a8]">
-                        Necha yillik sodiq mijozlarimiz biz bilan o'sishda davom
-                        etmoqda.
+                        Ta’lim markazlari bilan yillar davomida birga
+                        o’smoqdamiz.
                     </p>
                 </motion.div>
             </div>
