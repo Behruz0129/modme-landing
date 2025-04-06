@@ -74,10 +74,10 @@ const FeaturesSection = () => {
                             Muammolarni unuting!{" "}
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
-                            Dars jadvalidan moliyagacha bo’lgan barcha
-                            jarayonlarni to’liq tizimlashtiring, qo’lda
+                            Dars jadvalidan moliyagacha bo'lgan barcha
+                            jarayonlarni to'liq tizimlashtiring, qo'lda
                             qilinadigan ishlarni avtomatlashtiring va nazoratni
-                            o’z qo’lingizga oling!
+                            o'z qo'lingizga oling!
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -96,17 +96,16 @@ const FeaturesSection = () => {
                                 Tizimlashtirish
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                O'quv jarayonini mukammal shakllantiring
+                                Barcha jarayonlarni tartibga soling.
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Platformamizdagi guruhlar, talabalar va ularning
-                                statuslarini ajratish, filtrlash hamda dars
-                                jadvali funksiyalari orqali o'quv markazingizni
-                                samarali boshqaring.
+                                Jarayonlarni yagona tizimda oson boshqarishing,
+                                o’lchang va tartibga soling, bu uchun esa
+                                Modmeda barcha funksiyalar mavjud!
                             </p>
-                            <div className="mt-auto relative w-full h-[150px] sm:h-[180px] overflow-hidden rounded-lg">
+                            <div className="mt-auto relative w-full h-[250px] overflow-hidden rounded-lg">
                                 <Image
-                                    src="/images/features/guruhlar.png"
+                                    src="/images/features/guruhlar.webp"
                                     alt="O'quv jarayoni tizimi"
                                     fill
                                     className="object-cover"
@@ -127,8 +126,7 @@ const FeaturesSection = () => {
                                 Lidlar
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Lidlarni tartibga soling va konversiyani
-                                oshiring
+                                O’quvchi sonini bir necha barobar oshiring.
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Qulay interfeys orqali har bir mijoz bilan
@@ -137,9 +135,9 @@ const FeaturesSection = () => {
                                 birinchi to'lovga olib kelish jarayonlarini
                                 to'liq nazorat qiling.
                             </p>
-                            <div className="mt-auto relative w-full h-[180px] sm:h-[200px] overflow-hidden rounded-lg">
+                            <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
-                                    src="/images/features/lidlar.png"
+                                    src="/images/features/lidlar.webp"
                                     alt="Lidlar boshqaruvi"
                                     fill
                                     className="object-cover"
@@ -160,18 +158,17 @@ const FeaturesSection = () => {
                                 Moliya
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Moliyaviy jarayonlar ustidan to'liq nazorat
-                                o'rnating
+                                Moliyani oson boshqaring.
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                To'lovlar va xarajatlarni yuritish, oyliklarni
-                                hisoblash, qarzdorlarni kuzatish - hammasini
-                                bitta tizimda avtomatik va aniq hisob-kitob
-                                bilan boshqaring.
+                                O‘quv markazingiz moliyasini qog‘ozda emas,
+                                Modme orqali boshqaring. To‘lovlar, qarzdorlar,
+                                xodimlar oyligi, chegirmalar va tranzaksiyalarni
+                                real vaqtda kuzatish imkoniyatiga ega bo'ling!
                             </p>
-                            <div className="mt-auto relative w-full h-[300px] sm:h-[350px] overflow-hidden rounded-lg">
+                            <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
-                                    src="/images/features/moliya.png"
+                                    src="/images/features/moliya.webp"
                                     alt="Moliyaviy boshqaruv"
                                     fill
                                     className="object-cover"
@@ -199,9 +196,9 @@ const FeaturesSection = () => {
                                 bilan bog'lanib, ish jarayonlarini
                                 avtomatlashtiring va samaradorlikni oshiring.
                             </p>
-                            <div className="mt-auto relative w-full h-[300px] sm:h-[350px] overflow-hidden rounded-lg">
+                            <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
-                                    src="/images/features/integratsiyalar.png"
+                                    src="/images/features/integratsiyalar.webp"
                                     alt="Texnologik integratsiyalar"
                                     fill
                                     className="object-cover"
