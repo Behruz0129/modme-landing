@@ -7,7 +7,7 @@ import ScrollAnimation from "@/lib/animations/scroll-animation";
 import Card3D from "@/components/ui/card-3d";
 
 // 3D Card компоненти
-const Card3D = ({
+const Card3DComponent = ({
     children,
     className = "",
 }: {
@@ -143,7 +143,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-5"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF8E8] text-[#894B00] font-medium rounded-xl mb-6">
                                 Tizimlashtirish
                             </div>
@@ -163,7 +163,7 @@ const FeaturesSection = () => {
                                     className="object-cover"
                                 />
                             </div>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
 
                     {/* Feature 2 - Lidlar - 7/12 */}
@@ -173,7 +173,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-7"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF2F2] text-[#C70036] font-medium rounded-xl mb-6">
                                 Lidlar
                             </div>
@@ -195,7 +195,7 @@ const FeaturesSection = () => {
                                     className="object-cover"
                                 />
                             </div>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
 
                     {/* Feature 3 - Moliya - 7/12 */}
@@ -205,7 +205,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-7"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0FFF5] text-[#01662F] font-medium rounded-xl mb-6">
                                 Moliya
                             </div>
@@ -226,7 +226,7 @@ const FeaturesSection = () => {
                                     className="object-cover"
                                 />
                             </div>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
 
                     {/* Feature 4 - Integratsiyalar - 5/12 */}
@@ -236,7 +236,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-5"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F5F0FF] text-[#6E11B0] font-medium rounded-xl mb-6">
                                 Integratsiyalar
                             </div>
@@ -256,7 +256,7 @@ const FeaturesSection = () => {
                                     className="object-cover"
                                 />
                             </div>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
 
                     {/* Feature 5 - Filiallar - 5/12 (бeз изображения) */}
@@ -266,7 +266,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-5"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0F6FF] text-[#193CB8] font-medium rounded-xl mb-6">
                                 Filiallar
                             </div>
@@ -280,7 +280,7 @@ const FeaturesSection = () => {
                                 filiallardagi jarayonlarni markazdan nazorat
                                 qiling.
                             </p>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
 
                     {/* Feature 6 - Mobil Ilovalar - 7/12 (бeз изображения) */}
@@ -290,7 +290,7 @@ const FeaturesSection = () => {
                         threshold={0.3}
                         className="col-span-12 md:col-span-7"
                     >
-                        <Card3D>
+                        <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF2F2] text-[#C70036] font-medium rounded-xl mb-6">
                                 Mobil Ilovalar
                             </div>
@@ -305,7 +305,7 @@ const FeaturesSection = () => {
                                 eting. Bu bilan aloqa samaradorligini oshiring
                                 va foydalanuvchi tajribasini yaxshilang.
                             </p>
-                        </Card3D>
+                        </Card3DComponent>
                     </ScrollAnimation>
                 </div>
             </div>
