@@ -7,7 +7,7 @@ import ScrollAnimation from "@/lib/animations/scroll-animation";
 const statistics = [
     {
         title: "O'quv markazlari",
-        value: 300,
+        value: 200,
         suffix: "+",
         color: "from-[#ffd03d] to-[#ff8000]",
     },
@@ -19,13 +19,13 @@ const statistics = [
     },
     {
         title: "Guruhlar",
-        value: 7250,
+        value: 3250,
         suffix: "+",
         color: "from-[#ffd03d] to-[#ff8000]",
     },
     {
         title: "O'quvchilar",
-        value: 4000,
+        value: 8000000,
         suffix: "+",
         color: "from-[#ff8000] to-[#ffd03d]",
     },
@@ -89,9 +89,9 @@ const StatisticsSection = () => {
                             className="relative group"
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-[#ffd03d]/5 to-[#ff8000]/5 rounded-2xl transform group-hover:scale-105 transition-transform duration-300" />
-                            <div className="relative p-8 text-center">
+                            <div className="relative p-4 sm:p-6 md:p-8 text-center">
                                 <motion.div
-                                    className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+                                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 whitespace-nowrap"
                                     initial={{ opacity: 0 }}
                                     animate={isInView ? { opacity: 1 } : {}}
                                     transition={{
@@ -102,14 +102,17 @@ const StatisticsSection = () => {
                                     <span
                                         className={`bg-gradient-to-r ${stat.color} text-transparent bg-clip-text`}
                                     >
-                                        {counts[index].toLocaleString()}
+                                        {counts[index].toLocaleString("en-US", {
+                                            notation: "compact",
+                                            maximumFractionDigits: 1,
+                                        })}
                                         <span className="text-[#ff8000]">
                                             {stat.suffix}
                                         </span>
                                     </span>
                                 </motion.div>
                                 <motion.h3
-                                    className="text-lg md:text-xl font-semibold text-[#080a0a]"
+                                    className="text-base sm:text-lg md:text-xl font-semibold text-[#080a0a]"
                                     initial={{ opacity: 0 }}
                                     animate={isInView ? { opacity: 1 } : {}}
                                     transition={{

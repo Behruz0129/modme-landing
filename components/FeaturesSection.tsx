@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
+import Card3D from "@/components/ui/card-3d";
 
 // 3D Card компоненти
 const Card3D = ({
@@ -57,13 +58,64 @@ const Card3D = ({
     );
 };
 
+const features = [
+    {
+        id: 1,
+        title: "LMS va CRM tizimlari",
+        description:
+            "O'quv jarayonini boshqarish va mijozlar bilan aloqani yaxshilash uchun birlashtirilgan tizim",
+        icon: "/images/icons/management.svg",
+    },
+    {
+        id: 2,
+        title: "O'quvchilar boshqaruvi",
+        description:
+            "O'quvchilar ro'yxatini yaratish, guruhlarga ajratish va ularning o'qish jarayonini kuzatish",
+        icon: "/images/icons/students.svg",
+    },
+    {
+        id: 3,
+        title: "Dars jadvali",
+        description:
+            "Guruhlar va o'qituvchilar uchun dars jadvalini tuzish va boshqarish",
+        icon: "/images/icons/schedule.svg",
+    },
+    {
+        id: 4,
+        title: "Moliyaviy hisobotlar",
+        description:
+            "To'lovlar, xarajatlar va moliyaviy holat haqida to'liq hisobotlar",
+        icon: "/images/icons/finance.svg",
+    },
+    {
+        id: 5,
+        title: "SMS va e-mail xabarnomalar",
+        description:
+            "O'quvchilar va ota-onalarga avtomatik xabarnomalar yuborish",
+        icon: "/images/icons/notification.svg",
+    },
+    {
+        id: 6,
+        title: "Veb-sayt integratsiyasi",
+        description:
+            "O'quv markazingiz veb-sayti bilan integratsiya qilish imkoniyati",
+        icon: "/images/icons/website.svg",
+    },
+    {
+        id: 7,
+        title: "Mobil ilova",
+        description: "O'qituvchilar va o'quvchilar uchun qulay mobil ilova",
+        icon: "/images/icons/mobile.svg",
+    },
+    {
+        id: 8,
+        title: "O'qituvchilar boshqaruvi",
+        description: "O'qituvchilarning ishini nazorat qilish va baholash",
+        icon: "/images/icons/teachers.svg",
+    },
+];
+
 const FeaturesSection = () => {
-    const [isLoaded, setIsLoaded] = useState(false);
-
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
-
     return (
         <section className="w-full py-16 md:py-20 lg:py-24 overflow-hidden bg-[#fcfcfc]">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,7 +152,7 @@ const FeaturesSection = () => {
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Jarayonlarni yagona tizimda oson boshqarishing,
-                                o’lchang va tartibga soling, bu uchun esa
+                                o'lchang va tartibga soling, bu uchun esa
                                 Modmeda barcha funksiyalar mavjud!
                             </p>
                             <div className="mt-auto relative w-full h-[250px] overflow-hidden rounded-lg">
@@ -126,7 +178,7 @@ const FeaturesSection = () => {
                                 Lidlar
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                O’quvchi sonini bir necha barobar oshiring.
+                                O'quvchi sonini bir necha barobar oshiring.
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Qulay interfeys orqali har bir mijoz bilan
@@ -161,8 +213,8 @@ const FeaturesSection = () => {
                                 Moliyani oson boshqaring.
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                O‘quv markazingiz moliyasini qog‘ozda emas,
-                                Modme orqali boshqaring. To‘lovlar, qarzdorlar,
+                                O'quv markazingiz moliyasini qog'ozda emas,
+                                Modme orqali boshqaring. To'lovlar, qarzdorlar,
                                 xodimlar oyligi, chegirmalar va tranzaksiyalarni
                                 real vaqtda kuzatish imkoniyatiga ega bo'ling!
                             </p>

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 type WithdrawMethod = {
     id: string;
@@ -50,14 +52,14 @@ const withdrawMethods: WithdrawMethod[] = [
         ],
         advantages: [
             "O'quv markazingizda haftada 2 martta bo'ladigan guruhlar uchun, 8ta dars uchun, 3 martta bo'ladigan guruhlar uchun 12ta dars, 4 martta bo'ladigan guruhlar uchun 20ta dars, haftada 6 kun bo'ladigan guruhlar uchun esa, 24ta darsni belgilash orqali har bir guruhdan darslar soniga qarab pul yechib olish imkoniyati.",
-            "1 oyda 12 yoki 13ta dars bo'lib qoladigan holatlar, ushbu rejimdagi guruhlarga hech qanday negativ ta'sir qilmaydi. ",
+            "1 oyda 12 yoki 13ta dars bo'lib qoladigan holatlar, ushbu rejimdagi guruhlarga hech qanday negativ ta'sir qilmaydi.",
         ],
     },
     {
         id: "groupstart",
         name: "Guruh boshlanish sanasi",
         description: [
-            "Ushbu rejimda Guruh boshlanish sanasi Guruhdagi O'quvchilardan pul yechib olish sanasi hisoblanadi. Ya'ni Guruh 14-sanada ochilsa, har oyning 14-sanasi talabalar uchun to'lov kuni hisoblanadi.  Bu rejimda ham 1 oyga o'quvchilardan kurs narxi bo'yicha to'lov olinadi.",
+            "Ushbu rejimda Guruh boshlanish sanasi Guruhdagi O'quvchilardan pul yechib olish sanasi hisoblanadi. Ya'ni Guruh 14-sanada ochilsa, har oyning 14-sanasi talabalar uchun to'lov kuni hisoblanadi. Bu rejimda ham 1 oyga o'quvchilardan kurs narxi bo'yicha to'lov olinadi.",
         ],
         advantages: [
             "Agarda yangi guruhlar yetarlicha o'quvchi yig'ilishi bilan ochiladigan holatlarda, o'quvchilardan guruh boshlangan sanadan boshlab pul yechilishi natijasida, oyning qaysi qismi bo'lishidan qat'iy nazar to'liq to'lov olish.",
@@ -89,12 +91,7 @@ const withdrawMethods: WithdrawMethod[] = [
 ];
 
 const WithdrawMethodSection = () => {
-    const [isLoaded, setIsLoaded] = useState(false);
     const [selectedMethod, setSelectedMethod] = useState<string>("monthly");
-
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
 
     const selectedWithdrawMethod =
         withdrawMethods.find((method) => method.id === selectedMethod) ||

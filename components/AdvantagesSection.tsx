@@ -22,13 +22,13 @@ const AdvantagesSection = () => {
                 {/* Cards Grid with Plus Lines */}
                 <div className="relative">
                     {/* Vertical Line */}
-                    <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-[#ff8000]/20 to-transparent hidden md:block" />
+                    <div className="absolute left-[50%] top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-[#ff8000]/30 to-transparent hidden md:block z-0 transform -translate-x-1/2" />
 
                     {/* Horizontal Line */}
-                    <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff8000]/20 to-transparent hidden md:block" />
+                    <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#ff8000]/30 to-transparent hidden md:block z-0" />
 
                     {/* Cards Container */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative z-10">
                         {/* Card 1 - 1:1 */}
                         <ScrollAnimation
                             direction="up"

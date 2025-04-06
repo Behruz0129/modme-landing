@@ -1,50 +1,64 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 
 const faqs = [
     {
-        question: "Modme platformasi qanday ishlaydi?",
-        answer: "Modme - bu o'quv markazlari uchun yaratilgan zamonaviy LMS (Learning Management System) platformasi. Platforma orqali siz o'quv jarayonini to'liq boshqarishingiz, darslarni tashkil qilishingiz, o'quvchilarni nazorat qilishingiz va barcha ma'lumotlarni bir joyda saqlashingiz mumkin.",
+        id: 1,
+        question: "Modme nima?",
+        answer: "Modme - bu o'quv markazlari uchun maxsus ishlab chiqilgan LMS (Learning Management System) va CRM (Customer Relationship Management) tizimlarini birlashtirgan platforma. U o'quv jarayonini avtomatlashtirish, o'quvchilar bilan aloqani yaxshilash va biznesni boshqarish imkonini beradi.",
     },
     {
-        question: "Platformani qanday boshlash mumkin?",
-        answer: "Platformani boshlash uchun bizning veb-saytimizga kirib, ro'yxatdan o'tishingiz kerak. Keyin siz o'z o'quv markazingiz uchun yangi akkaunt yaratishingiz mumkin. Biz sizga platformani ishlatish bo'yicha to'liq qo'llanma va texnik yordam taqdim etamiz.",
+        id: 2,
+        question: "Modme qanday imkoniyatlarga ega?",
+        answer:
+            "Modme quyidagi asosiy imkoniyatlarni taqdim etadi:\n\n" +
+            "• LMS va CRM tizimlari - o'quv jarayonini boshqarish va mijozlar bilan aloqani yaxshilash\n" +
+            "• O'quvchilar boshqaruvi - ro'yxatni yaratish, guruhlarga ajratish va o'qish jarayonini kuzatish\n" +
+            "• Dars jadvali - guruhlar va o'qituvchilar uchun dars jadvalini tuzish va boshqarish\n" +
+            "• Moliyaviy hisobotlar - to'lovlar, xarajatlar va moliyaviy holat haqida to'liq hisobotlar\n" +
+            "• SMS va e-mail xabarnomalar - o'quvchilar va ota-onalarga avtomatik xabarnomalar\n" +
+            "• Veb-sayt integratsiyasi - o'quv markazingiz veb-sayti bilan integratsiya\n" +
+            "• Mobil ilova - o'qituvchilar va o'quvchilar uchun qulay mobil ilova\n" +
+            "• O'qituvchilar boshqaruvi - o'qituvchilarning ishini nazorat qilish va baholash",
     },
     {
-        question: "Qaysi to'lov usullari qo'llab-quvvatlanadi?",
-        answer: "Biz to'lovlarni bank orqali, naqd pul va boshqa zamonaviy to'lov usullari orqali qabul qilamiz. Har bir mijoz uchun eng qulay to'lov usulini tanlash imkoniyati mavjud.",
+        id: 3,
+        question: "Modme qanday ishlaydi?",
+        answer: "Modme oddiy va qulay interfeysga ega. Platformaga kirib, o'quvchilar ro'yxatini yaratasiz, guruhlar tuzasiz, dars jadvalini belgilaysiz. O'qituvchilar o'z guruhlarini boshqarishi, darslarni belgilashi va o'quvchilar bilan aloqada bo'lishi mumkin. Barcha ma'lumotlar avtomatik saqlanadi va hisobotlar tuziladi.",
     },
     {
-        question: "Platforma qanday xususiyatlarga ega?",
-        answer: "Modme platformasi quyidagi asosiy xususiyatlarga ega: darslar jadvalini tashkil qilish, o'quvchilarni nazorat qilish, uy vazifalarini berish va baholash, to'lovlarni qabul qilish, hisobotlar tayyorlash, ota-onalar uchun alohida portal va boshqa ko'plab imkoniyatlar.",
+        id: 4,
+        question: "Modme qancha turadi?",
+        answer: "Modme narxlari o'quv markazingiz o'lchamiga va tanlagan tarif rejangizga bog'liq. Biz turli xil tarif rejalarni taklif qilamiz - kichik o'quv markazlaridan tortib, yirik tarmoqlargacha. Batafsil ma'lumot uchun biz bilan bog'laning.",
     },
     {
-        question: "Texnik yordam qanday taqdim etiladi?",
-        answer: "Biz 24/7 texnik yordam xizmatini taqdim etamiz. Mijozlarimiz har qanday savol yoki muammolarni qo'llab-quvvatlash xizmatimiz orqali hal qilishlari mumkin. Shuningdek, platforma bo'yicha muntazam o'quv seminarlari ham o'tkaziladi.",
-    },
-    {
-        question: "Platforma qanday narxda?",
-        answer: "Platforma narxlari o'quv markazingiz o'lchamiga va tanlangan funksionallik paketiga qarab belgilanadi. Batafsil ma'lumot uchun narxlar bo'limiga o'ting yoki biz bilan bog'laning.",
+        id: 5,
+        question: "Modme qanday texnik yordam ko'rsatadi?",
+        answer:
+            "Biz mijozlarimizga quyidagi yordam xizmatlarini taqdim etamiz:\n\n" +
+            "• Onlayn qo'llanma va video darsliklar\n" +
+            "• Telegram orqali texnik yordam\n" +
+            "• Onlayn treninglar va seminarlar\n" +
+            "• Shaxsiy menejer yordami",
     },
 ];
 
 const FAQSection = () => {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
-        <section className="w-full py-16 md:py-20 lg:py-24 overflow-hidden bg-[#fcfcfc]">
+        <section className="w-full py-16 md:py-20 lg:py-24 bg-[#fcfcfc]">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Ko'p beriladigan savollar
+                            Ko'p so'raladigan savollar
                         </h2>
                         <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Modme platformasi haqida
+                            Modme haqida
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -52,62 +66,54 @@ const FAQSection = () => {
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <motion.div
-                            key={index}
+                            key={faq.id}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3, delay: index * 0.1 }}
-                            className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+                            transition={{ delay: index * 0.1 }}
+                            className="bg-white rounded-2xl overflow-hidden"
                         >
                             <button
                                 onClick={() =>
-                                    setOpenIndex(
-                                        openIndex === index ? -1 : index
+                                    setActiveIndex(
+                                        activeIndex === index ? null : index
                                     )
                                 }
-                                className="w-full p-6 text-left flex items-center justify-between focus:outline-none"
+                                className="w-full p-6 text-left flex items-center justify-between"
                             >
-                                <span className="text-lg md:text-xl font-semibold text-[#080a0a]">
+                                <h3 className="text-lg md:text-xl font-semibold text-[#080a0a]">
                                     {faq.question}
-                                </span>
-                                <motion.span
-                                    animate={{
-                                        rotate: openIndex === index ? 180 : 0,
-                                    }}
-                                    transition={{ duration: 0.3 }}
-                                    className="text-[#ff8000]"
+                                </h3>
+                                <svg
+                                    className={`w-6 h-6 text-[#ff8000] transition-transform duration-300 ${
+                                        activeIndex === index
+                                            ? "rotate-180"
+                                            : ""
+                                    }`}
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
                                 >
-                                    <svg
-                                        className="w-6 h-6"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M19 9l-7 7-7-7"
-                                        />
-                                    </svg>
-                                </motion.span>
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
                             </button>
-                            <AnimatePresence>
-                                {openIndex === index && (
-                                    <motion.div
-                                        initial={{ height: 0, opacity: 0 }}
-                                        animate={{ height: "auto", opacity: 1 }}
-                                        exit={{ height: 0, opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="overflow-hidden"
-                                    >
-                                        <div className="px-6 pb-6">
-                                            <p className="text-[#a8a8a8] text-lg leading-relaxed">
-                                                {faq.answer}
-                                            </p>
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{
+                                    height: activeIndex === index ? "auto" : 0,
+                                    opacity: activeIndex === index ? 1 : 0,
+                                }}
+                                transition={{ duration: 0.3 }}
+                                className="overflow-hidden"
+                            >
+                                <div className="p-6 pt-0 text-[#666666] whitespace-pre-line">
+                                    {faq.answer}
+                                </div>
+                            </motion.div>
                         </motion.div>
                     ))}
                 </div>
