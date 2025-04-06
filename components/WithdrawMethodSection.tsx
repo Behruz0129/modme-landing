@@ -8,65 +8,83 @@ import ScrollAnimation from "@/lib/animations/scroll-animation";
 type WithdrawMethod = {
     id: string;
     name: string;
-    description: string;
-    example: string;
-    image: string;
+    description: string[];
+    advantages: string[];
 };
 
 const withdrawMethods: WithdrawMethod[] = [
     {
         id: "monthly",
         name: "Oylik (Kalendar)",
-        description:
-            "Bu rejimda talaba har oyning 1-sanasidan oxirigacha bo'lgan barcha darslar uchun oldindan to'lov qiladi. Agar talaba o'qishga oyning o'rtasida qo'shilsa, faqat qolgan darslar uchun to'lov hisoblanadi.",
-        example:
-            "Kurs narxi 1 000 000 so'm va 1 oyda 14 dars bo'lsa, har bir dars 71 429 so'mga teng. Talaba 15-kuni qo'shilsa va 7 ta dars qoldi, u faqat 500 000 so'm to'laydi (1 mln / 14 * 7) = 500 ming.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Ushbu rejimda guruhga qo'shilgan aktiv o'quvchilardan har oyning 1-sanasida guruhdagi kurs narxi (yoki chegirmali narxi) bo'yicha oldindan pul yechib olinadi.",
+            "1 oyda davomida nechta dars bo'lishidan qat'iy nazar, platforma 1-sanadan oyning oxirigi sanasigacha kurs narxi bo'yicha to'liq pul yechib oladi.",
+        ],
+        advantages: [
+            "Qarzdorliklar bilan shug'ullanish va qarzdorlik foizini tushirish uchun ancha qulay.",
+            "Guruhdagi o'quvchi qancha vaqtdan buyon qarzdorlikda ekanligini aniqlash.",
+            "O'qituvchilarga ham bir xil vaqtda maosh hisoblab berish uchun qulay.",
+            "O'quvchilarda ham oyda to'lov qilish odatini shakllantirish va to'lov sanasini eslab qolish osonligi.",
+        ],
     },
     {
         id: "daily",
         name: "Kunlik",
-        description:
-            "Bu rejimda talaba faqat qatnashgan darslar uchun to'lov qiladi. Har bir dars uchun to'lov kurs narxining umumiy darslar soniga bo'lingan qiymatidan hisoblanadi.",
-        example:
-            "Agar kurs narxi 1 000 000 so'm bo'lsa va oyda 20 ta dars rejalashtirilgan bo'lsa, har bir dars narxi 50 000 so'm bo'ladi. Talaba qatnashgan darslar soni uchun to'lovni amalga oshiradi.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Ushbu rejim Kalendar to'lov rejimiga o'xshash va o'quvchilardan har darsda 1ta dars narxi bo'yicha avtomatik pul yechib boradi.",
+            "Kurs narxi 1-sanadan boshlab, oy oxirigacha bo'lgan dars soniga bo'linadi va har darsda o'quvchilardan pul yechiladi. Misol uchun: Kurs narxi: 299 000 so'm 1 oyda 13ta dars bor 299 000 / 13 = 23 000 so'mdan kunlik yechib boradi.",
+        ],
+        advantages: [
+            "O'quvchilar balansidan 1 oyga emas, har dars pul yechib oladi.",
+            "O'quvchi guruhdan guruhga o'tish jarayonida ham hech qanday eski guruhi uchun pul qaytarish holatlari bo'lmaydi.",
+            "Muzlatilgan o'quvchilardan pul yechilmaydi.",
+        ],
     },
     {
         id: "module",
         name: "Modul",
-        description:
-            "Bu rejimda talaba butun bir modul uchun to'lovni oldindan amalga oshiradi. Modullar kursning alohida bo'limlarini o'z ichiga oladi va odatda bir necha darslardan iborat bo'ladi.",
-        example:
-            "JavaScript kursining 'DOM manipulatsiyasi' moduli 8 ta darsdan iborat bo'lsa, talaba shu 8 ta dars uchun oldindan to'lov qiladi. Agar modul narxi 800 000 so'm bo'lsa, talaba barcha 8 ta dars uchun shu summani to'laydi.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Ushbu rejimda har nechta darsda o'quvchilardan pul yechilishi kerakligini tanlashingiz mumkin.",
+            "Kurs yaratish jarayonida 1ta moduldagi darslar sonini 4, 8, 12, 20, 24, 28 darsga pul yechib oladigan qilib belgilab qo'yishingiz mumkin.",
+            "Agarda guruh 12ta darslik modul asosida yaratilgan va 13-sanada ochilgan bo'lsa, Shu sanadan boshlab 12ta darsni hisoblab, aktiv talabalardan narxi narxni yechib oladi. Va keyingi to'lov sanasi doimiy o'zgarib turadi.",
+        ],
+        advantages: [
+            "O'quv markazingizda haftada 2 martta bo'ladigan guruhlar uchun, 8ta dars uchun, 3 martta bo'ladigan guruhlar uchun 12ta dars, 4 martta bo'ladigan guruhlar uchun 20ta dars, haftada 6 kun bo'ladigan guruhlar uchun esa, 24ta darsni belgilash orqali har bir guruhdan darslar soniga qarab pul yechib olish imkoniyati.",
+            "1 oyda 12 yoki 13ta dars bo'lib qoladigan holatlar, ushbu rejimdagi guruhlarga hech qanday negativ ta'sir qilmaydi. ",
+        ],
     },
     {
         id: "groupstart",
         name: "Guruh boshlanish sanasi",
-        description:
-            "Bu rejimda to'lov hisoblash guruh boshlanish sanasiga bog'liq bo'ladi. Talaba guruhga birinchi darsdan yoki keyinroq qo'shilishidan qat'i nazar, to'lov o'quv markazining ichki hisobiga muvofiq hisoblanadi.",
-        example:
-            "Guruh 5-fevralda boshlangan va talaba 20-fevralda qo'shilgan bo'lsa, to'lov kursning boshidan hisoblangan darslar soniga muvofiq belgilanadi, qolgan darslar uchun to'lovlar keyingi oyga o'tkaziladi.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Ushbu rejimda Guruh boshlanish sanasi Guruhdagi O'quvchilardan pul yechib olish sanasi hisoblanadi. Ya'ni Guruh 14-sanada ochilsa, har oyning 14-sanasi talabalar uchun to'lov kuni hisoblanadi.  Bu rejimda ham 1 oyga o'quvchilardan kurs narxi bo'yicha to'lov olinadi.",
+        ],
+        advantages: [
+            "Agarda yangi guruhlar yetarlicha o'quvchi yig'ilishi bilan ochiladigan holatlarda, o'quvchilardan guruh boshlangan sanadan boshlab pul yechilishi natijasida, oyning qaysi qismi bo'lishidan qat'iy nazar to'liq to'lov olish.",
+            "Talabaning to'lov sanasi doim bir xil (guruh boshlangan sana) va o'zgarmaydi.",
+        ],
     },
     {
         id: "coursepayment",
         name: "Kurs uchun to'lov",
-        description:
-            "Bu rejimda talaba butun kurs davomiyligi uchun bir martalik to'lovni amalga oshiradi. Odatda bu rejimda chegirmalar taqdim etiladi va to'liq to'lov kursni o'zlashtirish kafolatlanadi.",
-        example:
-            "6 oylik dasturlash kursi uchun oylik to'lov 1 000 000 so'm, jami 6 000 000 so'm bo'lsa, bir yo'la to'lov qilgan talabaga 15% chegirma bilan 5 100 000 so'mga kurs taqdim etiladi.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Bu rejimda talaba butun kurs davomiyligi uchun bir martalik to'lovni amalga oshiradi.",
+        ],
+        advantages: [
+            "Misol 6 oylik dasturlash kursi uchun oylik to'lov 1 000 000 so'm, jami 6 000 000 so'm bittada qarzdorlikka kiritadi. Birinchi faollashtirilgan vaqtdayoq",
+            "Asosan online kurs yurutuvchilar, to'lov butun kurs uchun oldindan olinadigan bootcamplar uchun qulay rejim",
+        ],
     },
     {
         id: "individual",
         name: "Individual",
-        description:
-            "Bu rejimda to'lovlar talabaning individual ehtiyojlari va o'quv markazining o'ziga xos shartlariga muvofiq belgilanadi. Bu o'zaro kelishuv asosida o'rnatilgan maxsus to'lov rejimi.",
-        example:
-            "Talaba maxsus dastur bo'yicha o'qiyotgan bo'lsa yoki alohida talablarga ega bo'lsa, to'lov rejimi individual tartibda o'rnatiladi. Masalan, 2 ta fan uchun haftasiga 3 kun, har bir dars 1.5 soatdan o'qitish uchun oyiga 1 500 000 so'm.",
-        image: "/images/withdraw-method/kalendar.png",
+        description: [
+            "Bu rejimda talaba qachon faollashtirilsa, har oyni o'sha sanasida pul yechib olinadi. Ya'ni talaba 15-sanada faollashtirilgan bo'lsa, har oyning 15-sanasi to'lov kuni hisoblanadi.",
+            "Har bir talabaga alohida yondashuv talab qiladi.",
+        ],
+        advantages: [
+            "Talaba qachon qo'shilgan bo'lsa, shu sanadan boshlab har oyning o'sha kunida to'lov olinadi. Bu to'lovni hammadan to'liq olishni, to'lov bo'lib olinmasligini ta'minlaydi.",
+        ],
     },
 ];
 
@@ -145,29 +163,45 @@ const WithdrawMethodSection = () => {
                                             </h3>
                                         </div>
                                         <div className="prose prose-lg max-w-none">
-                                            <p className="text-[#080A0A] leading-relaxed">
-                                                {
-                                                    selectedWithdrawMethod.description
-                                                }
-                                            </p>
+                                            <ul className="list-disc pl-6 space-y-2">
+                                                {selectedWithdrawMethod.description.map(
+                                                    (item, index) => (
+                                                        <li
+                                                            key={index}
+                                                            className="text-[#080A0A] leading-relaxed"
+                                                        >
+                                                            {item}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <div className="space-y-4 bg-[#fcfcfc] p-6 rounded-lg">
                                         <div className="flex items-center gap-3">
-                                            <div className="w-8 h-8 bg-[#ff8000]/10 rounded-full flex items-center justify-center">
-                                                <span className="text-[#ff8000] font-semibold">
+                                            <div className="w-8 h-8 bg-[#01662F]/10 rounded-full flex items-center justify-center">
+                                                <span className="text-[#01662F] font-semibold">
                                                     !
                                                 </span>
                                             </div>
-                                            <h4 className="text-xl font-semibold text-[#080A0A]">
-                                                Misol:
+                                            <h4 className="text-xl font-semibold text-[#01662F]">
+                                                Avzalliklari:
                                             </h4>
                                         </div>
                                         <div className="prose prose-lg max-w-none">
-                                            <p className="text-[#080A0A] leading-relaxed">
-                                                {selectedWithdrawMethod.example}
-                                            </p>
+                                            <ul className="list-disc pl-6 space-y-2">
+                                                {selectedWithdrawMethod.advantages.map(
+                                                    (item, index) => (
+                                                        <li
+                                                            key={index}
+                                                            className="text-[#080A0A] leading-relaxed"
+                                                        >
+                                                            {item}
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

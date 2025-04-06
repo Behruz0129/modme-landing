@@ -44,10 +44,12 @@ const AdvantagesSection = () => {
                                         Doimiy Texnik Yordam
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua.
+                                        Har kuni 9:00 dan 20:00 gacha texnik
+                                        yordam xizmati orqali har qanday texnik
+                                        muammolaringizni hal qilishda yordam
+                                        beramiz. Bizning mutaxassislarimiz sizga
+                                        ish vaqtida doimiy qo'llab-quvvatlash
+                                        ko'rsatishadi
                                     </p>
                                 </div>
                             </div>
@@ -68,10 +70,10 @@ const AdvantagesSection = () => {
                                         Bepul Konsultatsiya
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua.
+                                        O'quv markazingizni rivojlantirish uchun
+                                        bepul konsultatsiya xizmatini taqdim
+                                        etamiz. Bizning mutaxassislarimiz sizga
+                                        eng yaxshi yechimlarni taklif qilishadi
                                     </p>
                                 </div>
                             </div>
@@ -92,10 +94,11 @@ const AdvantagesSection = () => {
                                         Xavfsizlik
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua.
+                                        3 tomonlama xavfsizlik tizimi: yuridik
+                                        (shartnomalar va huquqiy himoya), texnik
+                                        (ma'lumotlarni shifrlash va himoya) va
+                                        reputatsiya (o'quvchilar va hamkorlar
+                                        ishonchi) jihatdan to'liq himoyalangan
                                     </p>
                                 </div>
                             </div>
@@ -116,10 +119,11 @@ const AdvantagesSection = () => {
                                         Qulay Interfeys
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua.
+                                        Intuitiv va foydalanuvchi uchun qulay
+                                        interfeys orqali o'quv markazingizni
+                                        boshqarish oson va qiziqarli. Har qanday
+                                        yoshdagi foydalanuvchilar uchun
+                                        mo'ljallangan
                                     </p>
                                 </div>
                             </div>

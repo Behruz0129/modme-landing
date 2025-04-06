@@ -106,17 +106,20 @@ const Navbar = () => {
     }, [isMobileMenuOpen]);
 
     return (
-        <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 h-[89px] ${
+        <motion.nav
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 isGamificationPage
                     ? "bg-[#0a0a0a]/95 backdrop-blur-sm"
                     : isScrolled
-                    ? "bg-white/90 backdrop-blur-sm"
+                    ? "bg-white dark:bg-[#0a0a0a]"
                     : "bg-transparent"
             }`}
         >
-            <div className="max-w-[1200px] mx-auto px-4 h-full">
-                <div className="flex items-center justify-between h-full">
+            <div className="w-full max-w-[1200px] mx-auto px-2 sm:px-4 lg:px-6">
+                <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <Link href="/" className="relative w-[120px] h-[40px]">
                         <Image
@@ -133,7 +136,7 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center space-x-12">
+                    <div className="hidden lg:flex items-center gap-8">
                         {/* Navigation Links */}
                         {navLinks.map((link) => (
                             <Link
@@ -162,7 +165,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Social Icons & CTA */}
-                    <div className="hidden lg:flex items-center space-x-6">
+                    <div className="hidden lg:flex items-center gap-4">
                         {/* Support Icon */}
                         <a
                             href="tel:787771100"
@@ -332,7 +335,7 @@ const Navbar = () => {
                     )}
                 </AnimatePresence>
             </div>
-        </nav>
+        </motion.nav>
     );
 };
 
