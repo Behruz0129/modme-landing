@@ -302,24 +302,22 @@ const PricingPage = () => {
                             className="flex justify-center gap-4 mb-8"
                             variants={itemVariants}
                         >
-                            {["3 oy", "6 oy", "9 oy", "12 oy"].map(
-                                (period, index) => (
-                                    <button
-                                        key={period}
-                                        onClick={() => {
-                                            swiper?.slideTo(index);
-                                            setActiveIndex(index);
-                                        }}
-                                        className={`px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${
-                                            activeIndex === index
-                                                ? "bg-gradient-to-r from-[#ffd03d] to-[#ff8000] text-white font-bold"
-                                                : "bg-white text-[#a8a8a8] hover:bg-[#f8f8f8]"
-                                        }`}
-                                    >
-                                        {period}
-                                    </button>
-                                )
-                            )}
+                            {plans.map((plan, index) => (
+                                <button
+                                    key={plan.name}
+                                    onClick={() => {
+                                        swiper?.slideTo(index);
+                                        setActiveIndex(index);
+                                    }}
+                                    className={`px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${
+                                        activeIndex === index
+                                            ? "bg-gradient-to-r from-[#ffd03d] to-[#ff8000] text-white font-bold"
+                                            : "bg-white text-[#a8a8a8] hover:bg-[#f8f8f8]"
+                                    }`}
+                                >
+                                    {plan.name}
+                                </button>
+                            ))}
                         </motion.div>
 
                         <Swiper
@@ -333,95 +331,92 @@ const PricingPage = () => {
                             initialSlide={2}
                             className="w-full"
                         >
-                            {["3", "6", "9", "12"].map((period) => (
-                                <SwiperSlide key={period}>
-                                    <div
-                                        className={`bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl ${
-                                            period === "9"
-                                                ? "bg-gradient-to-r from-[#ffd03d]/5 to-[#ff8000]/5"
-                                                : ""
-                                        }`}
-                                    >
+                            {plans.map((plan) => (
+                                <SwiperSlide key={plan.name}>
+                                    <div className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
                                         <div className="flex items-center gap-2 mb-6">
                                             <h3 className="text-xl font-bold text-[#080a0a]">
-                                                {period} oy
+                                                {plan.name}
                                             </h3>
-                                            {period === "9" && (
+                                            {plan.isPopular && (
                                                 <Zap className="w-5 h-5 text-[#ff8000]" />
                                             )}
                                         </div>
                                         <div className="space-y-4">
-                                            {plans.map((plan) => (
-                                                <div
-                                                    key={plan.name}
-                                                    className="border-b border-[#f0f0f0] last:border-0 pb-4 last:pb-0"
-                                                >
-                                                    <div className="flex items-center justify-between mb-2 transition-transform duration-300 hover:scale-[1.02]">
-                                                        <div>
-                                                            <h4 className="font-bold text-[#080a0a]">
-                                                                {plan.name}
-                                                            </h4>
-                                                            <p className="text-sm text-[#a8a8a8]">
-                                                                {
-                                                                    plan.description
-                                                                }
-                                                            </p>
-                                                        </div>
-                                                        <div className="text-right">
-                                                            <div className="flex items-center gap-2">
-                                                                <span
-                                                                    className={`text-lg font-bold ${
-                                                                        period ===
-                                                                        "9"
-                                                                            ? "text-[#ff8000]"
-                                                                            : "text-[#080a0a]"
-                                                                    }`}
-                                                                >
-                                                                    {formatPrice(
-                                                                        plan
-                                                                            .prices[
-                                                                            period as keyof typeof plan.prices
-                                                                        ]
-                                                                    )}
-                                                                </span>
-                                                                {period ===
-                                                                    "9" && (
-                                                                    <Trophy className="w-4 h-4 text-[#ff8000]" />
-                                                                )}
-                                                                {period ===
-                                                                    "12" && (
-                                                                    <Star className="w-4 h-4 text-[#ff8000]" />
-                                                                )}
+                                            {["3", "6", "9", "12"].map(
+                                                (period) => (
+                                                    <div
+                                                        key={period}
+                                                        className="border-b border-[#f0f0f0] last:border-0 pb-4 last:pb-0"
+                                                    >
+                                                        <div className="flex items-center justify-between mb-2 transition-transform duration-300 hover:scale-[1.02]">
+                                                            <div>
+                                                                <h4 className="font-bold text-[#080a0a]">
+                                                                    {period} oy
+                                                                </h4>
+                                                                <p className="text-sm text-[#a8a8a8]">
+                                                                    {
+                                                                        plan.description
+                                                                    }
+                                                                </p>
                                                             </div>
-                                                            {period !== "3" && (
-                                                                <div className="flex items-center gap-1 text-sm text-[#a8a8a8]">
-                                                                    <span className="line-through">
+                                                            <div className="text-right">
+                                                                <div className="flex items-center gap-2">
+                                                                    <span
+                                                                        className={`text-lg font-bold ${
+                                                                            period ===
+                                                                            "9"
+                                                                                ? "text-[#ff8000]"
+                                                                                : "text-[#080a0a]"
+                                                                        }`}
+                                                                    >
                                                                         {formatPrice(
-                                                                            plan
-                                                                                .originalPrices[
-                                                                                period as keyof typeof plan.originalPrices
-                                                                            ]
-                                                                        )}
-                                                                    </span>
-                                                                    <span className="text-[#ff8000] flex items-center gap-0.5">
-                                                                        <Percent className="w-3 h-3" />
-                                                                        {calculateDiscount(
                                                                             plan
                                                                                 .prices[
                                                                                 period as keyof typeof plan.prices
-                                                                            ],
-                                                                            plan
-                                                                                .originalPrices[
-                                                                                period as keyof typeof plan.originalPrices
                                                                             ]
                                                                         )}
                                                                     </span>
+                                                                    {period ===
+                                                                        "9" && (
+                                                                        <Trophy className="w-4 h-4 text-[#ff8000]" />
+                                                                    )}
+                                                                    {period ===
+                                                                        "12" && (
+                                                                        <Star className="w-4 h-4 text-[#ff8000]" />
+                                                                    )}
                                                                 </div>
-                                                            )}
+                                                                {period !==
+                                                                    "3" && (
+                                                                    <div className="flex items-center gap-1 text-sm text-[#a8a8a8]">
+                                                                        <span className="line-through">
+                                                                            {formatPrice(
+                                                                                plan
+                                                                                    .originalPrices[
+                                                                                    period as keyof typeof plan.originalPrices
+                                                                                ]
+                                                                            )}
+                                                                        </span>
+                                                                        <span className="text-[#ff8000] flex items-center gap-0.5">
+                                                                            <Percent className="w-3 h-3" />
+                                                                            {calculateDiscount(
+                                                                                plan
+                                                                                    .prices[
+                                                                                    period as keyof typeof plan.prices
+                                                                                ],
+                                                                                plan
+                                                                                    .originalPrices[
+                                                                                    period as keyof typeof plan.originalPrices
+                                                                                ]
+                                                                            )}
+                                                                        </span>
+                                                                    </div>
+                                                                )}
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            ))}
+                                                )
+                                            )}
                                         </div>
                                     </div>
                                 </SwiperSlide>

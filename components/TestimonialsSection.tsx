@@ -90,20 +90,21 @@ const TestimonialsSection = () => {
                         <div className="lg:hidden">
                             <Swiper
                                 slidesPerView="auto"
-                                spaceBetween={24}
+                                spaceBetween={16}
+                                initialSlide={0}
                                 className="testimonials-swiper"
                                 breakpoints={{
                                     0: {
-                                        slidesPerView: 1.5,
-                                        width: 320,
+                                        slidesPerView: 1.2,
+                                        spaceBetween: 16,
                                     },
                                     640: {
-                                        slidesPerView: 2.5,
-                                        width: 640,
+                                        slidesPerView: 2.1,
+                                        spaceBetween: 20,
                                     },
                                     1024: {
-                                        slidesPerView: 1,
-                                        width: 1024,
+                                        slidesPerView: 3.2,
+                                        spaceBetween: 24,
                                     },
                                 }}
                             >

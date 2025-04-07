@@ -13,18 +13,10 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="w-full"
             >
-                {/* History Section */}
                 <HistorySection />
-
-                {/* Founders Section */}
                 <FoundersSection />
-
-                {/* Team Section */}
                 <TeamSection />
-
-                {/* Mission Section */}
                 <MissionSection />
             </motion.div>
         </main>
