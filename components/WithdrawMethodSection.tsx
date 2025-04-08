@@ -104,12 +104,12 @@ const WithdrawMethodSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12 mb-14 md:mb-16 lg:mb-20">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] max-w-md lg:max-w-lg">
-                            Moslashuvchan va ishonchli hisob-kitob.
+                            Moslashuvchan va ishonchli hisob-kitob
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
                             6 xil to'lov rejimi orasidan o'zingizga eng qulayini
                             tanlang. Har bir tranzaksiya shaffof va minimal
-                            xatolik bilan amalga oshiriladi.
+                            xatolik bilan amalga oshiriladi
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -183,7 +183,7 @@ const WithdrawMethodSection = () => {
                                                 </span>
                                             </div>
                                             <h4 className="text-xl font-semibold text-[#01662F]">
-                                                Avzalliklari:
+                                                Afzalliklari:
                                             </h4>
                                         </div>
                                         <div className="prose prose-lg max-w-none">

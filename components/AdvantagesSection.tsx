@@ -14,7 +14,7 @@ const AdvantagesSection = () => {
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
                             ModMe – bu sizning o'quv markazingiz uchun eng
                             yaxshi tanlov! Biz sizga shunchaki platforma emas,
-                            balki to'liq xizmat va qulay tajriba taqdim etamiz.
+                            balki to'liq xizmat va qulay tajriba taqdim etamiz
                         </p>
                     </div>
                 </ScrollAnimation>

@@ -129,7 +129,7 @@ const FeaturesSection = () => {
                             Dars jadvalidan moliyagacha bo'lgan barcha
                             jarayonlarni to'liq tizimlashtiring, qo'lda
                             qilinadigan ishlarni avtomatlashtiring va nazoratni
-                            o'z qo'lingizga oling!
+                            o'z qo'lingizga oling
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -148,12 +148,12 @@ const FeaturesSection = () => {
                                 Tizimlashtirish
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Barcha jarayonlarni tartibga soling.
+                                Barcha jarayonlarni tartibga soling
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Jarayonlarni yagona tizimda oson boshqarishing,
                                 o'lchang va tartibga soling, bu uchun esa
-                                Modmeda barcha funksiyalar mavjud!
+                                Modmeda barcha funksiyalar mavjud
                             </p>
                             <div className="mt-auto relative w-full h-[250px] overflow-hidden rounded-lg">
                                 <Image
@@ -178,14 +178,14 @@ const FeaturesSection = () => {
                                 Lidlar
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                O'quvchi sonini bir necha barobar oshiring.
+                                O'quvchi sonini bir necha barobar oshiring
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Qulay interfeys orqali har bir mijoz bilan
                                 aloqani samarali boshqarish, ularni sinov
                                 darsiga yo'naltirish, guruhlarga qo'shish va
                                 birinchi to'lovga olib kelish jarayonlarini
-                                to'liq nazorat qiling.
+                                to'liq nazorat qiling
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
@@ -210,7 +210,7 @@ const FeaturesSection = () => {
                                 Moliya
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Moliyani oson boshqaring.
+                                Moliyani oson boshqaring
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
                                 O'quv markazingiz moliyasini qog'ozda emas,
@@ -246,7 +246,7 @@ const FeaturesSection = () => {
                             <p className="text-[#4A5564] mb-6 text-base">
                                 Modme orqalo turli foydali xizmatlar va tizimlar
                                 bilan bog'lanib, ish jarayonlarini
-                                avtomatlashtiring va samaradorlikni oshiring.
+                                avtomatlashtiring va samaradorlikni oshiring
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
@@ -278,7 +278,7 @@ const FeaturesSection = () => {
                                 yagona tizimda tartibli yuriting. Bu bilan o'quv
                                 markazingizning samaradorligini oshiring va
                                 filiallardagi jarayonlarni markazdan nazorat
-                                qiling.
+                                qiling
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
@@ -303,7 +303,7 @@ const FeaturesSection = () => {
                                 holati, dars materiallari va boshqa muhim
                                 ma'lumotlarga oson kirish imkoniyatini taqdim
                                 eting. Bu bilan aloqa samaradorligini oshiring
-                                va foydalanuvchi tajribasini yaxshilang.
+                                va foydalanuvchi tajribasini yaxshilang
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>

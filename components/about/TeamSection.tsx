@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
+import { Linkedin, Twitter } from "lucide-react";
 
 const team = [
     {
@@ -95,7 +96,7 @@ const TeamSection = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="relative group"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#ffd03d]/5 to-[#ff8000]/5 rounded-2xl transform group-hover:scale-105 transition-transform duration-300" />
+                            <div className="absolute inset-0 bg-white rounded-2xl shadow-sm transform group-hover:scale-105 transition-transform duration-300" />
                             <div className="relative p-6">
                                 <div className="flex flex-col items-center text-center">
                                     <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">

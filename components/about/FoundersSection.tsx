@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
+import { Linkedin, Twitter } from "lucide-react";
 
 const founders = [
     {
@@ -55,8 +56,8 @@ const FoundersSection = () => {
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-[#ffd03d]/5 to-[#ff8000]/5 rounded-2xl transform group-hover:scale-105 transition-transform duration-300" />
                             <div className="relative p-8">
-                                <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
-                                    <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                <div className="flex flex-col items-center space-y-6">
+                                    <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden">
                                         <Image
                                             src={founder.image}
                                             alt={founder.name}
@@ -64,7 +65,7 @@ const FoundersSection = () => {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <div className="text-center md:text-left">
+                                    <div className="text-center">
                                         <h3 className="text-2xl font-bold text-[#080a0a] mb-2">
                                             {founder.name}
                                         </h3>
@@ -74,20 +75,14 @@ const FoundersSection = () => {
                                         <p className="text-[#a8a8a8] mb-6">
                                             {founder.description}
                                         </p>
-                                        <div className="flex justify-center md:justify-start space-x-4">
+                                        <div className="flex justify-center space-x-4">
                                             <a
                                                 href={founder.social.linkedin}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-[#a8a8a8] hover:text-[#ff8000] transition-colors"
                                             >
-                                                <svg
-                                                    className="w-6 h-6"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-.976-.017-2.229-1.359-2.229-1.36 0-1.569 1.062-1.569 2.158v5.675h-3v-11h3v1.538h.042c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.857z" />
-                                                </svg>
+                                                <Linkedin className="w-6 h-6" />
                                             </a>
                                             <a
                                                 href={founder.social.twitter}
@@ -95,13 +90,7 @@ const FoundersSection = () => {
                                                 rel="noopener noreferrer"
                                                 className="text-[#a8a8a8] hover:text-[#ff8000] transition-colors"
                                             >
-                                                <svg
-                                                    className="w-6 h-6"
-                                                    fill="currentColor"
-                                                    viewBox="0 0 24 24"
-                                                >
-                                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                                                </svg>
+                                                <Twitter className="w-6 h-6" />
                                             </a>
                                         </div>
                                     </div>
