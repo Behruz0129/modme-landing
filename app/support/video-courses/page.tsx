@@ -33,22 +33,6 @@ const playlists: Playlist[] = [
             },
         ],
     },
-    {
-        id: "2",
-        title: "Modme CRM Kengaytmalari",
-        videos: [
-            {
-                id: "dQw4w9WgXcQ3",
-                title: "SMS Xizmati",
-                description: "SMS xizmatini sozlash va ishlatish",
-            },
-            {
-                id: "dQw4w9WgXcQ4",
-                title: "Telegram Bot",
-                description: "Telegram botni ulash va ishlatish",
-            },
-        ],
-    },
 ];
 
 export default function VideoCoursesPage() {

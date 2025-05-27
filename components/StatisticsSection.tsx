@@ -13,19 +13,19 @@ const statistics = [
     },
     {
         title: "Filiallar",
-        value: 500,
+        value: 450,
         suffix: "+",
         color: "from-[#ff8000] to-[#ffd03d]",
     },
     {
         title: "Guruhlar",
-        value: 3250,
+        value: 15000,
         suffix: "+",
         color: "from-[#ffd03d] to-[#ff8000]",
     },
     {
         title: "O'quvchilar",
-        value: 8000000,
+        value: 300000,
         suffix: "+",
         color: "from-[#ff8000] to-[#ffd03d]",
     },
@@ -67,11 +67,8 @@ const StatisticsSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Modme platformasi foydalanuvchilari
+                            Modme foydalanuvchilari raqamlarda
                         </h2>
-                        <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Raqamlarda
-                        </p>
                     </div>
                 </ScrollAnimation>
 

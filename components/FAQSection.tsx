@@ -7,42 +7,30 @@ import ScrollAnimation from "@/lib/animations/scroll-animation";
 const faqs = [
     {
         id: 1,
-        question: "Modme nima?",
-        answer: "Modme - bu o'quv markazlari uchun maxsus ishlab chiqilgan LMS (Learning Management System) va CRM (Customer Relationship Management) tizimlarini birlashtirgan platforma. U o'quv jarayonini avtomatlashtirish, o'quvchilar bilan aloqani yaxshilash va biznesni boshqarish imkonini beradi.",
+        question: "Modme nima va kimlar uchun mo‘ljallangan?",
+        answer:
+            "Modme — bu ta’lim markazlari uchun mo‘ljallangan CRM tizimi bo‘lib, o‘quvchilarni ro‘yxatga olish, moliya boshqaruvi, dars jadvali, hisobotlar va boshqalarni avtomatlashtirishga yordam beradi\n\n" +
+            "Modme xususiy o‘quv markazlari, kurslar, repetitorlik markazlari va boshqa har qanday ta’lim muassasalari uchun mos keladi",
     },
     {
         id: 2,
-        question: "Modme qanday imkoniyatlarga ega?",
-        answer:
-            "Modme quyidagi asosiy imkoniyatlarni taqdim etadi:\n\n" +
-            "• LMS va CRM tizimlari - o'quv jarayonini boshqarish va mijozlar bilan aloqani yaxshilash\n" +
-            "• O'quvchilar boshqaruvi - ro'yxatni yaratish, guruhlarga ajratish va o'qish jarayonini kuzatish\n" +
-            "• Dars jadvali - guruhlar va o'qituvchilar uchun dars jadvalini tuzish va boshqarish\n" +
-            "• Moliyaviy hisobotlar - to'lovlar, xarajatlar va moliyaviy holat haqida to'liq hisobotlar\n" +
-            "• SMS va e-mail xabarnomalar - o'quvchilar va ota-onalarga avtomatik xabarnomalar\n" +
-            "• Veb-sayt integratsiyasi - o'quv markazingiz veb-sayti bilan integratsiya\n" +
-            "• Mobil ilova - o'qituvchilar va o'quvchilar uchun qulay mobil ilova\n" +
-            "• O'qituvchilar boshqaruvi - o'qituvchilarning ishini nazorat qilish va baholash",
+        question: "Moliyaviy hisobotlar qanchalik to‘liq?",
+        answer: "To‘liq avtomatik: har bir to‘lov, chegirma, qarzdorlik, oylik hisobotlar va tranzaksiyalar tizimda aks etadi",
     },
     {
         id: 3,
-        question: "Modme qanday ishlaydi?",
-        answer: "Modme oddiy va qulay interfeysga ega. Platformaga kirib, o'quvchilar ro'yxatini yaratasiz, guruhlar tuzasiz, dars jadvalini belgilaysiz. O'qituvchilar o'z guruhlarini boshqarishi, darslarni belgilashi va o'quvchilar bilan aloqada bo'lishi mumkin. Barcha ma'lumotlar avtomatik saqlanadi va hisobotlar tuziladi.",
+        question: "Dastur bulutli xizmatmi yoki kompyuterga o‘rnatish kerakmi?",
+        answer: "Modme to‘liq bulutda ishlaydi — istalgan qurilmadan, istalgan joydan kirish mumkin",
     },
     {
         id: 4,
-        question: "Modme qancha turadi?",
-        answer: "Modme narxlari o'quv markazingiz o'lchamiga va tanlagan tarif rejangizga bog'liq. Biz turli xil tarif rejalarni taklif qilamiz - kichik o'quv markazlaridan tortib, yirik tarmoqlargacha. Batafsil ma'lumot uchun biz bilan bog'laning.",
+        question: " Sinov muddati bormi?",
+        answer: "Ha, bizda bepul demo versiyasi mavjud — 7 kungacha sinab, ishlatib ko‘rishingiz mumkin",
     },
     {
         id: 5,
-        question: "Modme qanday texnik yordam ko'rsatadi?",
-        answer:
-            "Biz mijozlarimizga quyidagi yordam xizmatlarini taqdim etamiz:\n\n" +
-            "• Onlayn qo'llanma va video darsliklar\n" +
-            "• Telegram orqali texnik yordam\n" +
-            "• Onlayn treninglar va seminarlar\n" +
-            "• Shaxsiy menejer yordami",
+        question: "Ma’lumotlarim xavfsizligiga kafolat bormi?",
+        answer: "Ha, barcha ma’lumotlar shifrlangan va xavfsiz serverlarda saqlanadi. Har bir foydalanuvchi o‘z paroli bilan tizimga kiradi",
     },
 ];
 
@@ -55,11 +43,8 @@ const FAQSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Ko'p so'raladigan savollar
+                            Ko'p beriladigan savollar
                         </h2>
-                        <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Modme haqida
-                        </p>
                     </div>
                 </ScrollAnimation>
 

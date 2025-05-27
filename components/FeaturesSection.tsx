@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
-import Card3D from "@/components/ui/card-3d";
 
 // 3D Card компоненти
 const Card3DComponent = ({
@@ -57,63 +56,6 @@ const Card3DComponent = ({
         </motion.div>
     );
 };
-
-const features = [
-    {
-        id: 1,
-        title: "LMS va CRM tizimlari",
-        description:
-            "O'quv jarayonini boshqarish va mijozlar bilan aloqani yaxshilash uchun birlashtirilgan tizim",
-        icon: "/images/icons/management.svg",
-    },
-    {
-        id: 2,
-        title: "O'quvchilar boshqaruvi",
-        description:
-            "O'quvchilar ro'yxatini yaratish, guruhlarga ajratish va ularning o'qish jarayonini kuzatish",
-        icon: "/images/icons/students.svg",
-    },
-    {
-        id: 3,
-        title: "Dars jadvali",
-        description:
-            "Guruhlar va o'qituvchilar uchun dars jadvalini tuzish va boshqarish",
-        icon: "/images/icons/schedule.svg",
-    },
-    {
-        id: 4,
-        title: "Moliyaviy hisobotlar",
-        description:
-            "To'lovlar, xarajatlar va moliyaviy holat haqida to'liq hisobotlar",
-        icon: "/images/icons/finance.svg",
-    },
-    {
-        id: 5,
-        title: "SMS va e-mail xabarnomalar",
-        description:
-            "O'quvchilar va ota-onalarga avtomatik xabarnomalar yuborish",
-        icon: "/images/icons/notification.svg",
-    },
-    {
-        id: 6,
-        title: "Veb-sayt integratsiyasi",
-        description:
-            "O'quv markazingiz veb-sayti bilan integratsiya qilish imkoniyati",
-        icon: "/images/icons/website.svg",
-    },
-    {
-        id: 7,
-        title: "Mobil ilova",
-        description: "O'qituvchilar va o'quvchilar uchun qulay mobil ilova",
-        icon: "/images/icons/mobile.svg",
-    },
-    {
-        id: 8,
-        title: "O'qituvchilar boshqaruvi",
-        description: "O'qituvchilarning ishini nazorat qilish va baholash",
-        icon: "/images/icons/teachers.svg",
-    },
-];
 
 const FeaturesSection = () => {
     return (
@@ -210,13 +152,14 @@ const FeaturesSection = () => {
                                 Moliya
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Moliyani oson boshqaring
+                                Moliyani oson boshqaring{" "}
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                O'quv markazingiz moliyasini qog'ozda emas,
-                                Modme orqali boshqaring. To'lovlar, qarzdorlar,
-                                xodimlar oyligi, chegirmalar va tranzaksiyalarni
-                                real vaqtda kuzatish imkoniyatiga ega bo'ling!
+                                Barcha to’lovlar va xarajatlarni bir joyda
+                                yuritish, sof foydani avtomatik aniqlash,
+                                oyliklarni hisoblash, qarzdorlarni oson
+                                boshqarish orqali o’quv markazingizni keyingi
+                                darajaga olib chiqing!
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
@@ -244,7 +187,7 @@ const FeaturesSection = () => {
                                 Zamonaviy texnologiyalar bilan yanada qulayroq
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Modme orqalo turli foydali xizmatlar va tizimlar
+                                Modme orqali turli foydali xizmatlar va tizimlar
                                 bilan bog'lanib, ish jarayonlarini
                                 avtomatlashtiring va samaradorlikni oshiring
                             </p>
@@ -259,7 +202,7 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 5 - Filiallar - 5/12 (бeз изображения) */}
+                    {/* Feature 5 - Filiallar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.6}
@@ -268,22 +211,22 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0F6FF] text-[#193CB8] font-medium rounded-xl mb-6">
-                                Filiallar
+                                Masofaviy boshqaruv
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Markazingizni istalgan joydan boshqaring
+                                Ta’lim biznesingizni istalgan joydan boshqaring
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                Ko'plab filial va guruhlarni yarating va ularni
-                                yagona tizimda tartibli yuriting. Bu bilan o'quv
-                                markazingizning samaradorligini oshiring va
-                                filiallardagi jarayonlarni markazdan nazorat
-                                qiling
+                                Platforma yordamida ta’lim biznesingizdagi
+                                ko’rsatkichlarni masofadan turib boshqaring, bu
+                                Sizga ko’proq vaqtingiz biznesingizni yanada
+                                rivojlantirishga yo’naltirishingizga yana bir
+                                imkoniyat!
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 6 - Mobil Ilovalar - 7/12 (бeз изображения) */}
+                    {/* Feature 6 - Mobil Ilovalar - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.7}

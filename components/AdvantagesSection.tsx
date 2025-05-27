@@ -9,12 +9,11 @@ const AdvantagesSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12 mb-14 md:mb-16 lg:mb-20">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] max-w-md lg:max-w-lg">
-                            Biz Bilan Nimalarga Ega Bo'lasiz?
+                            Biz bilan nimalarga ega bo'lasiz?
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
-                            ModMe – bu sizning o'quv markazingiz uchun eng
-                            yaxshi tanlov! Biz sizga shunchaki platforma emas,
-                            balki to'liq xizmat va qulay tajriba taqdim etamiz
+                            MODME – bu Sizning ta’lim biznesingiz uchun eng
+                            yaxshi tanlov!
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -41,15 +40,13 @@ const AdvantagesSection = () => {
                                         <Headphones className="w-6 h-6 text-[#ff8000]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#080a0a] mb-3">
-                                        Doimiy Texnik Yordam
+                                        Maxsus texnik yordam
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Har kuni 9:00 dan 20:00 gacha texnik
-                                        yordam xizmati orqali har qanday texnik
-                                        muammolaringizni hal qilishda yordam
-                                        beramiz. Bizning mutaxassislarimiz sizga
-                                        ish vaqtida doimiy qo'llab-quvvatlash
-                                        ko'rsatishadi
+                                        Siz uchun biriktitilgan maxsus
+                                        menejerlar Siz muvaffaqiyatga
+                                        erishishingizga o’z hissasini qo’shib va
+                                        doimiy qo'llab-quvvatlash ko'rsatishadi
                                     </p>
                                 </div>
                             </div>
@@ -72,7 +69,7 @@ const AdvantagesSection = () => {
                                     <p className="text-[#a8a8a8]">
                                         O'quv markazingizni rivojlantirish uchun
                                         bepul konsultatsiya xizmatini taqdim
-                                        etamiz. Bizning mutaxassislarimiz sizga
+                                        etamiz. Bizning mutaxassislarimiz Sizga
                                         eng yaxshi yechimlarni taklif qilishadi
                                     </p>
                                 </div>
@@ -94,11 +91,9 @@ const AdvantagesSection = () => {
                                         Xavfsizlik
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        3 tomonlama xavfsizlik tizimi: yuridik
-                                        (shartnomalar va huquqiy himoya), texnik
-                                        (ma'lumotlarni shifrlash va himoya) va
-                                        reputatsiya (o'quvchilar va hamkorlar
-                                        ishonchi) jihatdan to'liq himoyalangan
+                                        Sizning ma’lumotlaringiz xavfsizligi biz
+                                        tomondan 3 tomonlama himoyalanadi. Bizga
+                                        Sizning ishonchingiz muhim!
                                     </p>
                                 </div>
                             </div>
@@ -119,11 +114,10 @@ const AdvantagesSection = () => {
                                         Qulay Interfeys
                                     </h3>
                                     <p className="text-[#a8a8a8]">
-                                        Intuitiv va foydalanuvchi uchun qulay
-                                        interfeys orqali o'quv markazingizni
-                                        boshqarish oson va qiziqarli. Har qanday
-                                        yoshdagi foydalanuvchilar uchun
-                                        mo'ljallangan
+                                        Barcha foydalanuvchilar uchun qulay va
+                                        ishlatishga oson interfeys orqali qisqa
+                                        vaqt ichida platformani o’rganishingiz
+                                        va ishga tushirishingiz mumkin!
                                     </p>
                                 </div>
                             </div>
