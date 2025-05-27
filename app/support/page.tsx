@@ -7,7 +7,7 @@ const supportCards = [
     {
         id: 1,
         title: "Video Darslar",
-        description: "Modme platformasi bo'yicha video darsliklar to'plami",
+        description: "Modme platformasi bo'yicha video darsliklar",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -83,22 +83,261 @@ const supportCards = [
             </svg>
         ),
         href: "https://modme-crm.gitbook.io/modme-crm",
-        color: "bg-[#F0F6FF] text-[#193CB8] border-[#B8D1FF]",
+        color: "bg-[#FFF8E8] text-[#894B00] border-[#FFE4B5]",
         external: true,
+        cta: "O'qish",
+    },
+    {
+        id: 3,
+        title: "Aloqa",
+        description: "Biz bilan bog'laning",
+        icon: (
+            <svg
+                className="w-8 h-8"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            </svg>
+        ),
+        href: "https://t.me/modme_support",
+        color: "bg-[#FFF8E8] text-[#894B00] border-[#FFE4B5]",
+        external: true,
+        cta: "Yozish",
     },
 ];
 
+const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.1,
+            duration: 0.5,
+        },
+    }),
+};
+
 export default function SupportPage() {
     return (
-        <section className="w-full min-h-screen bg-[#fcfcfc] flex items-center justify-center">
-            <div className="text-center">
-                <h1 className="text-4xl font-bold text-[#080a0a] mb-4">
-                    Hali qurilmoqda
-                </h1>
-                <p className="text-xl text-[#666666]">
-                    Tez orada bu sahifa ishga tushadi
-                </p>
+        <div className="min-h-screen bg-white">
+            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-center mb-16"
+                >
+                    <h1 className="text-4xl font-bold text-[#080a0a] mb-6">
+                        Yordam Markazi
+                    </h1>
+                    <p className="text-xl text-[#666666] max-w-2xl mx-auto">
+                        Modme platformasi bo'yicha barcha yordam materiallari va
+                        qo'llanmalar
+                    </p>
+                </motion.div>
+
+                <div className="space-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {supportCards.slice(0, 2).map((card, index) => (
+                            <motion.div
+                                key={card.id}
+                                custom={index}
+                                initial="hidden"
+                                animate="visible"
+                                variants={cardVariants}
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                {card.external ? (
+                                    <a
+                                        href={card.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                    >
+                                        <div className="mb-6">{card.icon}</div>
+                                        <h3 className="text-2xl font-semibold mb-4">
+                                            {card.title}
+                                        </h3>
+                                        <p className="text-base text-gray-600 mb-8">
+                                            {card.description}
+                                        </p>
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-base font-medium">
+                                                {card.cta}
+                                            </span>
+                                            <svg
+                                                className="w-6 h-6"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M5 12H19"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M12 5L19 12L12 19"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                ) : (
+                                    <Link
+                                        href={card.href}
+                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                    >
+                                        <div className="mb-6">{card.icon}</div>
+                                        <h3 className="text-2xl font-semibold mb-4">
+                                            {card.title}
+                                        </h3>
+                                        <p className="text-base text-gray-600 mb-8">
+                                            {card.description}
+                                        </p>
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-base font-medium">
+                                                Ko'rish
+                                            </span>
+                                            <svg
+                                                className="w-6 h-6"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M5 12H19"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M12 5L19 12L12 19"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </Link>
+                                )}
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    <motion.div
+                        custom={2}
+                        initial="hidden"
+                        animate="visible"
+                        variants={cardVariants}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        {supportCards[2].external ? (
+                            <a
+                                href={supportCards[2].href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                            >
+                                <div className="mb-6">
+                                    {supportCards[2].icon}
+                                </div>
+                                <h3 className="text-2xl font-semibold mb-4">
+                                    {supportCards[2].title}
+                                </h3>
+                                <p className="text-base text-gray-600 mb-8">
+                                    {supportCards[2].description}
+                                </p>
+                                <div className="flex items-center justify-between">
+                                    <span className="text-base font-medium">
+                                        {supportCards[2].cta}
+                                    </span>
+                                    <svg
+                                        className="w-6 h-6"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 12H19"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        />
+                                        <path
+                                            d="M12 5L19 12L12 19"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </a>
+                        ) : (
+                            <Link
+                                href={supportCards[2].href}
+                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                            >
+                                <div className="mb-6">
+                                    {supportCards[2].icon}
+                                </div>
+                                <h3 className="text-2xl font-semibold mb-4">
+                                    {supportCards[2].title}
+                                </h3>
+                                <p className="text-base text-gray-600 mb-8">
+                                    {supportCards[2].description}
+                                </p>
+                                <div className="flex items-center justify-between">
+                                    <span className="text-base font-medium">
+                                        Ko'rish
+                                    </span>
+                                    <svg
+                                        className="w-6 h-6"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 12H19"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        />
+                                        <path
+                                            d="M12 5L19 12L12 19"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </Link>
+                        )}
+                    </motion.div>
+                </div>
             </div>
-        </section>
+        </div>
     );
 }

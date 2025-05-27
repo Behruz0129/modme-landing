@@ -74,8 +74,6 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
-
-    // Gamification page ni tekshirish
     const isGamificationPage = pathname?.startsWith("/gamification");
 
     // Pathname va isGamificationPage ni tekshirish

@@ -35,6 +35,40 @@ const GamificationPage = () => {
     const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
+    // Predefined particle positions
+    const particlePositions = [
+        { left: "45.5%", top: "43.0%" },
+        { left: "21.1%", top: "1.0%" },
+        { left: "40.4%", top: "15.7%" },
+        { left: "87.0%", top: "40.7%" },
+        { left: "80.7%", top: "5.0%" },
+        { left: "86.1%", top: "66.9%" },
+        { left: "26.0%", top: "68.9%" },
+        { left: "42.8%", top: "63.0%" },
+        { left: "93.4%", top: "90.1%" },
+        { left: "54.1%", top: "93.4%" },
+        { left: "27.6%", top: "19.5%" },
+        { left: "39.9%", top: "0.0%" },
+        { left: "36.4%", top: "38.3%" },
+        { left: "0.4%", top: "72.7%" },
+        { left: "41.3%", top: "52.1%" },
+        { left: "2.2%", top: "3.5%" },
+        { left: "82.5%", top: "32.6%" },
+        { left: "39.8%", top: "16.6%" },
+        { left: "80.8%", top: "98.6%" },
+        { left: "15.3%", top: "11.2%" },
+        { left: "47.4%", top: "66.9%" },
+        { left: "97.5%", top: "11.0%" },
+        { left: "15.0%", top: "57.2%" },
+        { left: "2.3%", top: "20.4%" },
+        { left: "99.4%", top: "17.4%" },
+        { left: "55.4%", top: "68.1%" },
+        { left: "56.5%", top: "87.9%" },
+        { left: "71.6%", top: "77.2%" },
+        { left: "46.6%", top: "7.8%" },
+        { left: "4.5%", top: "63.7%" },
+    ];
+
     return (
         <AnimatePresence mode="wait">
             <motion.main
@@ -59,6 +93,30 @@ const GamificationPage = () => {
                 {/* Hero Section */}
                 <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
                     <div ref={containerRef} className="absolute inset-0">
+                        {/* Mesh Gradient Background */}
+                        <motion.div
+                            className="absolute inset-0"
+                            style={{
+                                background: `
+                                    radial-gradient(circle at 20% 20%, rgba(255, 208, 61, 0.1) 0%, transparent 20%),
+                                    radial-gradient(circle at 80% 80%, rgba(255, 128, 0, 0.1) 0%, transparent 20%),
+                                    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 30%)
+                                `,
+                            }}
+                            animate={{
+                                backgroundPosition: [
+                                    "0% 0%",
+                                    "100% 100%",
+                                    "0% 0%",
+                                ],
+                            }}
+                            transition={{
+                                duration: 20,
+                                repeat: Infinity,
+                                ease: "linear",
+                            }}
+                        />
+
                         {/* Animated Background */}
                         <motion.div
                             className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]"
@@ -67,36 +125,96 @@ const GamificationPage = () => {
                             transition={{ duration: 1 }}
                         />
 
-                        {/* Animated Circles */}
+                        {/* Rotating Blur Objects */}
                         <motion.div
-                            className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#ff8000]/10 rounded-full blur-3xl"
+                            className="absolute top-1/2 left-1/2 w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2"
                             animate={{
-                                scale: [1, 1.2, 1],
-                                opacity: [0.3, 0.5, 0.3],
+                                rotate: 360,
                             }}
                             transition={{
-                                duration: 8,
+                                duration: 20,
                                 repeat: Infinity,
-                                ease: "easeInOut",
+                                ease: "linear",
                             }}
-                        />
-                        <motion.div
-                            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#ffd03d]/10 rounded-full blur-3xl"
-                            animate={{
-                                scale: [1.2, 1, 1.2],
-                                opacity: [0.5, 0.3, 0.5],
-                            }}
-                            transition={{
-                                duration: 8,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                            }}
-                        />
+                        >
+                            <motion.div
+                                className="absolute top-0 left-1/2 w-32 h-32 bg-[#ffd03d]/5 rounded-full blur-3xl"
+                                animate={{
+                                    scale: [1, 1.2, 1],
+                                    opacity: [0.3, 0.5, 0.3],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            />
+                            <motion.div
+                                className="absolute top-1/2 right-0 w-40 h-40 bg-[#ff8000]/5 rounded-full blur-3xl"
+                                animate={{
+                                    scale: [1.2, 1, 1.2],
+                                    opacity: [0.5, 0.3, 0.5],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            />
+                            <motion.div
+                                className="absolute bottom-0 left-1/2 w-36 h-36 bg-[#ffd03d]/5 rounded-full blur-3xl"
+                                animate={{
+                                    scale: [1, 1.1, 1],
+                                    opacity: [0.4, 0.6, 0.4],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            />
+                            <motion.div
+                                className="absolute top-1/2 left-0 w-28 h-28 bg-[#ff8000]/5 rounded-full blur-3xl"
+                                animate={{
+                                    scale: [1.1, 1, 1.1],
+                                    opacity: [0.6, 0.4, 0.6],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            />
+                        </motion.div>
 
-                        {/* Floating Elements - Hidden on mobile */}
+                        {/* Animated Particles */}
+                        <div className="absolute inset-0 overflow-hidden">
+                            {particlePositions.map((pos, i) => (
+                                <motion.div
+                                    key={i}
+                                    className="absolute w-1.5 h-1.5 bg-white/10 rounded-full"
+                                    style={{
+                                        left: pos.left,
+                                        top: pos.top,
+                                    }}
+                                    animate={{
+                                        y: [0, -100, 0],
+                                        x: [0, Math.random() * 50 - 25, 0],
+                                        opacity: [0.1, 0.3, 0.1],
+                                    }}
+                                    transition={{
+                                        duration: Math.random() * 5 + 5,
+                                        repeat: Infinity,
+                                        ease: "linear",
+                                    }}
+                                />
+                            ))}
+                        </div>
+
+                        {/* Floating Elements */}
                         <div className="hidden md:block">
                             <motion.div
-                                className="absolute top-1/3 left-1/3"
+                                className="absolute top-1/4 left-1/4"
                                 animate={{
                                     y: [0, -20, 0],
                                     rotate: [0, 5, 0],
@@ -110,7 +228,7 @@ const GamificationPage = () => {
                                 <Trophy className="w-12 h-12 text-[#ffd03d]" />
                             </motion.div>
                             <motion.div
-                                className="absolute bottom-1/3 right-1/3"
+                                className="absolute bottom-1/4 right-1/4"
                                 animate={{
                                     y: [0, 20, 0],
                                     rotate: [0, -5, 0],
@@ -123,33 +241,155 @@ const GamificationPage = () => {
                             >
                                 <Star className="w-12 h-12 text-[#ff8000]" />
                             </motion.div>
+                            <motion.div
+                                className="absolute top-1/3 right-1/4"
+                                animate={{
+                                    y: [0, -15, 0],
+                                    rotate: [0, -5, 0],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            >
+                                <Target className="w-12 h-12 text-[#ffd03d]" />
+                            </motion.div>
+                            <motion.div
+                                className="absolute bottom-1/3 left-1/4"
+                                animate={{
+                                    y: [0, 15, 0],
+                                    rotate: [0, 5, 0],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            >
+                                <Award className="w-12 h-12 text-[#ff8000]" />
+                            </motion.div>
                         </div>
                     </div>
 
-                    <div className="relative z-10 text-center">
-                        <h1 className="text-6xl md:text-7xl font-bold mb-6">
-                            <span className="bg-gradient-to-r from-[#ffd03d] to-[#ff8000] text-transparent bg-clip-text">
-                                Gamifikatsiya
-                            </span>
-                        </h1>
-                        <motion.p
-                            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+                    <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+                        <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
+                            transition={{ duration: 0.8 }}
+                            className="relative"
                         >
-                            O'quv jarayonini qiziqarli va samarali qiling.
-                            O'quvchilaringiz uchun motivatsiya yarating va
-                            ularning natijalarini yuqorilang!
-                        </motion.p>
+                            {/* Light Beam Effect */}
+                            <motion.div
+                                className="absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px]"
+                                style={{
+                                    background:
+                                        "radial-gradient(circle at center, rgba(255, 208, 61, 0.2) 0%, transparent 70%)",
+                                }}
+                                animate={{
+                                    scale: [1, 1.1, 1],
+                                    opacity: [0.3, 0.5, 0.3],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                            />
+
+                            {/* Floating Elements Around Text */}
+                            <div className="absolute inset-0 pointer-events-none">
+                                {[...Array(15)].map((_, i) => (
+                                    <motion.div
+                                        key={i}
+                                        className="absolute"
+                                        style={{
+                                            left: `${Math.random() * 100}%`,
+                                            top: `${Math.random() * 100}%`,
+                                        }}
+                                        animate={{
+                                            y: [0, -20, 0],
+                                            x: [0, Math.random() * 20 - 10, 0],
+                                            rotate: [0, 360],
+                                            scale: [0.8, 1.2, 0.8],
+                                        }}
+                                        transition={{
+                                            duration: Math.random() * 3 + 2,
+                                            repeat: Infinity,
+                                            ease: "easeInOut",
+                                        }}
+                                    >
+                                        <Sparkles className="w-4 h-4 text-[#ffd03d]/50" />
+                                    </motion.div>
+                                ))}
+                            </div>
+
+                            <h1 className="text-6xl md:text-7xl font-bold mb-6 relative">
+                                <motion.span
+                                    className="bg-gradient-to-r from-[#ffd03d] to-[#ff8000] text-transparent bg-clip-text relative"
+                                    animate={{
+                                        textShadow: [
+                                            "0 0 10px rgba(255, 208, 61, 0.5)",
+                                            "0 0 20px rgba(255, 208, 61, 0.7)",
+                                            "0 0 10px rgba(255, 208, 61, 0.5)",
+                                        ],
+                                    }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                    }}
+                                >
+                                    Gamifikatsiya
+                                </motion.span>
+                            </h1>
+
+                            {/* Glowing Particles */}
+                            <div className="absolute inset-0 pointer-events-none">
+                                {[...Array(20)].map((_, i) => (
+                                    <motion.div
+                                        key={i}
+                                        className="absolute w-1 h-1 bg-[#ffd03d]/30 rounded-full"
+                                        style={{
+                                            left: `${Math.random() * 100}%`,
+                                            top: `${Math.random() * 100}%`,
+                                        }}
+                                        animate={{
+                                            scale: [1, 1.5, 1],
+                                            opacity: [0.3, 0.8, 0.3],
+                                        }}
+                                        transition={{
+                                            duration: Math.random() * 2 + 1,
+                                            repeat: Infinity,
+                                            ease: "easeInOut",
+                                        }}
+                                    />
+                                ))}
+                            </div>
+
+                            <motion.div
+                                className="relative inline-block"
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <p className="relative text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                                    O'quv jarayonini qiziqarli va samarali
+                                    qiling. O'quvchilaringiz uchun motivatsiya
+                                    yarating va ularning natijalarini
+                                    yuqorilang!
+                                </p>
+                            </motion.div>
+                        </motion.div>
+
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
+                            className="relative"
                         >
                             <Button
                                 onClick={() => setIsVideoOpen(true)}
-                                className="bg-[#ff8000] hover:bg-[#ff9831] text-white text-lg px-8 py-6 rounded-full group relative overflow-hidden"
+                                className="relative bg-[#ff8000] hover:bg-[#ff9831] text-white text-lg px-8 py-6 rounded-full group overflow-hidden"
                                 size="lg"
                             >
                                 <motion.span
