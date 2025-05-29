@@ -7,7 +7,6 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 import {
     Trophy,
@@ -20,9 +19,11 @@ import {
     X,
     ArrowRight,
     Zap,
+    ShoppingCart,
 } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
+import Link from "next/link";
 
 const GamificationPage = () => {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -340,7 +341,7 @@ const GamificationPage = () => {
                                         ease: "easeInOut",
                                     }}
                                 >
-                                    Gamifikatsiya
+                                    Gamification
                                 </motion.span>
                             </h1>
 
@@ -384,25 +385,16 @@ const GamificationPage = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.4 }}
-                            className="relative"
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
                         >
-                            <Button
+                            <button
                                 onClick={() => setIsVideoOpen(true)}
-                                className="relative bg-[#ff8000] hover:bg-[#ff9831] text-white text-lg px-8 py-6 rounded-full group overflow-hidden"
-                                size="lg"
+                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-bold transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white px-8 py-4 text-lg cursor-pointer"
                             >
-                                <motion.span
-                                    className="absolute inset-0 bg-gradient-to-r from-[#ffd03d] to-[#ff8000] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                    initial={{ x: "-100%" }}
-                                    whileHover={{ x: "100%" }}
-                                    transition={{ duration: 0.5 }}
-                                />
-                                <span className="relative flex items-center">
-                                    <Play className="w-5 h-5 mr-2" />
-                                    Videoni ko'rish
-                                </span>
-                            </Button>
+                                <Play className="w-5 h-5" />
+                                <span>Video ko'rish</span>
+                            </button>
                         </motion.div>
                     </div>
 
@@ -439,11 +431,11 @@ const GamificationPage = () => {
                     <div className="max-w-[1200px] mx-auto px-4">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl font-bold mb-6">
-                                Асосий хусусиятлар
+                                Asosiy xususiyatlar
                             </h2>
                             <p className="text-gray-400 text-lg">
-                                О'қувчиларнинг қизиқишини ошириш учун замонавий
-                                ёндашувлар
+                                O'quvchilarning qiziqishini oshirish uchun
+                                zamonaviy tizim
                             </p>
                         </div>
 
@@ -489,19 +481,22 @@ const GamificationPage = () => {
                             />
                             <div className="relative z-10">
                                 <h2 className="text-4xl font-bold mb-6">
-                                    Ҳозиргина бошланг
+                                    Hoziroq o'rnating
                                 </h2>
                                 <p className="text-lg mb-8">
-                                    О'қувчиларнинг қизиқишини ошириш учун
-                                    замонавий ёндашувни синаб кўринг
+                                    Yangi Gamification modulini hoziroq sinab
+                                    ko'ring
                                 </p>
-                                <Button
-                                    className="bg-white text-[#ff8000] hover:bg-gray-100 text-lg px-8 py-6 rounded-full"
-                                    size="lg"
+                                <Link
+                                    href="https://t.me/Toshkenboyev04"
+                                    target="_blank"
+                                    className="inline-block"
                                 >
-                                    Бошлаш
-                                    <ArrowRight className="ml-2 w-5 h-5" />
-                                </Button>
+                                    <button className="inline-flex items-center justify-center gap-2 bg-white text-[#ff8000] hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
+                                        <span>Boshlash</span>
+                                        <ArrowRight className="w-5 h-5" />
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -552,40 +547,40 @@ const GamificationPage = () => {
 
 const features = [
     {
-        title: "Quvvatlash tizimi",
+        title: "Zamonaviy gamification tizimi",
         description:
-            "O'quvchilarning harakatlarini quvvatlash va ularning samaradorligini oshirish uchun tizim",
+            "Ko'plab yetakchi ta'lim markazlari singari, sizning platformangiz ham coin orqali mukofotlash asosida raqobatbardosh va zamonaviy yondashuvni taklif etadi",
+        icon: <Sparkles className="w-6 h-6 text-[#ffd03d]" />,
+    },
+    {
+        title: "Sarafan marketing orqali brendni kuchaytirish",
+        description:
+            "O'quv markaz logotipi tushirilgan mahsulotlarni shop orqali coin evaziga tarqatish, o'quvchilarning o'zaro targ'iboti orqali reklama ta'sirini oshiradi",
+        icon: <Users className="w-6 h-6 text-[#ff8000]" />,
+    },
+    {
+        title: "O'quvchilar motivatsiyasini oshirish",
+        description:
+            "Davomat, baholar yoki uyga vazifa bajarilishi asosida beriladigan coinlar, o'quvchilarni faolroq bo'lishga undaydi",
         icon: <Trophy className="w-6 h-6 text-[#ffd03d]" />,
     },
     {
-        title: "Harakatlar",
+        title: "Do'st olib kelgan o'quvchiga mukofot tizimi",
         description:
-            "O'quvchilarning harakatlarini kuzatish va ularning samaradorligini baholash",
-        icon: <Target className="w-6 h-6 text-[#ff8000]" />,
-    },
-    {
-        title: "Haftalik maqsadlar",
-        description:
-            "O'quvchilar uchun haftalik maqsadlar belgilash va ularga erishishni kuzatish",
-        icon: <Star className="w-6 h-6 text-[#ffd03d]" />,
-    },
-    {
-        title: "Mukofotlar",
-        description:
-            "O'quvchilar uchun turli xil mukofotlar va unvonlar berish imkoniyati",
+            "O'quvchilar o'z do'stlarini markazga olib kelib coin olishlari mumkin, bu esa marketingni avtomatik tarzda kuchaytiradi",
         icon: <Award className="w-6 h-6 text-[#ff8000]" />,
     },
     {
-        title: "Reytinglar",
+        title: "Ichki do'kon orqali real mukofotlar",
         description:
-            "O'quvchilar orasida reytinglar va ko'rsatkichlar tizimini yaratish",
-        icon: <Zap className="w-6 h-6 text-[#ffd03d]" />,
+            "O'quv markazi shop'ida turli mahsulotlar qo'shilishi va coin evaziga xarid qilinishi, ta'lim jarayoniga qiziqishni oshiradi",
+        icon: <ShoppingCart className="w-6 h-6 text-[#ffd03d]" />,
     },
     {
-        title: "Hamkorlik",
+        title: "Moslashuvchan va qo'lda boshqariladigan tizim",
         description:
-            "Guruh ishlarini tashkil qilish va hamkorlikni rag'batlantirish",
-        icon: <Trophy className="w-6 h-6 text-[#ff8000]" />,
+            "Coinlar miqdorini qo'lda belgilash, mahsulot qabul qilish, kamaytirish yoki qayta sozlash imkoniyati platformani har qanday markazga moslashtirishga yordam beradi",
+        icon: <Zap className="w-6 h-6 text-[#ff8000]" />,
     },
 ];
 

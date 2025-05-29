@@ -43,7 +43,7 @@ const PricingPage = () => {
         setGlitchIcon(null);
     };
 
-    const letters = "Gamifikatsiya".split("");
+    const letters = "Gamification".split("");
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -164,10 +164,6 @@ const PricingPage = () => {
                         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#080a0a]">
                             Narxlar
                         </h1>
-                        <p className="text-lg md:text-xl text-[#a8a8a8] max-w-2xl mx-auto">
-                            O'z o'quv markazingiz uchun eng muvofiq tarifni
-                            tanlang. Har bir tarif o'z xususiyatlariga ega.
-                        </p>
                     </motion.div>
 
                     {/* Pricing Table - Desktop */}
@@ -447,6 +443,53 @@ const PricingPage = () => {
                         </motion.div>
                     </motion.div>
 
+                    {/* Scroll Down Animation */}
+                    <motion.div
+                        className="flex flex-col items-center justify-center mt-16 mb-32"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        <svg
+                            width="60"
+                            height="120"
+                            viewBox="0 0 60 120"
+                            fill="none"
+                        >
+                            <defs>
+                                <linearGradient
+                                    id="chevron-gradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="120"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stopColor="#ffd03d" />
+                                    <stop offset="1" stopColor="#ff8000" />
+                                </linearGradient>
+                            </defs>
+                            <motion.polyline
+                                points="
+                                    30,10 55,40 30,40 55,70 30,70 55,100 30,100 5,70 30,70 5,40 30,40 5,10 30,10
+                                "
+                                fill="none"
+                                stroke="url(#chevron-gradient)"
+                                strokeWidth="5"
+                                strokeLinejoin="round"
+                                strokeLinecap="round"
+                                initial={false}
+                                animate={{ y: [0, 15, 0] }}
+                                transition={{
+                                    duration: 1.5,
+                                    repeat: Infinity,
+                                    ease: "easeInOut",
+                                }}
+                                opacity="1"
+                            />
+                        </svg>
+                    </motion.div>
+
                     {/* Gamification CTA Section */}
                     <motion.div
                         className="mt-32 relative overflow-hidden"
@@ -464,7 +507,7 @@ const PricingPage = () => {
                                     <div className="flex items-center gap-2 mb-4">
                                         <Sparkles className="w-6 h-6 text-[#ff8000]" />
                                         <h2 className="text-2xl font-bold text-[#080a0a]">
-                                            Gamifikatsiya moduli
+                                            Gamification moduli
                                         </h2>
                                     </div>
                                     <p className="text-[#a8a8a8] mb-6 max-w-xl">
