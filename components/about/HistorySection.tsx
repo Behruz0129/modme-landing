@@ -7,46 +7,47 @@ import ScrollAnimation from "@/lib/animations/scroll-animation";
 
 const history = [
     {
-        year: "2018",
+        year: "2020",
         title: "Tashkil etilish",
         description:
-            "O'quv markazlari uchun maxsus tizim yaratish g'oyasi paydo bo'ldi. Dastlabki loyiha ishlari boshlandi.",
+            "Modme 2020-yilda tashkil etilgan. Kompaniya asoschilari — Cambridge Learning Center asoschisi Jahongir Po‘latov va Mars IT School asoschisi Ruslan Yuldashevdir. Ular ta’lim markazlarining ichki jarayonlarini avtomatlashtirish va boshqarishni soddalashtirish maqsadida Modme CRM platformasini yaratdilar",
         image: "/images/about/history-1.jpg",
     },
     {
-        year: "2019",
-        title: "Birinchi versiya",
-        description:
-            "Birinchi versiya ishga tushirildi. 10 ta o'quv markazi tizimdan foydalana boshladi.",
-        image: "/images/about/history-2.jpg",
-    },
-    {
-        year: "2020",
-        title: "Pandemiya davri",
-        description:
-            "Pandemiya davrida tizim tez rivojlandi. 100 dan ortiq o'quv markazi tizimga qo'shildi.",
-        image: "/images/about/history-3.jpg",
-    },
-    {
         year: "2021",
-        title: "Yangi funksiyalar",
+        title: "Loyihamiz break-even nuqtasiga yetdi",
         description:
-            "Mobil ilova, onlayn to'lov, SMS-xabarnoma kabi yangi funksiyalar qo'shildi.",
-        image: "/images/about/history-4.jpg",
+            "Loyiha o‘z xarajatlarini o‘zi qoplaydi. 15 oyda 40 dan ortiq o‘quv markazi va 10 000+ talabaning hayotini osonlashtirgan tizimimiz uchun bu muhim bosqich bo‘ldi",
+        image: "/images/about/history-1.2.jpg",
     },
     {
         year: "2022",
-        title: "Xalqaro miqyos",
+        title: "Tezkor o‘sish va ilk investitsiyalar",
         description:
-            "Tizim O'zbekistondan tashqarida ham ishlatila boshladi. Birinchi xorijiy mijozlar.",
-        image: "/images/about/history-5.jpg",
+            "2022-yilda Modme loyihasi sezilarli o‘sishni boshdan kechirdi. AmoCRM asoschisi Mixail Tokovinin kompaniyaga investitsiya kiritdi, bu esa loyiha rivojlanishiga turtki bo‘ldi",
+        image: "/images/about/history-2.jpg",
     },
     {
         year: "2023",
-        title: "Yangi bosqich",
+        title: "Yirik investitsiya va xalqaro kengayish",
         description:
-            "AI texnologiyalari, gamifikatsiya va boshqa innovatsion funksiyalar qo'shildi.",
-        image: "/images/about/history-6.jpg",
+            "2023-yilda Modme UzVC fondidan 100,000 AQSh dollari miqdorida investitsiya oldi. Bu fond Londondagi Sturgeon Capital bilan hamkorlikda bo‘lib, Modme loyihasini 1,250,000 AQSh dollariga baholadi.\n\n" +
+            "Shuningdek, kompaniya Indoneziya bozoriga chiqishni boshladi va xalqaro miqyosda o‘z faoliyatini kengaytirdi",
+        image: "/images/about/history-3.jpg",
+    },
+    {
+        year: "2024",
+        title: "Mahsulotlar va xizmatlar kengayishi",
+        description:
+            "Modme o‘zining mobil ilovasini ishga tushirdi, bu orqali o‘quv markazlari o‘z logotipi va nomi bilan ilovadan foydalanish imkoniyatiga ega bo‘ldilar. Bundan tashqari, `Modme Audit` xizmati joriy etildi, bu xizmat orqali o‘quv markazlari o‘z faoliyatini tahlil qilish va samaradorligini oshirish imkoniyatiga ega bo‘ldilar",
+        image: "/images/about/history-4.jpg",
+    },
+    {
+        year: "2025",
+        title: "Bugungi kunda",
+        description:
+            "Modme o‘zining CRM va LMS platformalari orqali o‘quv markazlarining marketing, moliya, sotuv va xizmat ko‘rsatish bo‘limlarini avtomatlashtirishga yordam bermoqda",
+        image: "/images/about/history-5.jpg",
     },
 ];
 
@@ -60,7 +61,7 @@ const HistorySection = () => {
                             Bizning tarix
                         </h2>
                         <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Bizning kompaniyamizning rivojlanish bosqichlari
+                            Kompaniyamizning rivojlanish bosqichlari
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -74,7 +75,7 @@ const HistorySection = () => {
                     <div className="space-y-20 md:space-y-32">
                         {history.map((item, index) => (
                             <ScrollAnimation
-                                key={item.year}
+                                key={`${index}-${item.year}`}
                                 direction={index % 2 === 0 ? "left" : "right"}
                                 delay={0.1 * index}
                                 threshold={0.3}
@@ -113,12 +114,6 @@ const HistorySection = () => {
                                             <p className="text-[#4A5564] mb-6">
                                                 {item.description}
                                             </p>
-                                            <div className="flex items-center gap-2 text-[#01662F]">
-                                                <Check className="w-5 h-5" />
-                                                <span className="font-medium">
-                                                    Muvaffaqiyatli yakunlandi
-                                                </span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

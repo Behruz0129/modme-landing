@@ -27,11 +27,6 @@ const faqs = [
         question: " Sinov muddati bormi?",
         answer: "Ha, bizda bepul demo versiyasi mavjud — 7 kungacha sinab, ishlatib ko‘rishingiz mumkin",
     },
-    {
-        id: 5,
-        question: "Ma’lumotlarim xavfsizligiga kafolat bormi?",
-        answer: "Ha, barcha ma’lumotlar shifrlangan va xavfsiz serverlarda saqlanadi. Har bir foydalanuvchi o‘z paroli bilan tizimga kiradi",
-    },
 ];
 
 const FAQSection = () => {

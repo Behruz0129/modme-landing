@@ -3,70 +3,69 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
-import { Linkedin, Twitter } from "lucide-react";
 
 const team = [
     {
-        name: "Jasur Toshmatov",
-        position: "CEO",
-        image: "/about/team-ceo.jpg",
+        name: "Abdullo Mustafaev",
+        position: "Project Manager",
+        image: "/images/about/team-projm.jpg",
         description:
             "Kompaniya rahbari va strategik yo'nalishlarni belgilovchi",
     },
     {
-        name: "Malika Yusupova",
+        name: "Behruz Sharapov",
         position: "Product Manager",
-        image: "/about/team-pm.jpg",
+        image: "/images/about/team-pm.jpg",
         description:
             "Platforma rivojlanishini boshqaruvchi va yangi funksiyalarni loyihalovchi",
     },
     {
-        name: "Aziz Karimov",
+        name: "Toshkenboyev Yodgorbek",
         position: "Sales Manager",
-        image: "/about/team-sales.jpg",
+        image: "/images/about/team-sales.jpg",
         description:
             "Mijozlar bilan ishlash va yangi hamkorliklarni rivojlantirish",
     },
     {
-        name: "Dilshod Rahimov",
+        name: "Faxriddin Ergashev",
         position: "Support Manager",
-        image: "/about/team-support.jpg",
+        image: "/images/about/team-support.jpg",
         description: "Mijozlar uchun texnik yordam va qo'llab-quvvatlash",
     },
     {
-        name: "Nargiza Alimova",
-        position: "Support & Designer",
-        image: "/about/team-support-design.jpg",
+        name: "Abrorbek Alijonov",
+        position: "Customer Succes Manager",
+        image: "/images/about/team-csm.jpg",
         description: "Dizayn va mijozlar qo'llab-quvvatlash bo'limi",
     },
     {
-        name: "Shahzod Toshmatov",
+        name: "Behruzbek Berdiyev",
+        position: "Designer & Support",
+        image: "/images/about/team-support-design.jpg",
+        description: "Mijozlar uchun texnik yordam va qo'llab-quvvatlash",
+    },
+    {
+        name: "Mirmuhsin Hamroyev",
         position: "Team Lead",
-        image: "/about/team-lead.jpg",
+        image: "/images/about/team-lead.jpg",
         description: "Dasturiy ta'minot jamoasini boshqaruvchi",
     },
     {
-        name: "Jasur Alimov",
+        name: "Umarov Shoxruh",
         position: "Backend Developer",
-        image: "/about/team-backend-1.jpg",
+        image: "/images/about/team-backend-1.jpg",
         description: "Backend dasturchi",
     },
     {
-        name: "Malika Karimova",
+        name: "Murodjonov Samandar",
         position: "Backend Developer",
-        image: "/about/team-backend-2.jpg",
+        image: "/images/about/team-backend-2.jpg",
         description: "Backend dasturchi",
     },
     {
-        name: "Aziz Yusupov",
-        position: "Backend Developer",
-        image: "/about/team-backend-3.jpg",
-        description: "Backend dasturchi",
-    },
-    {
-        name: "Dilshod Alimov",
+        name: "Saidakbarov Fayzullo",
         position: "Frontend Developer",
-        image: "/about/team-frontend.jpg",
+        image: "/images/about/team-frontend.jpg",
         description: "Frontend dasturchi",
     },
 ];
@@ -78,12 +77,8 @@ const TeamSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Jamoa
+                            Bizning Jamoa
                         </h2>
-                        <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Modme platformasini yaratgan va rivojlantirgan
-                            mutaxassislar
-                        </p>
                     </div>
                 </ScrollAnimation>
 

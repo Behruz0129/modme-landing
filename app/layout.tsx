@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "ModMe - O'quv markazingizni keyingi bosqichga olib chiqing!",
-    description: "ModMe - O'quv markazlari uchun CRM tizimi",
+    title: "Modme - O'quv markazingizni yangi bosqichga olib chiqing!",
+    description: "Modme - O'quv markazlari uchun eng munosib CRM tizimi",
 };
 
 export default function RootLayout({

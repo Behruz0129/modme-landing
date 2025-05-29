@@ -7,7 +7,7 @@ const values = [
     {
         title: "Innovatsiya",
         description:
-            "Biz doimo yangi texnologiyalar va yondashuvlarni qo'llab-quvvatlaymiz va ta'lim jarayonini zamonaviylashtirishga intilamiz.",
+            "Biz doimo yangi texnologiyalar va yondashuvlarni qo'llab-quvvatlaymiz va ta'lim jarayonini zamonaviylashtirishga bor kuchimizni sarflaymiz",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -27,7 +27,7 @@ const values = [
     {
         title: "Sifat",
         description:
-            "Biz mijozlarimizga yuqori sifatli xizmat ko'rsatish va platformamizni doimo yaxshilashga intilamiz.",
+            "Biz mijozlarimizga yuqori sifatli xizmat ko'rsatish va platformamizni doimo yaxshilashga harakat qilamiz",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -47,7 +47,7 @@ const values = [
     {
         title: "Hamkorlik",
         description:
-            "Biz mijozlarimiz bilan yaqin hamkorlikda ishlaymiz va ularning muvaffaqiyatiga intilamiz.",
+            "Biz mijozlarimiz bilan yaqin hamkorlikda ishlaymiz va ularning muvaffaqiyatiga erishishiga ko'mak beramiz",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -67,7 +67,7 @@ const values = [
     {
         title: "O'zlashtirish",
         description:
-            "Biz o'quvchilarning bilimlarini oshirish va ularning muvaffaqiyatiga yordam berishga intilamiz.",
+            "Biz o'quvchilarning bilimlarini oshirish va ularning muvaffaqiyatga erishishida kerak bo'ladigan barcha imkoniyatlarni taqdim etamiz",
         icon: (
             <svg
                 className="w-8 h-8"
@@ -95,9 +95,6 @@ const MissionSection = () => {
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
                             Missiya va qadriyatlar
                         </h2>
-                        <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Modme platformasining asosiy maqsadlari
-                        </p>
                     </div>
                 </ScrollAnimation>
 
@@ -109,11 +106,13 @@ const MissionSection = () => {
                                 Bizning missiyamiz
                             </h3>
                             <p className="text-[#a8a8a8] text-lg leading-relaxed">
-                                Modme platformasi orqali ta'lim jarayonini
-                                zamonaviylashtirish va o'quvchilarning
-                                bilimlarini oshirishga yordam berish. Biz har
-                                bir o'quv markaziga yuqori sifatli va samarali
-                                ta'lim berish imkonini yaratishga intilamiz.
+                                Biz ta’lim muassasalariga kuchliroq va
+                                samaraliroq bo‘lishga yordam beramiz —
+                                boshqaruv, o‘qitish va o‘sish jarayonlarini
+                                oddiy va raqamlashgan ekotizim orqali
+                                ta’minlaymiz. Bizning maqsadimiz — barcha ta’lim
+                                jarayoni ishtirokchilari uchun sifatli ta’limni
+                                ommabop, oson va texnologik qilish
                             </p>
                         </div>
                     </div>

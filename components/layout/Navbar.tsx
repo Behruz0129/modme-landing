@@ -237,7 +237,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.2 }}
-                            className={`absolute top-[89px] left-0 right-0 z-40 ${
+                            className={`absolute top-[60px] left-0 right-0 z-40 ${
                                 isGamificationPage
                                     ? "bg-[#0a0a0a]/95 backdrop-blur-md"
                                     : isScrolled
