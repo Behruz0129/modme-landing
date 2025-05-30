@@ -455,10 +455,11 @@ const PricingPage = () => {
                             height="120"
                             viewBox="0 0 60 120"
                             fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
                         >
                             <defs>
                                 <linearGradient
-                                    id="chevron-gradient"
+                                    id="triangle-gradient"
                                     x1="0"
                                     y1="0"
                                     x2="0"
@@ -469,24 +470,30 @@ const PricingPage = () => {
                                     <stop offset="1" stopColor="#ff8000" />
                                 </linearGradient>
                             </defs>
-                            <motion.polyline
-                                points="
-                                    30,10 55,40 30,40 55,70 30,70 55,100 30,100 5,70 30,70 5,40 30,40 5,10 30,10
-                                "
-                                fill="none"
-                                stroke="url(#chevron-gradient)"
-                                strokeWidth="5"
-                                strokeLinejoin="round"
-                                strokeLinecap="round"
+                            <motion.g
                                 initial={false}
-                                animate={{ y: [0, 15, 0] }}
+                                animate={{ y: [0, 10, 0] }}
                                 transition={{
                                     duration: 1.5,
                                     repeat: Infinity,
                                     ease: "easeInOut",
                                 }}
-                                opacity="1"
-                            />
+                            >
+                                <path
+                                    d="M5 10L30 40L55 10"
+                                    stroke="url(#triangle-gradient)"
+                                    strokeWidth="5"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                />
+                                <path
+                                    d="M5 50L30 80L55 50"
+                                    stroke="url(#triangle-gradient)"
+                                    strokeWidth="5"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                />
+                            </motion.g>
                         </svg>
                     </motion.div>
 

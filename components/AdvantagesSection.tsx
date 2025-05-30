@@ -40,7 +40,7 @@ const AdvantagesSection = () => {
                                         <Headphones className="w-6 h-6 text-[#ff8000]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#080a0a] mb-3">
-                                        Maxsus texnik yordam
+                                        Texnik yordam
                                     </h3>
                                     <p className="text-[#a8a8a8]">
                                         Siz uchun biriktitilgan maxsus
@@ -64,7 +64,7 @@ const AdvantagesSection = () => {
                                         <MessageSquare className="w-6 h-6 text-[#ff8000]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#080a0a] mb-3">
-                                        Bepul Konsultatsiya
+                                        Bepul Online Konsultatsiya
                                     </h3>
                                     <p className="text-[#a8a8a8]">
                                         O'quv markazingizni rivojlantirish uchun
