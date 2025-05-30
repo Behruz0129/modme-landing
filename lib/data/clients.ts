@@ -20,12 +20,6 @@ export const clientLogos: ClientLogo[][] = [
             height: 50,
         },
         {
-            name: "Logo 3",
-            path: "/images/clients/logo3.webp",
-            width: 153,
-            height: 50,
-        },
-        {
             name: "Logo 4",
             path: "/images/clients/logo4.webp",
             width: 155,
@@ -58,6 +52,12 @@ export const clientLogos: ClientLogo[][] = [
         {
             name: "Logo 9",
             path: "/images/clients/logo9.webp",
+            width: 143,
+            height: 50,
+        },
+        {
+            name: "Logo 20",
+            path: "/images/clients/logo20.webp",
             width: 143,
             height: 50,
         },
@@ -122,6 +122,12 @@ export const clientLogos: ClientLogo[][] = [
             path: "/images/clients/logo19.webp",
             width: 75,
             height: 75,
+        },
+        {
+            name: "Logo 21",
+            path: "/images/clients/logo21.webp",
+            width: 201,
+            height: 50,
         },
     ],
 ];

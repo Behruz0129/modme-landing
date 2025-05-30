@@ -488,7 +488,7 @@ const GamificationPage = () => {
                                     ko'ring
                                 </p>
                                 <Link
-                                    href="https://t.me/Toshkenboyev04"
+                                    href="https://t.me/modme_sales"
                                     target="_blank"
                                     className="inline-block"
                                 >

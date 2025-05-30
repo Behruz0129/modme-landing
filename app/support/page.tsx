@@ -89,8 +89,8 @@ const supportCards = [
     },
     {
         id: 3,
-        title: "Aloqa",
-        description: "Biz bilan bog'laning",
+        title: "Modme Support",
+        description: "Maxsus texnik yordam bo'limi bilan bog'lanish",
         icon: (
             <svg
                 className="w-8 h-8"

@@ -77,7 +77,7 @@ export default function DemoPage() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <Link
-                            href="https://t.me/Toshkenboyev04"
+                            href="https://t.me/modme_sales"
                             target="_blank"
                             className="cursor-pointer"
                         >

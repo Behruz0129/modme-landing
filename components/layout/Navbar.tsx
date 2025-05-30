@@ -9,7 +9,6 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-    { name: "Biz haqimizda", href: "/about" },
     { name: "Narxlar", href: "/prices" },
     { name: "Gamification", href: "/gamification" },
     { name: "Qo'llab-quvvatlash", href: "/support" },
@@ -144,7 +143,7 @@ const Navbar = () => {
                                         ? "text-[#ff8000]"
                                         : isGamificationPage
                                         ? "text-white hover:text-[#ff8000]"
-                                        : "text-gray-600 hover:text-gray-900"
+                                        : "text-[#181c23] hover:text-[#181c23]"
                                 }`}
                             >
                                 {link.name}
@@ -154,57 +153,15 @@ const Navbar = () => {
                                             ? "bg-[#ff8000] w-full"
                                             : isGamificationPage
                                             ? "bg-[#ff8000]"
-                                            : "bg-gray-900"
+                                            : "bg-[#181c23]"
                                     }`}
                                 />
                             </Link>
                         ))}
                     </div>
 
-                    {/* Social Icons & CTA */}
+                    {/* CTA */}
                     <div className="hidden lg:flex items-center gap-4">
-                        {/* Support Icon */}
-                        <a
-                            href="tel:787771100"
-                            target="_blank"
-                            className={`${
-                                isGamificationPage
-                                    ? "text-white hover:text-[#ff8000]"
-                                    : "text-gray-600 hover:text-gray-900"
-                            } cursor-pointer transition-colors`}
-                            aria-label="Call support"
-                        >
-                            <Headset size={24} />
-                        </a>
-
-                        {/* Telegram Icon */}
-                        <a
-                            href="https://t.me/modme_uz"
-                            target="_blank"
-                            className={`${
-                                isGamificationPage
-                                    ? "text-white hover:text-[#ff8000]"
-                                    : "text-gray-600 hover:text-gray-900"
-                            } cursor-pointer transition-colors`}
-                            aria-label="Telegram"
-                        >
-                            <FaTelegramPlane size={24} />
-                        </a>
-
-                        {/* Instagram Icon */}
-                        <a
-                            href="https://www.instagram.com/modme_uz/"
-                            target="_blank"
-                            className={`${
-                                isGamificationPage
-                                    ? "text-white hover:text-[#ff8000]"
-                                    : "text-gray-600 hover:text-gray-900"
-                            } cursor-pointer transition-colors`}
-                            aria-label="Instagram"
-                        >
-                            <Instagram size={24} />
-                        </a>
-
                         {/* Demo Button */}
                         <Link href="/demo" className="cursor-pointer">
                             <button
@@ -235,7 +192,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.2 }}
-                            className={`absolute top-[60px] left-0 right-0 z-40 ${
+                            className={`absolute top-[64px] left-0 right-0 z-40 ${
                                 isGamificationPage
                                     ? "bg-[#0a0a0a]/95 backdrop-blur-md"
                                     : isScrolled
@@ -253,7 +210,7 @@ const Navbar = () => {
                                             className={`text-lg font-medium relative overflow-hidden group ${
                                                 isGamificationPage
                                                     ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-800 hover:text-black"
+                                                    : "text-[#181c23] hover:text-[#181c23]"
                                             } transition-all py-2`}
                                             onClick={() =>
                                                 setIsMobileMenuOpen(false)
@@ -264,48 +221,11 @@ const Navbar = () => {
                                                 className={`absolute bottom-0 left-0 w-full h-0.5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                                                     isGamificationPage
                                                         ? "bg-[#ff8000]"
-                                                        : "bg-black"
+                                                        : "bg-[#181c23]"
                                                 }`}
                                             />
                                         </Link>
                                     ))}
-
-                                    {/* Mobile social links */}
-                                    <div className="flex justify-start space-x-6 py-4">
-                                        <a
-                                            href="tel:787771100"
-                                            target="_blank"
-                                            className={`${
-                                                isGamificationPage
-                                                    ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
-                                        >
-                                            <Headset size={24} />
-                                        </a>
-                                        <a
-                                            href="https://t.me/modme_uz"
-                                            target="_blank"
-                                            className={`${
-                                                isGamificationPage
-                                                    ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
-                                        >
-                                            <FaTelegramPlane size={24} />
-                                        </a>
-                                        <a
-                                            href="https://www.instagram.com/modme_uz/"
-                                            target="_blank"
-                                            className={`${
-                                                isGamificationPage
-                                                    ? "text-white hover:text-[#ff8000]"
-                                                    : "text-gray-700 hover:text-gray-900"
-                                            } transition-colors`}
-                                        >
-                                            <Instagram size={24} />
-                                        </a>
-                                    </div>
 
                                     {/* CTA Button */}
                                     <div className="mt-4">
