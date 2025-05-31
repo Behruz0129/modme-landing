@@ -32,7 +32,7 @@ const supportCards = [
             </svg>
         ),
         href: "/support/video-courses",
-        color: "bg-[#FFF8E8] text-[#894B00] border-[#FFE4B5]",
+        color: "bg-white text-[#080a0a] border-[#f0f0f0]",
     },
     {
         id: 2,
@@ -83,7 +83,7 @@ const supportCards = [
             </svg>
         ),
         href: "https://modme-crm.gitbook.io/modme-crm",
-        color: "bg-[#FFF8E8] text-[#894B00] border-[#FFE4B5]",
+        color: "bg-white text-[#080a0a] border-[#f0f0f0]",
         external: true,
         cta: "O'qish",
     },
@@ -108,7 +108,7 @@ const supportCards = [
             </svg>
         ),
         href: "https://t.me/modme_support",
-        color: "bg-[#FFF8E8] text-[#894B00] border-[#FFE4B5]",
+        color: "bg-white text-[#080a0a] border-[#f0f0f0]",
         external: true,
         cta: "Yozish",
     },
@@ -162,21 +162,25 @@ export default function SupportPage() {
                                         href={card.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#080a0a] border-[#f0f0f0] transition-all duration-300 hover:shadow-lg"
                                     >
-                                        <div className="mb-6">{card.icon}</div>
-                                        <h3 className="text-2xl font-semibold mb-4">
+                                        <div className="mb-6 p-4 bg-orange-100 rounded-lg inline-block">
+                                            <div className="text-orange-500">
+                                                {card.icon}
+                                            </div>
+                                        </div>
+                                        <h3 className="text-2xl font-semibold mb-4 text-[#080a0a]">
                                             {card.title}
                                         </h3>
-                                        <p className="text-base text-gray-600 mb-8">
+                                        <p className="text-base text-[#666666] mb-8">
                                             {card.description}
                                         </p>
                                         <div className="flex items-center justify-between">
-                                            <span className="text-base font-medium">
+                                            <span className="text-base font-medium text-orange-500">
                                                 {card.cta}
                                             </span>
                                             <svg
-                                                className="w-6 h-6"
+                                                className="w-6 h-6 text-orange-500"
                                                 viewBox="0 0 24 24"
                                                 fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -201,21 +205,25 @@ export default function SupportPage() {
                                 ) : (
                                     <Link
                                         href={card.href}
-                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                        className="block h-full p-8 rounded-xl border-2 bg-white text-[#080a0a] border-[#f0f0f0] transition-all duration-300 hover:shadow-lg"
                                     >
-                                        <div className="mb-6">{card.icon}</div>
-                                        <h3 className="text-2xl font-semibold mb-4">
+                                        <div className="mb-6 p-4 bg-orange-100 rounded-lg inline-block">
+                                            <div className="text-orange-500">
+                                                {card.icon}
+                                            </div>
+                                        </div>
+                                        <h3 className="text-2xl font-semibold mb-4 text-[#080a0a]">
                                             {card.title}
                                         </h3>
-                                        <p className="text-base text-gray-600 mb-8">
+                                        <p className="text-base text-[#666666] mb-8">
                                             {card.description}
                                         </p>
                                         <div className="flex items-center justify-between">
-                                            <span className="text-base font-medium">
+                                            <span className="text-base font-medium text-orange-500">
                                                 Ko'rish
                                             </span>
                                             <svg
-                                                className="w-6 h-6"
+                                                className="w-6 h-6 text-orange-500"
                                                 viewBox="0 0 24 24"
                                                 fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -255,23 +263,25 @@ export default function SupportPage() {
                                 href={supportCards[2].href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#080a0a] border-[#f0f0f0] transition-all duration-300 hover:shadow-lg"
                             >
-                                <div className="mb-6">
-                                    {supportCards[2].icon}
+                                <div className="mb-6 p-4 bg-orange-100 rounded-lg inline-block">
+                                    <div className="text-orange-500">
+                                        {supportCards[2].icon}
+                                    </div>
                                 </div>
-                                <h3 className="text-2xl font-semibold mb-4">
+                                <h3 className="text-2xl font-semibold mb-4 text-[#080a0a]">
                                     {supportCards[2].title}
                                 </h3>
-                                <p className="text-base text-gray-600 mb-8">
+                                <p className="text-base text-[#666666] mb-8">
                                     {supportCards[2].description}
                                 </p>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-base font-medium">
+                                    <span className="text-base font-medium text-orange-500">
                                         {supportCards[2].cta}
                                     </span>
                                     <svg
-                                        className="w-6 h-6"
+                                        className="w-6 h-6 text-orange-500"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -296,23 +306,25 @@ export default function SupportPage() {
                         ) : (
                             <Link
                                 href={supportCards[2].href}
-                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#894B00] border-[#FFE4B5] transition-all duration-300 hover:shadow-lg"
+                                className="block h-full p-8 rounded-xl border-2 bg-white text-[#080a0a] border-[#f0f0f0] transition-all duration-300 hover:shadow-lg"
                             >
-                                <div className="mb-6">
-                                    {supportCards[2].icon}
+                                <div className="mb-6 p-4 bg-orange-100 rounded-lg inline-block">
+                                    <div className="text-orange-500">
+                                        {supportCards[2].icon}
+                                    </div>
                                 </div>
-                                <h3 className="text-2xl font-semibold mb-4">
+                                <h3 className="text-2xl font-semibold mb-4 text-[#080a0a]">
                                     {supportCards[2].title}
                                 </h3>
-                                <p className="text-base text-gray-600 mb-8">
+                                <p className="text-base text-[#666666] mb-8">
                                     {supportCards[2].description}
                                 </p>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-base font-medium">
+                                    <span className="text-base font-medium text-orange-500">
                                         Ko'rish
                                     </span>
                                     <svg
-                                        className="w-6 h-6"
+                                        className="w-6 h-6 text-orange-500"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"

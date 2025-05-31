@@ -522,7 +522,7 @@ const GamificationPage = () => {
                                 <iframe
                                     width="100%"
                                     height="100%"
-                                    src="https://www.youtube.com/embed/HcRYyOo3lsk?si=381awe5nN03Lznkc"
+                                    src="https://www.youtube.com/embed/0gi0t8rYL64?si=lzQ4UcuXns6KDJV1"
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

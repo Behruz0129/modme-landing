@@ -44,7 +44,7 @@ const Card3DComponent = ({
     return (
         <motion.div
             ref={cardRef}
-            className={`bg-white rounded-2xl shadow-lg shadow-black/10 p-6 md:p-8 flex flex-col h-full ${className} hover:shadow-xl transition-all duration-300 cursor-pointer`}
+            className={`bg-white rounded-2xl shadow-lg shadow-black/10 p-6 md:p-8 flex flex-col h-full ${className} hover:shadow-xl transition-all duration-300 cursor-drag`}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             style={{

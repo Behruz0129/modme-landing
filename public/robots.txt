@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://modme.uz/sitemap.xml
+
+# Disallow admin and api routes
+Disallow: /admin/
+Disallow: /api/ 
