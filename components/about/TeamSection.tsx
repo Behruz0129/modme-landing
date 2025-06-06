@@ -13,9 +13,9 @@ const team = [
             "Kompaniya rahbari va strategik yo'nalishlarni belgilovchi",
     },
     {
-        name: "Behruz Sharapov",
+        name: "Behruz Berdiyev",
         position: "Product Manager",
-        image: "/images/about/team-pm.jpg",
+        image: "/images/about/team-support-design.jpg",
         description:
             "Platforma rivojlanishini boshqaruvchi va yangi funksiyalarni loyihalovchi",
     },
@@ -37,12 +37,6 @@ const team = [
         position: "Customer Succes Manager",
         image: "/images/about/team-csm.jpg",
         description: "Dizayn va mijozlar qo'llab-quvvatlash bo'limi",
-    },
-    {
-        name: "Behruzbek Berdiyev",
-        position: "Designer & Support",
-        image: "/images/about/team-support-design.jpg",
-        description: "Mijozlar uchun texnik yordam va qo'llab-quvvatlash",
     },
     {
         name: "Mirmuhsin Hamroyev",

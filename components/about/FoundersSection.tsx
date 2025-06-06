@@ -9,6 +9,7 @@ import {
     GraduationCap,
     Rocket,
     Building2,
+    School,
 } from "lucide-react";
 
 const founders = [
@@ -20,6 +21,10 @@ const founders = [
             {
                 icon: <GraduationCap className="w-5 h-5" />,
                 text: '"Cambridge" o\'quv markazi asoschisi',
+            },
+            {
+                icon: <School className="w-5 h-5" />,
+                text: '"Jahon School" loyihasi asoschisi',
             },
             {
                 icon: <Rocket className="w-5 h-5" />,
