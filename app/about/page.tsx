@@ -1,24 +1,14 @@
-"use client";
+import { Metadata } from "next";
+import AboutClient from "./client";
 
-import { motion } from "framer-motion";
-import HistorySection from "@/components/about/HistorySection";
-import FoundersSection from "@/components/about/FoundersSection";
-import TeamSection from "@/components/about/TeamSection";
-import MissionSection from "@/components/about/MissionSection";
+export const metadata: Metadata = {
+    title: "Biz haqimizda | Modme",
+    description:
+        "Modme - O'zbekistondagi eng yirik o'quv markazlari uchun maxsus yaratilgan CRM tizimi. Bizning jamoamiz va missiyamiz haqida batafsil ma'lumot.",
+    keywords:
+        "Modme, o'quv markazlari, CRM tizimi, O'zbekiston, ta'lim texnologiyalari",
+};
 
 export default function AboutPage() {
-    return (
-        <main className="w-full">
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-            >
-                <HistorySection />
-                <FoundersSection />
-                <TeamSection />
-                <MissionSection />
-            </motion.div>
-        </main>
-    );
+    return <AboutClient />;
 }

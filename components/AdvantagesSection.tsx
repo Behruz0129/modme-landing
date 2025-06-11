@@ -12,7 +12,7 @@ const AdvantagesSection = () => {
                             Biz bilan nimalarga ega bo'lasiz?
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
-                            MODME – bu Sizning ta’lim biznesingiz uchun eng
+                            Modme – bu Sizning ta’lim biznesingiz uchun eng
                             yaxshi tanlov!
                         </p>
                     </div>
