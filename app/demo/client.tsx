@@ -39,11 +39,20 @@ export default function DemoClient() {
                             method="POST"
                             className="space-y-6"
                         >
-                            <input
-                                type="hidden"
-                                name="lessons_per_month"
-                                value="12"
-                            />
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                    Ismingiz
+                                </label>
+                                <input
+                                    name="first_name"
+                                    type="text"
+                                    required
+                                    minLength={1}
+                                    maxLength={255}
+                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
+                                    placeholder="Ismingizni kiriting"
+                                />
+                            </div>
 
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -58,27 +67,6 @@ export default function DemoClient() {
                                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                     placeholder="Markaz nomini kiriting"
                                 />
-                            </div>
-
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                    Subdomain
-                                </label>
-                                <div className="relative">
-                                    <input
-                                        name="subdomain"
-                                        type="text"
-                                        required
-                                        minLength={3}
-                                        maxLength={30}
-                                        pattern="[a-z0-9-]+"
-                                        className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
-                                        placeholder="subdomain"
-                                    />
-                                    <span className="absolute right-3 top-2 text-gray-500">
-                                        .modme.uz
-                                    </span>
-                                </div>
                             </div>
 
                             <div>
