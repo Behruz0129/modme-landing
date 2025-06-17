@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="flex flex-col">
                         <Link
                             href="/"
-                            className="relative w-[120px] h-[40px] mb-6"
+                            className="relative w-[120px] h-[40px] mb-6 select-none cursor-pointer"
                         >
                             <Image
                                 src="/images/logo-light.svg"

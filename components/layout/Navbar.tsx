@@ -117,7 +117,10 @@ const Navbar = () => {
             <div className="w-full max-w-[1200px] mx-auto px-2 sm:px-4 lg:px-6">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link href="/" className="relative w-[120px] h-[40px]">
+                    <Link
+                        href="/"
+                        className="relative w-[120px] h-[40px] select-none cursor-pointer"
+                    >
                         <Image
                             src={
                                 isGamificationPage

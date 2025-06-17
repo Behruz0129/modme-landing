@@ -38,6 +38,15 @@ export default function DemoClient() {
                             action="https://api.modme.dev/v1/company/openDemoCompany"
                             method="POST"
                             className="space-y-6"
+                            target="_blank"
+                            onSubmit={() => {
+                                setTimeout(() => {
+                                    window.open(
+                                        "https://t.me/modme_robot?start=demo_998995182901",
+                                        "_blank"
+                                    );
+                                }, 1000);
+                            }}
                         >
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
