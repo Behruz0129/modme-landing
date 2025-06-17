@@ -21,6 +21,44 @@ export default function DemoClient() {
         setPhone(value);
     };
 
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            first_name: formData.get("first_name"),
+            name: formData.get("name"),
+            phone: `998${phone}`,
+            balance_mode: formData.get("balance_mode"),
+            password: formData.get("password"),
+        };
+
+        try {
+            const response = await fetch(
+                "https://api.modme.uz/v1/company/openDemoCompany",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                }
+            );
+
+            if (response.ok) {
+                window.open(
+                    "https://t.me/modme_robot?start=demo_998995182901",
+                    "_blank"
+                );
+            } else {
+                alert("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 pt-[89px]">
             <div className="container mx-auto px-4 py-12">
@@ -35,18 +73,11 @@ export default function DemoClient() {
                             Demo olish
                         </h1>
                         <form
-                            action="https://api.modme.dev/v1/company/openDemoCompany"
+                            action="https://api.modme.uz/v1/company/openDemoCompany"
                             method="POST"
                             className="space-y-6"
                             target="_blank"
-                            onSubmit={() => {
-                                setTimeout(() => {
-                                    window.open(
-                                        "https://t.me/modme_robot?start=demo_998995182901",
-                                        "_blank"
-                                    );
-                                }, 1000);
-                            }}
+                            onSubmit={handleSubmit}
                         >
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
