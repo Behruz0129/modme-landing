@@ -77,7 +77,6 @@ export default function DemoClient() {
                             method="POST"
                             className="space-y-6"
                             target="_blank"
-                            onSubmit={handleSubmit}
                         >
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
