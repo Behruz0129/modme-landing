@@ -27,9 +27,10 @@ export default function DemoClient() {
                             Demo olish
                         </h1>
                         <form
-                            action="https://api.modme.dev/v1/company/openDemoCompany"
+                            action="https://api.modme.uz/v1/company/openDemoCompany"
                             method="POST"
                             className="space-y-6"
+                            target="_blank"
                         >
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
