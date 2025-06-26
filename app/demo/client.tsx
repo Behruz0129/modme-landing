@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { HelpCircle } from "lucide-react";
 
 const balanceModes = [
-    { id: 1, name: "Oylik" },
-    { id: 2, name: "Kunlik" },
-    { id: 3, name: "Modul" },
+    { id: 1, name: "Kunlik" },
+    { id: 2, name: "Oylik" },
+    { id: 3, name: "Guruh boshlanish sanasi" },
     { id: 4, name: "Butun kurs" },
-    { id: 5, name: "Individual" },
-    { id: 6, name: "Guruh boshlanish sanasi" },
+    { id: 5, name: "Modul" },
+    { id: 6, name: "Individual" },
 ];
 
 export default function DemoClient() {
@@ -27,7 +27,7 @@ export default function DemoClient() {
                             Demo olish
                         </h1>
                         <form
-                            action="https://api.modme.dev/v1/company/openDemoCompany"
+                            action="https://api.modme.uz/v1/company/openDemoCompany"
                             method="POST"
                             className="space-y-6"
                             target="_blank"
