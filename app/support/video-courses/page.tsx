@@ -526,38 +526,8 @@ const playlists: Playlist[] = [
                     "Lidlar arxivini ko'rish va boshqarish imkoniyatlarini ko'rib chiqamiz",
             },
             {
-                id: "kzzZIXp1DWc",
-                title: "13-dars. Lidlarni Excelga eksport qilish",
-                description:
-                    "Lidlar ma'lumotlarini Excel formatida eksport qilishni o'rganamiz",
-            },
-            {
-                id: "LbLYQ0Ksoys",
-                title: "14-dars. Lidlar uchun yangi vazifa yaratish",
-                description:
-                    "Lidlar uchun yangi vazifalar yaratish va ularni boshqarishni ko'rib chiqamiz",
-            },
-            {
-                id: "NxE019yihyo",
-                title: "15-dars. Lidni boshqa bo'limga o'tkazish, guruhga qo'shish",
-                description:
-                    "Lidni boshqa bo'limlarga o'tkazish va guruhlarga qo'shishni o'rganamiz",
-            },
-            {
-                id: "bon6SHgwzIQ",
-                title: "16-dars. Bir nechta lidni boshqa papkaga ko'chirish",
-                description:
-                    "Bir nechta lidni bir vaqtda boshqa papkaga ko'chirishni ko'rib chiqamiz",
-            },
-            {
-                id: "99v7MHlwKi8",
-                title: "17-dars. Jadval versiyasiga o'tish",
-                description:
-                    "Lidlar bo'limidan jadval versiyasiga o'tish va undan foydalanishni o'rganamiz",
-            },
-            {
                 id: "qMTWU81Icyw",
-                title: "18-dars. Yangi lidlar bo'limi",
+                title: "13-dars. Yangi lidlar bo'limi",
                 description:
                     "Yangi lidlar bo'limini ko'rish va boshqarish imkoniyatlarini ko'rib chiqamiz",
             },
