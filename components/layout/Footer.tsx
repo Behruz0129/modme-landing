@@ -118,7 +118,7 @@ export default function Footer() {
                                 <Send className="w-6 h-6" />
                             </a>
                         </div>
-                        <Link href="/demo">
+                        <Link href="https://t.me/modme_sales">
                             <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white font-bold text-sm transition-all">
                                 Demo olish
                             </button>
