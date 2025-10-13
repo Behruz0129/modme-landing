@@ -505,7 +505,7 @@ export default function PricingPage() {
                                     </div>
                                     <p className="text-[#a8a8a8] mb-6 max-w-xl">
                                         O'quvchilarning motivatsiyasini oshirish
-                                        uchun maxsus modul. Har oy 500 000 so'm.
+                                        uchun maxsus modul. Har oy 150 000 so'm.
                                     </p>
                                     <Link
                                         href="/gamification"
@@ -519,7 +519,7 @@ export default function PricingPage() {
                                     <div className="w-32 h-32 rounded-full bg-gradient-to-r from-[#ffd03d] to-[#ff8000] animate-pulse" />
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <span className="text-3xl font-bold text-white">
-                                            500 000
+                                            150 000
                                         </span>
                                     </div>
                                 </div>
