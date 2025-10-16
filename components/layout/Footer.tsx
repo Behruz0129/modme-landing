@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Youtube, Send, Phone } from "lucide-react";
+import {
+    Instagram,
+    Youtube,
+    Send,
+    Phone,
+    MessageCircle,
+    User,
+    ShoppingCart,
+} from "lucide-react";
 
 export default function Footer() {
     return (
@@ -87,10 +95,50 @@ export default function Footer() {
                         <h3 className="text-lg font-bold mb-4">Bog'lanish</h3>
                         <a
                             href="tel:+998787771100"
-                            className="flex items-center gap-2 text-[#bfc8d6] hover:text-white transition-colors text-sm"
+                            className="flex items-center gap-2 text-[#bfc8d6] hover:text-white transition-colors text-sm mb-3"
                         >
                             <Phone className="w-5 h-5" /> +998(78) 777-11-00
                         </a>
+
+                        {/* Telegram akkauntlari */}
+                        <div className="flex flex-col gap-2">
+                            <a
+                                href="https://t.me/modme_support"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
+                            >
+                                <MessageCircle className="w-4 h-4" />
+                                <span>Qo'llab-quvvatlash</span>
+                                <span className="group-hover:translate-x-0.5 transition-transform">
+                                    ↗
+                                </span>
+                            </a>
+                            <a
+                                href="https://t.me/modme_manager"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
+                            >
+                                <User className="w-4 h-4" />
+                                <span>Menejer</span>
+                                <span className="group-hover:translate-x-0.5 transition-transform">
+                                    ↗
+                                </span>
+                            </a>
+                            <a
+                                href="https://t.me/modme_sales"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
+                            >
+                                <ShoppingCart className="w-4 h-4" />
+                                <span>Sotuv bo'limi</span>
+                                <span className="group-hover:translate-x-0.5 transition-transform">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
                     </div>
 
                     {/* Ijtimoiy tarmoqlar */}
