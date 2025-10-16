@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import ClarityInit from "@/components/analytics/ClarityInit";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -105,6 +106,7 @@ export default function RootLayout({
     return (
         <html lang="uz" suppressHydrationWarning>
             <body className={inter.className}>
+                <ClarityInit />
                 <Script id="facebook-pixel" strategy="afterInteractive">
                     {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
