@@ -121,7 +121,7 @@ export default function Footer() {
                                 className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
                             >
                                 <User className="w-4 h-4" />
-                                <span>Menejer</span>
+                                <span>Loyiha Menejeri</span>
                                 <span className="group-hover:translate-x-0.5 transition-transform">
                                     ↗
                                 </span>
@@ -171,6 +171,13 @@ export default function Footer() {
                                 Demo olish
                             </button>
                         </Link>
+                        <div className="mt-3">
+                            <Link href="https://t.me/modmebillingbot?start=footer">
+                                <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90 text-white font-bold text-sm transition-all">
+                                    To'lov qilish
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
 

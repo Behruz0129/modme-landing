@@ -27,6 +27,24 @@ const faqs = [
         question: " Sinov muddati bormi?",
         answer: "Ha, bizda bepul demo versiyasi mavjud — 7 kungacha sinab, ishlatib ko‘rishingiz mumkin",
     },
+    {
+        id: 5,
+        question: "Qanday to'lov qilsa bo'ladi?",
+        answer: (
+            <span>
+                Platforma uchun to'lovni quyidagi havola orqali amalga
+                oshirishingiz mumkin:{" "}
+                <a
+                    href="https://t.me/modmebillingbot?start=faq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#ff8000] underline underline-offset-4"
+                >
+                    To'lov qilish
+                </a>
+            </span>
+        ),
+    },
 ];
 
 const FAQSection = () => {

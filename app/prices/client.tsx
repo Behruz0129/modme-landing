@@ -272,6 +272,38 @@ export default function PricingPage() {
                         </div>
                     </motion.div>
 
+                    {/* Global Payment CTA */}
+                    <motion.div
+                        className="mt-10"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <motion.div
+                            variants={itemVariants}
+                            className="relative overflow-hidden rounded-2xl border border-[#ff8000]/20"
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#ffd03d]/15 to-[#ff8000]/15" />
+                            <div className="relative p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                                <div className="text-center md:text-left">
+                                    <h3 className="text-2xl font-bold text-[#080a0a]">
+                                        Platforma uchun to'lov
+                                    </h3>
+                                    <p className="text-[#a8a8a8] mt-2">
+                                        Xavfsiz va qulay to'lov — bir necha
+                                        bosqichda yakunlang
+                                    </p>
+                                </div>
+                                <Link
+                                    href="https://t.me/modmebillingbot?start=prices"
+                                    className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-[#ffd03d] to-[#ff8000] text-white font-bold hover:opacity-90 transition-all duration-300"
+                                >
+                                    To'lov qilish
+                                </Link>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+
                     {/* Pricing Cards - Mobile */}
                     <motion.div
                         className="lg:hidden"
