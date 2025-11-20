@@ -139,6 +139,14 @@ export default function Footer() {
                                 </span>
                             </a>
                         </div>
+                        <div className="mt-6 p-4 rounded-xl border border-[#232b39] bg-white/5 backdrop-blur-sm text-[#bfc8d6] text-sm leading-relaxed">
+                            <p className="font-semibold text-white text-base mb-2">
+                                Huquqiy ma'lumotlar
+                            </p>
+                            <p>MChJ: &quot;MODME&quot;</p>
+                            <p>Manzil: Toshkent shahri, Mirzo Ulug‘bek tumani, Navnihon MFY, Tepamasjid ko‘chasi, 4a-uy</p>
+                            <p>STIR: 307442900</p>
+                        </div>
                     </div>
 
                     {/* Ijtimoiy tarmoqlar */}
