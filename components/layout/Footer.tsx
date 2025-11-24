@@ -33,14 +33,6 @@ export default function Footer() {
                         <p className="text-[#bfc8d6] text-sm">
                             O'quv markazlari uchun professional CRM tizimi
                         </p>
-                        <div className="mt-4 p-4 rounded-xl border border-[#232b39] bg-white/5 backdrop-blur-sm text-[#bfc8d6] text-sm leading-relaxed">
-                            <p className="font-semibold text-white text-base mb-2">
-                                Huquqiy ma'lumotlar
-                            </p>
-                            <p>MChJ: &quot;MODME&quot;</p>
-                            <p>Manzil: Toshkent shahri, Mirzo Ulug‘bek tumani, Navnihon MFY, Tepamasjid ko‘chasi, 4a-uy</p>
-                            <p>STIR: 307442900</p>
-                        </div>
                     </div>
 
                     {/* ModmeCRM */}
@@ -174,7 +166,7 @@ export default function Footer() {
                                 <Send className="w-6 h-6" />
                             </a>
                         </div>
-                        <Link href="https://t.me/modme_sales">
+                        <Link href="/demo">
                             <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white font-bold text-sm transition-all">
                                 Demo olish
                             </button>
@@ -199,12 +191,12 @@ export default function Footer() {
                             </span>
                             . All Rights Reserved
                         </p>
-                        {/* <Link
-                            href="/oferta"
+                        <Link
+                            href="/resources"
                             className="text-[#bfc8d6] hover:text-white transition-colors text-sm"
                         >
-                            Oferta ↗
-                        </Link> */}
+                            Resurslar ↗
+                        </Link>
                     </div>
                 </div>
             </div>

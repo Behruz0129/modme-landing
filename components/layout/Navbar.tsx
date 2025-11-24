@@ -180,7 +180,7 @@ const Navbar = () => {
 
                         {/* Demo Button */}
                         <Link
-                            href="https://t.me/modme_sales"
+                            href="/demo"
                             className="cursor-pointer"
                         >
                             <button
@@ -264,7 +264,7 @@ const Navbar = () => {
                                     {/* CTA Button */}
                                     <div className="mt-2">
                                         <Link
-                                            href="https://t.me/modme_sales"
+                                            href="/demo"
                                             className="cursor-pointer"
                                         >
                                             <button
