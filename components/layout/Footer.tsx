@@ -4,10 +4,6 @@ import {
     Instagram,
     Youtube,
     Send,
-    Phone,
-    MessageCircle,
-    User,
-    ShoppingCart,
 } from "lucide-react";
 
 export default function Footer() {
@@ -15,7 +11,7 @@ export default function Footer() {
         <footer className="bg-[#181c23] text-white">
             <div className="max-w-[1200px] mx-auto px-4 py-12">
                 {/* Asosiy qism */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
                     {/* Logo */}
                     <div className="flex flex-col">
                         <Link
@@ -30,34 +26,21 @@ export default function Footer() {
                                 priority
                             />
                         </Link>
-                        <p className="text-[#bfc8d6] text-sm">
+                        <p className="text-[#bfc8d6] text-base md:text-lg">
                             O'quv markazlari uchun professional CRM tizimi
                         </p>
                     </div>
 
                     {/* ModmeCRM */}
                     <div className="flex flex-col">
-                        <h3 className="text-lg font-bold mb-4">ModmeCRM</h3>
                         <div className="flex flex-col gap-3">
                             <Link
                                 href="/about"
-                                className="text-[#bfc8d6] hover:text-white transition-colors text-sm group flex items-center gap-1"
+                                className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
                             >
                                 Biz haqimizda
-                                <span className="group-hover:translate-x-0.5 transition-transform">
-                                    ↗
-                                </span>
                             </Link>
-                            <Link
-                                href="/support"
-                                className="text-[#bfc8d6] hover:text-white transition-colors text-sm group flex items-center gap-1"
-                            >
-                                Qo'llab-quvvatlash
-                                <span className="group-hover:translate-x-0.5 transition-transform">
-                                    ↗
-                                </span>
-                            </Link>
-                            <div className="flex gap-3 mt-2">
+                            <div className="flex flex-col gap-3 mt-2">
                                 <a
                                     href="https://play.google.com/store/apps/details?id=uz.modme.student"
                                     target="_blank"
@@ -81,7 +64,7 @@ export default function Footer() {
                                     <Image
                                         src="/images/ios-download.svg"
                                         alt="iOS uchun yuklab olish"
-                                        width={120}
+                                        width={135}
                                         height={40}
                                         className="object-contain"
                                     />
@@ -90,55 +73,24 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Bog'lanish */}
+                    {/* Resurslar */}
                     <div className="flex flex-col">
-                        <h3 className="text-lg font-bold mb-4">Bog'lanish</h3>
-                        <a
-                            href="tel:+998787771100"
-                            className="flex items-center gap-2 text-[#bfc8d6] hover:text-white transition-colors text-sm mb-3"
+                        <Link
+                            href="/resources"
+                            className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
                         >
-                            <Phone className="w-5 h-5" /> +998(78) 777-11-00
-                        </a>
+                            Resurslar
+                        </Link>
+                    </div>
 
-                        {/* Telegram akkauntlari */}
-                        <div className="flex flex-col gap-2">
-                            <a
-                                href="https://t.me/modme_support"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
-                            >
-                                <MessageCircle className="w-4 h-4" />
-                                <span>Qo'llab-quvvatlash</span>
-                                <span className="group-hover:translate-x-0.5 transition-transform">
-                                    ↗
-                                </span>
-                            </a>
-                            <a
-                                href="https://t.me/modme_manager"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
-                            >
-                                <User className="w-4 h-4" />
-                                <span>Loyiha Menejeri</span>
-                                <span className="group-hover:translate-x-0.5 transition-transform">
-                                    ↗
-                                </span>
-                            </a>
-                            <a
-                                href="https://t.me/modme_sales"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-[#bfc8d6] hover:text-[#ff8000] transition-colors text-sm group"
-                            >
-                                <ShoppingCart className="w-4 h-4" />
-                                <span>Sotuv bo'limi</span>
-                                <span className="group-hover:translate-x-0.5 transition-transform">
-                                    ↗
-                                </span>
-                            </a>
-                        </div>
+                    {/* Kontaktlar */}
+                    <div className="flex flex-col">
+                        <Link
+                            href="/contacts"
+                            className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
+                        >
+                            Kontaktlar
+                        </Link>
                     </div>
 
                     {/* Ijtimoiy tarmoqlar */}
@@ -191,12 +143,6 @@ export default function Footer() {
                             </span>
                             . All Rights Reserved
                         </p>
-                        <Link
-                            href="/resources"
-                            className="text-[#bfc8d6] hover:text-white transition-colors text-sm"
-                        >
-                            Resurslar ↗
-                        </Link>
                     </div>
                 </div>
             </div>
