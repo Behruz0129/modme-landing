@@ -135,13 +135,15 @@ export default function Footer() {
 
                 {/* Pastki qism */}
                 <div className="pt-8 border-t border-[#232b39]">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className="flex flex-col items-start gap-4">
                         <p className="text-[#bfc8d6] text-sm">
                             Copyright © 2025{" "}
                             <span className="font-bold text-white">
                                 ModmeCRM
                             </span>
-                            . All Rights Reserved
+                        </p>
+                        <p className="text-[#8a919c] text-xs max-w-3xl leading-relaxed">
+                            Услуги, представленные на сайте, предназначены исключительно для юридических лиц и индивидуальных предпринимателей и используются в предпринимательской деятельности. Сервис не предназначен для физических лиц в качестве потребителей. Закон Республики Узбекистан «О защите прав потребителей» к данным услугам не применяется.
                         </p>
                     </div>
                 </div>

@@ -12,6 +12,7 @@ const navLinks = [
     { name: "Narxlar", href: "/prices" },
     { name: "Gamification", href: "/gamification" },
     { name: "Qo'llab-quvvatlash", href: "/support" },
+    { name: "Vakansiyalar", href: "/vacancies" },
 ];
 
 // Hamburger menu animatsiya komponenti

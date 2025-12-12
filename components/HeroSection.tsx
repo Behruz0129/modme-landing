@@ -30,7 +30,7 @@ const HeroSection = () => {
                         className="mb-6 md:mb-8"
                     >
                         <h1 className={sectionStyles.heading}>
-                            Markazingizni yangi <br /> bosqichga olib
+                            O'quv markazingizni yangi <br /> bosqichga olib
                             chiqing!
                         </h1>
                         <p className={sectionStyles.description}>
