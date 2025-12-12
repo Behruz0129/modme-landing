@@ -40,7 +40,7 @@ const vacancies = [
             "Karyera o'sishi imkoniyati",
         ],
         salary: "Kelishiladi (asosiy ish haqi + sotuv bonuslari)",
-        contactTelegram: "https://t.me/modme_hr",
+        contactTelegram: "https://t.me/modme_manager",
     },
 ];
 
@@ -230,11 +230,11 @@ export default function VacanciesClient() {
                         <p className="text-[#a8a8a8]">
                             Boshqa vakansiyalar hozircha yo'q. Lekin siz o'z rezyumeingizni{" "}
                             <Link
-                                href="https://t.me/modme_hr"
+                                href="https://t.me/modme_manager"
                                 target="_blank"
                                 className="text-[#ff8000] hover:underline"
                             >
-                                @modme_hr
+                                @modme_manager
                             </Link>{" "}
                             ga yuborishingiz mumkin.
                         </p>
