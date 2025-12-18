@@ -140,7 +140,7 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 3 - Moliya - 7/12 */}
+                    {/* Feature 3 - Baholash - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.4}
@@ -148,34 +148,51 @@ const FeaturesSection = () => {
                         className="col-span-12 md:col-span-7"
                     >
                         <Card3DComponent>
-                            <div className="inline-block w-fit px-4 py-2 bg-[#F0FFF5] text-[#01662F] font-medium rounded-xl mb-6">
-                                Moliya
+                            <div className="inline-block w-fit px-4 py-2 bg-[#FFF5E6] text-[#B35A00] font-medium rounded-xl mb-6">
+                                Baholash
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Moliyani oson boshqaring{" "}
+                                O'quvchilarni baholang va taqqoslang
                             </h3>
-                            <p className="text-[#4A5564] mb-6 text-base">
-                                Barcha to’lovlar va xarajatlarni bir joyda
-                                yuritish, sof foydani avtomatik aniqlash,
-                                oyliklarni hisoblash, qarzdorlarni oson
-                                boshqarish orqali o’quv markazingizni keyingi
-                                darajaga olib chiqing!
+                            <p className="text-[#4A5564] text-base">
+                                Har bir darsda o'quvchilarga baho qo'ying va 
+                                umumiy reyting jadvalida natijalarni kuzating.
+                                Filial, guruh yoki butun markaz bo'yicha 
+                                o'quvchilarni solishtiring va eng yaxshi 
+                                natijalarni aniqlang. Shaffof baholash tizimi 
+                                orqali ta'lim sifatini oshiring
                             </p>
-                            <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
-                                <Image
-                                    src="/images/features/moliya.webp"
-                                    alt="Moliyaviy boshqaruv"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 4 - Integratsiyalar - 5/12 */}
+                    {/* Feature 4 - Eslatmalar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.5}
+                        threshold={0.3}
+                        className="col-span-12 md:col-span-5"
+                    >
+                        <Card3DComponent>
+                            <div className="inline-block w-fit px-4 py-2 bg-[#E8F5FF] text-[#0066CC] font-medium rounded-xl mb-6">
+                                Eslatmalar
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
+                                Vazifalarni rejalashtiring va nazorat qiling
+                            </h3>
+                            <p className="text-[#4A5564] text-base">
+                                O'zingiz va jamoangiz uchun task va eslatmalar 
+                                yarating. Muddati o'tgan, bugungi va kelgusi 
+                                vazifalarni alohida ko'ring. Bajarilgan ishlar 
+                                tarixda saqlanadi va yopishda natijani yozib 
+                                qoldiring
+                            </p>
+                        </Card3DComponent>
+                    </ScrollAnimation>
+
+                    {/* Feature 5 - Integratsiyalar - 5/12 */}
+                    <ScrollAnimation
+                        direction="up"
+                        delay={0.6}
                         threshold={0.3}
                         className="col-span-12 md:col-span-5"
                     >
@@ -202,36 +219,68 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 5 - Filiallar - 5/12 */}
+                    {/* Feature 6 - Moliya - 7/12 */}
                     <ScrollAnimation
                         direction="up"
-                        delay={0.6}
+                        delay={0.7}
                         threshold={0.3}
-                        className="col-span-12 md:col-span-5"
+                        className="col-span-12 md:col-span-7"
+                    >
+                        <Card3DComponent>
+                            <div className="inline-block w-fit px-4 py-2 bg-[#F0FFF5] text-[#01662F] font-medium rounded-xl mb-6">
+                                Moliya
+                            </div>
+                            <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
+                                Moliyani oson boshqaring{" "}
+                            </h3>
+                            <p className="text-[#4A5564] mb-6 text-base">
+                                Barcha to'lovlar va xarajatlarni bir joyda
+                                yuritish, sof foydani avtomatik aniqlash,
+                                oyliklarni hisoblash, qarzdorlarni oson
+                                boshqarish orqali o'quv markazingizni keyingi
+                                darajaga olib chiqing!
+                            </p>
+                            <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
+                                <Image
+                                    src="/images/features/moliya.webp"
+                                    alt="Moliyaviy boshqaruv"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </Card3DComponent>
+                    </ScrollAnimation>
+
+                    {/* Feature 7 - Masofaviy boshqaruv - 7/12 */}
+                    <ScrollAnimation
+                        direction="up"
+                        delay={0.8}
+                        threshold={0.3}
+                        className="col-span-12 md:col-span-7"
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0F6FF] text-[#193CB8] font-medium rounded-xl mb-6">
                                 Masofaviy boshqaruv
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Ta’lim biznesingizni istalgan joydan boshqaring
+                                Ta'lim biznesingizni istalgan joydan boshqaring
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                Platforma yordamida ta’lim biznesingizdagi
-                                ko’rsatkichlarni masofadan turib boshqaring, bu
-                                Sizga ko’proq vaqtingiz biznesingizni yanada
-                                rivojlantirishga yo’naltirishingizga yana bir
+                                Platforma yordamida ta'lim biznesingizdagi
+                                ko'rsatkichlarni masofadan turib boshqaring, bu
+                                Sizga ko'proq vaqtingiz biznesingizni yanada
+                                rivojlantirishga yo'naltirishingizga yana bir
                                 imkoniyat!
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 6 - Mobil Ilovalar - 7/12 */}
+                    {/* Feature 8 - Mobil Ilovalar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
-                        delay={0.7}
+                        delay={0.9}
                         threshold={0.3}
-                        className="col-span-12 md:col-span-7"
+                        className="col-span-12 md:col-span-5"
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF2F2] text-[#C70036] font-medium rounded-xl mb-6">

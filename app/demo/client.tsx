@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 const balanceModes = [
     { id: 1, name: "Kunlik" },
@@ -13,6 +15,31 @@ const balanceModes = [
 ];
 
 export default function DemoClient() {
+    const [formData, setFormData] = useState({
+        first_name: "",
+        name: "",
+        phone: "",
+        balance_mode: "",
+        password: "",
+    });
+    const [privacyAccepted, setPrivacyAccepted] = useState(false);
+
+    const isFormValid =
+        formData.first_name.length >= 1 &&
+        formData.name.length >= 1 &&
+        formData.phone.length === 9 &&
+        /^[0-9]{9}$/.test(formData.phone) &&
+        formData.balance_mode !== "" &&
+        formData.password.length >= 8 &&
+        privacyAccepted;
+
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    ) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 pt-[89px]">
             <div className="container mx-auto px-4 py-12">
@@ -42,6 +69,8 @@ export default function DemoClient() {
                                     required
                                     minLength={1}
                                     maxLength={255}
+                                    value={formData.first_name}
+                                    onChange={handleInputChange}
                                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                     placeholder="Ismingizni kiriting"
                                 />
@@ -56,6 +85,8 @@ export default function DemoClient() {
                                     required
                                     minLength={1}
                                     maxLength={255}
+                                    value={formData.name}
+                                    onChange={handleInputChange}
                                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                     placeholder="Markaz nomini kiriting"
                                 />
@@ -75,6 +106,8 @@ export default function DemoClient() {
                                         minLength={9}
                                         maxLength={9}
                                         pattern="[0-9]{9}"
+                                        value={formData.phone}
+                                        onChange={handleInputChange}
                                         className="flex-1 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                         placeholder="991234567"
                                     />
@@ -98,6 +131,8 @@ export default function DemoClient() {
                                 <select
                                     name="balance_mode"
                                     required
+                                    value={formData.balance_mode}
+                                    onChange={handleInputChange}
                                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                 >
                                     <option value="">
@@ -120,13 +155,45 @@ export default function DemoClient() {
                                     required
                                     minLength={8}
                                     maxLength={255}
+                                    value={formData.password}
+                                    onChange={handleInputChange}
                                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-[#ff8000] focus:border-transparent"
                                     placeholder="Kamida 8 ta belgi"
                                 />
                             </div>
+                            <div className="flex items-start gap-3">
+                                <input
+                                    type="checkbox"
+                                    id="privacy"
+                                    checked={privacyAccepted}
+                                    onChange={(e) =>
+                                        setPrivacyAccepted(e.target.checked)
+                                    }
+                                    className="mt-1 w-4 h-4 text-[#ff8000] bg-gray-100 border-gray-300 rounded focus:ring-[#ff8000] focus:ring-2 cursor-pointer"
+                                />
+                                <label
+                                    htmlFor="privacy"
+                                    className="text-sm text-gray-600 dark:text-gray-400 cursor-pointer"
+                                >
+                                    Men{" "}
+                                    <Link
+                                        href="/privacy-policy"
+                                        className="text-[#ff8000] hover:text-[#ff9831] underline underline-offset-2 transition-colors"
+                                    >
+                                        Maxfiylik siyosatini
+                                    </Link>{" "}
+                                    o'qib chiqdim va shaxsiy ma'lumotlarni qayta
+                                    ishlashga roziman
+                                </label>
+                            </div>
                             <button
                                 type="submit"
-                                className="w-full bg-[#ff8000] hover:bg-[#ff9831] text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200"
+                                disabled={!isFormValid}
+                                className={`w-full font-medium py-3 px-4 rounded-lg transition-colors duration-200 ${
+                                    isFormValid
+                                        ? "bg-[#ff8000] hover:bg-[#ff9831] text-white cursor-pointer"
+                                        : "bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed"
+                                }`}
                             >
                                 Demo olish
                             </button>
