@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -123,6 +124,7 @@ fbq('track', 'PageView');`}
                 <Navbar />
                 {children}
                 <Footer />
+                <CookieConsent />
             </body>
         </html>
     );
