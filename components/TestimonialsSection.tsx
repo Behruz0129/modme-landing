@@ -3,68 +3,36 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const testimonials = [
-    {
-        id: 1,
-        name: "MuhammadAli Eshonqulov",
-        position: "Asoschi, CEO",
-        avatar: "/images/avatars/avatar1.jpg",
-        comment:
-            "Yuksalish Liderlar akademiyasining boshlang`ich 2 oy davomida juda ko`plab qiyinchiliklarga duch keldik, moliyaviy hisob-kitob, kengayish va filiallarni tizimli boshqarishda juda qiynaldik. Va nihoyat jonimizga aro kirgan platforma keldi, buning nomi Modme deb ataladi. Ushbu platformani ishlatish orqali ishimiz oson ko`chdi!",
-        center: "Yuksalish liderlar akademiyasi",
-    },
-    {
-        id: 2,
-        name: "Shahzod Sobirov",
-        position: "Asoschi, CEO",
-        avatar: "/images/avatars/avatar2.jpg",
-        comment:
-            "Ushbu platforma ishni juda osonlashtiradi. Qani endi bu platformadan o`quv markazimizni yo`lga qo`yganimizdan boshlab foydalanganimizda, bizni ancha yo`qotishdan saqlab qolar edi. Haqiqatda muammolarimizni yechganligi uchun Modme CRM platformasini ishlatishni barchaga tavsiya qilaman!",
-        center: "Data Learning Center",
-    },
-    {
-        id: 3,
-        name: "Alloma Sakhiyeva",
-        position: "Asoschi, CEO",
-        avatar: "/images/avatars/avatar3.jpeg",
-        comment:
-            "Biz rosmana ishlatishimizga bir oy bo`lgan bo`lsa, Modmega o`tishimiz bilan ancha ishlarimiz yengillashdi Allohga shukr, chin dildan aytilayotgan gap. Yana ham kuch-quvvat bersin sizlarga, Modme jamoasi ishlaringizga omad!",
-        center: "Fashion Art Academy",
-    },
-    {
-        id: 4,
-        name: "Doston Nuraliyev",
-        position: "Asoschi, CEO",
-        avatar: "/images/avatars/avatar4.jpeg",
-        comment:
-            "Modme platformasini ishlatishni boshlaganimizdan bir oy o`tib o`quvchilar soni keskin oshib ketdi. Hozirda tizimlashtirishga katta e`tibor beryapmiz, nimaga? Sababi o`quv markazi qancha kengaygani sari boshqaruv qiyinlashib bormoqda edi, ammo Modmeni ishlatishni boshlaganimizdan so`ng ishimiz ancha yengillashdi. Ushbu platforma yordamida hozirda o`quv markazda nechta o`quvchi bor, qanchasi qarzdor, nechtasi ketib qolyapti, moliyaviy holat va konversiya haqida to`liq ma`lumotga ega bo`lib turaman.",
-        center: "English Life o`quv markazi",
-    },
-    {
-        id: 5,
-        name: "Sardor Davlatov",
-        position: "Asoschilardan biri",
-        avatar: "/images/avatars/avatar5.jpeg",
-        comment:
-            "Modme bizga o`quv markazimizdagi jarayonlarni avtomatlashtirishda juda katta yordam berdi va biz o`sishga erishdik. Hozirda 3 ta filialimiz bor va Modme CRM barchasini sifatli boshqarishda va shaxsiy hayotga vaqt ajratishga yordam beryapti. Men albatta har bir o`quv markaz egasiga Modme tizimini joriy etishni maslahat beraman va natija siz kutgandan ham tez bo`ladi.",
-        center: "iKnow o'quv markazi",
-    },
-    {
-        id: 6,
-        name: "Muhammadjon Uzoqov",
-        position: "O'quv markazi rahbari",
-        avatar: "/images/avatars/avatar6.png",
-        comment:
-            "Modme CRM orqali o`quv markazimizni tizimlashtiridik va natijalar biz o`ylagandan yaxshiroq bo`ldi. Hozirda o`quv markazini yanada rivojlantirish uchun marketing bo`limiga e`tibor beryapman.",
-        center: "Fast and Easy o`quv markazi",
-    },
+const AVATARS = [
+    "/images/avatars/avatar1.jpg",
+    "/images/avatars/avatar2.jpg",
+    "/images/avatars/avatar3.jpeg",
+    "/images/avatars/avatar4.jpeg",
+    "/images/avatars/avatar5.jpeg",
+    "/images/avatars/avatar6.png",
 ];
 
+type TestimonialItem = {
+    name: string;
+    position: string;
+    comment: string;
+    center: string;
+};
+
 const TestimonialsSection = () => {
+    const t = useTranslations("testimonials");
+    const rawItems = t.raw("items") as TestimonialItem[];
+    const testimonials = rawItems.map((it, idx) => ({
+        ...it,
+        id: idx + 1,
+        avatar: AVATARS[idx] ?? AVATARS[0],
+    }));
+
     const [activeTab, setActiveTab] = useState(0);
     const activeTestimonial = testimonials[activeTab];
 
@@ -75,7 +43,7 @@ const TestimonialsSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Mijozlarimiz fikrlari
+                            {t("heading")}
                         </h2>
                     </div>
                 </ScrollAnimation>

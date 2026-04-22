@@ -1,0 +1,612 @@
+{
+    "metadata": {
+        "title": "Modme - Take your learning center to the next level!",
+        "description": "Modme - The most suitable CRM system for learning centers. Manage students, groups, payments, and all other processes.",
+        "keywords": "CRM, learning center, education, management system, students, groups, payments"
+    },
+    "common": {
+        "backToHome": "Back to home",
+        "backToResources": "Back to resources",
+        "learnMore": "Learn more",
+        "viewMore": "View more",
+        "readMore": "Read more",
+        "send": "Send",
+        "write": "Write",
+        "start": "Start",
+        "loading": "Loading...",
+        "close": "Close",
+        "openMenu": "Open menu",
+        "selectLanguage": "Select language",
+        "languageLabel": "English"
+    },
+    "languages": {
+        "uz": "O'zbekcha",
+        "en": "English",
+        "ru": "Русский"
+    },
+    "navbar": {
+        "prices": "Pricing",
+        "gamification": "Gamification",
+        "support": "Support",
+        "vacancies": "Careers",
+        "demo": "Get Demo",
+        "phone": "78 777 11 00"
+    },
+    "footer": {
+        "tagline": "Professional CRM system for learning centers",
+        "about": "About us",
+        "resources": "Resources",
+        "contacts": "Contacts",
+        "social": "Social Networks",
+        "demo": "Get Demo",
+        "payment": "Make a payment",
+        "copyright": "Copyright © 2025",
+        "legal": "The services provided on the website are intended exclusively for legal entities and individual entrepreneurs and are used in business activities. The service is not intended for individuals as consumers. The Law of the Republic of Uzbekistan \"On the Protection of Consumer Rights\" does not apply to these services.",
+        "androidAlt": "Download for Android",
+        "iosAlt": "Download for iOS"
+    },
+    "hero": {
+        "title": "Take your learning center to the next level!",
+        "description": "Modme is systematic management, automation, and a digital solution. Reduce manual work, save time, and simplify management",
+        "tryNow": "Try it now – 7 days free!",
+        "salesDept": "Sales Department"
+    },
+    "clients": {
+        "title": "A trusted partner of learning centers",
+        "subtitle": "We have been growing together with educational centers for years"
+    },
+    "features": {
+        "heading": "Forget your problems!",
+        "description": "Fully systematize all processes from class scheduling to finance, automate manual work, and take control into your own hands",
+        "items": {
+            "systematize": {
+                "tag": "Systematization",
+                "title": "Organize all processes",
+                "description": "Easily manage, measure, and organize processes in a single system — Modme has all the features for it",
+                "alt": "Learning process system"
+            },
+            "leads": {
+                "tag": "Leads",
+                "title": "Multiply your student count",
+                "description": "Through a convenient interface, effectively manage communication with every client, guide them to a trial lesson, add them to groups, and control the whole process leading to the first payment",
+                "alt": "Lead management"
+            },
+            "grading": {
+                "tag": "Grading",
+                "title": "Grade and compare students",
+                "description": "Grade students in every lesson and track results in a general ranking table. Compare students by branch, group, or the whole center and identify the best results. Improve educational quality with a transparent grading system"
+            },
+            "reminders": {
+                "tag": "Reminders",
+                "title": "Plan and control tasks",
+                "description": "Create tasks and reminders for yourself and your team. View overdue, today's, and upcoming tasks separately. Completed work is saved in history and you can record the result when closing"
+            },
+            "integrations": {
+                "tag": "Integrations",
+                "title": "Even more convenient with modern technologies",
+                "description": "Connect with various useful services and systems through Modme, automate workflow processes, and increase efficiency",
+                "alt": "Technology integrations"
+            },
+            "finance": {
+                "tag": "Finance",
+                "title": "Easily manage finances",
+                "description": "Track all payments and expenses in one place, automatically calculate net profit, compute salaries, easily manage debtors, and take your learning center to the next level!",
+                "alt": "Financial management"
+            },
+            "remote": {
+                "tag": "Remote management",
+                "title": "Manage your education business from anywhere",
+                "description": "With our platform, manage your educational business metrics remotely — giving you more time to focus on growing your business!"
+            },
+            "mobile": {
+                "tag": "Mobile Apps",
+                "title": "Modern apps for students and teachers",
+                "description": "With \"Modme Students App\" and \"Modme Teachers App\", give teachers and students easy access to class schedules, payment status, lesson materials, and other important information. Improve communication efficiency and user experience"
+            }
+        }
+    },
+    "withdrawMethod": {
+        "heading": "Flexible and reliable billing",
+        "description": "Choose the most convenient of 6 different payment modes. Every transaction is transparent and performed with minimal error",
+        "example": "Example:",
+        "advantages": "Advantages:",
+        "disadvantages": "Disadvantages:",
+        "methods": {
+            "monthly": {
+                "name": "Monthly (Calendar)",
+                "description": "From the date a student is activated in a group through the end of the month, regardless of how many lessons there are, the platform automatically calculates based on the course price (or discounted price). Students' next payment is on the 1st of each month",
+                "example": "Regardless of which day in the month the student joins, they pay for the lessons remaining until the end of the month",
+                "advantages": [
+                    "Identify and control student debts",
+                    "Because payments come at the start of each month, control finances and calculate expenses in advance",
+                    "Ability to pay teachers' monthly salary on time at the beginning of each month"
+                ],
+                "disadvantages": ["Not suitable for other payment modes"]
+            },
+            "daily": {
+                "name": "Daily",
+                "description": "From the date the student is activated in the group, the platform automatically calculates the fee for each lesson based on the course price (or discounted price). Students pay for each lesson",
+                "example": "Regardless of which day in the month the student joins, they pay on each lesson day for every remaining lesson",
+                "advantages": [
+                    "Money is deducted from the student's balance per lesson, not for a whole month",
+                    "No refunds for the old group when a student moves between groups",
+                    "No money is deducted from frozen students"
+                ],
+                "disadvantages": [
+                    "Not all payments come on one day — since they happen on each lesson day, payments come gradually throughout the month"
+                ]
+            },
+            "module": {
+                "name": "Module",
+                "description": "In this mode, you can choose how many lessons should be paid by students per cycle",
+                "example": "If you set it to charge every 12 lessons, the platform will charge every 12 lessons from the group's opening date. If a student is activated at the 4th lesson, they will pay for the remaining 8 lessons in the module. The platform calculates the required payment based on the activation date",
+                "advantages": [
+                    "12 or 13 lessons in a month don't affect groups in this mode",
+                    "You can create modules (subscriptions) that fit your needs"
+                ],
+                "disadvantages": [
+                    "Not all payments come on one day — some groups' modules fall in the middle of the month"
+                ]
+            },
+            "groupstart": {
+                "name": "Group start date",
+                "description": "In this mode, the payment day for students in a group is considered the group's start date",
+                "example": "If the group opens on the 14th, then the 14th of each month becomes the payment day. Students pay a full month's fee based on the course price (or discounted price)",
+                "advantages": [
+                    "If new groups open after accumulating enough students, deducting from the group start date ensures you get full payment regardless of when in the month it happens",
+                    "The student's payment date always stays the same (the group start date)"
+                ],
+                "disadvantages": [
+                    "Not all payments come on one day — some groups' start dates fall on various dates in the month"
+                ]
+            },
+            "coursepayment": {
+                "name": "Course payment",
+                "description": "In this mode, the student pays a one-time fee for the entire duration of the course",
+                "example": "For a 6-month course with a total fee of 6,000,000 soums, upon the first activation, the full 6,000,000 soums is automatically entered as a debt on the platform",
+                "advantages": [
+                    "Great for online courses or education businesses that charge up-front for the entire course"
+                ],
+                "disadvantages": ["Not suitable for other payment modes"]
+            },
+            "individual": {
+                "name": "Individual",
+                "description": "In this mode, whenever the student is activated in the group, the platform automatically deducts money on that same date each month",
+                "example": "If the student is activated on the 15th, the 15th of each month becomes the payment day",
+                "advantages": [
+                    "Provides the ability to pay on the same date each month from the student's arrival date"
+                ],
+                "disadvantages": [
+                    "Not all payments come on one day — some students' payments fall on different dates in the month"
+                ]
+            }
+        }
+    },
+    "advantages": {
+        "heading": "What will you get with us?",
+        "description": "Modme — is the best choice for your education business!",
+        "support": {
+            "title": "Technical support",
+            "description": "Dedicated managers assigned to you contribute to your success and provide continuous support"
+        },
+        "consultation": {
+            "title": "Free Online Consultation",
+            "description": "We offer a free consultation service to grow your learning center. Our experts will suggest the best solutions for you"
+        },
+        "security": {
+            "title": "Security",
+            "description": "Your data is protected by us with three-layer security. Your trust matters to us!"
+        },
+        "interface": {
+            "title": "Convenient Interface",
+            "description": "With a user-friendly and easy-to-use interface, you can learn and launch the platform in a short time!"
+        }
+    },
+    "statistics": {
+        "heading": "Modme users in numbers",
+        "centers": "Learning centers",
+        "branches": "Branches",
+        "groups": "Groups",
+        "students": "Students"
+    },
+    "testimonials": {
+        "heading": "Our customers' feedback",
+        "items": [
+            {
+                "name": "MuhammadAli Eshonqulov",
+                "position": "Founder, CEO",
+                "comment": "In the first 2 months of Yuksalish Leaders Academy, we faced many difficulties — in financial accounting, expansion, and managing branches systematically. Then a platform that saved us came along: Modme. Using this platform made our work much easier!",
+                "center": "Yuksalish Leaders Academy"
+            },
+            {
+                "name": "Shahzod Sobirov",
+                "position": "Founder, CEO",
+                "comment": "This platform makes work much easier. I wish we had used it from the very start of our learning center — it would have saved us many losses. Because it truly solved our problems, I recommend Modme CRM to everyone!",
+                "center": "Data Learning Center"
+            },
+            {
+                "name": "Alloma Sakhiyeva",
+                "position": "Founder, CEO",
+                "comment": "We've only been using it properly for a month, but since switching to Modme our work became much easier, thank God — I'm saying it sincerely. May Allah give you even more strength, Modme team — good luck with your work!",
+                "center": "Fashion Art Academy"
+            },
+            {
+                "name": "Doston Nuraliyev",
+                "position": "Founder, CEO",
+                "comment": "A month after starting to use Modme, student numbers increased dramatically. We pay great attention to systematizing now — because as the learning center grew, management became harder, but after using Modme our work became much easier. With this platform, I always have complete information on how many students there are, how many are in debt, how many are leaving, as well as the financial status and conversion rates.",
+                "center": "English Life learning center"
+            },
+            {
+                "name": "Sardor Davlatov",
+                "position": "Co-founder",
+                "comment": "Modme was a huge help in automating our learning center's processes and we were able to grow. Currently we have 3 branches and Modme CRM is helping us manage all of them quality-wise while also giving us time for personal life. I definitely recommend every learning center owner to implement Modme — results will come faster than you expect.",
+                "center": "iKnow learning center"
+            },
+            {
+                "name": "Muhammadjon Uzoqov",
+                "position": "Learning center director",
+                "comment": "We systematized our learning center with Modme CRM and the results were better than we thought. Now I'm focusing on marketing to further develop the learning center.",
+                "center": "Fast and Easy learning center"
+            }
+        ]
+    },
+    "faq": {
+        "heading": "Frequently asked questions",
+        "items": [
+            {
+                "question": "What is Modme and who is it for?",
+                "answer": "Modme — is a CRM system designed for educational centers that helps automate student registration, financial management, lesson scheduling, reporting, and more.\n\nModme is suitable for private learning centers, courses, tutoring centers, and any other educational institutions"
+            },
+            {
+                "question": "How detailed are the financial reports?",
+                "answer": "Fully automated: every payment, discount, debt, monthly report, and transaction is reflected in the system"
+            },
+            {
+                "question": "Is the application cloud-based or does it need to be installed on a computer?",
+                "answer": "Modme runs entirely in the cloud — accessible from any device, anywhere"
+            },
+            {
+                "question": "Is there a trial period?",
+                "answer": "Yes, we have a free demo version — you can try and use it for up to 7 days"
+            },
+            {
+                "question": "How can I pay?",
+                "answer": "You can pay for the platform through the following link: ",
+                "linkText": "Make a payment"
+            }
+        ]
+    },
+    "about": {
+        "metaTitle": "About us | Modme",
+        "metaDescription": "Modme — CRM system specifically designed for the largest learning centers in Uzbekistan. Learn more about our team and mission.",
+        "history": {
+            "heading": "Our history",
+            "subtitle": "Milestones of our company's development",
+            "items": [
+                {
+                    "year": "2020",
+                    "title": "Founding",
+                    "description": "Modme was founded in 2020. The company's founders are Jahongir Pulatov, founder of Cambridge Learning Center, and Ruslan Yuldashev, founder of Mars IT School. They created the Modme CRM platform to automate internal processes of educational centers and simplify management"
+                },
+                {
+                    "year": "2021",
+                    "title": "Our project reached break-even",
+                    "description": "The project covers its own expenses. An important milestone for our system that helped simplify the lives of over 40 learning centers and 10,000+ students in 15 months"
+                },
+                {
+                    "year": "2022",
+                    "title": "Rapid growth and first investments",
+                    "description": "In 2022, Modme experienced significant growth. AmoCRM founder Mikhail Tokovinin invested in the company, which gave a boost to the project's development"
+                },
+                {
+                    "year": "2023",
+                    "title": "Major investment and international expansion",
+                    "description": "In 2023, Modme received a $100,000 investment from the UzVC fund. This fund, partnering with London's Sturgeon Capital, valued the Modme project at $1,250,000.\n\nThe company also started entering the Indonesian market and expanded its operations internationally"
+                },
+                {
+                    "year": "2024",
+                    "title": "Expansion of products and services",
+                    "description": "Modme launched its own mobile app, giving learning centers the ability to use the app with their own logo and name. Additionally, the `Modme Audit` service was introduced, allowing learning centers to analyze their performance and improve efficiency"
+                },
+                {
+                    "year": "2025",
+                    "title": "Today",
+                    "description": "Modme is helping learning centers automate their marketing, finance, sales, and customer service departments through its CRM and LMS platforms"
+                }
+            ]
+        },
+        "founders": {
+            "heading": "Founders",
+            "subtitle": "The people who created the Modme platform",
+            "jahongir": {
+                "name": "Jahongir Pulatov",
+                "position": "Founder and CEO",
+                "points": [
+                    "Founder of \"Cambridge\" learning center",
+                    "Founder of \"Jahon School\" project",
+                    "Founder of \"Selfmade\" project",
+                    "Founder of \"Modme\" project"
+                ]
+            },
+            "ruslan": {
+                "name": "Ruslan Yuldashev",
+                "position": "Founder and COO",
+                "points": [
+                    "Founder of \"Mars IT School\"",
+                    "Founder of \"Modme\" project",
+                    "Former employee of Yandex Education (Silicon Valley)"
+                ]
+            }
+        },
+        "team": {
+            "heading": "Our Team",
+            "items": [
+                {
+                    "name": "Abdullo Mustafaev",
+                    "position": "Project Manager",
+                    "description": "Head of the company, defining strategic directions"
+                },
+                {
+                    "name": "Behruz Berdiyev",
+                    "position": "Product Manager",
+                    "description": "Drives platform development and designs new features"
+                },
+                {
+                    "name": "Toshkenboyev Yodgorbek",
+                    "position": "Sales Manager",
+                    "description": "Working with clients and developing new partnerships"
+                },
+                {
+                    "name": "Faxriddin Ergashev",
+                    "position": "Support Manager",
+                    "description": "Technical help and support for clients"
+                },
+                {
+                    "name": "Abrorbek Alijonov",
+                    "position": "Customer Success Manager",
+                    "description": "Design and customer support department"
+                },
+                {
+                    "name": "Mirmuhsin Hamroyev",
+                    "position": "Team Lead",
+                    "description": "Leading the software development team"
+                },
+                {
+                    "name": "Umarov Shoxruh",
+                    "position": "Backend Developer",
+                    "description": "Backend developer"
+                },
+                {
+                    "name": "Murodjonov Samandar",
+                    "position": "Backend Developer",
+                    "description": "Backend developer"
+                },
+                {
+                    "name": "Saidakbarov Fayzullo",
+                    "position": "Frontend Developer",
+                    "description": "Frontend developer"
+                }
+            ]
+        },
+        "mission": {
+            "heading": "Mission and values",
+            "missionTitle": "Our mission",
+            "missionText": "We help educational institutions become stronger and more efficient — providing management, teaching, and growth processes through a simple and digitized ecosystem. Our goal is to make quality education accessible, easy, and technological for all participants of the educational process",
+            "values": [
+                {
+                    "title": "Innovation",
+                    "description": "We always support new technologies and approaches and put all our strength into modernizing the educational process"
+                },
+                {
+                    "title": "Quality",
+                    "description": "We strive to provide our customers with high-quality service and continuously improve our platform"
+                },
+                {
+                    "title": "Collaboration",
+                    "description": "We work closely with our customers and help them achieve success"
+                },
+                {
+                    "title": "Growth",
+                    "description": "We provide all the opportunities needed to increase students' knowledge and help them achieve success"
+                }
+            ]
+        }
+    },
+    "contacts": {
+        "heading": "Contacts",
+        "description": "Use the following contacts to get in touch with Modme CRM.",
+        "phone": "Phone",
+        "support": "Support",
+        "manager": "Project Manager",
+        "sales": "Sales Department"
+    },
+    "demo": {
+        "heading": "Get Demo",
+        "nameLabel": "Your name",
+        "namePlaceholder": "Enter your name",
+        "centerLabel": "Center name",
+        "centerPlaceholder": "Enter center name",
+        "phoneLabel": "Phone number",
+        "paymentModeLabel": "Payment mode",
+        "paymentModePlaceholder": "Select payment mode",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "At least 8 characters",
+        "privacyConsent": "I have read the {link} and agree to the processing of personal data",
+        "privacyLink": "Privacy Policy",
+        "submit": "Get Demo",
+        "paymentModes": {
+            "daily": "Daily",
+            "monthly": "Monthly",
+            "groupstart": "Group start date",
+            "course": "Whole course",
+            "module": "Module",
+            "individual": "Individual"
+        }
+    },
+    "vacancies": {
+        "heading": "Careers",
+        "subtitle": "Join the Modme team and help develop education technology!",
+        "languageRequirements": "Language requirements:",
+        "responsibilities": "Responsibilities:",
+        "requirements": "Requirements:",
+        "offer": "We offer:",
+        "salary": "Salary:",
+        "applyBtn": "Submit application",
+        "contactTelegram": "Contact via Telegram",
+        "noMore": "No other openings yet. But you can send your resume to {link}.",
+        "items": [
+            {
+                "title": "Sales Manager",
+                "location": "Tashkent",
+                "type": "Offline",
+                "languages": ["Uzbek", "Russian (required)"],
+                "department": "Sales Department",
+                "description": "We are looking for an experienced and communicative sales manager to join the Modme team. You will work with learning centers and present our CRM system to them.",
+                "responsibilities": [
+                    "Finding new customers and establishing contact with them",
+                    "Presenting the Modme CRM platform to learning centers",
+                    "Conducting negotiations with clients and drafting contracts",
+                    "Maintaining the customer database in CRM",
+                    "Meeting monthly sales targets",
+                    "Developing long-term relationships with clients"
+                ],
+                "requirements": [
+                    "At least 1 year of experience in sales",
+                    "Good command of Russian (required)",
+                    "Knowledge of Uzbek",
+                    "Communication and persuasion skills",
+                    "Results-oriented",
+                    "Experience with CRM systems (preferred)",
+                    "B2B sales experience (preferred)"
+                ],
+                "benefits": [
+                    "Competitive salary + bonuses",
+                    "Professional growth opportunities",
+                    "Modern office environment",
+                    "Friendly team",
+                    "Career growth opportunities"
+                ],
+                "salary": "Negotiable (base salary + sales bonuses)"
+            }
+        ]
+    },
+    "gamification": {
+        "heading": "Gamification",
+        "description": "Make the learning process engaging and effective. Create motivation for your students and lift their results!",
+        "watchVideo": "Watch video",
+        "featuresHeading": "Key features",
+        "featuresSubtitle": "A modern system to boost student engagement",
+        "features": [
+            {
+                "title": "Modern gamification system",
+                "description": "Like many leading learning centers, your platform also offers a competitive and modern approach through coin-based rewards"
+            },
+            {
+                "title": "Strengthen the brand through word-of-mouth marketing",
+                "description": "Distributing merchandise with the learning center's logo in the shop for coins increases advertising impact through students' own promotion"
+            },
+            {
+                "title": "Boost student motivation",
+                "description": "Coins awarded for attendance, grades, or homework completion encourage students to be more active"
+            },
+            {
+                "title": "Reward system for referring friends",
+                "description": "Students can earn coins by bringing their friends to the center, automatically strengthening marketing"
+            },
+            {
+                "title": "Real rewards via the in-app store",
+                "description": "Adding various products to the learning center shop and buying them with coins increases interest in the learning process"
+            },
+            {
+                "title": "Flexible and manually controlled system",
+                "description": "The ability to manually set coin amounts, accept items, reduce or reconfigure makes the platform adaptable to any center"
+            }
+        ],
+        "ctaTitle": "Install it now",
+        "ctaText": "Try out the new Gamification module now",
+        "ctaBtn": "Get started"
+    },
+    "prices": {
+        "heading": "Pricing",
+        "tariff": "Plan",
+        "month": "month",
+        "plans": {
+            "start": {
+                "name": "Start",
+                "description": "0-100 students"
+            },
+            "basic": {
+                "name": "Basic",
+                "description": "100-300 students"
+            },
+            "pro": {
+                "name": "Pro",
+                "description": "300-1000 students"
+            },
+            "premium": {
+                "name": "Premium",
+                "description": "1000+ students"
+            }
+        },
+        "paymentCtaTitle": "Pay for the platform",
+        "paymentCtaText": "Safe and convenient payment — complete in a few steps",
+        "paymentCtaBtn": "Make a payment",
+        "bonus9": "+1 month bonus on the 9-month plan",
+        "bonus12": "+2 months bonus on the 12-month plan",
+        "gamificationTitle": "Gamification module",
+        "gamificationText": "A special module to boost student motivation. 150,000 soums per month.",
+        "gamificationBtn": "Learn more"
+    },
+    "support": {
+        "heading": "Help Center",
+        "subtitle": "All help materials and guides for the Modme platform",
+        "videoLessons": {
+            "title": "Video Lessons",
+            "description": "Video tutorials on the Modme platform"
+        },
+        "documentation": {
+            "title": "Documentation",
+            "description": "Complete guide to the Modme platform"
+        },
+        "techSupport": {
+            "title": "Modme Support",
+            "description": "Contact our dedicated technical support department"
+        }
+    },
+    "notFound": {
+        "heading": "Page not found",
+        "description": "Sorry, the page you're looking for doesn't exist or may have been removed."
+    },
+    "resources": {
+        "label": "Resources",
+        "heading": "Legal information",
+        "description": "Review all official and legal information related to the operation of the Modme CRM platform. The information below provides our company's main details.",
+        "documentsHeading": "Documents",
+        "fields": {
+            "executor": "Executor",
+            "tin": "TIN",
+            "address": "Legal address",
+            "phone": "Phone",
+            "email": "E-mail"
+        },
+        "documents": {
+            "oferta": "Public offer",
+            "tariffs": "Annex No. 1 — Tariffs",
+            "technicalSupport": "Annex No. 2 — Technical Support Policy (SLA)",
+            "privacy": "Annex No. 3 — Privacy and Personal Data Processing Policy",
+            "cybersecurity": "Annex No. 4 — Public Part of the Cybersecurity Policy",
+            "certificate": "Certificate of registration of personal data database"
+        }
+    },
+    "privacyPolicy": {
+        "fullDocument": "Full document"
+    },
+    "videoCourses": {
+        "view": "View",
+        "back": "Back",
+        "prev": "Previous",
+        "next": "Next",
+        "notFound": "Video not found",
+        "lessonsCount": "{count} video lessons"
+    }
+}

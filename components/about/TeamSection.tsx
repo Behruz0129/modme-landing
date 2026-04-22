@@ -2,76 +2,39 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 
-const team = [
-    {
-        name: "Abdullo Mustafaev",
-        position: "Project Manager",
-        image: "/images/about/team-projm.jpg",
-        description:
-            "Kompaniya rahbari va strategik yo'nalishlarni belgilovchi",
-    },
-    {
-        name: "Behruz Berdiyev",
-        position: "Product Manager",
-        image: "/images/about/team-support-design.jpg",
-        description:
-            "Platforma rivojlanishini boshqaruvchi va yangi funksiyalarni loyihalovchi",
-    },
-    {
-        name: "Toshkenboyev Yodgorbek",
-        position: "Sales Manager",
-        image: "/images/about/team-sales.jpg",
-        description:
-            "Mijozlar bilan ishlash va yangi hamkorliklarni rivojlantirish",
-    },
-    {
-        name: "Faxriddin Ergashev",
-        position: "Support Manager",
-        image: "/images/about/team-support.jpg",
-        description: "Mijozlar uchun texnik yordam va qo'llab-quvvatlash",
-    },
-    {
-        name: "Abrorbek Alijonov",
-        position: "Customer Succes Manager",
-        image: "/images/about/team-csm.jpg",
-        description: "Dizayn va mijozlar qo'llab-quvvatlash bo'limi",
-    },
-    {
-        name: "Mirmuhsin Hamroyev",
-        position: "Team Lead",
-        image: "/images/about/team-lead.jpg",
-        description: "Dasturiy ta'minot jamoasini boshqaruvchi",
-    },
-    {
-        name: "Umarov Shoxruh",
-        position: "Backend Developer",
-        image: "/images/about/team-backend-1.jpg",
-        description: "Backend dasturchi",
-    },
-    {
-        name: "Murodjonov Samandar",
-        position: "Backend Developer",
-        image: "/images/about/team-backend-2.jpg",
-        description: "Backend dasturchi",
-    },
-    {
-        name: "Saidakbarov Fayzullo",
-        position: "Frontend Developer",
-        image: "/images/about/team-frontend.jpg",
-        description: "Frontend dasturchi",
-    },
+const IMAGES = [
+    "/images/about/team-projm.jpg",
+    "/images/about/team-support-design.jpg",
+    "/images/about/team-sales.jpg",
+    "/images/about/team-support.jpg",
+    "/images/about/team-csm.jpg",
+    "/images/about/team-lead.jpg",
+    "/images/about/team-backend-1.jpg",
+    "/images/about/team-backend-2.jpg",
+    "/images/about/team-frontend.jpg",
 ];
 
+type TeamMember = {
+    name: string;
+    position: string;
+    description: string;
+};
+
 const TeamSection = () => {
+    const t = useTranslations("about.team");
+    const items = t.raw("items") as TeamMember[];
+    const team = items.map((m, i) => ({ ...m, image: IMAGES[i] }));
+
     return (
         <section className="w-full py-16 md:py-20 lg:py-24 overflow-hidden bg-[#fcfcfc]">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Bizning Jamoa
+                            {t("heading")}
                         </h2>
                     </div>
                 </ScrollAnimation>

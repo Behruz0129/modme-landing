@@ -1,4 +1,4 @@
-import { Variants } from "framer-motion";
+import { Transition, Variants } from "framer-motion";
 
 export const fadeInUp: Variants = {
     initial: { opacity: 0, y: 20 },
@@ -18,8 +18,8 @@ export const fadeIn: Variants = {
     exit: { opacity: 0 },
 };
 
-export const getTransition = (delay: number = 0) => ({
+export const getTransition = (delay: number = 0): Transition => ({
     duration: 0.6,
     delay,
-    ease: "easeOut",
+    ease: [0.4, 0, 0.2, 1],
 });

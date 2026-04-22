@@ -2,36 +2,39 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 
-const statistics = [
-    {
-        title: "O'quv markazlari",
-        value: 200,
-        suffix: "+",
-        color: "from-[#ffd03d] to-[#ff8000]",
-    },
-    {
-        title: "Filiallar",
-        value: 450,
-        suffix: "+",
-        color: "from-[#ff8000] to-[#ffd03d]",
-    },
-    {
-        title: "Guruhlar",
-        value: 15000,
-        suffix: "+",
-        color: "from-[#ffd03d] to-[#ff8000]",
-    },
-    {
-        title: "O'quvchilar",
-        value: 300000,
-        suffix: "+",
-        color: "from-[#ff8000] to-[#ffd03d]",
-    },
-];
-
 const StatisticsSection = () => {
+    const t = useTranslations("statistics");
+
+    const statistics = [
+        {
+            title: t("centers"),
+            value: 200,
+            suffix: "+",
+            color: "from-[#ffd03d] to-[#ff8000]",
+        },
+        {
+            title: t("branches"),
+            value: 450,
+            suffix: "+",
+            color: "from-[#ff8000] to-[#ffd03d]",
+        },
+        {
+            title: t("groups"),
+            value: 15000,
+            suffix: "+",
+            color: "from-[#ffd03d] to-[#ff8000]",
+        },
+        {
+            title: t("students"),
+            value: 300000,
+            suffix: "+",
+            color: "from-[#ff8000] to-[#ffd03d]",
+        },
+    ];
+
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
     const [counts, setCounts] = useState(statistics.map(() => 0));
@@ -67,7 +70,7 @@ const StatisticsSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Modme foydalanuvchilari raqamlarda
+                            {t("heading")}
                         </h2>
                     </div>
                 </ScrollAnimation>
