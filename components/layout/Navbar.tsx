@@ -1,35 +1,31 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Headset, Instagram, Phone } from "lucide-react";
-import { FaTelegramPlane } from "react-icons/fa";
-import { usePathname } from "next/navigation";
+import { Phone } from "lucide-react";
+import { usePathname, Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const navLinks = [
-    { name: "Narxlar", href: "/prices" },
-    { name: "Gamification", href: "/gamification" },
-    { name: "Qo'llab-quvvatlash", href: "/support" },
-    { name: "Vakansiyalar", href: "/vacancies" },
-];
-
-// Hamburger menu animatsiya komponenti
 const MenuButton = ({
     isOpen,
     toggle,
     isGamificationPage,
+    closeLabel,
+    openLabel,
 }: {
     isOpen: boolean;
     toggle: () => void;
     isGamificationPage: boolean;
+    closeLabel: string;
+    openLabel: string;
 }) => {
     return (
         <button
             onClick={toggle}
             className="flex flex-col justify-center items-center h-10 w-10 relative z-50 focus:outline-none lg:hidden"
-            aria-label={isOpen ? "Yopish" : "Menu ochish"}
+            aria-label={isOpen ? closeLabel : openLabel}
         >
             <div className="relative w-6 h-5">
                 <motion.span
@@ -73,13 +69,16 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
+    const t = useTranslations("navbar");
+    const tCommon = useTranslations("common");
     const isGamificationPage = pathname?.startsWith("/gamification");
 
-    // Pathname va isGamificationPage ni tekshirish
-    useEffect(() => {
-        console.log("Current pathname:", pathname);
-        console.log("isGamificationPage:", isGamificationPage);
-    }, [pathname, isGamificationPage]);
+    const navLinks = [
+        { name: t("prices"), href: "/prices" },
+        { name: t("gamification"), href: "/gamification" },
+        { name: t("support"), href: "/support" },
+        { name: t("vacancies"), href: "/vacancies" },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -90,7 +89,6 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Mobile menu ochilganda body scrollni bloklash
     useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = "hidden";
@@ -117,7 +115,6 @@ const Navbar = () => {
         >
             <div className="w-full max-w-[1200px] mx-auto px-2 sm:px-4 lg:px-6">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
                     <Link
                         href="/"
                         className="relative w-[120px] h-[40px] select-none cursor-pointer"
@@ -135,12 +132,10 @@ const Navbar = () => {
                         />
                     </Link>
 
-                    {/* Desktop Navigation */}
                     <div className="hidden lg:flex items-center gap-8">
-                        {/* Navigation Links */}
                         {navLinks.map((link) => (
                             <Link
-                                key={link.name}
+                                key={link.href}
                                 href={link.href}
                                 className={`text-lg font-medium transition-all relative group ${
                                     pathname === link.href
@@ -164,9 +159,7 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    {/* CTA */}
                     <div className="hidden lg:flex items-center gap-4">
-                        {/* Phone Number */}
                         <a
                             href="tel:+998787771100"
                             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
@@ -176,14 +169,12 @@ const Navbar = () => {
                             }`}
                         >
                             <Phone className="w-4 h-4" />
-                            <span>78 777 11 00</span>
+                            <span>{t("phone")}</span>
                         </a>
 
-                        {/* Demo Button */}
-                        <Link
-                            href="/demo"
-                            className="cursor-pointer"
-                        >
+                        <LanguageSwitcher dark={!!isGamificationPage} />
+
+                        <Link href="/demo" className="cursor-pointer">
                             <button
                                 className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 rounded-md px-6 has-[>svg]:px-4 ${
                                     isGamificationPage
@@ -191,20 +182,25 @@ const Navbar = () => {
                                         : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
                                 } text-white cursor-pointer`}
                             >
-                                Demo olish
+                                {t("demo")}
                             </button>
                         </Link>
                     </div>
 
-                    {/* Mobile Menu Button */}
-                    <MenuButton
-                        isOpen={isMobileMenuOpen}
-                        toggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        isGamificationPage={isGamificationPage}
-                    />
+                    <div className="lg:hidden flex items-center gap-2">
+                        <LanguageSwitcher dark={!!isGamificationPage} />
+                        <MenuButton
+                            isOpen={isMobileMenuOpen}
+                            toggle={() =>
+                                setIsMobileMenuOpen(!isMobileMenuOpen)
+                            }
+                            isGamificationPage={!!isGamificationPage}
+                            closeLabel={tCommon("close")}
+                            openLabel={tCommon("openMenu")}
+                        />
+                    </div>
                 </div>
 
-                {/* Mobile Menu */}
                 <AnimatePresence>
                     {isMobileMenuOpen && (
                         <motion.div
@@ -222,10 +218,9 @@ const Navbar = () => {
                         >
                             <div className="container mx-auto px-4 py-4">
                                 <div className="flex flex-col space-y-4">
-                                    {/* Navigation Links */}
                                     {navLinks.map((link) => (
                                         <Link
-                                            key={link.name}
+                                            key={link.href}
                                             href={link.href}
                                             className={`text-lg font-medium relative overflow-hidden group ${
                                                 isGamificationPage
@@ -247,7 +242,6 @@ const Navbar = () => {
                                         </Link>
                                     ))}
 
-                                    {/* Phone Number */}
                                     <div className="mt-4">
                                         <a
                                             href="tel:+998787771100"
@@ -258,11 +252,10 @@ const Navbar = () => {
                                             }`}
                                         >
                                             <Phone className="w-4 h-4" />
-                                            <span>78 777 11 00</span>
+                                            <span>{t("phone")}</span>
                                         </a>
                                     </div>
 
-                                    {/* CTA Button */}
                                     <div className="mt-2">
                                         <Link
                                             href="/demo"
@@ -275,7 +268,7 @@ const Navbar = () => {
                                                         : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
                                                 } text-white py-3 px-6 rounded-md font-bold transition-all`}
                                             >
-                                                Demo olish
+                                                {t("demo")}
                                             </button>
                                         </Link>
                                     </div>

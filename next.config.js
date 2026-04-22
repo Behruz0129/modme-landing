@@ -1,9 +1,16 @@
+const createNextIntlPlugin = require("next-intl/plugin");
+
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
         unoptimized: true,
     },
-    trailingSlash: true,
+    turbopack: {
+        root: __dirname,
+    },
+    outputFileTracingRoot: __dirname,
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

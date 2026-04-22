@@ -3,12 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { PhoneCall, X, Menu } from "lucide-react";
+import { PhoneCall } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { fadeInUp, fadeInScale, getTransition } from "@/lib/animations";
 import { heroButtonStyles, sectionStyles } from "@/lib/styles";
 
 const HeroSection = () => {
     const [isLoaded, setIsLoaded] = useState(false);
+    const t = useTranslations("hero");
     const screen2Ref = useRef(null);
     const screen3Ref = useRef(null);
     const isScreen2InView = useInView(screen2Ref, { once: false, amount: 0.3 });
@@ -30,14 +32,10 @@ const HeroSection = () => {
                         className="mb-6 md:mb-8"
                     >
                         <h1 className={sectionStyles.heading}>
-                            O'quv markazingizni yangi <br /> bosqichga olib
-                            chiqing!
+                            {t("title")}
                         </h1>
                         <p className={sectionStyles.description}>
-                            Modme - bu tizimli boshqaruv, avtomatlashtirish va
-                            raqamli yechim. Qo'lda bajaradigan ishlarni
-                            qisqartiring, vaqtni tejang va boshqaruvni
-                            soddalashtiring
+                            {t("description")}
                         </p>
                     </motion.div>
 
@@ -52,17 +50,9 @@ const HeroSection = () => {
                             <button
                                 className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-md font-bold transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-[#181c23] text-[#181c23] shadow-xs hover:bg-[#181c23]/90 h-9 px-4 py-2 has-[>svg]:px-3 ${heroButtonStyles.primary}`}
                             >
-                                Hoziroq sinab ko'ring – 7 kun bepul!
+                                {t("tryNow")}
                             </button>
                         </a>
-
-                        {/* <a href="https://t.me/modme_sales" target="_blank" className="flex-1 sm:flex-none">
-                            <button
-                                className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-md font-bold transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-[#181c23] text-[#181c23] shadow-xs hover:bg-[#181c23]/90 h-9 px-4 py-2 has-[>svg]:px-3 ${heroButtonStyles.primary}`}
-                            >
-                                Hoziroq sinab ko'ring – 7 kun bepul!
-                            </button>
-                        </a> */}
 
                         <a
                             href="https://t.me/modme_sales"
@@ -73,7 +63,7 @@ const HeroSection = () => {
                                 className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-md font-bold transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 ${heroButtonStyles.secondary}`}
                             >
                                 <PhoneCall size={20} />
-                                <span>Sotuv bo'limi</span>
+                                <span>{t("salesDept")}</span>
                             </button>
                         </a>
                     </motion.div>

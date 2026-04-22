@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 
-// 3D Card компоненти
 const Card3DComponent = ({
     children,
     className = "",
@@ -26,7 +26,6 @@ const Card3DComponent = ({
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
 
-        // Курсор позициясига кўра эгилиш ҳисоблаш
         const rotateYValue = ((e.clientX - centerX) / (rect.width / 2)) * 5;
         const rotateXValue = ((centerY - e.clientY) / (rect.height / 2)) * 5;
 
@@ -58,27 +57,23 @@ const Card3DComponent = ({
 };
 
 const FeaturesSection = () => {
+    const t = useTranslations("features");
+
     return (
         <section className="w-full py-16 md:py-20 lg:py-24 overflow-hidden bg-[#fcfcfc]">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12 mb-14 md:mb-16 lg:mb-20">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] max-w-md lg:max-w-lg">
-                            Muammolarni unuting!{" "}
+                            {t("heading")}
                         </h2>
                         <p className="text-base md:text-lg text-[#a8a8a8] max-w-md lg:max-w-lg">
-                            Dars jadvalidan moliyagacha bo'lgan barcha
-                            jarayonlarni to'liq tizimlashtiring, qo'lda
-                            qilinadigan ishlarni avtomatlashtiring va nazoratni
-                            o'z qo'lingizga oling
+                            {t("description")}
                         </p>
                     </div>
                 </ScrollAnimation>
 
-                {/* Bento Grid Features */}
                 <div className="grid grid-cols-12 gap-6 lg:gap-8">
-                    {/* Feature 1 - Tizimlashtirish - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.2}
@@ -87,20 +82,18 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF8E8] text-[#894B00] font-medium rounded-xl mb-6">
-                                Tizimlashtirish
+                                {t("items.systematize.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Barcha jarayonlarni tartibga soling
+                                {t("items.systematize.title")}
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Jarayonlarni yagona tizimda oson boshqarishing,
-                                o'lchang va tartibga soling, bu uchun esa
-                                Modmeda barcha funksiyalar mavjud
+                                {t("items.systematize.description")}
                             </p>
                             <div className="mt-auto relative w-full h-[250px] overflow-hidden rounded-lg">
                                 <Image
                                     src="/images/features/guruhlar.webp"
-                                    alt="O'quv jarayoni tizimi"
+                                    alt={t("items.systematize.alt")}
                                     fill
                                     className="object-cover"
                                 />
@@ -108,7 +101,6 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 2 - Lidlar - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.3}
@@ -117,22 +109,18 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF2F2] text-[#C70036] font-medium rounded-xl mb-6">
-                                Lidlar
+                                {t("items.leads.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                O'quvchi sonini bir necha barobar oshiring
+                                {t("items.leads.title")}
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Qulay interfeys orqali har bir mijoz bilan
-                                aloqani samarali boshqarish, ularni sinov
-                                darsiga yo'naltirish, guruhlarga qo'shish va
-                                birinchi to'lovga olib kelish jarayonlarini
-                                to'liq nazorat qiling
+                                {t("items.leads.description")}
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
                                     src="/images/features/lidlar.webp"
-                                    alt="Lidlar boshqaruvi"
+                                    alt={t("items.leads.alt")}
                                     fill
                                     className="object-cover"
                                 />
@@ -140,7 +128,6 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 3 - Baholash - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.4}
@@ -149,23 +136,17 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF5E6] text-[#B35A00] font-medium rounded-xl mb-6">
-                                Baholash
+                                {t("items.grading.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                O'quvchilarni baholang va taqqoslang
+                                {t("items.grading.title")}
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                Har bir darsda o'quvchilarga baho qo'ying va 
-                                umumiy reyting jadvalida natijalarni kuzating.
-                                Filial, guruh yoki butun markaz bo'yicha 
-                                o'quvchilarni solishtiring va eng yaxshi 
-                                natijalarni aniqlang. Shaffof baholash tizimi 
-                                orqali ta'lim sifatini oshiring
+                                {t("items.grading.description")}
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 4 - Eslatmalar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.5}
@@ -174,22 +155,17 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#E8F5FF] text-[#0066CC] font-medium rounded-xl mb-6">
-                                Eslatmalar
+                                {t("items.reminders.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Vazifalarni rejalashtiring va nazorat qiling
+                                {t("items.reminders.title")}
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                O'zingiz va jamoangiz uchun task va eslatmalar 
-                                yarating. Muddati o'tgan, bugungi va kelgusi 
-                                vazifalarni alohida ko'ring. Bajarilgan ishlar 
-                                tarixda saqlanadi va yopishda natijani yozib 
-                                qoldiring
+                                {t("items.reminders.description")}
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 5 - Integratsiyalar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.6}
@@ -198,20 +174,18 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F5F0FF] text-[#6E11B0] font-medium rounded-xl mb-6">
-                                Integratsiyalar
+                                {t("items.integrations.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Zamonaviy texnologiyalar bilan yanada qulayroq
+                                {t("items.integrations.title")}
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Modme orqali turli foydali xizmatlar va tizimlar
-                                bilan bog'lanib, ish jarayonlarini
-                                avtomatlashtiring va samaradorlikni oshiring
+                                {t("items.integrations.description")}
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
                                     src="/images/features/integratsiyalar.webp"
-                                    alt="Texnologik integratsiyalar"
+                                    alt={t("items.integrations.alt")}
                                     fill
                                     className="object-cover"
                                 />
@@ -219,7 +193,6 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 6 - Moliya - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.7}
@@ -228,22 +201,18 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0FFF5] text-[#01662F] font-medium rounded-xl mb-6">
-                                Moliya
+                                {t("items.finance.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Moliyani oson boshqaring{" "}
+                                {t("items.finance.title")}
                             </h3>
                             <p className="text-[#4A5564] mb-6 text-base">
-                                Barcha to'lovlar va xarajatlarni bir joyda
-                                yuritish, sof foydani avtomatik aniqlash,
-                                oyliklarni hisoblash, qarzdorlarni oson
-                                boshqarish orqali o'quv markazingizni keyingi
-                                darajaga olib chiqing!
+                                {t("items.finance.description")}
                             </p>
                             <div className="mt-auto relative w-full h-[300px] overflow-hidden rounded-lg">
                                 <Image
                                     src="/images/features/moliya.webp"
-                                    alt="Moliyaviy boshqaruv"
+                                    alt={t("items.finance.alt")}
                                     fill
                                     className="object-cover"
                                 />
@@ -251,7 +220,6 @@ const FeaturesSection = () => {
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 7 - Masofaviy boshqaruv - 7/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.8}
@@ -260,22 +228,17 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#F0F6FF] text-[#193CB8] font-medium rounded-xl mb-6">
-                                Masofaviy boshqaruv
+                                {t("items.remote.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Ta'lim biznesingizni istalgan joydan boshqaring
+                                {t("items.remote.title")}
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                Platforma yordamida ta'lim biznesingizdagi
-                                ko'rsatkichlarni masofadan turib boshqaring, bu
-                                Sizga ko'proq vaqtingiz biznesingizni yanada
-                                rivojlantirishga yo'naltirishingizga yana bir
-                                imkoniyat!
+                                {t("items.remote.description")}
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>
 
-                    {/* Feature 8 - Mobil Ilovalar - 5/12 */}
                     <ScrollAnimation
                         direction="up"
                         delay={0.9}
@@ -284,18 +247,13 @@ const FeaturesSection = () => {
                     >
                         <Card3DComponent>
                             <div className="inline-block w-fit px-4 py-2 bg-[#FFF2F2] text-[#C70036] font-medium rounded-xl mb-6">
-                                Mobil Ilovalar
+                                {t("items.mobile.tag")}
                             </div>
                             <h3 className="text-xl md:text-2xl font-bold text-black mb-4">
-                                Talaba va ustozlar uchun zamonaviy ilovalar
+                                {t("items.mobile.title")}
                             </h3>
                             <p className="text-[#4A5564] text-base">
-                                "Modme Students App" va "Modme Teachers App"
-                                orqali ustoz va talabalarga dars jadvali, to'lov
-                                holati, dars materiallari va boshqa muhim
-                                ma'lumotlarga oson kirish imkoniyatini taqdim
-                                eting. Bu bilan aloqa samaradorligini oshiring
-                                va foydalanuvchi tajribasini yaxshilang
+                                {t("items.mobile.description")}
                             </p>
                         </Card3DComponent>
                     </ScrollAnimation>

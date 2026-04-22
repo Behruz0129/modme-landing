@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { fadeInUp, getTransition } from "@/lib/animations";
 import { sectionStyles } from "@/lib/styles";
 import { clientLogos } from "@/lib/data/clients";
@@ -94,6 +95,7 @@ const LogoRow = ({
 
 const ClientsSection = () => {
     const [isLoaded, setIsLoaded] = useState(false);
+    const t = useTranslations("clients");
 
     useEffect(() => {
         setIsLoaded(true);
@@ -111,11 +113,10 @@ const ClientsSection = () => {
                     transition={getTransition(0.1)}
                 >
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
-                        O’quv markazlarining ishonchli hamkori
+                        {t("title")}
                     </h2>
                     <p className="text-base md:text-lg text-[#a8a8a8]">
-                        Ta’lim markazlari bilan yillar davomida birga
-                        o’smoqdamiz
+                        {t("subtitle")}
                     </p>
                 </motion.div>
             </div>

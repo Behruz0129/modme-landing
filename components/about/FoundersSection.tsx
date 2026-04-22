@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 import {
     Instagram,
@@ -11,71 +12,62 @@ import {
     Building2,
     School,
 } from "lucide-react";
-
-const founders = [
-    {
-        name: "Jahongir Pulatov",
-        position: "Asoschi va CEO",
-        image: "/images/about/founder-1.png",
-        description: [
-            {
-                icon: <GraduationCap className="w-5 h-5" />,
-                text: '"Cambridge" o\'quv markazi asoschisi',
-            },
-            {
-                icon: <School className="w-5 h-5" />,
-                text: '"Jahon School" loyihasi asoschisi',
-            },
-            {
-                icon: <Rocket className="w-5 h-5" />,
-                text: '"Selfmade" loyihasi asoschisi',
-            },
-            {
-                icon: <Building2 className="w-5 h-5" />,
-                text: '"Modme" loyihasi asoschisi',
-            },
-        ],
-        social: {
-            telegram: "https://t.me/jahongir_pulatov_blog",
-            instagram: "https://www.instagram.com/jakhongir_pulatov/",
-        },
-    },
-    {
-        name: "Ruslan Yuldashev",
-        position: "Asoschi va COO",
-        image: "/images/about/founder-2.png",
-        description: [
-            {
-                icon: <GraduationCap className="w-5 h-5" />,
-                text: '"Mars IT School" asoschisi',
-            },
-            {
-                icon: <Building2 className="w-5 h-5" />,
-                text: '"Modme" loyihasi asoschisi',
-            },
-            {
-                icon: <Rocket className="w-5 h-5" />,
-                text: "Yandex Education (Silicon Valley) sobiq xodimi",
-            },
-        ],
-        social: {
-            telegram: "https://t.me/ruslanonline",
-            instagram: "https://www.instagram.com/monitoringe/",
-        },
-    },
-];
+import { ReactNode } from "react";
 
 const FoundersSection = () => {
+    const t = useTranslations("about.founders");
+
+    const jahongirIcons: ReactNode[] = [
+        <GraduationCap key="1" className="w-5 h-5" />,
+        <School key="2" className="w-5 h-5" />,
+        <Rocket key="3" className="w-5 h-5" />,
+        <Building2 key="4" className="w-5 h-5" />,
+    ];
+    const ruslanIcons: ReactNode[] = [
+        <GraduationCap key="1" className="w-5 h-5" />,
+        <Building2 key="2" className="w-5 h-5" />,
+        <Rocket key="3" className="w-5 h-5" />,
+    ];
+
+    const founders = [
+        {
+            name: t("jahongir.name"),
+            position: t("jahongir.position"),
+            image: "/images/about/founder-1.png",
+            points: (t.raw("jahongir.points") as string[]).map((text, i) => ({
+                icon: jahongirIcons[i],
+                text,
+            })),
+            social: {
+                telegram: "https://t.me/jahongir_pulatov_blog",
+                instagram: "https://www.instagram.com/jakhongir_pulatov/",
+            },
+        },
+        {
+            name: t("ruslan.name"),
+            position: t("ruslan.position"),
+            image: "/images/about/founder-2.png",
+            points: (t.raw("ruslan.points") as string[]).map((text, i) => ({
+                icon: ruslanIcons[i],
+                text,
+            })),
+            social: {
+                telegram: "https://t.me/ruslanonline",
+                instagram: "https://www.instagram.com/monitoringe/",
+            },
+        },
+    ];
+
     return (
         <section className="w-full py-16 md:py-20 lg:py-24 overflow-hidden bg-[#fcfcfc]">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Asoschilar
+                            {t("heading")}
                         </h2>
                         <p className="text-xl md:text-2xl text-[#a8a8a8]">
-                            Modme platformasini yaratgan insonlar
+                            {t("subtitle")}
                         </p>
                     </div>
                 </ScrollAnimation>
@@ -107,19 +99,17 @@ const FoundersSection = () => {
                                             {founder.position}
                                         </p>
                                         <div className="space-y-3 mb-6">
-                                            {founder.description.map(
-                                                (item, index) => (
-                                                    <div
-                                                        key={index}
-                                                        className="flex items-center gap-3 text-[#a8a8a8]"
-                                                    >
-                                                        <span className="text-[#ff8000]">
-                                                            {item.icon}
-                                                        </span>
-                                                        <span>{item.text}</span>
-                                                    </div>
-                                                )
-                                            )}
+                                            {founder.points.map((item, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="flex items-center gap-3 text-[#a8a8a8]"
+                                                >
+                                                    <span className="text-[#ff8000]">
+                                                        {item.icon}
+                                                    </span>
+                                                    <span>{item.text}</span>
+                                                </div>
+                                            ))}
                                         </div>
                                         <div className="flex justify-center space-x-4">
                                             <a

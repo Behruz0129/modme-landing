@@ -1,18 +1,15 @@
-import Link from "next/link";
 import Image from "next/image";
-import {
-    Instagram,
-    Youtube,
-    Send,
-} from "lucide-react";
+import { Instagram, Youtube, Send } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+    const t = useTranslations("footer");
+
     return (
         <footer className="bg-[#181c23] text-white">
             <div className="max-w-[1200px] mx-auto px-4 py-12">
-                {/* Asosiy qism */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
-                    {/* Logo */}
                     <div className="flex flex-col">
                         <Link
                             href="/"
@@ -27,18 +24,17 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-[#bfc8d6] text-base md:text-lg">
-                            O'quv markazlari uchun professional CRM tizimi
+                            {t("tagline")}
                         </p>
                     </div>
 
-                    {/* ModmeCRM */}
                     <div className="flex flex-col">
                         <div className="flex flex-col gap-3">
                             <Link
                                 href="/about"
                                 className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
                             >
-                                Biz haqimizda
+                                {t("about")}
                             </Link>
                             <div className="flex flex-col gap-3 mt-2">
                                 <a
@@ -49,7 +45,7 @@ export default function Footer() {
                                 >
                                     <Image
                                         src="/images/android-download.svg"
-                                        alt="Android uchun yuklab olish"
+                                        alt={t("androidAlt")}
                                         width={135}
                                         height={40}
                                         className="object-contain"
@@ -63,7 +59,7 @@ export default function Footer() {
                                 >
                                     <Image
                                         src="/images/ios-download.svg"
-                                        alt="iOS uchun yuklab olish"
+                                        alt={t("iosAlt")}
                                         width={135}
                                         height={40}
                                         className="object-contain"
@@ -73,31 +69,26 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Resurslar */}
                     <div className="flex flex-col">
                         <Link
                             href="/resources"
                             className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
                         >
-                            Resurslar
+                            {t("resources")}
                         </Link>
                     </div>
 
-                    {/* Kontaktlar */}
                     <div className="flex flex-col">
                         <Link
                             href="/contacts"
                             className="text-lg font-bold mb-4 text-white hover:text-[#ff8000] transition-colors"
                         >
-                            Kontaktlar
+                            {t("contacts")}
                         </Link>
                     </div>
 
-                    {/* Ijtimoiy tarmoqlar */}
                     <div className="flex flex-col">
-                        <h3 className="text-lg font-bold mb-4">
-                            Ijtimoiy Tarmoqlar
-                        </h3>
+                        <h3 className="text-lg font-bold mb-4">{t("social")}</h3>
                         <div className="flex gap-4 mb-6">
                             <a
                                 href="https://www.youtube.com/@modme_uz"
@@ -120,30 +111,29 @@ export default function Footer() {
                         </div>
                         <Link href="/demo">
                             <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white font-bold text-sm transition-all">
-                                Demo olish
+                                {t("demo")}
                             </button>
                         </Link>
                         <div className="mt-3">
-                            <Link href="https://t.me/modmebillingbot?start=footer">
+                            <a href="https://t.me/modmebillingbot?start=footer">
                                 <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90 text-white font-bold text-sm transition-all">
-                                    To'lov qilish
+                                    {t("payment")}
                                 </button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                {/* Pastki qism */}
                 <div className="pt-8 border-t border-[#232b39]">
                     <div className="flex flex-col items-start gap-4">
                         <p className="text-[#bfc8d6] text-sm">
-                            Copyright © 2025{" "}
+                            {t("copyright")}{" "}
                             <span className="font-bold text-white">
                                 ModmeCRM
                             </span>
                         </p>
                         <p className="text-[#8a919c] text-xs max-w-3xl leading-relaxed">
-                            Услуги, представленные на сайте, предназначены исключительно для юридических лиц и индивидуальных предпринимателей и используются в предпринимательской деятельности. Сервис не предназначен для физических лиц в качестве потребителей. Закон Республики Узбекистан «О защите прав потребителей» к данным услугам не применяется.
+                            {t("legal")}
                         </p>
                     </div>
                 </div>

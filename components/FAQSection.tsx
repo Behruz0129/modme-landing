@@ -2,52 +2,18 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import ScrollAnimation from "@/lib/animations/scroll-animation";
 
-const faqs = [
-    {
-        id: 1,
-        question: "Modme nima va kimlar uchun mo‘ljallangan?",
-        answer:
-            "Modme — bu ta’lim markazlari uchun mo‘ljallangan CRM tizimi bo‘lib, o‘quvchilarni ro‘yxatga olish, moliya boshqaruvi, dars jadvali, hisobotlar va boshqalarni avtomatlashtirishga yordam beradi\n\n" +
-            "Modme xususiy o‘quv markazlari, kurslar, repetitorlik markazlari va boshqa har qanday ta’lim muassasalari uchun mos keladi",
-    },
-    {
-        id: 2,
-        question: "Moliyaviy hisobotlar qanchalik to‘liq?",
-        answer: "To‘liq avtomatik: har bir to‘lov, chegirma, qarzdorlik, oylik hisobotlar va tranzaksiyalar tizimda aks etadi",
-    },
-    {
-        id: 3,
-        question: "Dastur bulutli xizmatmi yoki kompyuterga o‘rnatish kerakmi?",
-        answer: "Modme to‘liq bulutda ishlaydi — istalgan qurilmadan, istalgan joydan kirish mumkin",
-    },
-    {
-        id: 4,
-        question: " Sinov muddati bormi?",
-        answer: "Ha, bizda bepul demo versiyasi mavjud — 7 kungacha sinab, ishlatib ko‘rishingiz mumkin",
-    },
-    {
-        id: 5,
-        question: "Qanday to'lov qilsa bo'ladi?",
-        answer: (
-            <span>
-                Platforma uchun to'lovni quyidagi havola orqali amalga
-                oshirishingiz mumkin:{" "}
-                <a
-                    href="https://t.me/modmebillingbot?start=faq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#ff8000] underline underline-offset-4"
-                >
-                    To'lov qilish
-                </a>
-            </span>
-        ),
-    },
-];
+type FaqItem = {
+    question: string;
+    answer: string;
+    linkText?: string;
+};
 
 const FAQSection = () => {
+    const t = useTranslations("faq");
+    const faqs = t.raw("items") as FaqItem[];
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
@@ -56,7 +22,7 @@ const FAQSection = () => {
                 <ScrollAnimation direction="up" delay={0.1} threshold={0.5}>
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#080a0a] mb-6">
-                            Ko'p beriladigan savollar
+                            {t("heading")}
                         </h2>
                     </div>
                 </ScrollAnimation>
@@ -64,7 +30,7 @@ const FAQSection = () => {
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <motion.div
-                            key={faq.id}
+                            key={index}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
@@ -110,6 +76,16 @@ const FAQSection = () => {
                             >
                                 <div className="p-6 pt-0 text-[#666666] whitespace-pre-line">
                                     {faq.answer}
+                                    {faq.linkText && (
+                                        <a
+                                            href="https://t.me/modmebillingbot?start=faq"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-[#ff8000] underline underline-offset-4"
+                                        >
+                                            {faq.linkText}
+                                        </a>
+                                    )}
                                 </div>
                             </motion.div>
                         </motion.div>
