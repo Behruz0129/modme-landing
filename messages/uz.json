@@ -121,7 +121,9 @@
                     "To'lovlar har oyni boshida tushgani sababli moliyani nazorat qilish va xarajatlarni oldindan hisoblash",
                     "Ustozlar uchun oylik maoshni har oyni boshida kechiktirmasdan bera olish"
                 ],
-                "disadvantages": ["Boshqa to'lov rejimlariga mos kelmasligi"]
+                "disadvantages": [
+                    "Boshqa to'lov rejimlariga mos kelmasligi"
+                ]
             },
             "daily": {
                 "name": "Kunlik",
@@ -167,7 +169,9 @@
                 "advantages": [
                     "Online kurs yurutuvchilar yoki to'lov butun kurs uchun oldindan olinadigan ta'lim biznezlari uchun"
                 ],
-                "disadvantages": ["Boshqa to'lov rejimlariga mos kelmasligi"]
+                "disadvantages": [
+                    "Boshqa to'lov rejimlariga mos kelmasligi"
+                ]
             },
             "individual": {
                 "name": "Individual",
@@ -459,7 +463,10 @@
                 "title": "Sotuv menejeri",
                 "location": "Toshkent",
                 "type": "Offline",
-                "languages": ["O'zbek tili", "Rus tili (majburiy)"],
+                "languages": [
+                    "O'zbek tili",
+                    "Rus tili (majburiy)"
+                ],
                 "department": "Sotuv bo'limi",
                 "description": "Modme jamoasiga tajribali va kommunikabel sotuv menejerini qidiryapmiz. Siz o'quv markazlari bilan ishlaysiz va ularga CRM tizimimizni taqdim etasiz.",
                 "responsibilities": [
@@ -604,9 +611,711 @@
             "privacy": "3-Ilova — Maxfiylik va shaxsiy ma'lumotlarga ishlov berish siyosati",
             "cybersecurity": "4-Ilova — Kiberxavfsizlik siyosatining ommaviy qismi",
             "certificate": "Shaxsiy ma'lumotlar bazasini ro'yxatga olish to'g'risidagi guvohnoma"
+        },
+        "oferta": {
+            "metadata": {
+                "title": "Ommaviy oferta | Modme",
+                "description": "MODME MChJ ommaviy ofertasi - Modme CRM platformasidan foydalanishning rasmiy shartlari.",
+                "keywords": "Modme oferta, ommaviy oferta, foydalanish shartlari, Modme CRM shartnoma"
+            },
+            "title": "OMMAVIY OFERTA",
+            "subtitle": "modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish uchun",
+            "updatedLabel": "tahrir sanasi",
+            "intro": [
+                "Ushbu hujjat (Oferta) O'zbekiston Respublikasi Fuqarolik kodeksining 367 va 370-moddalariga muvofiq tuzilgan bo'lib, modme.uz dasturiy ta'minotidan SaaS (Software as a Service) modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasining muhim shartlarini o'z ichiga olgan ommaviy oferta hisoblanadi.",
+                "Shartnoma tuzish haqidagi ushbu taklif modme.uz dasturiy ta'minotidan o'z tadbirkorlik faoliyatida foydalanmoqchi bo'lgan yuridik shaxslar va yakka tartibdagi tadbirkorlarga qaratilgan.",
+                "Shartnoma O'zbekiston Respublikasi qonunchiligida belgilangan tartibda ushbu Ofertani aksept qilish orqali tuziladi.",
+                "Ofertaning aksepti Tanlangan Tarif bo'yicha Buyurtmachi tomonidan muvaffaqiyatli to'lov amalga oshirilgan sana hisoblanadi. Shu paytdan boshlab shartnoma yozma shaklda tuzilgan shartnomaga teng yuridik kuchga ega bo'ladi.",
+                "Ijrochi va Buyurtmachi o'zaro kelishuvga ko'ra alohida yozma ikki tomonlama shartnoma tuzishi mumkin. Agar bunday shartnoma shartlari ushbu Oferta shartlaridan farq qilsa, alohida tuzilgan shartnoma ustuvor bo'ladi.",
+                "Ommaviy ofertaning ushbu tahriri Ijrochining https://modme.uz/ manzilidagi saytida joylashtirilgan paytdan kuchga kiradi va Ijrochi tomonidan rasmiy ravishda bekor qilinguniga yoki o'zgartirilguniga qadar amal qiladi.",
+                "Ofertani aksept qilishdan oldin uning matni bilan diqqat bilan tanishing. Agar Ofertaning yoki unga ilova qilingan hujjatlarning biror shartiga rozi bo'lmasangiz, Ofertani aksept qilmang."
+            ],
+            "notice": "Ushbu oferta modme.uz platformasidan foydalanishni tartibga soluvchi yuridik hujjatdir. Platformaga kirish uchun to'lov qilsangiz, quyidagi shartlarga avtomatik ravishda rozilik bildirgan hisoblanasiz.",
+            "sections": [
+                {
+                    "title": "1. UMUMIY QOIDALAR",
+                    "paragraphs": [
+                        "Ushbu Ommaviy oferta MODME MChJ (STIR 307442900), keyingi o'rinlarda Ijrochi, tomonidan yuridik shaxslar va yakka tartibdagi tadbirkorlarga modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish haqidagi rasmiy taklifdir.",
+                        "Oferta pullik xizmatlar shartnomasining barcha muhim shartlarini o'z ichiga oladi. Shartnoma qog'oz nusxasini imzolamasdan, ushbu Ofertani aksept qilish orqali tuziladi.",
+                        "Oferta faqat professional va tadbirkorlik maqsadlarida foydalanish uchun mo'ljallangan hamda iste'molchi sifatidagi jismoniy shaxslarga tatbiq etilmaydi.",
+                        "Aksept tanlangan Tarif bo'yicha muvaffaqiyatli to'lovni anglatadi. Ofertani aksept qilgan shaxs Buyurtmachi hisoblanadi.",
+                        "Servis Ijrochi tomonidan ishlab chiqilgan, bulutli infratuzilmada joylashtirilgan va Internet orqali Buyurtmachiga biznes jarayonlarini avtomatlashtirish, mijozlar bazasini yuritish va ichki hujjat aylanishi uchun taqdim etiladigan modme.uz dasturiy ta'minotidir.",
+                        "Buyurtmachiga Servisdan foydalanish huquqi beriladi, biroq mulk huquqi, dastur nusxalari, manba kodi yoki mutlaq huquqlar o'tkazilmaydi.",
+                        "Oferta va unga bog'liq hujjatlar o'zbek, rus va ingliz tillarida e'lon qilinishi mumkin. Til versiyalari o'rtasida tafovut bo'lsa, davlat tilidagi o'zbekcha matn ustuvor hisoblanadi."
+                    ]
+                },
+                {
+                    "title": "2. SHARTNOMA PREDMETI",
+                    "paragraphs": [
+                        "Ijrochi Buyurtmachiga modme.uz Servisidan SaaS modeli asosida masofaviy foydalanish imkoniyatini beradi, Buyurtmachi esa ushbu xizmatlarni qabul qiladi va haqini to'laydi.",
+                        "Servis mijozlar bazasini yuritish, biznes jarayonlarini avtomatlashtirish, kontragentlar bilan ishlash va Servis funksionalida mavjud boshqa vazifalar uchun texnik imkoniyat yaratadi.",
+                        "Ijrochi qo'shimcha ravishda o'quv materiallarini yuklash, darslar va testlar o'tkazish hamda o'quvchilarga kirish berish uchun LMS modulidan foydalanishni taqdim etishi mumkin. Bunday kontent Buyurtmachiga tegishli bo'ladi va Ijrochi uning mazmuni yoki qonunchilikka muvofiqligi uchun javob bermaydi.",
+                        "Kirish https://modme.uz manzilidagi veb-interfeys, zarur hollarda API integratsiyalari va mavjud hamda Ijrochi tomonidan qo'llab-quvvatlanadigan mobil ilova orqali taqdim etiladi.",
+                        "Buyurtmachi Servisdan faqat o'z tadbirkorlik faoliyati doirasida, to'langan tarif va kirish muddati chegarasida foydalanadi. Servis ushbu Ofertada aniq ko'rsatilgan kafolatlardan tashqari as-is shartlarida taqdim etiladi.",
+                        "Xizmatlar O'zbekiston Respublikasi hududida ko'rsatiladi, Servisga kirish esa O'zbekiston qonunchiligiga rioya qilingan holda dunyoning istalgan nuqtasidan amalga oshirilishi mumkin."
+                    ]
+                },
+                {
+                    "title": "3. RO'YXATDAN O'TISH VA HISOB",
+                    "paragraphs": [
+                        "Tarif uchun to'lovdan so'ng Buyurtmachi Servisga kirish uchun Ijrochining saytida ro'yxatdan o'tadi va hisob yaratadi.",
+                        "Ro'yxatdan o'tishda Buyurtmachi tashkilot nomi, STIR, aloqa shaxsi, e-mail, telefon raqami va identifikatsiya hamda aloqa uchun zarur boshqa ma'lumotlarni taqdim etadi.",
+                        "Ro'yxatdan o'tish Buyurtmachining ushbu Oferta, Shaxsiy ma'lumotlarni qayta ishlash siyosati va Kiberxavfsizlik siyosati shartlariga roziligini tasdiqlaydi.",
+                        "Hisobni ro'yxatdan o'tkazayotgan shaxs Buyurtmachi nomidan harakat qilish vakolatiga ega ekanini tasdiqlaydi. Bunday vakolat yo'qligi bilan bog'liq barcha xavflar Buyurtmachiga yuklanadi.",
+                        "Buyurtmachi ro'yxatdan o'tish ma'lumotlarining to'g'riligi va dolzarbligini kafolatlaydi hamda o'zgarishlar yuz berganda ularni o'z vaqtida yangilashi yoki Ijrochini xabardor qilishi shart.",
+                        "Buyurtmachi loginlar, parollar, tokenlar va kirish kodlarining maxfiyligi hamda o'z hisobi orqali bajarilgan barcha harakatlar uchun javobgardir.",
+                        "Hisob ustidan nazorat yo'qolsa, parol oshkor bo'lsa yoki ruxsatsiz kirishdan shubha qilinsa, Buyurtmachi darhol Ijrochini xabardor qilishi shart.",
+                        "Buyurtmachi Ofertani buzsa, o'z vaqtida to'lov qilmasa, kiberxavfsizlikka tahdid tug'dirsa yoki qonun yoxud davlat organlari talab qilsa, Ijrochi kirishni vaqtincha cheklashi yoki bloklashi mumkin."
+                    ]
+                },
+                {
+                    "title": "4. TARAFLARNING HUQUQ VA MAJBURIYATLARI",
+                    "paragraphs": [
+                        "Ijrochi tanlangan Tarif bo'yicha Servisga kirishni ta'minlashi, Buyurtmachi ma'lumotlarini texnik va tashkiliy choralar bilan himoya qilishi, rejali texnik ishlar haqida xabar berishi, elektron hujjatlarni taqdim etishi va shaxsiy ma'lumotlarni faqat shartnomani bajarish uchun qayta ishlashi shart.",
+                        "Ijrochi texnik ishlar uchun kirishni vaqtincha to'xtatishi, umumiy mavjudlik va sifat darajasini yomonlashtirmagan holda Servisni o'zgartirishi, tariflarni e'lon qilinganidan keyin o'zgartirishi, buzilishlar bo'lsa kirishni bloklashi, xizmat xabarlarini yuborishi va xizmatlarni yaxshilash uchun anonim statistikadan foydalanishi mumkin.",
+                        "Buyurtmachi Oferta va ilovalarga rioya qilishi, Servisdan qonuniy va faqat tadbirkorlik maqsadlarida foydalanishi, to'lovlarni o'z vaqtida amalga oshirishi, kirish ma'lumotlarini maxfiy saqlashi, to'g'ri ma'lumot taqdim etishi hamda shaxsiy ma'lumotlar, kiberxavfsizlik, reklama va elektron tijorat qonunchiligiga rioya qilishi shart.",
+                        "Buyurtmachi to'langan Tarif doirasida Servisdan foydalanishi, texnik yordam so'rashi, aktlar va hisob-fakturalarni olishi, tarifni oshirishi yoki uzaytirishi, so'rov va takliflar yuborishi hamda o'z ma'lumotlarining maxfiyligi va himoyasini talab qilishi mumkin.",
+                        "Buyurtmachi Ijrochiga e-mail, https://modme.uz saytidagi aloqa shakli yoki Servis saytida ko'rsatilgan rasmiy Telegram menejer akkaunti orqali murojaat qilishi mumkin.",
+                        "Buyurtmachiga Servis orqali qonunga zid axborotni qayta ishlash, himoya tizimlariga aralashish, manba kodini olishga urinish, spam yoki zararli dasturlar yuborish, hisobga kirishni boshqa shaxslarga berish, infratuzilmaga ortiqcha yuklama berish yoki Ijrochi obro'siga zarar yetkazish taqiqlanadi.",
+                        "Taraflar shartnoma ijrosi munosabati bilan olingan barcha axborotni maxfiy saqlashi shart, agar qonun oshkor qilishni talab qilmasa yoki boshqa taraf yozma rozilik bermasa."
+                    ]
+                },
+                {
+                    "title": "5. TO'LOV VA HUJJAT AYLANISHI",
+                    "paragraphs": [
+                        "Xizmatlar qiymati https://modme.uz saytida va 1-ilova, Tariflarda e'lon qilingan narxlarga muvofiq belgilanadi.",
+                        "Tariflar O'zbekiston so'mida (UZS) belgilanadi. Boshqacha ko'rsatilmagan bo'lsa, xizmat qiymatiga QQS, bank va to'lov tizimlari komissiyalari kiritilmaydi.",
+                        "To'lov Ijrochining bank hisobvarag'iga 100% oldindan to'lov, Servisga integratsiya qilingan onlayn to'lov tizimlari yoki O'zbekiston milliy to'lov tizimiga ulangan bank kartalari orqali amalga oshiriladi.",
+                        "Birinchi to'lov shartnoma tuzilishidan oldin amalga oshiriladi. Keyingi kirish davrlari uchun to'lov tegishli davr boshlanishidan kamida bir kalendar kun oldin amalga oshirilishi kerak.",
+                        "To'lov sanasi mablag'lar Ijrochining bank hisobvarag'iga tushgan sana yoki to'lov tizimi operatsiyani tasdiqlagan sana hisoblanadi.",
+                        "Har bir to'langan oy yoki kirish davri oxirida Ijrochi elektron hujjat aylanishi tizimi orqali Buyurtmachiga ko'rsatilgan xizmatlar akti va elektron hisob-fakturani yuboradi.",
+                        "Buyurtmachi akt va hisob-fakturani besh kalendar kun ichida elektron raqamli imzo bilan imzolashi yoki asoslantirilgan rad javobini yuborishi shart. E'tiroz bildirilmasa, xizmatlar to'liq qabul qilingan hisoblanadi.",
+                        "Keyingi davr uchun to'lov kelib tushsa, shartnoma xuddi shu muddatga avtomatik uzaytiriladi. To'lov kelib tushmasa, avvalgi kirish muddati tugaganidan keyin shartnoma avtomatik bekor qilingan hisoblanadi.",
+                        "Mablag' qaytarish faqat xato yoki takroriy to'lov, to'lov tizimi aybi bilan ruxsatsiz yechib olish, Ijrochi tomonidan hisob chiqarishdagi texnik xato, Ijrochi aybi bilan xizmat ko'rsatilmaganligi hujjat bilan tasdiqlanganda yoki Ijrochi tashabbusi bilan to'langan davr tugamasdan shartnoma bekor qilinganda mumkin.",
+                        "Buyurtmachi Servisdan o'z xohishiga ko'ra foydalanishni to'xtatsa, Servis tavsifga mos ishlasa-yu subyektiv kutilmalarga mos kelmasa yoki Buyurtmachi buzilishi sababli kirish to'xtatilsa, mablag' qaytarilmaydi."
+                    ]
+                },
+                {
+                    "title": "6. INTELLEKTUAL MULK",
+                    "paragraphs": [
+                        "Servis intellektual faoliyat natijasi bo'lib, O'zbekiston qonunchiligi, jumladan fuqarolik va mualliflik huquqi normalari bilan himoyalanadi.",
+                        "Servis, uning tarkibiy qismlari, dizayni, ma'lumotlar bazasi tuzilmasi, manba kodi, texnik hujjatlari, interfeyslari, logotiplari va boshqa elementlariga bo'lgan barcha mutlaq mulkiy va nomulkiy huquqlar faqat Ijrochiga tegishli.",
+                        "Ushbu Ofertaning hech bir qoidasi Buyurtmachiga Servisga nisbatan mulk huquqi yoki mutlaq huquqlarni o'tkazish sifatida talqin qilinmaydi.",
+                        "Ijrochi Buyurtmachiga Oferta, to'langan Tarif va kirish davri doirasida Servisdan foydalanish uchun nomutlaq, cheklangan, o'tkazib bo'lmaydigan va qaytarib olinadigan huquq beradi.",
+                        "Buyurtmachiga Servisni nusxalash, o'zgartirish, moslashtirish, tarjima qilish, dekompilyatsiya qilish yoki manba kodini olishga urinish; kirishni uchinchi shaxslarga berish; mualliflik huquqi yoki tovar belgisi belgilarini olib tashlash; hosila mahsulotlar yaratish; qonunga zid foydalanish taqiqlanadi.",
+                        "Ijrochi Buyurtmachi Kontentiga egalik qilmaydi va undan faqat Servis ishlashini ta'minlash hamda shartnomani bajarish maqsadida foydalanadi."
+                    ]
+                },
+                {
+                    "title": "7. SHAXSIY MA'LUMOTLARNI QAYTA ISHLASH VA HIMOYA QILISH",
+                    "paragraphs": [
+                        "Buyurtmachi Servis funksionalidan foydalanish jarayonida joylashtirilgan shaxsiy ma'lumotlarning egasi va operatori hisoblanadi.",
+                        "Ijrochi Buyurtmachi va uning vakillari ro'yxatdan o'tishi hamda Servisdan foydalanishi paytida olingan ma'lumotlarga nisbatan operator, Buyurtmachi Servisga joylashtirgan shaxsiy ma'lumotlarga nisbatan esa uchinchi shaxs sifatida ishtirok etadi.",
+                        "Ijrochi shaxsiy ma'lumotlarni faqat Buyurtmachi topshirig'iga ko'ra va shartnoma majburiyatlarini bajarish uchun zarur hajmda qayta ishlaydi.",
+                        "Servis ro'yxatdan o'tish ma'lumotlari, Buyurtmachi yoki uning xodimlari mijozlar bilan ishlashda joylashtiradigan ma'lumotlar hamda Servisdan foydalanishda avtomatik yig'iladigan texnik ma'lumotlarni qayta ishlashi mumkin.",
+                        "Ijrochi Buyurtmachi mijozlarining shaxsiy ma'lumotlarini mustaqil ravishda yig'maydi va qayta ishlamaydi. Bunday ma'lumotlar Buyurtmachi topshirig'i va javobgarligi ostida qayta ishlanadi.",
+                        "Qayta ishlash shartnomani bajarish, Buyurtmachi bilan aloqa qilish, Servis xavfsizligi va barqaror ishlashini ta'minlash hamda O'zbekiston qonunchiligi talablarini bajarish uchun amalga oshiriladi.",
+                        "Ro'yxatdan o'tish va to'lov qilish orqali Buyurtmachi o'z shaxsiy ma'lumotlarini qayta ishlashga rozilik berganini hamda Servisga kiritadigan xodimlari va mijozlari ma'lumotlari uchun tegishli roziliklarni olganini tasdiqlaydi.",
+                        "Ijrochi tomonidan qayta ishlanadigan shaxsiy ma'lumotlar bazalari O'zbekiston hududida joylashadi va ro'yxatdan o'tkaziladi. Server va hosting quvvatlari O'zbekistonda joylashgan.",
+                        "Shartnoma tugaganidan keyin yoki yozma so'rov bo'yicha ma'lumotlar oltmish kalendar kun ichida o'chirilishi yoki anonimlashtirilishi mumkin, agar qonun boshqacha talab qilmasa.",
+                        "Shaxsiy ma'lumotlarga oid savol va so'rovlar crmmodme@gmail.com manziliga yuborilishi mumkin."
+                    ]
+                },
+                {
+                    "title": "8. KIBERXAVFSIZLIK VA AXBOROT HIMOYASI",
+                    "paragraphs": [
+                        "Ijrochi Servis va Buyurtmachi ma'lumotlarini ruxsatsiz kirish, yo'qotish yoki o'zgartirishning oldini olishga qaratilgan texnik va tashkiliy choralar orqali himoya qiladi.",
+                        "Himoya choralariga HTTPS va SSL/TLS, kirishni nazorat qilish va foydalanuvchi autentifikatsiyasi, antivirus va zararli dasturlarga qarshi himoya, muntazam dasturiy yangilanishlar hamda xodimlarning Buyurtmachi ma'lumotlariga role-based access tamoyili bo'yicha kirishi kiradi.",
+                        "Ijrochi Kiberxavfsizlik siyosatiga muvofiq muntazam ichki xavfsizlik auditlari va infratuzilma zaifliklarini testdan o'tkazadi. Audit natijalari oshkor qilinmaydi, lekin yozma so'rov bo'yicha umumlashtirilgan shaklda taqdim etilishi mumkin.",
+                        "Ijrochi serverlar, aloqa kanallari va Servis infratuzilmasini o'z ichiga olgan texnik javobgarlik doirasida ma'lumotlar xavfsizligi uchun javobgar.",
+                        "Buyurtmachi o'z hisoblari, parollari va Servisga kirish bergan foydalanuvchilar harakatlari xavfsizligi uchun javobgar.",
+                        "Parollarni uchinchi shaxslarga berish, xavfsiz bo'lmagan uskunalar yoki tarmoqlardan foydalanish, Buyurtmachi xodimlari yoki kontragentlarining noqonuniy harakatlari oqibatida kelgan zararlar uchun Ijrochi javobgar emas.",
+                        "Ijrochi texnik nosozliklar yoki boshqa hodisalarda ma'lumotlar yo'qolishining oldini olish uchun muntazam zaxira nusxalarini yaratadi. Zaxiralash davriyligi, saqlash muddati va tiklash tartibi ichki reglamentlar bilan belgilanadi.",
+                        "Ruxsatsiz kirish, sizib chiqish, virus hujumi yoki Buyurtmachi ma'lumotlariga ta'sir qiluvchi boshqa hodisa aniqlansa, Ijrochi tahdidni lokalizatsiya qilish choralarini ko'radi va aniqlanganidan keyin 24 soat ichida Buyurtmachini xabardor qiladi.",
+                        "Agar hodisa shaxsiy ma'lumotlar sizib chiqishiga olib kelsa, Ijrochi O'zbekiston qonunchiligida belgilangan tartibda Davlat kiberxavfsizlik markazi va boshqa vakolatli organlarni ham xabardor qiladi."
+                    ]
+                },
+                {
+                    "title": "9. TARAFLARNING JAVOBGARLIGI",
+                    "paragraphs": [
+                        "Har bir taraf o'z majburiyatlarini O'zbekiston qonunchiligi va shartnoma shartlarida belgilangan doirada lozim darajada bajarish uchun javobgar.",
+                        "Ijrochi to'langan Tarif va kirish davri doirasida kirishni ta'minlash, o'z texnik javobgarligi doirasida Buyurtmachi ma'lumotlarini himoya qilish hamda oqilona muddatda texnik nosozliklarni bartaraf etish uchun javobgar.",
+                        "Buyurtmachi ro'yxatdan o'tish ma'lumotlarining to'g'riligi, kirish ma'lumotlarining maxfiyligi, xodimlari va foydalanuvchilar harakatlari, Servisga joylashtirilgan ma'lumotlarning qonuniyligi hamda Servisdan qonuniy foydalanish uchun javobgar.",
+                        "Buyurtmachi ushbu Oferta yoki qonunchilikni buzsa, Ijrochiga yetkazilgan zararlarni, jumladan hodisa oqibatlarini tekshirish va bartaraf etish xarajatlarini qoplashi shart.",
+                        "Buyurtmachi uskunalari yoki aloqa kanallari nosozligi, uchinchi shaxslar harakati, Buyurtmachi aybi bilan ma'lumot yo'qolishi, Servisdan noto'g'ri foydalanish yoki ko'rsatmalarga rioya qilmaslik oqibatidagi nosozliklar uchun Ijrochi javobgar emas.",
+                        "Ijrochi Servisning mutlaq uzluksiz va xatosiz ishlashini kafolatlamaydi, biroq uning barqaror ishlashini ta'minlash uchun oqilona choralar ko'radi.",
+                        "Ijrochi boy berilgan foyda, ma'lumot yoki daromad yo'qotilishi hamda bilvosita zararlar uchun javobgar emas. Ijrochi aybi bo'lsa, uning javobgarligi buzilish yuz bergan davr uchun Buyurtmachi tomonidan haqiqatda to'langan summa bilan cheklanadi.",
+                        "Tabiiy ofatlar, yong'in, suv toshqini, zilzila, harbiy harakatlar, ommaviy tartibsizliklar, ish tashlashlar, terrorchilik, davlat organlari harakatlari, energetika yoki telekommunikatsiya tarmoqlari nosozligi, epidemiyalar yoki data-markazlar nosozligi kabi fors-major holatlar sababli majburiyatlar bajarilmasa, taraflar javobgarlikdan ozod etiladi."
+                    ]
+                },
+                {
+                    "title": "10. SHARTNOMANI BEKOR QILISH",
+                    "paragraphs": [
+                        "Buyurtmachi joriy to'langan davr tugashidan kamida besh kalendar kun oldin Ijrochini xabardor qilib, Servisdan keyingi foydalanishni rad etishi mumkin. Foydalanilmagan davr uchun to'lovlar 5-bo'limda ko'rsatilgan holatlardan tashqari qaytarilmaydi.",
+                        "Buyurtmachi keyingi davr uchun to'lov qilmasa va kirishni uzaytirishni rejalashtirmasa, shartnoma to'langan davr tugaganidan keyin bekor bo'ladi.",
+                        "Ijrochi joriy to'langan davr tugashidan kamida besh kalendar kun oldin shaxsiy kabinet yoki e-mail orqali xabar berib, xizmatlarni ko'rsatishni to'xtatishi mumkin.",
+                        "Ijrochi shartnomani Buyurtmachi buzilishi sababli bekor qilsa, foydalanilmagan davr uchun mablag' qaytarilmaydi va shartnomaviy jarima sifatida ushlab qolinadi.",
+                        "Agar Ijrochi tashabbusi bilan bekor qilish Buyurtmachiga bog'liq bo'lmagan sabablarga ko'ra bo'lsa, foydalanilmagan summa 5-bo'limga muvofiq qaytariladi.",
+                        "Taraflar kamida besh kalendar kun oldin yozma xabar berib, o'zaro kelishuv bilan shartnomani bekor qilishi mumkin.",
+                        "Shartnoma tugaganidan keyin Buyurtmachining Servis funksionaliga kirishi to'xtatiladi. Ijrochi Buyurtmachi Kontentini saqlaydi va tugash sanasidan boshlab oltmish kalendar kun davomida eksport qilish imkoniyatini beradi.",
+                        "Yozma so'rov bo'yicha Ijrochi ma'lumotlarni mashina o'qiy oladigan formatda o'n ish kuni ichida taqdim etadi. Eksport va qabul qilish tasdiqlanganidan keyin ma'lumotlar nusxalari ishchi tizimlar va zaxira nusxalaridan oltmish kalendar kun ichida o'chiriladi, agar qonun boshqacha talab qilmasa."
+                    ]
+                },
+                {
+                    "title": "11. NIZOLARNI HAL QILISH TARTIBI",
+                    "paragraphs": [
+                        "Ushbu Oferta va shartnomani bajarish, o'zgartirish, bekor qilish yoki talqin qilish bo'yicha kelib chiqadigan barcha kelishmovchilik va nizolar muzokaralar orqali hal qilinadi.",
+                        "Sudga murojaat qilishdan oldin huquqlari buzilgan deb hisoblagan taraf nizoning mohiyatini bayon qilgan va uni ixtiyoriy hal qilish taklifini o'z ichiga olgan yozma talabnoma yuborishi shart.",
+                        "Xizmatlar hajmi va sifati bo'yicha talabnomalar tasdiqlovchi materiallar, masalan skrinshotlar yoki yozishmalar ilova qilingan holda Ijrochining e-mail manziliga yuboriladi.",
+                        "Talabnomani ko'rib chiqish muddati o'n ish kunigacha. Talabnoma asosli deb topilsa, Ijrochi kamchiliklarni bartaraf etadi yoki kirishni uzaytirish yoxud qiymatni qayta hisoblash kabi kompensatsiya beradi.",
+                        "Muzokaralar orqali hal qilinmagan nizolar Ijrochining davlat ro'yxatidan o'tgan joyidagi sudda ko'rib chiqiladi. Taraflar ushbu sudlovni yakuniy va majburiy deb tan oladi."
+                    ]
+                },
+                {
+                    "title": "12. YAKUNIY QOIDALAR",
+                    "paragraphs": [
+                        "Oferta, shartnoma, qo'shimcha kelishuvlar, ilovalar, aktlar va hisob-fakturalar elektron hujjat aylanishi tizimi orqali elektron raqamli imzo bilan imzolanishi mumkin.",
+                        "Shartnoma ijrosi bilan bog'liq boshqa hujjatlar, xabarnomalar va axborot e-mail, messenjerlar yoki elektron hujjat aylanishi tizimlari orqali yuborilishi mumkin. Taraflar elektron hujjatlar va xabarlarning yuridik kuchini tan oladi.",
+                        "Ijrochi ushbu Oferta, uning ilovalari, tariflari va unga bog'liq hujjatlarga o'zgartirishlar kiritishi mumkin.",
+                        "Barcha o'zgartirishlar https://modme.uz saytida e'lon qilinadi va boshqacha ko'rsatilmagan bo'lsa, e'lon qilingan sanadan kuchga kiradi.",
+                        "O'zgartirishlar kuchga kirganidan keyin Servisdan foydalanishni davom ettirish Buyurtmachining Ofertaning yangi tahririga roziligini anglatadi.",
+                        "Agar Buyurtmachi o'zgartirishlarga rozi bo'lmasa, Servisdan foydalanishni to'xtatishi, Ijrochini xabardor qilishi va keyingi davrlar uchun to'lovni to'xtatishi mumkin.",
+                        "Ushbu Oferta bekor qilinguniga yoki yangi tahrir bilan almashtirilguniga qadar amal qiladi. Yangi tahrir avvalgi tahrirlarni bekor qiladi va e'lon qilinganidan keyin yuzaga keladigan munosabatlarga tatbiq etiladi.",
+                        "To'lov vaqtida amal qilgan Oferta tahriri, agar yangi tahrirda boshqacha bevosita ko'rsatilmagan bo'lsa, to'langan kirish davri tugaguniga qadar amal qiladi."
+                    ]
+                },
+                {
+                    "title": "13. ILOVALAR",
+                    "paragraphs": [
+                        "Ushbu Ofertaga ilovalar Ijrochining https://modme.uz manzilidagi rasmiy saytida joylashtiriladi va Ofertaning ajralmas qismi hisoblanadi.",
+                        "Ilovalar quyidagilardan iborat: 1-ilova — Tariflar; 2-ilova — Texnik qo'llab-quvvatlash siyosati; 3-ilova — Shaxsiy ma'lumotlarni qayta ishlash siyosati; 4-ilova — Kiberxavfsizlik siyosati."
+                    ]
+                },
+                {
+                    "title": "14. IJROCHI REKVIZITLARI",
+                    "paragraphs": [
+                        "MODME mas'uliyati cheklangan jamiyati",
+                        "STIR: 307442900",
+                        "Yuridik manzil: O'zbekiston Respublikasi, Toshkent shahri, Mirzo-Ulug'bek tumani, Navnihole MFY, Tepamasjid ko'chasi, 4a-uy",
+                        "Bank rekvizitlari: hisob raqami 20208000905235041001, Kapitalbank ATB OPERU",
+                        "Telefon: +998 787771100",
+                        "E-mail: crmmodme@gmail.com",
+                        "Sayt: https://modme.uz"
+                    ]
+                }
+            ]
+        },
+        "legalInfo": {
+            "executor": "MODME MChJ",
+            "address": "O‘zbekiston Respublikasi, Toshkent shahri, Mirzo-Ulug‘bek tumani, Navnihole mahallasi, Tepamasjid ko‘chasi, 4A-uy.",
+            "phone": "+998 (78) 777-11-00",
+            "email": "crmmodme@gmail.com"
+        },
+        "certificate": {
+            "title": "Shaxsiy maʼlumotlar bazasini roʻyxatdan oʻtkazish guvohnomasi",
+            "metadata": {
+                "title": "Shaxsiy maʼlumotlar bazasini roʻyxatdan oʻtkazish guvohnomasi | Modme",
+                "description": "MODME MChJ shaxsiy maʼlumotlar bazasini roʻyxatdan oʻtkazish guvohnomasi - Modme CRM platformasi uchun rasmiy guvohnoma.",
+                "keywords": "Modme guvohnoma, maʼlumotlar bazasini roʻyxatdan oʻtkazish, shaxsiy maʼlumotlar, Modme CRM roʻyxatdan oʻtkazish"
+            }
+        },
+        "legalPages": {
+            "tariffs": {
+                "metadata": {
+                    "title": "1-Ilova — Tariflar | Modme",
+                    "description": "1-Ilova — MODME MChJ tariflari - Modme CRM platformasining rasmiy tarif rejalari.",
+                    "keywords": "Modme tariflar, tarif rejalari, Modme CRM narxlari, tariflar ilovasi"
+                }
+            },
+            "technicalSupport": {
+                "metadata": {
+                    "title": "2-Ilova — Texnik qoʻllab-quvvatlash siyosati (SLA) | Modme",
+                    "description": "2-Ilova — MODME MChJ texnik qoʻllab-quvvatlash siyosati (SLA) - Modme CRM platformasining rasmiy texnik yordam siyosati.",
+                    "keywords": "Modme SLA, texnik qoʻllab-quvvatlash siyosati, Modme CRM yordam, texnik yordam"
+                }
+            },
+            "privacy": {
+                "metadata": {
+                    "title": "3-Ilova — Maxfiylik va shaxsiy maʼlumotlarga ishlov berish siyosati | Modme",
+                    "description": "3-Ilova — MODME MChJ maxfiylik va shaxsiy maʼlumotlarga ishlov berish siyosati - Modme CRM platformasining rasmiy maxfiylik siyosati.",
+                    "keywords": "Modme maxfiylik siyosati, shaxsiy maʼlumotlarga ishlov berish, Modme CRM maxfiylik"
+                }
+            },
+            "cybersecurity": {
+                "metadata": {
+                    "title": "4-Ilova — Kiberxavfsizlik siyosatining ommaviy qismi | Modme",
+                    "description": "4-Ilova — MODME MChJ kiberxavfsizlik siyosatining ommaviy qismi - Modme CRM platformasining rasmiy kiberxavfsizlik siyosati.",
+                    "keywords": "Modme kiberxavfsizlik, kiberxavfsizlik siyosati, Modme CRM xavfsizlik"
+                }
+            }
+        },
+        "tariffsPage": {
+            "title": "1-Ilova",
+            "subtitle": "modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish uchun Ommaviy ofertaga",
+            "documentTitle": "TARIFLAR",
+            "serviceDescription": "modme.uz Servisidan foydalanish huquqini berish xizmatlari uchun",
+            "updatedLabel": "tahrir sanasi",
+            "activeTariffsTitle": "10. Amaldagi Tariflar",
+            "table": {
+                "tariff": "Tarif",
+                "start": "Start",
+                "basic": "Basic",
+                "pro": "Pro",
+                "premium": "Premium",
+                "startRange": "0-100 o'quvchi",
+                "basicRange": "100-300 o'quvchi",
+                "proRange": "300-1000 o'quvchi",
+                "premiumRange": "1000+ o'quvchi"
+            },
+            "currency": "so'm",
+            "periods": [
+                "3 oy foydalanish",
+                "6 oy foydalanish",
+                "9 oy foydalanish",
+                "12 oy foydalanish"
+            ],
+            "intro": [
+                "Ushbu Ilova Tariflar, ularni qo'llash tartibi va shartlari hamda MODME va Buyurtmachi o'rtasidagi hisob-kitoblar xususiyatlarini belgilaydi.",
+                "Ilova Ommaviy ofertaning ajralmas qismi hisoblanadi va uning matni bilan teng yuridik kuchga ega.",
+                "Tariflar haqidagi ma'lumot Ijrochining saytida Narxlar bo'limida ham joylashtiriladi va yangilanishi yoki to'ldirilishi mumkin.",
+                "Xizmatlar qiymati Buyurtmachidagi o'quvchilar soniga bog'liq bo'lgan Tarif asosida belgilanadi.",
+                "Narxni hisoblash maqsadida o'quvchi deganda Servisda elektron karta yoki hisob yaratilgan va joriy hisob-kitob davrida kamida bitta faol operatsiyaga ega bo'lgan noyob jismoniy shaxs tushuniladi.",
+                "O'quvchilar soni har bir hisob-kitob davrining oxirgi kunida aniqlanadi. Buyurtmachi o'z Akkaunti doirasida o'quvchilar ro'yxatini mustaqil boshqaradi va uning dolzarbligi uchun javobgar.",
+                "Agar haqiqiy o'quvchilar soni to'langan Tarif limitidan oshsa, Buyurtmachi avtomatik ravishda mos keyingi Tarifga o'tkaziladi. Farq summasi hisob olinganidan keyin 5 ish kuni ichida to'lanadi.",
+                "Buyurtmachi istalgan vaqtda tegishli qo'shimcha to'lovni amalga oshirib yuqoriroq Tarifga o'tishi mumkin. Kamroq o'quvchili Tarifga o'tish faqat to'langan foydalanish muddati tugagach mumkin.",
+                "Ushbu Ilova va saytdagi ma'lumotlar o'rtasida tafovut bo'lsa, Saytda e'lon qilingan versiya ustuvor hisoblanadi."
+            ],
+            "notes": [
+                "Barcha Tariflar milliy valyuta — O'zbekiston so'mida (UZS) belgilanadi va QQSsiz ko'rsatiladi.",
+                "Tarif bo'yicha to'lov — tanlangan Tarifga muvofiq Servisdan foydalanish huquqini berish xizmatlari uchun Buyurtmachi tomonidan Ijrochiga to'lanadigan summa.",
+                "Ijrochi Tariflar, qiymat va ularni qo'llash shartlarini saytga yangi tahrirni joylashtirish orqali o'zgartirishi mumkin.",
+                "O'zgarishlar matnida boshqacha ko'rsatilmagan bo'lsa, ular e'lon qilingan sanadan kuchga kiradi.",
+                "Allaqachon to'langan davrlar uchun Tarif qiymati va shartlari to'langan davr oxirigacha saqlanadi.",
+                "Buyurtmachi Tarifga kiritilmagan qo'shimcha xizmatlarni alohida shartnoma asosida xarid qilishi mumkin, masalan xodimlarni o'qitish, CRM sozlash yoki integratsiyalar.",
+                "Bunday xizmatlar alohida shartnoma asosida to'lanadi."
+            ],
+            "contactTitle": "Tariflar va hisob-kitoblar bo'yicha aloqa ma'lumotlari",
+            "contactIntro": "Tariflar va to'lov bilan bog'liq savollarni quyidagi kanallar orqali yuborish mumkin:",
+            "emailPrefix": "elektron pochta orqali:",
+            "telegramPrefix": "yoki Servis saytida havolasi joylashtirilgan rasmiy Telegram menejer akkaunti orqali:"
+        },
+        "technicalSupportPage": {
+            "title": "2-Ilova",
+            "subtitle": "modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish uchun Ommaviy ofertaga",
+            "documentTitle": "TEXNIK QOʻLLAB-QUVVATLASH SIYOSATI",
+            "company": "MODME MChJ",
+            "updatedLabel": "tahrir sanasi",
+            "paragraphs": [
+                "Ushbu Ilova MODME tomonidan modme.uz Servisi Buyurtmachilariga texnik qoʻllab-quvvatlash ko‘rsatish tartibi, shartlari va muddatlarini belgilaydi.",
+                "Ushbu Siyosat Ommaviy oferta va Shartnomaga ilova hisoblanadi hamda https://modme.uz saytida ochiq joylashtiriladi.",
+                "Texnik qoʻllab-quvvatlash Buyurtmachilarga toʻlangan tarif rejasi doirasida taqdim etiladi va ko‘rsatiladigan Xizmatlarning ajralmas qismi hisoblanadi.",
+                "Texnik qoʻllab-quvvatlash Servis bo‘yicha maslahat va ekspluatatsion yordam, funksional imkoniyatlar bo‘yicha yordam, incident va so‘rovlarni ro‘yxatga olish va qayta ishlash, fikr-mulohazalarni yig‘ish, yangilanish va rejalashtirilgan ishlar haqida xabar berish, API va integratsiya masalalari hamda yangi funksiyalar bo‘yicha so‘rovlarni ishlab chiqish bo‘limiga uzatishni o‘z ichiga oladi.",
+                "Texnik qoʻllab-quvvatlash Servis funksionalidan tashqarida Buyurtmachi xodimlarini o‘qitish, hujjatlarda nazarda tutilmagan individual biznes jarayonlarni sozlash va Buyurtmachi harakatlari sababli yuzaga kelgan xatolarni tuzatishni o‘z ichiga olmaydi.",
+                "Murojaatlar rasmiy aloqa kanallari orqali qabul qilinadi.",
+                "Texnik qoʻllab-quvvatlash ish vaqti: dushanbadan shanbagacha, Toshkent vaqti bilan 10:00 dan 19:00 gacha (UTC+5), O‘zbekiston Respublikasining rasmiy bayram kunlari bundan mustasno.",
+                "Buyurtmachilarning barcha murojaatlari MODME CRM tizimida ro‘yxatga olinadi.",
+                "Ijrochi murojaat olingan paytdan boshlab 1 ish kuni ichida dastlabki javob berishni o‘z zimmasiga oladi. Dastlabki javob murojaat qabul qilinganini tasdiqlash, qo‘shimcha maʼlumot so‘rash yoki diagnostikani boshlashni anglatadi.",
+                "Dastlabki javob doirasida texnik yordam mutaxassisi muammoni diagnostika qiladi va uni hal qilish choralarini ko‘radi, jumladan maslahatlar, yo‘riqnomalar, foto yoki video materiallar, hujjatlarga havolalar yoki onlayn maslahat beradi.",
+                "Agar yechim product manager yoki ishlab chiqish bo‘limini jalb qilishni talab qilsa, murojaat tegishli bo‘limga uzatiladi va Buyurtmachiga keyingi muddatlar haqida maʼlumot beriladi.",
+                "Incident hal qilingach yoki so‘rov bajarilgach, texnik yordam xodimi yechimni tasdiqlash va fikr-mulohaza olish uchun Buyurtmachi bilan qayta bog‘lanadi.",
+                "MODME qoʻllab-quvvatlash xizmati proaktiv ishlarni ham amalga oshiradi: platforma ishlashini tekshiradi, xizmat sifati bo‘yicha fikrlarni va Servisni yaxshilash takliflarini yig‘adi.",
+                "MODME texnik qoʻllab-quvvatlash xizmatiga murojaatlar quyidagi rasmiy kanallar orqali qabul qilinadi:"
+            ],
+            "channels": [
+                "Korporativ Telegram akkaunt:",
+                "Telefon raqami:",
+                "Elektron pochta:"
+            ]
+        },
+        "cybersecurityPage": {
+            "title": "4-Ilova",
+            "subtitle": "modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish uchun Ommaviy ofertaga",
+            "documentTitle": "KIBERXAVFSIZLIK SIYOSATI",
+            "company": "MODME MChJ",
+            "updatedLabel": "tahrir sanasi",
+            "sections": [
+                {
+                    "title": "1. Maqsad va qoʻllanish sohasi",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Ushbu Siyosat foydalanuvchilar modme.uz Servisi bilan ishlaganda kiberxavfsizlikni taʼminlashning asosiy tamoyillari va choralarini belgilaydi hamda MODME MChJ (STIR 307442900) mijozlari, xodimlari va hamkorlariga tatbiq etiladi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Hujjatning maqsadi maʼlumotlarning yaxlitligi, mavjudligi va maxfiyligini taʼminlash, shuningdek Servisda qayta ishlanadigan axborotning yoʻqolishi, oʻzgartirilishi yoki ruxsatsiz oshkor qilinishi bilan bogʻliq hodisalarning oldini olishdir."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Ushbu Siyosat Ommaviy oferta va Shartnomaga ilova hisoblanadi hamda https://modme.uz saytida ochiq joylashtiriladi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Siyosat Oʻzbekiston Respublikasining kiberxavfsizlik, shaxsiy maʼlumotlar haqidagi qonunchiligi va MODME ichki reglamentlariga muvofiq tuzilgan."
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Kiberxavfsizlik tamoyillari",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Maʼlumotlar xavfsizligini taʼminlashda MODME quyidagi tamoyillarga amal qiladi:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "Servis hayotiy siklining barcha bosqichlarida uzluksiz himoya;",
+                                "maxfiylik va faqat vakolatli shaxslarga kirish berish;",
+                                "maʼlumotlar va dasturiy kod yaxlitligi;",
+                                "minimal uzilishlar bilan Servis mavjudligi;",
+                                "himoya choralari va muhim hodisalar haqida shaffof axborot berish;",
+                                "MODME tizimlariga kirish huquqiga ega har bir shaxsning shaxsiy javobgarligi."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Infratuzilmani himoya qilish",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Texnik choralar HTTPS/SSL/TLS kabi himoyalangan aloqa protokollari, maʼlumotlarning zaxira nusxalarini yaratish, maʼlumotlarni Oʻzbekiston Respublikasi hududidagi serverlarda saqlash, firewall, antivirus va anti-DDoS himoya, dasturiy taʼminot va operatsion tizimlarni muntazam yangilashni oʻz ichiga oladi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Tashkiliy choralar maʼmuriy panellarga IP-filtrlash orqali kirishni cheklash, xodimlar va hamkorlar uchun ikki faktorli autentifikatsiya, parollar va kirish kalitlarini rotatsiya qilish, hodisalar jurnallarini yuritish va yillik xavfsizlik auditlarini oʻz ichiga oladi."
+                        }
+                    ]
+                },
+                {
+                    "title": "4. Hodisalarga javob berish",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Xavfsizlik hodisasi alomatlari aniqlanganda MODME hodisani qayd etadi, tahdid manbalarini bloklaydi, taʼsirlangan mijozlarni xabardor qiladi, ichki tekshiruv boshlaydi va oqibatlarni bartaraf etadi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Kiberxavfsizlik uchun masʼul shaxs hodisa boʻyicha hisobot tayyorlaydi va shunga oʻxshash holatlarning oldini olish choralarini koʻradi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Agar hodisa shaxsiy maʼlumotlar yoki axborot infratuzilmasiga taʼsir qilsa, MODME qonunchilikda belgilangan tartibda Davlat kiberxavfsizlik markazi va boshqa vakolatli organlarni xabardor qiladi."
+                        }
+                    ]
+                },
+                {
+                    "title": "5. Foydalanuvchilar va mijozlar majburiyatlari",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Foydalanuvchilar login va parollar maxfiyligini taʼminlashi, kirishni uchinchi shaxslarga bermasligi, zamonaviy himoyalangan qurilmalar va brauzerlardan foydalanishi hamda shubhali faollik aniqlanganda MODME qoʻllab-quvvatlash xizmatini darhol xabardor qilishi shart."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Foydalanuvchi kirish maʼlumotlari buzilgani haqida MODME xabardor qilingunga qadar oʻz hisobi orqali bajarilgan harakatlar uchun javobgar."
+                        }
+                    ]
+                },
+                {
+                    "title": "6. Uchinchi shaxslar bilan hamkorlik",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "MODME faqat tegishli kiberhimoya darajasini taʼminlaydigan hosting, aloqa, SMS-xabarnoma va toʻlov tizimlari provayderlarini jalb qiladi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Maʼlumotlarni uchinchi shaxslarga uzatish faqat shartnoma asosida va ichki kelishuv hamda xavfsizlik auditi tartiblariga muvofiq amalga oshiriladi."
+                        }
+                    ]
+                },
+                {
+                    "title": "7. Xodimlarni xabardor qilish va oʻqitish",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "MODME xodimlari ishga qabul qilinganda kiberxavfsizlik boʻyicha instruktajdan oʻtadi va har yili qayta oʻqitiladi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Xodimlar maxfiy axborot va shaxsiy maʼlumotlarni oshkor qilmaslik majburiyatini imzolaydi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "MODME yiliga kamida bir marta ichki testlar va hodisalarga javob berish boʻyicha mashgʻulotlar oʻtkazadi."
+                        }
+                    ]
+                },
+                {
+                    "title": "8. Javobgarlik va nazorat",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Kiberxavfsizlik choralarini tashkil etish va nazorat qilish uchun buyruq bilan tayinlangan shaxs javobgar hisoblanadi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "MODME ichki kiberxavfsizlik auditini oʻtkazadi va yiliga kamida bir marta kompaniya direktoriga hisobot beradi."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "Ushbu Siyosat talablarini buzgan xodimlar va pudratchilar qonunchilik hamda kompaniyaning ichki hujjatlariga muvofiq intizomiy va boshqa javobgarlikka tortiladi."
+                        }
+                    ]
+                },
+                {
+                    "title": "9. Yangilash va eʼlon qilish",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "Ushbu Siyosat https://modme.uz saytining Hujjatlar bo‘limida ochiq joylashtiriladi."
+                        }
+                    ]
+                }
+            ]
+        },
+        "privacyProcessingPage": {
+            "title": "3-Ilova",
+            "subtitle": "modme.uz dasturiy ta'minotidan SaaS modeli asosida foydalanish huquqini berish bo'yicha pullik xizmatlar shartnomasini tuzish uchun Ommaviy ofertaga",
+            "documentTitle": "SIYOSAT",
+            "documentSubtitle": "shaxsiy maʼlumotlarga ishlov berish bo‘yicha",
+            "company": "MODME MChJ",
+            "updatedLabel": "tahrir sanasi",
+            "introTitle": "Kirish qismi",
+            "intro": [
+                "Ushbu Shaxsiy maʼlumotlarga ishlov berish siyosati O‘zbekiston Respublikasining shaxsiy maʼlumotlarni himoya qilish sohasidagi qonunchiligi, jumladan “Shaxsiy maʼlumotlar to‘g‘risida”gi qonun, “Axborotlashtirish to‘g‘risida”gi qonun va boshqa normativ hujjatlarga muvofiq ishlab chiqilgan.",
+                "Siyosat MODME MChJ tomonidan faoliyati davomida amalga oshiriladigan shaxsiy maʼlumotlarga ishlov berish tartibi va tamoyillarini belgilaydi.",
+                "Siyosat MODME elektron platformalari foydalanuvchilari, mijozlari va hamkorlari bilan xizmat ko‘rsatish, shartnoma tuzish va bajarish jarayonida olinadigan hamda qayta ishlanadigan shaxsiy maʼlumotlarga tatbiq etiladi.",
+                "MODME taʼlim tashkilotlariga xizmat ko‘rsatadi, o‘z foydalanuvchilari va hamkorlari maʼlumotlarini Operator va Egasi sifatida, taʼlim tashkilotlari mijozlari maʼlumotlarini esa faqat saqlash va CRM tizimi ishlashini taʼminlash maqsadida Uchinchi shaxs sifatida qayta ishlaydi.",
+                "MODME foydalanuvchilar yoki taʼlim tashkilotlari vakillari kiritgan maʼlumotlarning ishonchliligi, to‘liqligi va dolzarbligi uchun javobgar emas hamda ularni saqlash, texnik xizmat ko‘rsatish va servis xavfsizligini taʼminlashdan boshqa maqsadlarda ishlatmaydi.",
+                "MODME elektron platformalaridan foydalanishdan oldin foydalanuvchiga ushbu Siyosat bilan tanishish tavsiya etiladi. Shaxsiy maʼlumotlarni MODMEga yuborish orqali foydalanuvchi ularni qayta ishlashga roziligini tasdiqlaydi."
+            ],
+            "sections": [
+                {
+                    "title": "1. Atamalar va taʼriflar",
+                    "paragraphs": [
+                        "Siyosatda quyidagi tushunchalar qo‘llanadi: shaxsiy maʼlumotlar bazasi, shaxsiy maʼlumotlar, shaxsiy maʼlumotlar subyekti, baza egasi, operator, uchinchi shaxs, MODME elektron platformasi, shaxsiy maʼlumotlarga ishlov berish va maxfiylik.",
+                        "Xizmatlar MODME dasturiy taʼminotidan foydalanish huquqini berish, uning ishlashini taʼminlash va foydalanuvchilarga texnik yordam ko‘rsatishni anglatadi."
+                    ]
+                },
+                {
+                    "title": "2. Shaxsiy maʼlumotlar bazasi operatori va aloqa maʼlumotlari",
+                    "paragraphs": [
+                        "MODME MChJ (STIR 307442900), O‘zbekiston Respublikasi Toshkent shahrida ro‘yxatdan o‘tgan, MODME elektron platformalari orqali qayta ishlanadigan shaxsiy maʼlumotlarning egasi va operatori hisoblanadi.",
+                        "MODME Buyurtmachi ro‘yxatdan o‘tishi va Servisdan foydalanishi davomida olingan maʼlumotlarga nisbatan operator, Buyurtmachi Servisga joylashtirgan shaxsiy maʼlumotlarga nisbatan esa uchinchi shaxs sifatida ishtirok etadi.",
+                        "Shaxsiy maʼlumotlar bo‘yicha aloqa: crmmodme@gmail.com."
+                    ]
+                },
+                {
+                    "title": "3. Siyosatning qo‘llanishi",
+                    "paragraphs": [
+                        "MODME elektron platformalaridan foydalanishdan oldin maʼlumotlar subyekti ushbu Siyosat bilan tanishishi tavsiya etiladi.",
+                        "Sayt, CRM tizimi, Telegram botlar va boshqa MODME resurslaridan foydalanish ushbu Siyosat va maʼlumotlarga ishlov berish shartlariga rozilikni anglatadi.",
+                        "MODME saytida shaxsiy maʼlumotlar mustaqil yig‘ilmaydi; tugmalar foydalanuvchini MODMEning Telegramdagi rasmiy resurslariga yo‘naltiradi.",
+                        "Agar subyekt ishlov berish shartlariga rozi bo‘lmasa, Operator xizmatlaridan foydalanmasligi va shaxsiy maʼlumotlarini taqdim etmasligi kerak."
+                    ]
+                },
+                {
+                    "title": "4. Qayta ishlanadigan shaxsiy maʼlumotlar toifalari",
+                    "paragraphs": [
+                        "Qayta ishlanadigan maʼlumotlar ro‘yxatdan o‘tishda taqdim etilgan maʼlumotlar, Buyurtmachi yoki uning xodimlari mijozlar bilan ishlashda joylashtiradigan maʼlumotlar hamda Servisdan foydalanishda avtomatik yig‘iladigan texnik maʼlumotlarni o‘z ichiga olishi mumkin.",
+                        "Operator Buyurtmachi mijozlarining maʼlumotlarini mustaqil yig‘maydi yoki qayta ishlamaydi; bunday maʼlumotlar Buyurtmachi topshirig‘i va javobgarligi ostida qayta ishlanadi.",
+                        "Operator subyekt taqdim etgan shaxsiy maʼlumotlarning to‘g‘riligini tekshirmaydi va aksini tasdiqlovchi dalillar bo‘lmaguncha ularni ishonchli deb hisoblaydi."
+                    ]
+                },
+                {
+                    "title": "5. Shaxsiy maʼlumotlarga ishlov berish shartlari va tamoyillari",
+                    "paragraphs": [
+                        "Обработка осуществляется на принципах законности, справедливости, ограничения целей, достоверности, достаточности и хранения данных не дольше, чем требуют цели обработки.",
+                        "Основаниями обработки являются согласие субъекта, необходимость исполнения договора, выполнение законных обязанностей, защита жизненно важных интересов, законные интересы Operatorа или третьих лиц, статистические цели при обезличивании и данные из общедоступных источников.",
+                        "Цели обработки включают идентификацию субъекта, предоставление доступа к ресурсам, обратную связь, подтверждение данных, создание учётной записи, платежи, поддержку и аналитические исследования на основе обезличенных данных.",
+                        "Персональные данные защищаются организационными и техническими мерами безопасности."
+                    ]
+                },
+                {
+                    "title": "6. Cookie fayllari va texnik maʼlumotlar",
+                    "paragraphs": [
+                        "MODME может использовать cookie и получать техническую информацию, включая IP-адреса пользователей, сведения о браузере, время доступа и адреса страниц.",
+                        "Cookie помогают обеспечивать корректную работу электронных платформ и повышать качество обслуживания. Используются сессионные и постоянные cookie.",
+                        "Техническая информация используется для работоспособности систем, анализа ошибок, безопасности сетевого взаимодействия и обезличенной статистики."
+                    ]
+                },
+                {
+                    "title": "7. Shaxsiy maʼlumotlarni saqlash muddati",
+                    "paragraphs": [
+                        "Персональные данные хранятся в течение срока, необходимого для достижения целей обработки и пока сохраняются основания для хранения.",
+                        "После прекращения оснований данные подлежат удалению или обезличиванию.",
+                        "Operator прекращает обработку и уничтожает данные в течение 10 календарных дней с момента получения письменного заявления субъекта или по истечении срока хранения, если иное не предусмотрено законом.",
+                        "Удаление обезличенных и резервных копий может занимать до 60 календарных дней из-за технологических особенностей хранения."
+                    ]
+                },
+                {
+                    "title": "8. Shaxsiy maʼlumotlarni transchegaraviy uzatish",
+                    "paragraphs": [
+                        "Трансграничная передача означает передачу shaxsiy maʼlumotlar за пределы O‘zbekiston Respublikasi.",
+                        "Такая передача допускается в государства, обеспечивающие адекватный уровень защиты прав субъектов shaxsiy maʼlumotlar, либо при наличии законных оснований.",
+                        "Передавая данные через Telegram или официальные боты MODME, субъект самостоятельно предоставляет данные этому сервису и должен ознакомиться с его политикой конфиденциальности.",
+                        "MODME не несёт ответственности за обработку, хранение и использование данных мессенджером Telegram по его собственным правилам."
+                    ]
+                },
+                {
+                    "title": "9. Shaxsiy maʼlumotlar subyekti huquqlari",
+                    "paragraphs": [
+                        "Subyekt имеет право знать о наличии своих shaxsiy maʼlumotlar, получать информацию об их обработке, требовать изменения, дополнения, временного приостановления или уничтожения данных, давать и отзывать согласие, а также обращаться за защитой прав в уполномоченный орган или суд.",
+                        "Subyekt может направить запрос на e-mail crmmodme@gmail.com или письменное обращение по почтовому адресу MODME.",
+                        "Operator идентифицирует заявителя, рассматривает обращение и предоставляет ответ в течение 10 календарных дней, если иные сроки не установлены законом."
+                    ]
+                },
+                {
+                    "title": "10. Egasi va Operatorning huquq va majburiyatlari",
+                    "paragraphs": [
+                        "Собственник и Operator вправе осуществлять обработку shaxsiy maʼlumotlar в пределах, установленных законодательством и Политикой.",
+                        "Они обязаны соблюдать требования законодательства, предоставлять субъекту информацию по запросу, определять необходимый перечень данных, уничтожать данные по достижении цели обработки или требованию субъекта, обеспечивать доказательства согласия и принимать меры защиты.",
+                        "Обработка может быть поручена третьему лицу при наличии согласия субъекта, необходимости исполнения договора или в случаях, предусмотренных законом.",
+                        "Обязанности по защите shaxsiy maʼlumotlar возникают с момента их получения и действуют до уничтожения или обезличивания данных."
+                    ]
+                },
+                {
+                    "title": "11. Maʼlumot taqdim etish tartibi",
+                    "paragraphs": [
+                        "Subyekt вправе изменить, дополнить или обновить предоставленные данные через функции платформы или письменное обращение.",
+                        "Subyekt может потребовать удаления данных через сайт, Telegram-бот или письменное либо электронное обращение.",
+                        "Информация об обработке предоставляется субъекту в пределах и порядке, установленных законодательством. Право на получение информации может быть ограничено, если её предоставление нарушает права других лиц или препятствует осуществлению правосудия."
+                    ]
+                },
+                {
+                    "title": "12. Qayta ishlash harakatlari haqida xabardor qilish",
+                    "paragraphs": [
+                        "При включении shaxsiy maʼlumotlar в базу данных субъект уведомляется о целях, правовых основаниях и предполагаемом объёме обработки.",
+                        "При передаче данных третьему лицу субъект уведомляется в течение трёх рабочих дней, если иное не предусмотрено законом или договором.",
+                        "Уведомление может не производиться в случаях, прямо предусмотренных законодательством."
+                    ]
+                },
+                {
+                    "title": "13. Avtomatlashtirilgan va avtomatlashtirilmagan ishlov berish",
+                    "paragraphs": [
+                        "Обработка shaxsiy maʼlumotlar осуществляется как с использованием средств автоматизации, так и без них, включая сбор, систематизацию, хранение, уточнение, использование, передачу и уничтожение данных.",
+                        "Subyekt имеет право не подвергаться решениям, основанным исключительно на автоматизированной обработке, если такие решения затрагивают его права или влекут юридические последствия, кроме случаев, предусмотренных законом.",
+                        "При поступлении возражения субъекту направляется результат рассмотрения в срок не позднее 10 календарных дней."
+                    ]
+                },
+                {
+                    "title": "14. O‘zbekiston fuqarolari maʼlumotlarini qayta ishlashning alohida shartlari",
+                    "paragraphs": [
+                        "При обработке shaxsiy maʼlumotlar граждан O‘zbekiston Respublikasi с использованием информационных технологий данные хранятся в базах, размещённых на технических средствах, физически находящихся на территории O‘zbekiston Respublikasi и зарегистрированных в установленном порядке.",
+                        "Хранение и обработка данных за пределами Узбекистана допускается только при соблюдении требований законодательства, обеспечении адекватной защиты и наличии согласия субъекта либо договора."
+                    ]
+                },
+                {
+                    "title": "15. Shaxsiy maʼlumotlarni himoya qilish kafolatlari",
+                    "paragraphs": [
+                        "Государство гарантирует защиту shaxsiy maʼlumotlar в соответствии с законодательством O‘zbekiston Respublikasi.",
+                        "Собственник, Operator и третьи лица принимают правовые, организационные и технические меры для защиты от вмешательства в частную жизнь, сохранности данных, режима конфиденциальности и предотвращения неправомерного доступа."
+                    ]
+                },
+                {
+                    "title": "16. Shaxsiy maʼlumotlar maxfiyligi",
+                    "paragraphs": [
+                        "Конфиденциальность означает обязательное требование не раскрывать и не распространять персональные данные без согласия субъекта или иного законного основания.",
+                        "Лица, получившие доступ к персональным данным, обязаны соблюдать конфиденциальность, кроме случаев, прямо предусмотренных законом."
+                    ]
+                },
+                {
+                    "title": "17. Ochiq shaxsiy maʼlumotlar",
+                    "paragraphs": [
+                        "Общедоступными являются персональные данные, свободный доступ к которым предоставлен с согласия субъекта либо на которые не распространяется требование конфиденциальности.",
+                        "Сведения субъекта могут быть исключены из общедоступных источников по его обращению, решению уполномоченного органа или суда."
+                    ]
+                },
+                {
+                    "title": "18. Yakuniy qoidalar",
+                    "paragraphs": [
+                        "Споры и разногласия, возникающие при обработке shaxsiy maʼlumotlar, разрешаются в порядке, установленном законодательством O‘zbekiston Respublikasi.",
+                        "Лица, виновные в нарушении законодательства о shaxsiy maʼlumotlar, несут ответственность в соответствии с действующим законодательством."
+                    ]
+                },
+                {
+                    "title": "19. Siyosatga o‘zgartirish kiritish",
+                    "paragraphs": [
+                        "MODME MChJ вправе вносить изменения в настоящую Политику без предварительного уведомления субъектов shaxsiy maʼlumotlar.",
+                        "Новая редакция Политики вступает в силу с момента её размещения на электронных платформах MODME, если иное не предусмотрено самим документом.",
+                        "Изменения законодательства и решения уполномоченных государственных органов являются основанием для внесения изменений в Политику.",
+                        "Siyosat утверждается приказом директора MODME MChJ."
+                    ]
+                }
+            ]
         }
     },
     "privacyPolicy": {
-        "fullDocument": "To'liq hujjat"
+        "fullDocument": "To'liq hujjat",
+        "consent": {
+            "metadata": {
+                "title": "Shaxsiy maʼlumotlarni qayta ishlashga rozilik - Modme",
+                "description": "Shaxsiy maʼlumotlarni qayta ishlashga rozilik va Modme CRM shaxsiy maʼlumotlar siyosatiga havola"
+            },
+            "title": "SHAXSIY MAʼLUMOTLARNI QAYTA ISHLASHGA ROZILIK",
+            "edition": "(tahrir sanasi “___” ____________ 2025)",
+            "intro": "Ushbu rozilik MODME MChJ bilan shartnoma tuzayotgan yuridik shaxs yoki yakka tartibdagi tadbirkor vakili bo‘lgan jismoniy shaxs tomonidan beriladi.",
+            "items": [
+                {
+                    "text": "Men, shaxsiy maʼlumotlar subyekti, MODME MChJ (MODME) Shaxsiy maʼlumotlarni qayta ishlash siyosati bilan tanishganimni tasdiqlayman. Ushbu siyosat https://modme.uz rasmiy saytida joylashtirilgan. MODME MChJ (STIR 307442900)ga O‘zbekiston Respublikasi qonunchiligi va Ijrochi Siyosatida belgilangan tartibda shaxsiy maʼlumotlarimni qayta ishlashga aniq va shartsiz rozilik beraman."
+                },
+                {
+                    "text": "Shaxsiy maʼlumotlarim quyidagi maqsadlarda qayta ishlanadi:",
+                    "list": [
+                        "modme.uz Servisida ro‘yxatdan o‘tish va kirish huquqini berish;",
+                        "men (yoki men vakillik qilayotgan tashkilot) va MODME o‘rtasidagi shartnoma majburiyatlarini bajarish;",
+                        "CRM/LMS platformasi va unga bog‘liq servislar ishlashini taʼminlash;",
+                        "Servisdan foydalanish bilan bog‘liq xabarnoma, texnik maʼlumot va xabarlarni yuborish;",
+                        "O‘zbekiston Respublikasi qonunchiligi talablarini bajarish."
+                    ]
+                },
+                {
+                    "text": "Ushbu rozilik doirasida quyidagi shaxsiy maʼlumotlar qayta ishlanishi mumkin:",
+                    "list": [
+                        "familiya, ism, otasining ismi;",
+                        "aloqa telefon raqami;",
+                        "elektron pochta manzili;",
+                        "lavozim va tashkilot nomi;",
+                        "ro‘yxatdan o‘tish yoki Servis funksionalidan foydalanishda kiritiladigan maʼlumotlar."
+                    ]
+                },
+                {
+                    "text": "MODME shaxsiy maʼlumotlarni yig‘ish, yozish, tizimlashtirish, saqlash, o‘zgartirish, foydalanish, anonimlashtirish, bloklash, o‘chirish va yo‘q qilish, shuningdek ushbu Rozilikda ko‘rsatilgan maqsadlarda O‘zbekiston Respublikasi hududida uzatish huquqiga ega."
+                },
+                {
+                    "text": "Maʼlumotlar MODME Shaxsiy maʼlumotlarni qayta ishlash siyosati va qonunchilik talablariga muvofiq avtomatlashtirilgan vositalar yordamida va zarur hollarda qo‘lda qayta ishlanadi."
+                },
+                {
+                    "text": "Maʼlumotlar O‘zbekiston Respublikasi hududida joylashgan himoyalangan serverlarda, maʼlumotlar bazasini ro‘yxatdan o‘tkazish guvohnomasiga muvofiq saqlanadi."
+                },
+                {
+                    "text": "MODME shaxsiy maʼlumotlarni uchinchi shaxslarga uzatishi mumkin, agar bunday uzatish quyidagilar uchun zarur bo‘lsa:",
+                    "list": [
+                        "aloqa va xabarnoma xizmatlarini ko‘rsatish;",
+                        "to‘lovlarni amalga oshirish;",
+                        "O‘zbekiston Respublikasidagi hosting va data-markaz xizmatlarini taʼminlash;",
+                        "shartnoma majburiyatlarini bajarish;",
+                        "O‘zbekiston Respublikasi qonunchiligida nazarda tutilgan boshqa maqsadlar."
+                    ]
+                },
+                {
+                    "text": "Menga maʼlumotlarim tarkibi va qayta ishlash usullari haqida axborot olish, maʼlumotlarni aniqlashtirish, bloklash yoki o‘chirishni talab qilish, crmmodme@gmail.com manziliga xabarnoma yuborib rozilikni qaytarib olish hamda MODME harakatlari ustidan qonunda belgilangan tartibda shikoyat qilish huquqim borligi maʼlum qilindi."
+                },
+                {
+                    "text": "Ushbu rozilik Servisdan foydalanishimning butun muddati davomida va MODME bilan munosabatlar tugaganidan keyin oltmish (60) kalendar kun davomida amal qiladi."
+                },
+                {
+                    "text": "Ushbu muddat tugagach, qonunchilikda boshqacha nazarda tutilmagan bo‘lsa, maʼlumotlar Oferta va MODME Shaxsiy maʼlumotlarni qayta ishlash siyosati shartlariga muvofiq o‘chiriladi yoki anonimlashtiriladi."
+                },
+                {
+                    "text": "Taqdim etilgan maʼlumotlar ishonchli ekanini tasdiqlayman va ularni ushbu hujjat shartlariga muvofiq qayta ishlashga rozilik bildiraman."
+                }
+            ],
+            "fullDocTitle": "3-Ilova — Maxfiylik va shaxsiy maʼlumotlarga ishlov berish siyosati",
+            "fullDocDescription": "To‘liq rasmiy hujjat bilan tanishing"
+        }
     }
 }

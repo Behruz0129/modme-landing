@@ -1,34 +1,31 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "@/i18n/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
+import { Link } from "@/i18n/navigation";
 
-type PrivacySection = {
+type OfertaSection = {
     title: string;
     paragraphs: string[];
 };
 
-function formatCurrentDate(locale: string) {
-    return new Intl.DateTimeFormat(
-        locale === "ru" ? "ru-RU" : locale === "en" ? "en-US" : "uz-UZ",
-        {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-        }
-    ).format(new Date());
+function formatDate(locale: string) {
+    return new Intl.DateTimeFormat(locale === "en" ? "en-US" : "uz-UZ", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+    }).format(new Date());
 }
 
-export default function PrivacyPolicyClient() {
+export default function LocalizedOfertaContent() {
     const common = useTranslations("common");
-    const t = useTranslations("resources.privacyProcessingPage");
+    const t = useTranslations("resources.oferta");
     const locale = useLocale();
     const [openSections, setOpenSections] = useState<number[]>([]);
     const intro = t.raw("intro") as string[];
-    const sections = t.raw("sections") as PrivacySection[];
+    const sections = t.raw("sections") as OfertaSection[];
 
     const toggleSection = (index: number) => {
         setOpenSections((prev) =>
@@ -65,32 +62,21 @@ export default function PrivacyPolicyClient() {
                                 <p className="text-xl font-semibold text-[#181c23] mb-2">
                                     {t("subtitle")}
                                 </p>
-                                <p className="text-2xl font-bold text-[#181c23] mb-2">
-                                    {t("documentTitle")}
-                                </p>
-                                <p className="text-xl font-semibold text-[#181c23] mb-2">
-                                    {t("documentSubtitle")}
-                                </p>
-                                <p className="text-lg font-semibold text-[#181c23] mb-2">
-                                    {t("company")}
-                                </p>
                                 <p className="text-sm text-[#a8a8a8]">
-                                    ({t("updatedLabel")}{" "}
-                                    {formatCurrentDate(locale)})
+                                    ({t("updatedLabel")}: {formatDate(locale)})
                                 </p>
                             </div>
 
-                            <div className="space-y-6">
-                                <div>
-                                    <h2 className="text-xl font-bold text-[#181c23] mb-4">
-                                        {t("introTitle")}
-                                    </h2>
-                                    <div className="space-y-4">
-                                        {intro.map((paragraph) => (
-                                            <p key={paragraph}>{paragraph}</p>
-                                        ))}
-                                    </div>
-                                </div>
+                            {intro.map((paragraph) => (
+                                <p className="text-left" key={paragraph}>
+                                    {paragraph}
+                                </p>
+                            ))}
+
+                            <div className="bg-[#fff8e8] border-l-4 border-[#ff8000] p-4 rounded-r-lg my-6 text-left">
+                                <p className="font-semibold text-[#181c23]">
+                                    {t("notice")}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +114,7 @@ export default function PrivacyPolicyClient() {
                                             transition={{ duration: 0.3 }}
                                             className="overflow-hidden"
                                         >
-                                            <div className="px-6 py-4 border-t border-[#f0f0f0] space-y-4 text-left text-[#4a5564]">
+                                            <div className="px-6 py-4 border-t border-[#f0f0f0] space-y-3 text-left text-[#4a5564]">
                                                 {section.paragraphs.map(
                                                     (paragraph) => (
                                                         <p key={paragraph}>

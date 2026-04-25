@@ -1,13 +1,24 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import CybersecurityPolicyClient from "./client";
 
-export const metadata: Metadata = {
-    title: "Приложение № 4 — Публичная часть Политики кибербезопасности | Modme",
-    description:
-        "Приложение № 4 — Публичная часть Политики кибербезопасности ООО «MODME» - официальная политика кибербезопасности платформы Modme CRM.",
-    keywords:
-        "Modme кибербезопасность, политика кибербезопасности, Modme CRM безопасность",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "resources.legalPages.cybersecurity.metadata",
+    });
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t("keywords"),
+    };
+}
 
 export default function CybersecurityPolicyPage() {
     return <CybersecurityPolicyClient />;

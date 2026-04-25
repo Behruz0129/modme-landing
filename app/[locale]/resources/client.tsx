@@ -46,21 +46,25 @@ export default function ResourcesClient() {
     const t = useTranslations("resources");
 
     const legalInfo = [
-        { label: t("fields.executor"), value: "ООО «MODME»", icon: ICONS[0] },
+        {
+            label: t("fields.executor"),
+            value: t("legalInfo.executor"),
+            icon: ICONS[0],
+        },
         { label: t("fields.tin"), value: "307442900", icon: ICONS[1] },
         {
             label: t("fields.address"),
-            value: "Республика Узбекистан, г. Ташкент, Мирзо-Улугбекский район, махалля Навнихол, улица Тепамасжид, дом 4А.",
+            value: t("legalInfo.address"),
             icon: ICONS[2],
         },
         {
             label: t("fields.phone"),
-            value: "+998 (78) 777-11-00",
+            value: t("legalInfo.phone"),
             icon: ICONS[3],
         },
         {
             label: t("fields.email"),
-            value: "crmmodme@gmail.com",
+            value: t("legalInfo.email"),
             icon: ICONS[4],
         },
     ];
