@@ -30,7 +30,7 @@ export default function VacanciesClient() {
     const items = t.raw("items") as VacancyItem[];
     const contactTelegram = "https://t.me/modme_manager";
 
-    const noMoreRaw = t("noMore");
+    const noMoreRaw = t.raw("noMore") as string;
     const noMoreParts = noMoreRaw.split("{link}");
 
     return (
