@@ -12,7 +12,7 @@ export default function OfertaClient() {
     const locale = useLocale();
     const [openSections, setOpenSections] = useState<number[]>([]);
 
-    if (locale === "en" || locale === "uz") {
+    if (locale === "en") {
         return <LocalizedOfertaContent />;
     }
 
