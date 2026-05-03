@@ -121,7 +121,9 @@
                     "Because payments come at the start of each month, control finances and calculate expenses in advance",
                     "Ability to pay teachers' monthly salary on time at the beginning of each month"
                 ],
-                "disadvantages": ["Not suitable for other payment modes"]
+                "disadvantages": [
+                    "Not suitable for other payment modes"
+                ]
             },
             "daily": {
                 "name": "Daily",
@@ -167,7 +169,9 @@
                 "advantages": [
                     "Great for online courses or education businesses that charge up-front for the entire course"
                 ],
-                "disadvantages": ["Not suitable for other payment modes"]
+                "disadvantages": [
+                    "Not suitable for other payment modes"
+                ]
             },
             "individual": {
                 "name": "Individual",
@@ -459,7 +463,10 @@
                 "title": "Sales Manager",
                 "location": "Tashkent",
                 "type": "Offline",
-                "languages": ["Uzbek", "Russian (required)"],
+                "languages": [
+                    "Uzbek",
+                    "Russian (required)"
+                ],
                 "department": "Sales Department",
                 "description": "We are looking for an experienced and communicative sales manager to join the Modme team. You will work with learning centers and present our CRM system to them.",
                 "responsibilities": [
@@ -596,10 +603,895 @@
             "privacy": "Annex No. 3 — Privacy and Personal Data Processing Policy",
             "cybersecurity": "Annex No. 4 — Public Part of the Cybersecurity Policy",
             "certificate": "Certificate of registration of personal data database"
+        },
+        "oferta": {
+            "metadata": {
+                "title": "Public Offer | Modme",
+                "description": "Public offer of MODME LLC - official terms for using the Modme CRM platform.",
+                "keywords": "Modme offer, public offer, terms of use, Modme CRM agreement"
+            },
+            "title": "PUBLIC OFFER",
+            "subtitle": "for the conclusion of a contract for the provision of paid services granting access to the \u201cmodme.uz\u201d software under the SaaS model",
+            "updatedLabel": "Revised as of",
+            "intro": [
+                "This document (hereinafter referred to as the \u201cOffer\u201d) has been prepared in accordance with Articles 367 and 370 of the Civil Code of the Republic of Uzbekistan and constitutes a public offer containing all the essential terms of a contract for the provision of paid services to grant access to the \u201cmodme.uz\u201d software under the SaaS (Software as a Service) model.",
+                "This proposal to enter into a contract (the \u201cOffer\u201d) is addressed to legal entities and individual entrepreneurs intending to use the \u201cmodme.uz\u201d software to conduct their own business activities.",
+                "The contract is concluded in accordance with the procedure provided for by the legislation of the Republic of Uzbekistan, through acceptance of this Offer.",
+                "Acceptance of the Offer is the date of successful payment made by the Customer according to the selected Rate; from that moment, the contract becomes legally binding, equivalent to a contract executed in writing.",
+                "Without contradicting the provisions of this Offer, the Contractor and the Customer have the right, by mutual agreement, to formalize the contract as a separate written bilateral document confirming the relationship established on the basis of the public offer. In this case, if there is a discrepancy between the terms of the Agreement and the terms of this Offer, the provisions of the concluded individual Agreement shall take precedence.",
+                "This version of the Public Offer shall enter into force upon its publication on the Contractor\u2019s website at https://modme.uz/ and shall remain in effect until the Contractor officially notifies of its withdrawal or amendment of its terms.",
+                "The Contractor has the right to withdraw the Offer at any time at its discretion prior to acceptance.",
+                "Please be sure to review the text of the Offer before accepting it. If you do not agree with any specific provision of the Offer, including the applicable Annexes, in its entirety, do not accept the Offer."
+            ],
+            "notice": "This Offer is a legal document that governs the use of the modme.uz platform. If you have paid for access to the platform, you automatically agree to the terms set forth below.",
+            "sections": [
+                {
+                    "title": "1. GENERAL PROVISIONS",
+                    "paragraphs": [
+                        "This Public Offer is the official proposal of MODME LLC (TIN 307442900), referred to as the Contractor, to legal entities and individual entrepreneurs to enter into an agreement for paid services to provide access to the modme.uz software under the SaaS model.",
+                        "The Offer contains all essential terms of the paid services agreement. The agreement is concluded by accepting this Offer without signing a paper copy.",
+                        "The Offer is intended only for professional and business use and does not apply to individuals acting as consumers.",
+                        "Acceptance means successful payment under the selected Tariff. The person accepting the Offer becomes the Customer.",
+                        "The Service means the modme.uz software developed by the Contractor, hosted in cloud infrastructure and provided to the Customer via the Internet for automation of business processes, customer management and internal workflow.",
+                        "The Customer receives access to the Service without transfer of ownership, copies of software, source code or exclusive rights.",
+                        "The Offer and related documents may be published in Uzbek, Russian and English. If language versions differ, the Uzbek text has priority as the state-language version."
+                    ]
+                },
+                {
+                    "title": "2. SUBJECT MATTER OF THE AGREEMENT",
+                    "paragraphs": [
+                        "The Contractor provides the Customer with remote access to the modme.uz Service under the SaaS model, and the Customer accepts and pays for these services.",
+                        "The Service provides technical functionality for maintaining a customer database, automating business processes, interacting with counterparties and performing other tasks available in the Service.",
+                        "The Contractor may optionally provide access to the LMS module for uploading educational materials, conducting lessons and tests, and providing access to students. Such content belongs to the Customer, and the Contractor is not responsible for its substance or legal compliance.",
+                        "Access is provided through the web interface at https://modme.uz, API integrations where necessary, and a mobile application if it is available and supported.",
+                        "The Customer uses the Service only for its own business activities within the paid tariff and access period. The Service is provided on an as-is basis, except for guarantees expressly stated in this Offer.",
+                        "Services are provided in the Republic of Uzbekistan, while access may be made from any location subject to compliance with the laws of Uzbekistan."
+                    ]
+                },
+                {
+                    "title": "3. REGISTRATION AND ACCOUNT",
+                    "paragraphs": [
+                        "After paying for a Tariff, the Customer registers on the Contractor's website and creates an account to access the Service.",
+                        "During registration, the Customer provides the required information, including company name, TIN, contact person, e-mail, phone number and other information necessary for identification and communication.",
+                        "Registration confirms the Customer's consent to this Offer, the Personal Data Processing Policy and the Cybersecurity Policy.",
+                        "The person registering the account confirms that they are authorized to act on behalf of the Customer. The Customer bears all risks related to lack of authority of such person.",
+                        "The Customer guarantees that all registration data is accurate and up to date and must promptly update or notify the Contractor of changes.",
+                        "The Customer is responsible for the confidentiality of logins, passwords, tokens and access codes, and for all actions performed through its account.",
+                        "If account control is lost, a password is compromised or unauthorized access is suspected, the Customer must immediately notify the Contractor.",
+                        "The Contractor may temporarily restrict or block access if the Customer violates the Offer, fails to pay on time, creates a cybersecurity threat, or if required by law or government authorities."
+                    ]
+                },
+                {
+                    "title": "4. RIGHTS AND OBLIGATIONS OF THE PARTIES",
+                    "paragraphs": [
+                        "The Contractor must provide access to the Service under the selected Tariff, protect Customer data through technical and organizational measures, inform the Customer about planned maintenance, provide electronic documents and process personal data only for performance of the agreement.",
+                        "The Contractor may temporarily suspend access for maintenance, modify the Service without degrading the general level of availability and quality, change tariffs after publication, block access in case of violations, send service notices and use anonymized statistics to improve services.",
+                        "The Customer must comply with the Offer and appendices, use the Service lawfully and only for business purposes, pay on time, keep access credentials confidential, provide accurate data, and comply with personal data, cybersecurity, advertising and e-commerce laws.",
+                        "The Customer may use the Service within the paid Tariff, request technical support, receive acts and invoices, upgrade or renew the Tariff, submit requests and proposals, and require confidentiality and protection of its data.",
+                        "The Customer may contact the Contractor by e-mail, through the feedback form on https://modme.uz, or via the official Telegram manager account indicated on the Service website.",
+                        "The Customer may not use the Service to process unlawful information, interfere with security systems, attempt to obtain source code, send spam or malware, transfer account access, overload infrastructure, or damage the Contractor's reputation.",
+                        "The parties must keep confidential all information received in connection with the agreement unless disclosure is required by law or approved in writing by the other party."
+                    ]
+                },
+                {
+                    "title": "5. PAYMENT AND DOCUMENTATION",
+                    "paragraphs": [
+                        "The cost of services is determined according to prices published at https://modme.uz and in Appendix No. 1, Tariffs.",
+                        "Tariffs are set in Uzbek soums (UZS). Unless otherwise stated, the service cost does not include VAT or bank and payment-system commissions.",
+                        "Payment is made by 100% prepayment to the Contractor's bank account, by online payment systems integrated with the Service, or by bank cards connected to the national payment system of Uzbekistan.",
+                        "The first payment is made before conclusion of the agreement. Payments for new access periods must be made no later than one calendar day before the start of the relevant period.",
+                        "The payment date is the date funds are credited to the Contractor's bank account or the date the payment system confirms the transaction.",
+                        "At the end of each paid month or access period, the Contractor forms and sends the Customer an act of services rendered and an electronic invoice through the electronic document workflow system.",
+                        "The Customer must sign the act and invoice with an electronic digital signature or provide a reasoned refusal within five calendar days. If no objections are provided, the services are deemed accepted in full.",
+                        "The agreement is automatically renewed for the same period if payment for the next period is received. If payment is not received, the agreement is automatically terminated after the previous access period ends.",
+                        "Refunds are possible only in limited cases such as mistaken or duplicate payment, unauthorized charge caused by a payment system, Contractor billing error, documented non-provision of services due to the Contractor, or early termination initiated by the Contractor before the paid period ends.",
+                        "Refunds are not made if the Customer stops using the Service at its own discretion, if the Service works according to its description but does not meet subjective expectations, or if access is suspended due to the Customer's violation."
+                    ]
+                },
+                {
+                    "title": "6. INTELLECTUAL PROPERTY",
+                    "paragraphs": [
+                        "The Service is an object of intellectual property protected by the laws of Uzbekistan, including civil and copyright legislation.",
+                        "All exclusive property and non-property rights to the Service, its components, design, database structure, source code, documentation, interfaces, logos and other elements belong exclusively to the Contractor.",
+                        "Nothing in this Offer transfers ownership or exclusive rights in the Service to the Customer.",
+                        "The Contractor grants the Customer a non-exclusive, limited, non-transferable and revocable right to use the Service within the Offer, paid Tariff and access period.",
+                        "The Customer may not copy, modify, adapt, translate, decompile or otherwise attempt to obtain the Service source code; transfer access to third parties; remove copyright or trademark notices; create derivative products; or use the Service in violation of law.",
+                        "The Contractor does not claim ownership of Customer Content and uses it only to ensure operation of the Service and performance of the agreement."
+                    ]
+                },
+                {
+                    "title": "7. PROCESSING AND PROTECTION OF PERSONAL DATA",
+                    "paragraphs": [
+                        "The Customer is the owner and operator of personal data placed in the Service while using its functionality.",
+                        "The Contractor acts as an operator regarding data received during registration and use of the Service by the Customer and its representatives, and as a third party regarding personal data placed by the Customer in the Service.",
+                        "The Contractor processes personal data only on the Customer's instructions and to the extent necessary to perform contractual obligations.",
+                        "The Service may process registration data, data placed by the Customer or its employees while working with clients, and technical data automatically collected during use of the Service.",
+                        "The Contractor does not independently collect or process personal data of the Customer's clients. Such data is processed on the Customer's instruction and under the Customer's responsibility.",
+                        "Processing is carried out for performance of the agreement, communication with the Customer, security and stable operation of the Service, and compliance with the legislation of Uzbekistan.",
+                        "By registering and paying for services, the Customer confirms that it has provided consent to process its personal data and has obtained consent from employees and clients whose data it enters into the Service.",
+                        "Personal data databases processed by the Contractor are located and registered in Uzbekistan. Server and hosting capacities are located in Uzbekistan.",
+                        "After termination of the agreement or upon written request, data may be deleted or anonymized within sixty calendar days unless otherwise required by law.",
+                        "Questions and requests relating to personal data may be sent to crmmodme@gmail.com."
+                    ]
+                },
+                {
+                    "title": "8. CYBERSECURITY AND INFORMATION PROTECTION",
+                    "paragraphs": [
+                        "The Contractor protects the Service and Customer data using technical and organizational measures aimed at preventing unauthorized access, loss or alteration of information.",
+                        "Security measures include HTTPS and SSL/TLS, access control and user authentication, antivirus and anti-malware protection, regular software updates and role-based employee access to Customer data.",
+                        "The Contractor regularly conducts internal security audits and infrastructure vulnerability testing under the Cybersecurity Policy. Audit results are not disclosed but may be provided in summarized form upon written request.",
+                        "The Contractor is responsible for data security within its technical area of responsibility, including servers, communication channels and Service infrastructure.",
+                        "The Customer is responsible for the security of its accounts, passwords and actions of users to whom it has granted access.",
+                        "The Contractor is not liable for losses caused by transfer of passwords to third parties, use of unsafe equipment or networks, or unlawful actions of the Customer's employees or counterparties.",
+                        "The Contractor performs regular backups to prevent data loss. Backup frequency, retention and restoration procedures are determined by internal regulations.",
+                        "In case of unauthorized access, leakage, virus attack or other incidents affecting Customer data, the Contractor takes immediate measures to localize the threat and notifies the Customer within 24 hours after detection.",
+                        "If an incident involves personal data leakage, the Contractor also notifies the State Cybersecurity Center and other competent authorities as required by Uzbekistan law."
+                    ]
+                },
+                {
+                    "title": "9. LIABILITY OF THE PARTIES",
+                    "paragraphs": [
+                        "Each party is liable for proper performance of its obligations within the limits established by Uzbekistan law and the agreement.",
+                        "The Contractor is liable for providing access within the paid Tariff and access period, protecting Customer data within its technical responsibility, and restoring access within a reasonable time.",
+                        "The Customer is liable for accuracy of registration data, confidentiality of access credentials, actions of its employees and users, legality of data placed in the Service, and lawful use of the Service.",
+                        "If the Customer violates this Offer or applicable law, it must compensate the Contractor for losses, including costs of investigation and mitigation of incident consequences.",
+                        "The Contractor is not liable for Service failures caused by Customer equipment or communication channels, third-party actions, data loss caused by the Customer, incorrect use of the Service or failure to follow instructions.",
+                        "The Contractor does not guarantee absolute uninterrupted or error-free operation of the Service but will use reasonable efforts to ensure stable functioning.",
+                        "The Contractor is not liable for lost profits, loss of data or revenue, or indirect losses. If the Contractor is at fault, its liability is limited to the amount actually paid by the Customer for the period in which the violation occurred.",
+                        "The parties are released from liability for non-performance caused by force majeure, including natural disasters, fires, floods, earthquakes, military actions, riots, strikes, terrorism, government actions, energy or telecom failures, epidemics or data-center failures."
+                    ]
+                },
+                {
+                    "title": "10. TERMINATION OF THE AGREEMENT",
+                    "paragraphs": [
+                        "The Customer may refuse further use of the Service by notifying the Contractor at least five calendar days before the end of the current paid period. Payments for the unused period are not refunded except as provided in Section 5.",
+                        "The agreement ends after the paid period if the Customer does not pay for the next period and does not intend to renew access.",
+                        "The Contractor may stop providing services by notifying the Customer at least five calendar days before the end of the current paid period through the account or by e-mail.",
+                        "If the Contractor terminates the agreement due to the Customer's violation, funds for the unused period are not refunded and are retained as contractual penalty.",
+                        "If termination by the Contractor is not caused by the Customer, the unused amount is refunded under Section 5.",
+                        "The parties may terminate the agreement by mutual consent with at least five calendar days' written notice.",
+                        "After termination, access to the Service stops. The Contractor keeps Customer Content and provides export capability for sixty calendar days after termination.",
+                        "Upon written request, the Contractor provides data export in a machine-readable format within ten working days. After export and confirmation of receipt, copies are deleted from working systems and backups within sixty calendar days unless otherwise required by law."
+                    ]
+                },
+                {
+                    "title": "11. DISPUTE RESOLUTION PROCEDURE",
+                    "paragraphs": [
+                        "All disagreements and disputes concerning performance, amendment, termination or interpretation of this Offer and the agreement should be resolved through negotiations.",
+                        "Before going to court, the party whose rights are allegedly violated must send a written claim describing the dispute and proposing voluntary settlement.",
+                        "Claims regarding scope and quality of services are sent to the Contractor's e-mail with supporting materials such as screenshots or correspondence.",
+                        "The claim review period is up to ten working days. If the claim is accepted, the Contractor eliminates the deficiencies or provides compensation such as access extension or cost recalculation.",
+                        "Disputes not resolved by negotiation are considered by the court at the place of state registration of the Contractor. The parties recognize this jurisdiction as final and binding."
+                    ]
+                },
+                {
+                    "title": "12. FINAL PROVISIONS",
+                    "paragraphs": [
+                        "The Offer, agreement, additional agreements, appendices, acts and invoices may be signed through an electronic document workflow system using an electronic digital signature.",
+                        "Other documents, notices and information related to the agreement may be sent by e-mail, messengers or electronic document workflow systems. The parties recognize the legal force of electronic documents and messages.",
+                        "The Contractor may amend this Offer, its appendices, tariffs and related documents.",
+                        "All amendments are published on https://modme.uz and become effective from publication unless otherwise stated.",
+                        "Continued use of the Service after amendments become effective means the Customer's consent to the new version of the Offer.",
+                        "If the Customer disagrees with amendments, it may stop using the Service, notify the Contractor and stop paying for subsequent periods.",
+                        "This Offer remains valid until it is withdrawn or replaced by a new version. The new version cancels previous versions and applies to relations arising after its publication.",
+                        "The version effective at the moment of payment remains valid until the end of the paid access period unless the new version expressly provides otherwise."
+                    ]
+                },
+                {
+                    "title": "13. APPENDICES",
+                    "paragraphs": [
+                        "Appendices to this Offer are published on the Contractor's official website at https://modme.uz and form an integral part of the Offer.",
+                        "The appendices include: Appendix No. 1 — Tariffs; Appendix No. 2 — Technical Support Policy; Appendix No. 3 — Personal Data Processing Policy; Appendix No. 4 — Cybersecurity Policy."
+                    ]
+                },
+                {
+                    "title": "14. CONTRACTOR\u2019S DETAILS",
+                    "paragraphs": [
+                        "MODME Limited Liability Company",
+                        "TIN: 307442900",
+                        "Legal address: Republic of Uzbekistan, Tashkent, Mirzo-Ulugbek district, Navnikhol MFY, Tepamasjid street, house 4a",
+                        "Bank details: account 20208000905235041001 at OPERU JSCB Kapitalbank",
+                        "Phone: +998 787771100",
+                        "E-mail: crmmodme@gmail.com",
+                        "Website: https://modme.uz"
+                    ]
+                }
+            ]
+        },
+        "legalInfo": {
+            "executor": "MODME LLC",
+            "address": "Republic of Uzbekistan, Tashkent, Mirzo-Ulugbek district, Navnikhol mahalla, Tepamasjid street, house 4A.",
+            "phone": "+998 (78) 777-11-00",
+            "email": "crmmodme@gmail.com"
+        },
+        "certificate": {
+            "title": "Certificate of registration of personal data database",
+            "metadata": {
+                "title": "Certificate of registration of personal data database | Modme",
+                "description": "Certificate of registration of the personal data database of MODME LLC - the official registration certificate for the Modme CRM platform.",
+                "keywords": "Modme certificate, database registration, personal data, Modme CRM registration"
+            }
+        },
+        "legalPages": {
+            "tariffs": {
+                "metadata": {
+                    "title": "Annex No. 1 — Tariffs | Modme",
+                    "description": "Annex No. 1 — Tariffs of MODME LLC - official tariff plans for the Modme CRM platform.",
+                    "keywords": "Modme tariffs, tariff plans, Modme CRM pricing, tariff annex"
+                }
+            },
+            "technicalSupport": {
+                "metadata": {
+                    "title": "Annex No. 2 — Technical Support Policy (SLA) | Modme",
+                    "description": "Annex No. 2 — Technical Support Policy (SLA) of MODME LLC - the official technical support policy for the Modme CRM platform.",
+                    "keywords": "Modme SLA, technical support policy, Modme CRM support, technical support"
+                }
+            },
+            "privacy": {
+                "metadata": {
+                    "title": "Annex No. 3 — Privacy and Personal Data Processing Policy | Modme",
+                    "description": "Annex No. 3 — Privacy and Personal Data Processing Policy of MODME LLC - the official privacy policy for the Modme CRM platform.",
+                    "keywords": "Modme privacy policy, personal data processing, Modme CRM privacy"
+                }
+            },
+            "cybersecurity": {
+                "metadata": {
+                    "title": "Annex No. 4 — Public Part of the Cybersecurity Policy | Modme",
+                    "description": "Annex No. 4 — Public Part of the Cybersecurity Policy of MODME LLC - the official cybersecurity policy for the Modme CRM platform.",
+                    "keywords": "Modme cybersecurity, cybersecurity policy, Modme CRM security"
+                }
+            }
+        },
+        "tariffsPage": {
+            "title": "Annex No. 1",
+            "subtitle": "to the Public Offer for entering into an agreement for paid services to provide access to the modme.uz software under the SaaS model",
+            "documentTitle": "TARIFFS",
+            "serviceDescription": "for services providing access to the modme.uz Service",
+            "updatedLabel": "version dated",
+            "activeTariffsTitle": "10. Current Tariffs",
+            "table": {
+                "tariff": "Tariff",
+                "start": "Start",
+                "basic": "Basic",
+                "pro": "Pro",
+                "premium": "Premium",
+                "startRange": "0-100 students",
+                "basicRange": "100-300 students",
+                "proRange": "300-1000 students",
+                "premiumRange": "1000+ students"
+            },
+            "currency": "UZS",
+            "periods": [
+                "3 months of access",
+                "6 months of access",
+                "9 months of access",
+                "12 months of access"
+            ],
+            "intro": [
+                "This Annex defines the Tariffs, the procedure and terms of their application, and the specifics of settlements between MODME and the Customer.",
+                "The Annex is an integral part of the Public Offer and has equal legal force with its text.",
+                "Tariff information is also published on the Contractor's website in the Pricing section, where it may be updated and supplemented.",
+                "The cost of services is determined based on the Tariff, which depends on the number of students of the Customer.",
+                "For pricing purposes, a student means a unique individual learner for whom an electronic card or account is created in the Service and who has at least one active operation during the current billing period.",
+                "The number of students is determined on the last day of each billing period. The Customer manages the student list in its Account and is responsible for keeping it up to date.",
+                "If the actual number of students exceeds the maximum limit of the paid Tariff, the Customer is automatically moved to the next applicable Tariff. The difference must be paid within 5 working days after receiving the invoice.",
+                "The Customer may upgrade to a higher Tariff at any time by making the relevant additional payment. Downgrading to a Tariff with fewer students is possible only after the paid access period ends.",
+                "If this Annex differs from information on the website, the version published on the website prevails."
+            ],
+            "notes": [
+                "All Tariffs are set in the national currency, Uzbek soums (UZS), and are stated without VAT.",
+                "A Tariff payment is the amount paid by the Customer for the Contractor's services providing access to the Service under the selected Tariff.",
+                "The Contractor may change Tariffs, prices and terms of application by publishing a new version on the website.",
+                "Changes take effect from the date of publication unless otherwise stated in the text of the changes.",
+                "For already paid periods, the price and terms of the Tariff remain valid until the end of the paid period.",
+                "The Customer may purchase additional services not included in the Tariff under a separate agreement, such as staff training, CRM setup or integrations.",
+                "Such services are paid under a separate agreement."
+            ],
+            "contactTitle": "Contacts for Tariffs and payments",
+            "contactIntro": "Questions related to Tariffs and payment may be sent:",
+            "emailPrefix": "by e-mail:",
+            "telegramPrefix": "or via the official Telegram manager account, the link to which is published on the Service website:"
+        },
+        "technicalSupportPage": {
+            "title": "Annex No. 2",
+            "subtitle": "to the Public Offer for entering into an agreement for paid services to provide access to the modme.uz software under the SaaS model",
+            "documentTitle": "TECHNICAL SUPPORT POLICY",
+            "company": "MODME LLC",
+            "updatedLabel": "version dated",
+            "paragraphs": [
+                "This Annex defines the procedure, terms and response timeframes for technical support provided by MODME to Customers of the modme.uz Service.",
+                "This Policy is an annex to the Public Offer and the Agreement and is published openly at https://modme.uz.",
+                "Technical support is provided to Customers within the paid tariff plan and is an integral part of the Services.",
+                "Technical support includes consulting and operational support for the Service, help with functionality, registration and processing of incidents and requests, collection of feedback, notifications about updates and planned maintenance, API and integration questions, and forwarding feature requests to the development team.",
+                "Technical support does not include Customer staff training outside the Service functionality, individual business-process customization not covered by documentation, or correction of errors caused by Customer actions.",
+                "Support requests are accepted through official communication channels.",
+                "Technical support working hours are Monday through Saturday, 10:00 to 19:00 Tashkent time (UTC+5), excluding official public holidays of the Republic of Uzbekistan.",
+                "All Customer requests are registered in the MODME CRM system.",
+                "The Contractor undertakes to provide an initial response within 1 working day after receiving a request. An initial response means confirmation of receipt, a request for additional information or the start of diagnostics.",
+                "As part of the initial response, the support specialist diagnoses the issue and takes steps to resolve it, including consultations, instructions, photo or video materials, documentation links or an online consultation.",
+                "If resolution requires a product manager or the development team, the request is forwarded to the relevant department and the Customer is informed about further timeframes.",
+                "After an incident is resolved or a request is completed, support contacts the Customer again to confirm the solution and collect feedback.",
+                "MODME support also performs proactive work: checking platform operation, collecting service quality feedback and gathering suggestions for Service improvement.",
+                "Requests to MODME technical support are accepted through the following official channels:"
+            ],
+            "channels": [
+                "Corporate Telegram account:",
+                "Phone number:",
+                "E-mail:"
+            ]
+        },
+        "cybersecurityPage": {
+            "title": "Appendix No. 4",
+            "subtitle": "to the Public Offer for the Conclusion of a Contract for the Provision of Paid Services for Access to the \u201cmodme.uz\u201d Software under the SaaS Model",
+            "documentTitle": "CYBERSECURITY POLICY",
+            "company": "MODME LLC",
+            "updatedLabel": "Revised",
+            "sections": [
+                {
+                    "title": "1. Objectives and Scope",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "1.1. This Policy defines the basic principles and measures for ensuring cybersecurity when users interact with the \u201cmodme.uz\u201d Service (hereinafter referred to as the Service) and applies to all clients, employees, and partners of MODME LLC (TIN 307442900) (hereinafter referred to as \u201cMODME\u201d)."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "1.2. The purpose of this document is to ensure the integrity, availability, and confidentiality of data, as well as to prevent incidents related to the loss, alteration, or unauthorized disclosure of information processed by the Service."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "1.3. This Policy is an appendix to the Public Offer and the Agreement and is publicly available on the website https://modme.uz."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "1.4. This Policy has been drafted in accordance with:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "The Law of the Republic of Uzbekistan \u201cOn Cybersecurity\u201d;",
+                                "The Law of the Republic of Uzbekistan \u201cOn Personal Data\u201d;",
+                                "other regulatory acts and internal regulations of MODME."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Cybersecurity Principles",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "In ensuring data security, MODME is guided by the following principles:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "Continuity of protection: security is built into all stages of the Service\u2019s lifecycle\u2014from design to maintenance.",
+                                "Confidentiality: access to data is granted only to authorized persons.",
+                                "Integrity: prevention of unauthorized changes to data and program code.",
+                                "Availability: ensuring uninterrupted operation of the Service with minimal downtime.",
+                                "Transparency: users are informed about security measures and incidents that may affect their data.",
+                                "Accountability: every person with access to MODME systems is personally responsible for complying with security rules."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Organization of Infrastructure Protection",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "3.1. Technical Measures:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "use of secure communication protocols (HTTPS, SSL/TLS);",
+                                "data backup at least once a day;",
+                                "storing data on servers located within the territory of the Republic of Uzbekistan;",
+                                "using firewalls, antivirus, and anti-DDoS protection;",
+                                "regularly updating software and operating systems."
+                            ]
+                        },
+                        {
+                            "kind": "p",
+                            "text": "3.2. Organizational Measures:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "restricting access to administrative panels via IP filtering;",
+                                "mandatory two-factor authentication for employees and partners;",
+                                "password rotation and access key management;",
+                                "maintaining event logs and storing them for at least 12 months;",
+                                "annual security testing and audits conducted by independent specialists."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "4. Incident Response",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "4.1. Upon detecting a security incident or signs thereof (data breach, hacking, virus attack, equipment failure), MODME shall immediately:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "record the event in the incident log;",
+                                "block the sources of the threat;",
+                                "notify affected customers (if their data is affected);",
+                                "initiate an internal investigation and address the consequences."
+                            ]
+                        },
+                        {
+                            "kind": "p",
+                            "text": "4.2. The cybersecurity officer prepares an incident report and takes measures to prevent similar incidents."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "4.3. In the event of incidents involving personal data or threatening the information infrastructure, MODME notifies the State Cybersecurity Center and other competent authorities in accordance with the procedure established by the legislation of the Republic of Uzbekistan."
+                        }
+                    ]
+                },
+                {
+                    "title": "5. Responsibilities of Users (Customers)",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "5.1. Users are required to:"
+                        },
+                        {
+                            "kind": "list",
+                            "items": [
+                                "keep their usernames and passwords confidential;",
+                                "not share access with third parties;",
+                                "use modern and secure devices and browsers;",
+                                "immediately notify MODME support (crmmodme@gmail.com) upon detecting suspicious activity."
+                            ]
+                        },
+                        {
+                            "kind": "p",
+                            "text": "5.2. The user is responsible for actions performed under their account until MODME is notified of a security breach."
+                        }
+                    ]
+                },
+                {
+                    "title": "6. Interaction with Third Parties",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "6.1. MODME engages only certified providers of hosting, telecommunications, SMS notification, and payment system services that ensure an adequate level of cybersecurity."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "6.2. Data transfer to third parties is carried out exclusively under contract and in accordance with internal approval and security audit procedures."
+                        }
+                    ]
+                },
+                {
+                    "title": "7. Staff Awareness and Training",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "7.1. All MODME employees receive cybersecurity training upon hiring and undergo annual refresher training."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "7.2. Employees sign a non-disclosure agreement regarding confidential information and personal data."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "7.3. MODME conducts internal incident response tests and drills at least once a year."
+                        }
+                    ]
+                },
+                {
+                    "title": "8. Responsibility and Oversight",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "8.1. The person designated by order is responsible for organizing and overseeing cybersecurity measures."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "8.2. MODME conducts an internal cybersecurity audit and submits a report to the company director at least once a year."
+                        },
+                        {
+                            "kind": "p",
+                            "text": "8.3. Employees and contractors are subject to disciplinary and other liability for violations of this Policy in accordance with the laws of the Republic of Uzbekistan and the company\u2019s internal regulations."
+                        }
+                    ]
+                },
+                {
+                    "title": "9. Updates and Publication",
+                    "blocks": [
+                        {
+                            "kind": "p",
+                            "text": "9.1. This Policy is publicly available on the website https://modme.uz in the \u201cDocuments\u201d section."
+                        }
+                    ]
+                }
+            ]
+        },
+        "privacyProcessingPage": {
+            "title": "Appendix No. 3",
+            "subtitle": "to the Public Offer for the Conclusion of a Contract for the Provision of Paid Services for Access to the \u201cmodme.uz\u201d Software under the SaaS Model",
+            "documentTitle": "POLICY",
+            "documentSubtitle": "on the Processing of Personal Data",
+            "company": "MODME LLC",
+            "updatedLabel": "as amended on",
+            "introTitle": "Introduction",
+            "intro": [
+                "This Personal Data Processing Policy (hereinafter referred to as the \u201cPolicy\u201d) has been developed in accordance with the legislation of the Republic of Uzbekistan in the field of personal data protection, including the Law of the Republic of Uzbekistan \u201cOn Personal Data,\u201d the Law \u201cOn Informatization,\u201d as well as other regulatory legal acts of the Republic of Uzbekistan.",
+                "The Policy defines the procedures and principles for the processing of personal data carried out by MODME Limited Liability Company (hereinafter referred to as MODME, the Operator) in the course of its activities.",
+                "This Policy applies to all personal data that MODME receives and processes when interacting: with users of MODME\u2019s electronic platforms (including the website, mobile app, API interfaces, messengers, and other digital resources); with MODME\u2019s clients and partners in the context of providing services, concluding, and executing contracts.",
+                "MODME LLC provides services to educational organizations (schools, training centers, and other institutions), processing: the personal data of its own users and partners \u2014 as the Controller and Data Owner; the personal data of clients of educational organizations (students, parents, employees) \u2014 as a Third Party, solely for the purpose of storing and ensuring the functioning of the CRM system.",
+                "MODME LLC is not responsible for the accuracy, completeness, or timeliness of data entered by users or representatives of educational organizations, and does not use such data for any purpose other than storage, technical maintenance, and ensuring the secure operation of the service.",
+                "Before using MODME LLC\u2019s electronic platforms, users are advised to review this Policy. By providing personal data to MODME, the user confirms their consent to its processing in accordance with the terms of this Policy."
+            ],
+            "sections": [
+                {
+                    "title": "1. Terms and Definitions",
+                    "paragraphs": [
+                        "For the purposes of this Policy, the following key terms are used:",
+                        "Personal data database \u2014 a collection of organized personal data stored in an information system that enables the storage, modification, retrieval, and use of data subjects\u2019 personal data.",
+                        "Personal data \u2014 any information about a data subject recorded in electronic, written, or other form that allows for the direct or indirect identification of that person when using MODME\u2019s services or electronic platforms.",
+                        "Data Subject (hereinafter referred to as the \u201cSubject\u201d) \u2014 a natural person (user, client, customer, or representative of an organization) who uses, has used, or intends to use the services provided by MODME, or otherwise interacts with MODME.",
+                        "The owner of the personal data database (hereinafter referred to as the \u201cOwner\u201d) is a legal entity that has the right to own, use, and dispose of the personal data database. Under this Policy, such an entity is MODME LLC (TIN 307442900).",
+                        "The personal data controller (hereinafter referred to as the \u201cController\u201d) is a legal entity that, independently or jointly with other entities, organizes and/or carries out the processing of personal data, as well as determines the purposes, scope, and actions performed with personal data. In this Policy, the Controller is MODME LLC.",
+                        "A third party is any natural or legal person who is not a Data Subject, Data Owner, or Data Controller, but who participates in the processing of personal data by virtue of an instruction, contract, or other legal basis (for example, educational organizations that are MODME clients).",
+                        "The MODME electronic platform (hereinafter referred to as the \u201cElectronic Platform\u201d) is the collection of MODME\u2019s digital resources, including the website, CRM system, API interfaces, as well as official pages and bots in messaging apps, through which services are provided and interactions with Data Subjects take place.",
+                        "Processing of personal data \u2014 any action (operation) or set of actions (operations) performed on personal data, including collection, systematization, storage, modification, supplementation, use, provision, transfer (including cross-border transfer), anonymization, and destruction of data \u2014 with or without the use of automation tools.",
+                        "Confidentiality of personal data \u2014 a mandatory requirement established for the Owner, the Operator, and Third Parties to prevent the dissemination or provision of personal data to third parties without the Subject\u2019s consent or in the absence of another legal basis.",
+                        "Services \u2014 services for providing access to the MODME software, ensuring its operation, and providing technical support to users, rendered by the Operator through the MODME Electronic Platforms."
+                    ]
+                },
+                {
+                    "title": "2. Personal data Owner and Operator and contact information",
+                    "paragraphs": [
+                        "2.1. MODME Limited Liability Company (TIN 307442900), registered at the following address: Republic of Uzbekistan, Tashkent, Mirzo-Ulugbek District, 4a Tepamasjid Street, Navnikhol MFY, is the owner and operator of personal data stored and processed during the use of the MODME Electronic Platforms.",
+                        "2.2. MODME acts as:",
+                        "the controller of personal data with respect to information obtained during the registration and use of the Service by the Customer and its representatives;",
+                        "a third party with respect to personal data posted by the Customer on the Service (including data regarding clients, pupils, students, parents, and employees).",
+                        "2.3. MODME processes the personal data of its Customers\u2019 data subjects exclusively at the Customer\u2019s request and to the extent necessary to fulfill contractual obligations and ensure the functioning of the software.",
+                        "2.4. Contact information for questions related to the processing of personal data:",
+                        "e-mail: crmmodme@gmail.com"
+                    ]
+                },
+                {
+                    "title": "3. Application of the Policy",
+                    "paragraphs": [
+                        "3.1. Before using MODME\u2019s Electronic Platforms, the Data Subject is advised to review this Personal Data Processing Policy.",
+                        "3.2. Use of any MODME Electronic Platforms, including the website, CRM system, and Telegram bots, constitutes the Data Subject\u2019s unconditional consent to this Policy and the terms and conditions for the processing of their personal data.",
+                        "Such consent covers:",
+                        "the processing of personal data by the Operator and Third Parties for the purpose of providing services to grant access to MODME software, as well as its technical support and maintenance;",
+                        "notifying the Data Subject about new services, promotions, and features of the Service;",
+                        "conducting surveys, questionnaires, marketing, and analytical research, including communication via the means of communication specified on the Operator\u2019s Electronic Platforms.",
+                        "3.3. This consent includes authorization to perform all necessary actions regarding personal data, including the collection, organization, accumulation, storage, clarification (updating, modification), use, transfer, anonymization, blocking, and destruction of data provided by the Data Subject when using the Electronic Platforms or during written or verbal communication with MODME.",
+                        "3.4. When processing personal data, the Operator is guided by the requirements of the Law of the Republic of Uzbekistan \u201cOn Personal Data,\u201d the Law \u201cOn Informatization,\u201d as well as other regulatory legal acts of the Republic of Uzbekistan.",
+                        "3.5. The MODME website does not collect or process personal data.",
+                        "Clicking the \u201cGet Demo Version,\u201d \u201cSales Department,\u201d and other similar elements redirects the user to MODME\u2019s official resources on Telegram, where further interaction takes place. By providing their data to the Telegram bot or when communicating with a MODME manager, the user confirms that they have read this Policy and consent to the processing of their personal data in accordance with its terms.",
+                        "3.6. By performing such implied actions, the Data Subject confirms that they have read this Policy and consent to the processing of their personal data.",
+                        "3.7. Entering into a contract with MODME, including through acceptance of a public offer, also constitutes a basis for the processing of the Data Subject\u2019s personal data.",
+                        "3.8. If the Data Subject does not agree to the terms of personal data processing, they are not entitled to use the Operator\u2019s services and must not provide their personal data through MODME\u2019s Electronic Platforms."
+                    ]
+                },
+                {
+                    "title": "4. Categories of processed personal data",
+                    "paragraphs": [
+                        "4.1. When using MODME\u2019s Electronic Platforms, the following categories of personal data may be processed:",
+                        "data provided by the Customer during registration (company name, TIN, contact person, phone number, email address, and other information necessary for the conclusion and performance of the contract);",
+                        "data that the Customer or its employees post on the Service when working with clients, students, or employees of educational institutions;",
+                        "technical data automatically collected when using the Service (IP address, browser type, operating system version information, log files, cookies, etc.).",
+                        "4.2. The Operator does not collect or process the Customer\u2019s clients\u2019 personal data on its own. Such data is processed exclusively at the Customer\u2019s request and under the Customer\u2019s responsibility to the extent necessary for the performance of contractual obligations.",
+                        "4.3. The Operator does not verify the accuracy of the personal data provided by the Data Subject and does not assess the Data Subject\u2019s legal capacity. All personal data provided by the Data Subject is presumed to be accurate until evidence to the contrary is received.",
+                        "4.4. The Operator and Third Parties are entitled to use the aforementioned data to test, improve, and develop technological solutions, optimize services, analyze risks, and conduct statistical and financial research, based on the Operator\u2019s legitimate interests and within the framework of the legislation of the Republic of Uzbekistan.",
+                        "4.5. Personal data is used only for the purposes for which it was collected, provided that the necessary level of personal data protection is maintained.",
+                        "4.6. Access to personal data is granted only to employees of the Operator and/or Third Parties whose job duties are directly related to its processing.",
+                        "Such employees are obligated to maintain confidentiality and prevent the disclosure of personal data that has come to their knowledge in the course of performing their employment or contractual duties."
+                    ]
+                },
+                {
+                    "title": "5. Conditions and Principles for the Processing of Personal Data",
+                    "paragraphs": [
+                        "5.1. The processing of personal data at MODME is carried out in accordance with the principles established by the Law of the Republic of Uzbekistan \u201cOn Personal Data,\u201d namely:",
+                        "lawfulness and fairness;",
+                        "limiting processing to the achievement of specific, predetermined, and lawful purposes;",
+                        "prohibition on combining databases containing personal data processed for incompatible purposes;",
+                        "accuracy, adequacy, and relevance of personal data;",
+                        "retaining personal data no longer than is necessary for the purposes of their processing.",
+                        "5.2. The grounds for processing personal data are:",
+                        "obtaining the Data Subject\u2019s consent to data processing;",
+                        "the necessity of processing to fulfill a contract (including one concluded through acceptance of a public offer) or to take actions at the Data Subject\u2019s request prior to concluding a contract;",
+                        "fulfillment of the Operator\u2019s legal obligations;",
+                        "protection of the vital interests of the Data Subject or another person;",
+                        "pursuit of the legitimate interests of the Operator or a Third Party, provided that this does not infringe upon the rights and freedoms of the Data Subject;",
+                        "use of data for statistical or research purposes, provided that the data is anonymized;",
+                        "processing of data obtained from publicly available sources.",
+                        "5.3. The scope of personal data requested and processed by MODME is limited by the principle of data minimization and strictly corresponds to the stated purposes of processing.",
+                        "5.4. The purposes of processing personal data include:",
+                        "identifying the Data Subject registered on the Electronic Platform for the conclusion and performance of the contract;",
+                        "providing access to personalized resources of the Electronic Platform;",
+                        "establishing communication, sending notifications, requests, and responses related to the use of the Service and the provision of services;",
+                        "verifying the accuracy of the data provided;",
+                        "creating and administering an account;",
+                        "processing and receiving payments;",
+                        "providing customer and technical support;",
+                        "conducting statistical, marketing, and other analytical studies based on anonymized data.",
+                        "5.5. Personal data is protected by organizational and technical security measures designed to prevent unauthorized access, alteration, distribution, destruction, or other unlawful use of the data.",
+                        "5.6. If necessary to protect the rights and legitimate interests of the Data Subject, personal data may be processed without prior consent until such time as obtaining consent becomes possible.",
+                        "5.7. This Policy applies to the processing of personal data regardless of the form and method of its provision (on the website, in the app, by phone, via messengers, or otherwise) and regardless of the form of storage (in information systems or on paper).",
+                        "5.8. For a minor Data Subject, consent to the processing of personal data is given by their parents (guardians, custodians), and in their absence\u2014by the guardianship and custody authorities.",
+                        "5.9. In the event of the Data Subject\u2019s death, consent to the processing of their personal data is given by their heirs, unless such consent was previously provided by the Data Subject themselves.",
+                        "5.10. The processing of personal data of a Data Subject declared deceased by a court or recognized as missing is permitted on the basis of the written consent of their heirs."
+                    ]
+                },
+                {
+                    "title": "6. Cookies and Technical Data",
+                    "paragraphs": [
+                        "6.1. In connection with the operation of the MODME Electronic Platforms, the Operator may collect certain information using cookie technology and may also obtain information regarding users\u2019 IP addresses. Such data is processed in accordance with this Policy and the separate Cookie Policy posted on the MODME website.",
+                        "6.2. Cookies allow information about a user\u2019s actions and settings to be stored on their device to ensure the proper functioning of the Electronic Platforms and to improve the quality of service. MODME uses both session and persistent cookies.",
+                        "Session cookies are deleted when the browser is closed;",
+                        "Persistent cookies remain on the device until they expire or are deleted by the user.",
+                        "6.3. MODME may allow certain third parties (including providers of advertising, analytical, or technical services) to collect information using cookies and other technologies directly on MODME\u2019s web pages.",
+                        "Such third parties process information in accordance with their own privacy policies, and the Operator is not liable for their actions unless they violate the laws of the Republic of Uzbekistan.",
+                        "6.4. Technical information (e.g., IP addresses, browser information, access time, URL of the requested page) is used to ensure system functionality, analyze errors, maintain network security, and aggregate anonymized statistics (e.g., by region or device type)."
+                    ]
+                },
+                {
+                    "title": "7. Retention Period for Personal Data",
+                    "paragraphs": [
+                        "7.1. The Controller retains the personal data of Data Subjects for the period necessary to achieve the purposes of processing and until all grounds for retention cease to exist, including:",
+                        "the term of the contract between the Data Subject and the Controller;",
+                        "the existence of the Controller\u2019s legitimate interests in the provision of services;",
+                        "the existence of data retention obligations established by law;",
+                        "the absence of a request from the Data Subject to cease processing and delete the data.",
+                        "7.2. Upon the cessation of the aforementioned circumstances, personal data shall be deleted or anonymized in accordance with established procedures.",
+                        "7.3. The Operator shall cease processing and destroy personal data within 10 (ten) calendar days of receiving a written request from the Data Subject or upon expiration of the retention period, unless otherwise provided by law.",
+                        "7.4. The deletion of anonymized and backup copies of personal data stored in the Operator\u2019s archives and technical systems may take up to 60 (sixty) calendar days, due to the technical characteristics of information storage."
+                    ]
+                },
+                {
+                    "title": "8. Cross-border Transfer of Personal Data",
+                    "paragraphs": [
+                        "8.1. A cross-border transfer of personal data is the transfer of personal data by the Controller and/or the Data Subject outside the territory of the Republic of Uzbekistan.",
+                        "8.2. Cross-border transfer of personal data is permitted to the territory of foreign states that ensure an adequate level of protection of the rights of data subjects, as established in accordance with the procedure provided for by the legislation of the Republic of Uzbekistan.",
+                        "8.3. The transfer of personal data to the territory of foreign states that do not ensure an adequate level of protection may be carried out in the following cases:",
+                        "if the Data Subject has given written (including electronic) consent to the cross-border transfer of their personal data;",
+                        "when necessary to protect the constitutional order, public order, the rights and freedoms of citizens, and the health and morality of the population;",
+                        "in cases provided for by international treaties of the Republic of Uzbekistan;",
+                        "if the cross-border transfer is necessary for the performance of a contract to which the Data Subject is a party.",
+                        "8.4. Cross-border transfer of personal data may be restricted or prohibited for the purpose of protecting the foundations of the constitutional order, morality, health, rights, and legitimate interests of citizens of the Republic of Uzbekistan, and ensuring national defense and state security.",
+                        "8.5. When transferring personal data via the Telegram messenger, including the use of official MODME bots and communication with MODME managers, the Data Subject independently and on their own initiative provides their data to the specified service.",
+                        "8.6. The Data Subject is responsible for the accuracy and scope of the personal data transmitted via Telegram and undertakes to independently review Telegram\u2019s Privacy Policy, which governs the processing and storage of user data on servers located outside the territory of the Republic of Uzbekistan.",
+                        "8.7. The transfer of personal data to Telegram is classified as a cross-border transfer of personal data carried out at the initiative of the Data Subject.",
+                        "8.8. MODME is not responsible for the processing, storage, distribution, or other use of the Data Subject\u2019s personal data by the Telegram messenger, which operates in accordance with its own rules and privacy policy.",
+                        "8.9. After the transfer of personal data to Telegram, its subsequent processing by MODME LLC is carried out exclusively for the purposes set forth in this Policy and within the scope of the granted authority."
+                    ]
+                },
+                {
+                    "title": "9. Rights of the Data Subject",
+                    "paragraphs": [
+                        "9.1. The data subject has the right to:",
+                        "know whether the Data Controller, Data Processor, or a third party holds their personal data, as well as the nature and source of such data;",
+                        "receive, upon request, information regarding the processing of personal data, including the purposes, legal grounds, retention periods, and a list of persons to whom the data has been disclosed;",
+                        "receive information regarding the conditions for accessing their personal data;",
+                        "request the modification, supplementation, temporary suspension, or destruction of their personal data if it is incomplete, outdated, inaccurate, obtained unlawfully, or not required for the stated purposes of processing;",
+                        "give consent to the processing of their personal data and withdraw such consent, except in cases where processing is carried out pursuant to law;",
+                        "consent to the Owner, Operator, and/or a Third Party to disseminate their data in publicly available sources;",
+                        "address issues regarding the protection of their rights and legitimate interests to the authorized state body for the protection of personal data or to a court.",
+                        "9.2. On behalf of a Data Subject who has been declared legally incompetent or has limited legal capacity, the legal representative shall manage their personal data.",
+                        "9.3. The Data Subject is obligated to provide accurate personal data in cases where such provision is necessary for compliance with legislation, the protection of citizens\u2019 rights and legitimate interests, and the assurance of national defense and state security.",
+                        "9.4. The Data Subject has the right to submit a request to the Controller regarding access to their personal data, its supplementation, correction, deletion, or restriction of processing in one of the following ways:",
+                        "by sending an email stating the purpose of the request and attaching a copy of an identity document to the email address: crmmodme@gmail.com;",
+                        "by sending a written request to the postal address: Republic of Uzbekistan, Tashkent, Mirzo-Ulugbek District, Tepamasjid Street, Building 4a.",
+                        "9.5. Upon receipt of the Data Subject\u2019s request, the Controller verifies the applicant\u2019s identity, reviews the request, and provides a response within 10 (ten) calendar days from the date of receipt, unless other timeframes are established by law. The response is sent via the same method used to submit the request.",
+                        "9.6. The Data Subject has the right to withdraw previously given consent to the processing of personal data at any time. Withdrawal is carried out in accordance with the procedure set forth in this Policy and does not affect the lawfulness of processing carried out prior to the withdrawal."
+                    ]
+                },
+                {
+                    "title": "10. Rights and Obligations of the Owner and/or Operator",
+                    "paragraphs": [
+                        "10.1. The Owner and/or Operator have the right to process personal data within the limits established by the legislation of the Republic of Uzbekistan and this Policy.",
+                        "10.2. The Owner and/or Operator are obligated to:",
+                        "comply with the requirements of personal data legislation;",
+                        "provide the Data Subject with information regarding the processing of their personal data upon request;",
+                        "approve the list of personal data necessary and sufficient to achieve the purposes of processing;",
+                        "take measures to destroy personal data upon achieving the purpose of processing or at the Subject\u2019s request;",
+                        "provide evidence of obtaining the Subject\u2019s consent to the processing of their personal data, if required by law;",
+                        "make changes or additions to personal data upon documentary confirmation of the accuracy of the new information, or destroy the data if such changes cannot be made;",
+                        "temporarily suspend the processing or destroy personal data upon detection of violations of the processing conditions;",
+                        "ensure that the Data Subject can submit an electronic request to suspend or delete personal data;",
+                        "notify the Data Subject and other parties involved in the processing of any changes, destruction, or restriction of access to the data;",
+                        "notify the Data Subject in the event of the transfer of their personal data to a third party;",
+                        "register all personal data databases owned and/or processed;",
+                        "take legal, organizational, and technical measures to protect personal data from unauthorized access and other threats.",
+                        "10.3. The Owner and (or) the Operator has the right to entrust the processing of personal data to a Third Party in the following cases:",
+                        "the Subject\u2019s consent in written or electronic form;",
+                        "the necessity to fulfill a contract between the Owner and the Subject or to perform actions at the Subject\u2019s request prior to the conclusion of a contract;",
+                        "cases expressly provided for by the legislation of the Republic of Uzbekistan.",
+                        "10.4. The obligations of the Owner, the Operator, and third parties regarding the protection of personal data arise from the moment of receipt of such data and remain in effect until the data is destroyed or anonymized.",
+                        "10.5. The Owner and/or the Operator shall appoint an official responsible for the processing and protection of personal data, who shall monitor compliance with the requirements of the law and the provisions of this Policy."
+                    ]
+                },
+                {
+                    "title": "11. Procedure for Providing Information Regarding the Processing of Personal Data",
+                    "paragraphs": [
+                        "11.1. The data subject has the right to modify, supplement, or update the personal data they have provided using the editing functions on the MODME Electronic Platforms or by submitting a written request to the Operator.",
+                        "11.2. The Data Subject has the right to request the deletion of their personal data by contacting the Operator via the MODME website, the Telegram bot, or by sending a written or electronic request to the Operator\u2019s address.",
+                        "11.3. The destruction of personal data refers to actions that render it impossible to recover the personal data by any means.",
+                        "11.4. Personal data shall be destroyed by the Owner, the Operator, or a Third Party in the following cases:",
+                        "achievement of the purposes of personal data processing;",
+                        "withdrawal by the Data Subject of consent to their processing;",
+                        "expiration of the processing period specified in the Data Subject\u2019s consent;",
+                        "entry into force of a court decision or a requirement from an authorized state body.",
+                        "11.5. The Data Subject may withdraw consent to the processing of personal data in the same form in which such consent was given, or in writing, including in the form of an electronic document.",
+                        "11.6. The Data Subject has the right to receive information regarding the processing of their personal data, including:",
+                        "confirmation of the fact that personal data is being processed;",
+                        "the legal grounds and purposes of the processing;",
+                        "the methods of processing used;",
+                        "the name and address of the Data Controller (Operator), and information about persons who have access to personal data or receive it on the basis of a contract or by law;",
+                        "the composition of the personal data and the source from which it was obtained, unless otherwise provided by law;",
+                        "the duration of the processing and storage of personal data;",
+                        "information regarding any actual or intended cross-border transfer of personal data.",
+                        "11.7. The Data Subject\u2019s right to receive information may be restricted if its disclosure violates the rights and legitimate interests of other persons or impedes the administration of justice, investigative, or operational-search activities.",
+                        "11.8. The procedure for providing information about personal data to third parties is determined by the terms of the Data Subject\u2019s consent to the processing of personal data.",
+                        "11.9. The Data Controller and/or Data Processor are exempt from the obligation to provide information to the Data Subject in cases where:",
+                        "the Data Subject has previously been notified of the processing of their personal data;",
+                        "the personal data has been made publicly available by the Data Subject or obtained from open sources;",
+                        "the provision of information would lead to a violation of the rights and legitimate interests of third parties.",
+                        "11.10. A notice of refusal to provide information shall be sent to the Data Subject in writing or electronically within 10 (ten) calendar days of receiving the request.",
+                        "11.11. The Data Subject has the right to appeal the decision to refuse to provide information to the authorized state body for the protection of personal data or to a court."
+                    ]
+                },
+                {
+                    "title": "12. Notification of Actions Involving the Processing of Personal Data",
+                    "paragraphs": [
+                        "12.1. When the Data Subject\u2019s personal data is entered into the database, the Operator shall notify the Data Subject of the purposes, legal grounds, and anticipated scope of such processing.",
+                        "12.2. In the event of a transfer of personal data to a third party, the Owner and/or the Operator shall notify the Data Subject within three business days of such transfer, unless otherwise provided by law or by an agreement with the Data Subject.",
+                        "12.3. The Data Subject shall not be notified in the following cases:",
+                        "processing of personal data by government agencies within the scope of their authority;",
+                        "transfer of data for historical, statistical, sociological, or scientific purposes, provided that the data is anonymized;",
+                        "collection of personal data from publicly available sources."
+                    ]
+                },
+                {
+                    "title": "13. Automated and Non-Automated Processing of Personal Data",
+                    "paragraphs": [
+                        "13.1. Personal data is processed both using automated means and without them (in a mixed form), including actions related to the collection, systematization, storage, clarification (updating, modification), use, transfer, and destruction of personal data\u2014for the purposes established by this Policy.",
+                        "13.2. The data subject has the right not to be subject to decisions based solely on the automated processing of their personal data if such decisions affect their rights, legitimate interests, or entail legal consequences, except in cases provided for by the legislation of the Republic of Uzbekistan and this Policy.",
+                        "13.3. Decisions based solely on the automated processing of personal data may be made in the following cases:",
+                        "with the Subject\u2019s written consent, including an electronic document signed in accordance with established procedures;",
+                        "if such a decision is made in fulfillment of a contract between the Owner (and/or the Operator) and the Data Subject, or as part of the fulfillment of the terms of a previously concluded contract;",
+                        "in cases expressly provided for by the legislation of the Republic of Uzbekistan.",
+                        "13.4. The Owner and/or Operator shall explain to the Data Subject the procedure and principles for making decisions based exclusively on automated processing, the possible legal consequences of such decisions, and shall also provide the Data Subject with the opportunity to file an objection and exercise the right to protect their legitimate interests.",
+                        "13.5. Upon receipt of an objection from the Data Subject, the Data Controller and/or Data Processor shall review it and notify the Data Subject in writing or electronically of the results of the review no later than 10 (ten) calendar days from the date of receipt of the request."
+                    ]
+                },
+                {
+                    "title": "14. Special Conditions for the Processing of Personal Data of Citizens of the Republic of Uzbekistan",
+                    "paragraphs": [
+                        "14.1. When processing the personal data of citizens of the Republic of Uzbekistan using information technology, including processing on the World Wide Web, the Data Controller and/or Data Processor shall store such data in personal data databases located on technical equipment physically situated within the territory of the Republic of Uzbekistan, and registered in the State Register of Personal Data Bases in accordance with the procedure established by the authorized state body.",
+                        "14.2. The storage and processing of personal data of citizens of the Republic of Uzbekistan outside the territory of the Republic of Uzbekistan is permitted only if the requirements of the law are met, adequate data protection is ensured, and there is consent from the Data Subject or a contract to which the Data Subject is a party."
+                    ]
+                },
+                {
+                    "title": "15. Guarantees for the Protection of Personal Data",
+                    "paragraphs": [
+                        "15.1. The State guarantees the protection of personal data in accordance with the legislation of the Republic of Uzbekistan.",
+                        "15.2. The Data Controller, the Data Processor, and third parties involved in the processing of personal data shall take legal, organizational, and technical measures aimed at ensuring:",
+                        "the exercise of the Data Subject\u2019s right to protection against interference in their private and family life;",
+                        "the integrity, security, and accuracy of personal data;",
+                        "compliance with the confidentiality regime for personal data;",
+                        "the prevention of unauthorized or unlawful access, alteration, dissemination, and destruction of personal data."
+                    ]
+                },
+                {
+                    "title": "16. Confidentiality of Personal Data",
+                    "paragraphs": [
+                        "16.1. The confidentiality of personal data refers to the requirement\u2014binding on the Data Controller, the Data Processor, and any other persons who have access to personal data\u2014that such data may not be disclosed or disseminated without the Data Subject\u2019s consent or another lawful basis.",
+                        "16.2. The Owner, the Operator, and other persons who have access to personal data are obligated not to disclose or disseminate such data without the Subject\u2019s consent, except in cases expressly provided for by the legislation of the Republic of Uzbekistan."
+                    ]
+                },
+                {
+                    "title": "17. Publicly Available Personal Data",
+                    "paragraphs": [
+                        "17.1. Personal data is considered publicly available if access to it is unrestricted with the Data Subject\u2019s consent, or if it is not subject to confidentiality requirements.",
+                        "17.2. For the purpose of providing information to the public, publicly available sources of personal data may be created, including biographical directories, telephone and address books, as well as open-access electronic information resources.",
+                        "17.3. With the Data Subject\u2019s written consent, publicly accessible sources of personal data may include the Data Subject\u2019s last name, first name, patronymic, year and place of birth, address, subscriber number, information about their profession, and other data provided by the Data Subject.",
+                        "17.4. Information about the Data Subject shall be removed from publicly available sources of personal data upon the Data Subject\u2019s request, submitted in the form in which consent was given or in writing (including an electronic document), as well as by decision of an authorized state body or a court."
+                    ]
+                },
+                {
+                    "title": "18. Final Provisions",
+                    "paragraphs": [
+                        "18.1. All disputes and disagreements arising from the processing of personal data shall be resolved in accordance with the procedures established by the laws of the Republic of Uzbekistan.",
+                        "18.2. Persons found guilty of violating personal data laws shall be held liable in accordance with the applicable laws of the Republic of Uzbekistan."
+                    ]
+                },
+                {
+                    "title": "19. Amendments to the Policy",
+                    "paragraphs": [
+                        "19.1. MODME LLC reserves the right to amend this Policy without prior notice to Data Subjects.",
+                        "19.2. The new version of the Policy shall take effect upon its publication on MODME\u2019s Electronic Platforms, unless otherwise specified in the document itself.",
+                        "19.3. Changes in legislation regarding personal data protection, as well as decisions by authorized government agencies, constitute grounds for amending this Policy.",
+                        "19.4. This Policy is approved by order of the director of MODME LLC."
+                    ]
+                }
+            ]
         }
     },
     "privacyPolicy": {
-        "fullDocument": "Full document"
+        "fullDocument": "Full document",
+        "consent": {
+            "metadata": {
+                "title": "Consent to personal data processing - Modme",
+                "description": "Consent to personal data processing and link to the Modme CRM personal data processing policy"
+            },
+            "title": "CONSENT TO PERSONAL DATA PROCESSING",
+            "edition": "(version dated “___” ____________ 2025)",
+            "intro": "This consent is provided by an individual who represents a legal entity or individual entrepreneur entering into an agreement with MODME LLC.",
+            "items": [
+                {
+                    "text": "I, the personal data subject, confirm that I have read the Personal Data Processing Policy of MODME LLC (MODME), published on the official website https://modme.uz, and give unconditional and explicit consent to MODME LLC (TIN 307442900) to process my personal data in accordance with the laws of the Republic of Uzbekistan and the Contractor's Policy."
+                },
+                {
+                    "text": "My personal data is processed for the following purposes:",
+                    "list": [
+                        "registration and provision of access to the modme.uz Service;",
+                        "performance of contractual obligations between me (or the organization I represent) and MODME;",
+                        "operation of the CRM/LMS platform and related services;",
+                        "sending notifications, technical information and messages related to use of the Service;",
+                        "compliance with the laws of the Republic of Uzbekistan."
+                    ]
+                },
+                {
+                    "text": "The following personal data may be processed under this consent:",
+                    "list": [
+                        "surname, name and patronymic;",
+                        "contact phone number;",
+                        "e-mail address;",
+                        "position and organization name;",
+                        "information entered during registration or use of the Service functionality."
+                    ]
+                },
+                {
+                    "text": "MODME may collect, record, systematize, store, change, use, anonymize, block, delete and destroy personal data, and transfer it within the Republic of Uzbekistan for the purposes stated in this Consent."
+                },
+                {
+                    "text": "Data is processed using automated tools and, where necessary, manually in accordance with the MODME Personal Data Processing Policy and legal requirements."
+                },
+                {
+                    "text": "Data is stored on protected servers located in the Republic of Uzbekistan in accordance with the database registration certificate."
+                },
+                {
+                    "text": "MODME may transfer personal data to third parties where such transfer is necessary for:",
+                    "list": [
+                        "communication and notification services;",
+                        "payment processing;",
+                        "hosting and data-center services in the Republic of Uzbekistan;",
+                        "performance of contractual obligations;",
+                        "other purposes provided by the laws of the Republic of Uzbekistan."
+                    ]
+                },
+                {
+                    "text": "I have been informed that I may receive information about the composition and processing methods of my data, request correction, blocking or deletion of data, withdraw consent by sending a notice to crmmodme@gmail.com, and appeal MODME actions as provided by law."
+                },
+                {
+                    "text": "This consent is valid throughout my use of the Service and for sixty (60) calendar days after relations with MODME end."
+                },
+                {
+                    "text": "After this period, data must be deleted or anonymized under the Offer and MODME Personal Data Processing Policy unless otherwise required by law."
+                },
+                {
+                    "text": "I confirm that the provided data is accurate and consent to its processing under this document."
+                }
+            ],
+            "fullDocTitle": "Annex No. 3 — Privacy and Personal Data Processing Policy",
+            "fullDocDescription": "Read the full official document"
+        }
     },
     "videoCourses": {
         "view": "View",

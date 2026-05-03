@@ -495,6 +495,7 @@ const GamificationClient = () => {
                                 <a
                                     href="https://t.me/modme_sales"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-block"
                                 >
                                     <button className="inline-flex items-center justify-center gap-2 bg-white text-[#ff8000] hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
@@ -514,14 +515,14 @@ const GamificationClient = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 backdrop-blur-md"
+                            className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 backdrop-blur-md cursor-pointer"
                             onClick={() => setIsVideoOpen(false)}
                         >
                             <motion.div
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
                                 exit={{ scale: 0.8, opacity: 0 }}
-                                className="relative w-[90vw] max-w-[1440px] aspect-video bg-black rounded-lg overflow-hidden"
+                                className="relative w-[90vw] max-w-[1440px] aspect-video bg-black rounded-lg overflow-hidden cursor-default"
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <iframe
@@ -537,6 +538,7 @@ const GamificationClient = () => {
                                 ></iframe>
                                 <button
                                     onClick={() => setIsVideoOpen(false)}
+                                    aria-label="Close video"
                                     className="absolute top-4 right-4 p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-90"
                                 >
                                     <X className="w-6 h-6 text-white" />

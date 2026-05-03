@@ -1,13 +1,24 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import PrivacyPolicyClient from "./client";
 
-export const metadata: Metadata = {
-    title: "Приложение № 3 — Политика конфиденциальности и обработки персональных данных | Modme",
-    description:
-        "Приложение № 3 — Политика конфиденциальности и обработки персональных данных ООО «MODME» - официальная политика конфиденциальности платформы Modme CRM.",
-    keywords:
-        "Modme политика конфиденциальности, обработка персональных данных, Modme CRM конфиденциальность",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "resources.legalPages.privacy.metadata",
+    });
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t("keywords"),
+    };
+}
 
 export default function PrivacyPolicyPage() {
     return <PrivacyPolicyClient />;

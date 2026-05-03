@@ -4,11 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { ArrowLeft, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import LocalizedOfertaContent from "./localized-content";
 
 export default function OfertaClient() {
     const t = useTranslations("common");
+    const locale = useLocale();
     const [openSections, setOpenSections] = useState<number[]>([]);
+
+    if (locale === "en") {
+        return <LocalizedOfertaContent />;
+    }
 
     const toggleSection = (index: number) => {
         setOpenSections((prev) =>

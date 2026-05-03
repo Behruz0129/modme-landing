@@ -43,7 +43,7 @@ export default function DemoClient() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const consentRaw = t("privacyConsent");
+    const consentRaw = t.raw("privacyConsent") as string;
     const consentParts = consentRaw.split("{link}");
 
     return (
@@ -128,6 +128,8 @@ export default function DemoClient() {
                                         <a
                                             href="https://modme-crm.gitbook.io/modme-crm/get-started/tolov-rejimini-tanlash"
                                             target="_blank"
+                                            rel="noopener noreferrer"
+                                            title={t("paymentModeLabel")}
                                             className="text-[#ff8000] hover:text-[#ff9831] transition-colors"
                                         >
                                             <HelpCircle className="w-4 h-4" />
@@ -136,6 +138,7 @@ export default function DemoClient() {
                                 </label>
                                 <select
                                     name="balance_mode"
+                                    aria-label={t("paymentModeLabel")}
                                     required
                                     value={formData.balance_mode}
                                     onChange={handleInputChange}

@@ -1,13 +1,24 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import CertificateClient from "./client";
 
-export const metadata: Metadata = {
-    title: "Свидетельство о регистрации базы персональных данных | Modme",
-    description:
-        "Свидетельство о регистрации базы персональных данных ООО «MODME» - официальное свидетельство регистрации базы персональных данных платформы Modme CRM.",
-    keywords:
-        "Modme свидетельство, регистрация базы данных, персональные данные, Modme CRM регистрация",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "resources.certificate.metadata",
+    });
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t("keywords"),
+    };
+}
 
 export default function CertificatePage() {
     return <CertificateClient />;

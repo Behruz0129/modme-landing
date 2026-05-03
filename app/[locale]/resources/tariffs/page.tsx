@@ -1,13 +1,24 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import TariffsClient from "./client";
 
-export const metadata: Metadata = {
-    title: "Приложение № 1 — Тарифы | Modme",
-    description:
-        "Приложение № 1 — Тарифы ООО «MODME» - официальные тарифные планы платформы Modme CRM.",
-    keywords:
-        "Modme тарифы, тарифные планы, Modme CRM цены, приложение тарифы",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "resources.legalPages.tariffs.metadata",
+    });
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t("keywords"),
+    };
+}
 
 export default function TariffsPage() {
     return <TariffsClient />;

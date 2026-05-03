@@ -1,13 +1,24 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import TechnicalSupportPolicyClient from "./client";
 
-export const metadata: Metadata = {
-    title: "Приложение № 2 — Политика технической поддержки (SLA) | Modme",
-    description:
-        "Приложение № 2 — Политика технической поддержки (SLA) ООО «MODME» - официальная политика технической поддержки платформы Modme CRM.",
-    keywords:
-        "Modme SLA, политика технической поддержки, Modme CRM поддержка, техническая поддержка",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "resources.legalPages.technicalSupport.metadata",
+    });
+
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t("keywords"),
+    };
+}
 
 export default function TechnicalSupportPolicyPage() {
     return <TechnicalSupportPolicyClient />;

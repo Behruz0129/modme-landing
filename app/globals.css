@@ -119,6 +119,15 @@
     body {
         @apply bg-background text-foreground;
     }
+    a,
+    button:not(:disabled),
+    [role="button"]:not([aria-disabled="true"]) {
+        cursor: pointer;
+    }
+    button:disabled,
+    [aria-disabled="true"] {
+        cursor: not-allowed;
+    }
 }
 
 /* Custom Scrollbar Styles */
