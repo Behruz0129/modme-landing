@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ReactNode } from "react";
 
 const Arrow = () => (
@@ -108,6 +108,30 @@ const ChatIcon = () => (
     </svg>
 );
 
+const PlugIcon = () => (
+    <svg
+        className="w-8 h-8"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M9 2V8M15 2V8M5 8H19V14C19 17.866 15.866 21 12 21C8.13401 21 5 17.866 5 14V8Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M12 21V23"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
 const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -133,6 +157,26 @@ type SupportCard = {
 export default function SupportClient() {
     const t = useTranslations("support");
     const tCommon = useTranslations("common");
+    const locale = useLocale();
+
+    const integrationCard: SupportCard =
+        locale === "en"
+            ? {
+                  id: 4,
+                  title: t("kommoIntegration.title"),
+                  description: t("kommoIntegration.description"),
+                  icon: <PlugIcon />,
+                  href: "/support/kommo-integration",
+                  cta: tCommon("viewMore"),
+              }
+            : {
+                  id: 4,
+                  title: t("amocrmIntegration.title"),
+                  description: t("amocrmIntegration.description"),
+                  icon: <PlugIcon />,
+                  href: "/support/amocrm-integration",
+                  cta: tCommon("viewMore"),
+              };
 
     const supportCards: SupportCard[] = [
         {
@@ -152,6 +196,7 @@ export default function SupportClient() {
             external: true,
             cta: tCommon("readMore"),
         },
+        integrationCard,
         {
             id: 3,
             title: t("techSupport.title"),
@@ -241,16 +286,19 @@ export default function SupportClient() {
                         ))}
                     </div>
 
-                    <motion.div
-                        custom={2}
-                        initial="hidden"
-                        animate="visible"
-                        variants={cardVariants}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                    >
-                        {renderCard(supportCards[2])}
-                    </motion.div>
+                    {supportCards.slice(2).map((card, index) => (
+                        <motion.div
+                            key={card.id}
+                            custom={index + 2}
+                            initial="hidden"
+                            animate="visible"
+                            variants={cardVariants}
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            {renderCard(card)}
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </div>
