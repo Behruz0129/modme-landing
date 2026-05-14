@@ -300,7 +300,7 @@
                 {
                     "year": "2022",
                     "title": "Tezkor o'sish va ilk investitsiyalar",
-                    "description": "2022-yilda Modme loyihasi sezilarli o'sishni boshdan kechirdi. AmoCRM asoschisi Mixail Tokovinin kompaniyaga investitsiya kiritdi, bu esa loyiha rivojlanishiga turtki bo'ldi"
+                    "description": "2022-yilda Modme loyihasi sezilarli o'sishni boshdan kechirdi. amoCRM asoschisi Mixail Tokovinin kompaniyaga investitsiya kiritdi, bu esa loyiha rivojlanishiga turtki bo'ldi"
                 },
                 {
                     "year": "2023",
@@ -578,6 +578,110 @@
         "techSupport": {
             "title": "Modme Support",
             "description": "Maxsus texnik yordam bo'limi bilan bog'lanish"
+        },
+        "amocrmIntegration": {
+            "title": "amoCRM integratsiyasi",
+            "description": "amoCRM hisobini Modme’ga ulash bo‘yicha bosqichma-bosqich qo‘llanma"
+        },
+        "kommoIntegration": {
+            "title": "Kommo integratsiyasi",
+            "description": "Kommo hisobini Modme’ga ulash bo‘yicha bosqichma-bosqich qo‘llanma"
+        }
+    },
+    "amocrmIntegration": {
+        "metadata": {
+            "title": "amoCRM integratsiyasi | Modme CRM",
+            "description": "amoCRM hisobingizni Modme’ga bir necha daqiqada ulang. Bosqichma-bosqich yo‘riqnoma: ulanish, domen kiritish, avtorizatsiya va trigger statusini tanlash.",
+            "keywords": "Modme amoCRM, amoCRM integratsiya, amoCRM ulash, amoCRM Modme CRM, amoCRM lidlar"
+        },
+        "badge": "Integratsiyalar",
+        "heading": "Modme va amoCRM integratsiyasi",
+        "subtitle": "amoCRM hisobingizni Modme’ga bir necha daqiqada ulang. Modme’ga faqat potentsial mijozning ismi va telefon raqami qo‘shiladi.",
+        "stepsHeading": "Bosqichma-bosqich yo‘riqnoma",
+        "stepsSubheading": "Atigi 4 oddiy qadam — integratsiya tayyor",
+        "stepLabel": "{n}-qadam",
+        "steps": {
+            "step1": {
+                "title": "«Integratsiyalar» bo‘limiga o‘ting",
+                "description": "Modme CRM sozlamalarida «Integratsiyalar» bo‘limini oching va amoCRM kartasidagi «Ulanish (Connect)» tugmasini bosing."
+            },
+            "step2": {
+                "title": "amoCRM domenini kiriting",
+                "description": "amoCRM hisobingizning to‘liq manzilini kiriting (masalan, example.amocrm.ru) va «Davom etish (Continue)» tugmasini bosing."
+            },
+            "step3": {
+                "title": "amoCRM hisobingizga kiring",
+                "description": "Yo‘naltirilgandan so‘ng amoCRM hisobingizga kiring va Modme’ga ma’lumotlarga ruxsat berishni tasdiqlang."
+            },
+            "step4": {
+                "title": "Trigger statusini tanlang",
+                "description": "Integratsiya sozlamalarida voronkadagi statusni tanlang — shu statusga yetganda lidning kontakt ma’lumotlari Modme’ga avtomatik qo‘shiladi."
+            }
+        },
+        "result": {
+            "heading": "Integratsiya natijasi",
+            "description": "amoCRM voronkasida tanlangan trigger statusiga yetilganda potentsial mijozning ismi va telefon raqami Modme’ning «Lidlar» bo‘limida avtomatik paydo bo‘ladi.",
+            "note": "Modme’ga faqat lidning ismi va telefon raqami uzatiladi — boshqa hech qanday ma’lumot emas."
+        },
+        "cta": {
+            "heading": "Savollaringiz qoldimi?",
+            "description": "Ulanish jarayonida qiyinchilikka duch kelsangiz, texnik yordam xizmatimizga murojaat qiling.",
+            "button": "Yordamga yozish"
+        },
+        "imageAlt": {
+            "hero": "amoCRM’dan Modme CRM’ga lidlar",
+            "step1": "Modme CRM integratsiyalar bo‘limi",
+            "step2": "amoCRM domenini kiritish oynasi",
+            "step3": "amoCRM avtorizatsiya sahifasi",
+            "step4": "amoCRM trigger statusini sozlash"
+        }
+    },
+    "kommoIntegration": {
+        "metadata": {
+            "title": "Kommo integratsiyasi | Modme CRM",
+            "description": "Kommo hisobingizni Modme’ga bir necha daqiqada ulang. Bosqichma-bosqich yo‘riqnoma: ulanish, domen kiritish, avtorizatsiya va trigger statusini tanlash.",
+            "keywords": "Modme Kommo, Kommo integratsiya, Kommo ulash, Kommo Modme CRM, Kommo lidlar"
+        },
+        "badge": "Integratsiyalar",
+        "heading": "Modme va Kommo integratsiyasi",
+        "subtitle": "Kommo hisobingizni Modme’ga bir necha daqiqada ulang. Modme’ga faqat potentsial mijozning ismi va telefon raqami qo‘shiladi.",
+        "stepsHeading": "Bosqichma-bosqich yo‘riqnoma",
+        "stepsSubheading": "Atigi 4 oddiy qadam — integratsiya tayyor",
+        "stepLabel": "{n}-qadam",
+        "steps": {
+            "step1": {
+                "title": "«Integratsiyalar» bo‘limiga o‘ting",
+                "description": "Modme CRM sozlamalarida «Integratsiyalar» bo‘limini oching va Kommo kartasidagi «Ulanish (Connect)» tugmasini bosing."
+            },
+            "step2": {
+                "title": "Kommo domenini kiriting",
+                "description": "Kommo hisobingizning to‘liq manzilini kiriting (masalan, example.kommo.com) va «Davom etish (Continue)» tugmasini bosing."
+            },
+            "step3": {
+                "title": "Kommo hisobingizga kiring",
+                "description": "Yo‘naltirilgandan so‘ng Kommo hisobingizga kiring va Modme’ga ma’lumotlarga ruxsat berishni tasdiqlang."
+            },
+            "step4": {
+                "title": "Trigger statusini tanlang",
+                "description": "Integratsiya sozlamalarida voronkadagi statusni tanlang — shu statusga yetganda lidning kontakt ma’lumotlari Modme’ga avtomatik qo‘shiladi."
+            }
+        },
+        "result": {
+            "heading": "Integratsiya natijasi",
+            "description": "Kommo voronkasida tanlangan trigger statusiga yetilganda potentsial mijozning ismi va telefon raqami Modme’ning «Lidlar» bo‘limida avtomatik paydo bo‘ladi.",
+            "note": "Modme’ga faqat lidning ismi va telefon raqami uzatiladi — boshqa hech qanday ma’lumot emas."
+        },
+        "cta": {
+            "heading": "Savollaringiz qoldimi?",
+            "description": "Ulanish jarayonida qiyinchilikka duch kelsangiz, texnik yordam xizmatimizga murojaat qiling.",
+            "button": "Yordamga yozish"
+        },
+        "imageAlt": {
+            "hero": "Kommo’dan Modme CRM’ga lidlar",
+            "step1": "Modme CRM integratsiyalar bo‘limi",
+            "step2": "Kommo domenini kiritish oynasi",
+            "step3": "Kommo avtorizatsiya sahifasi",
+            "step4": "Kommo trigger statusini sozlash"
         }
     },
     "videoCourses": {

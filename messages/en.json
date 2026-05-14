@@ -300,7 +300,7 @@
                 {
                     "year": "2022",
                     "title": "Rapid growth and first investments",
-                    "description": "In 2022, Modme experienced significant growth. AmoCRM founder Mikhail Tokovinin invested in the company, which gave a boost to the project's development"
+                    "description": "In 2022, Modme experienced significant growth. amoCRM founder Mikhail Tokovinin invested in the company, which gave a boost to the project's development"
                 },
                 {
                     "year": "2023",
@@ -578,6 +578,110 @@
         "techSupport": {
             "title": "Modme Support",
             "description": "Contact our dedicated technical support department"
+        },
+        "amocrmIntegration": {
+            "title": "amoCRM Integration",
+            "description": "Step-by-step guide on connecting amoCRM to Modme"
+        },
+        "kommoIntegration": {
+            "title": "Kommo Integration",
+            "description": "Step-by-step guide on connecting Kommo to Modme"
+        }
+    },
+    "amocrmIntegration": {
+        "metadata": {
+            "title": "amoCRM Integration | Modme CRM",
+            "description": "Connect your amoCRM account to Modme in just a few minutes. Step-by-step guide: connection, domain entry, authorization, and trigger status selection.",
+            "keywords": "Modme amoCRM, amoCRM integration, connect amoCRM, amoCRM Modme CRM, amoCRM leads"
+        },
+        "badge": "Integrations",
+        "heading": "Modme & amoCRM integration",
+        "subtitle": "Connect your amoCRM account to Modme in minutes. Only the lead's name and phone number are added to Modme.",
+        "stepsHeading": "Step-by-step guide",
+        "stepsSubheading": "Just 4 simple steps and the integration is ready",
+        "stepLabel": "Step {n}",
+        "steps": {
+            "step1": {
+                "title": "Open the Integrations section",
+                "description": "In your Modme CRM settings, open the Integrations section and click the Connect button in the amoCRM card."
+            },
+            "step2": {
+                "title": "Enter your amoCRM domain",
+                "description": "Provide the full address of your amoCRM account (e.g., example.amocrm.ru) and click Continue."
+            },
+            "step3": {
+                "title": "Sign in to amoCRM",
+                "description": "After redirection, sign in to your amoCRM account to grant Modme access to your data."
+            },
+            "step4": {
+                "title": "Select the trigger status",
+                "description": "In the integration settings, choose the pipeline status that will automatically push lead contact data into Modme."
+            }
+        },
+        "result": {
+            "heading": "Integration result",
+            "description": "When a lead reaches the selected trigger status in your amoCRM pipeline, the lead's name and phone number will automatically appear in the Leads section of Modme.",
+            "note": "Only the lead's name and phone number are transferred to Modme — no other data."
+        },
+        "cta": {
+            "heading": "Still have questions?",
+            "description": "If you run into any difficulties during the setup, reach out to our technical support team.",
+            "button": "Contact support"
+        },
+        "imageAlt": {
+            "hero": "Leads from amoCRM in Modme CRM",
+            "step1": "Integrations section in Modme CRM",
+            "step2": "amoCRM domain entry window",
+            "step3": "amoCRM login page",
+            "step4": "amoCRM trigger status configuration"
+        }
+    },
+    "kommoIntegration": {
+        "metadata": {
+            "title": "Kommo Integration | Modme CRM",
+            "description": "Connect your Kommo account to Modme in just a few minutes. Step-by-step guide: connection, domain entry, authorization, and trigger status selection.",
+            "keywords": "Modme Kommo, Kommo integration, connect Kommo, Kommo Modme CRM, Kommo leads"
+        },
+        "badge": "Integrations",
+        "heading": "Modme & Kommo integration",
+        "subtitle": "Connect your Kommo account to Modme in minutes. Only the lead's name and phone number are added to Modme.",
+        "stepsHeading": "Step-by-step guide",
+        "stepsSubheading": "Just 4 simple steps and the integration is ready",
+        "stepLabel": "Step {n}",
+        "steps": {
+            "step1": {
+                "title": "Open the Integrations section",
+                "description": "In your Modme CRM settings, open the Integrations section and click the Connect button in the Kommo card."
+            },
+            "step2": {
+                "title": "Enter your Kommo domain",
+                "description": "Provide the full address of your Kommo account (e.g., example.kommo.com) and click Continue."
+            },
+            "step3": {
+                "title": "Sign in to Kommo",
+                "description": "After redirection, sign in to your Kommo account to grant Modme access to your data."
+            },
+            "step4": {
+                "title": "Select the trigger status",
+                "description": "In the integration settings, choose the pipeline status that will automatically push lead contact data into Modme."
+            }
+        },
+        "result": {
+            "heading": "Integration result",
+            "description": "When a lead reaches the selected trigger status in your Kommo pipeline, the lead's name and phone number will automatically appear in the Leads section of Modme.",
+            "note": "Only the lead's name and phone number are transferred to Modme — no other data."
+        },
+        "cta": {
+            "heading": "Still have questions?",
+            "description": "If you run into any difficulties during the setup, reach out to our technical support team.",
+            "button": "Contact support"
+        },
+        "imageAlt": {
+            "hero": "Leads from Kommo in Modme CRM",
+            "step1": "Integrations section in Modme CRM",
+            "step2": "Kommo domain entry window",
+            "step3": "Kommo login page",
+            "step4": "Kommo trigger status configuration"
         }
     },
     "notFound": {
