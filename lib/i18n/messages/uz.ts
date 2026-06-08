@@ -266,13 +266,6 @@ const uz = {
                     center: "English Life o'quv markazi",
                 },
                 {
-                    name: "Sardor Davlatov",
-                    position: "Asoschilardan biri",
-                    comment:
-                        "Modme bizga o'quv markazimizdagi jarayonlarni avtomatlashtirishda juda katta yordam berdi va biz o'sishga erishdik. Hozirda 3 ta filialimiz bor va Modme CRM barchasini sifatli boshqarishda va shaxsiy hayotga vaqt ajratishga yordam beryapti. Men albatta har bir o'quv markaz egasiga Modme tizimini joriy etishni maslahat beraman va natija siz kutgandan ham tez bo'ladi.",
-                    center: "iKnow o'quv markazi",
-                },
-                {
                     name: "Muhammadjon Uzoqov",
                     position: "O'quv markazi rahbari",
                     comment:
