@@ -24,12 +24,32 @@
         "en": "English",
         "ru": "Русский"
     },
+    "consultation": {
+        "title": "Bepul konsultatsiya oling",
+        "subtitle": "Ma'lumotlaringizni qoldiring — sotuv menejerimiz tez orada siz bilan bog'lanadi.",
+        "nameLabel": "Ismingiz",
+        "namePlaceholder": "Ismingizni kiriting",
+        "centerLabel": "O'quv markazi nomi",
+        "centerPlaceholder": "O'quv markazingiz nomi",
+        "phoneLabel": "Telefon raqamingiz",
+        "phonePlaceholder": "90 123 45 67",
+        "submit": "Yuborish",
+        "submitting": "Yuborilmoqda...",
+        "success": "Arizangiz qabul qilindi! Tez orada siz bilan bog'lanamiz.",
+        "error": "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
+        "errors": {
+            "nameRequired": "Iltimos, ismingizni kiriting",
+            "centerRequired": "Iltimos, o'quv markazi nomini kiriting",
+            "phoneRequired": "Iltimos, telefon raqamingizni kiriting",
+            "phoneInvalid": "Telefon raqami noto'g'ri (9 ta raqam)"
+        }
+    },
     "navbar": {
         "prices": "Narxlar",
         "gamification": "Gamification",
         "support": "Qo'llab-quvvatlash",
         "vacancies": "Vakansiyalar",
-        "demo": "Demo olish",
+        "demo": "Konsultatsiyaga yozilish",
         "phone": "78 777 11 00"
     },
     "footer": {
@@ -38,7 +58,7 @@
         "resources": "Resurslar",
         "contacts": "Kontaktlar",
         "social": "Ijtimoiy Tarmoqlar",
-        "demo": "Demo olish",
+        "demo": "Konsultatsiyaga yozilish",
         "payment": "To'lov qilish",
         "copyright": "Copyright © 2025",
         "legal": "Saytda taqdim etilgan xizmatlar faqat yuridik shaxslar va yakka tartibdagi tadbirkorlar uchun mo'ljallangan va tadbirkorlik faoliyatida qo'llaniladi. Xizmat iste'molchilar sifatida jismoniy shaxslar uchun mo'ljallanmagan. O'zbekiston Respublikasining «Iste'molchilar huquqlarini himoya qilish to'g'risida»gi qonuni ushbu xizmatlarga tatbiq etilmaydi.",
@@ -48,7 +68,7 @@
     "hero": {
         "title": "O'quv markazingizni yangi bosqichga olib chiqing!",
         "description": "Modme - bu tizimli boshqaruv, avtomatlashtirish va raqamli yechim. Qo'lda bajaradigan ishlarni qisqartiring, vaqtni tejang va boshqaruvni soddalashtiring",
-        "tryNow": "Hoziroq sinab ko'ring – 7 kun bepul!",
+        "tryNow": "Hoziroq bepul konsultatsiya oling",
         "salesDept": "Sotuv bo'limi"
     },
     "clients": {

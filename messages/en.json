@@ -24,12 +24,32 @@
         "en": "English",
         "ru": "Русский"
     },
+    "consultation": {
+        "title": "Get a free consultation",
+        "subtitle": "Leave your details — our sales manager will contact you shortly.",
+        "nameLabel": "Your name",
+        "namePlaceholder": "Enter your name",
+        "centerLabel": "Learning center name",
+        "centerPlaceholder": "Your learning center name",
+        "phoneLabel": "Your phone number",
+        "phonePlaceholder": "90 123 45 67",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "success": "Your request has been received! We will contact you shortly.",
+        "error": "Something went wrong. Please try again.",
+        "errors": {
+            "nameRequired": "Please enter your name",
+            "centerRequired": "Please enter your learning center name",
+            "phoneRequired": "Please enter your phone number",
+            "phoneInvalid": "Invalid phone number (9 digits)"
+        }
+    },
     "navbar": {
         "prices": "Pricing",
         "gamification": "Gamification",
         "support": "Support",
         "vacancies": "Careers",
-        "demo": "Get Demo",
+        "demo": "Sign up for a consultation",
         "phone": "78 777 11 00"
     },
     "footer": {
@@ -38,7 +58,7 @@
         "resources": "Resources",
         "contacts": "Contacts",
         "social": "Social Networks",
-        "demo": "Get Demo",
+        "demo": "Sign up for a consultation",
         "payment": "Make a payment",
         "copyright": "Copyright © 2025",
         "legal": "The services provided on the website are intended exclusively for legal entities and individual entrepreneurs and are used in business activities. The service is not intended for individuals as consumers. The Law of the Republic of Uzbekistan \"On the Protection of Consumer Rights\" does not apply to these services.",
@@ -48,7 +68,7 @@
     "hero": {
         "title": "Take your learning center to the next level!",
         "description": "Modme is systematic management, automation, and a digital solution. Reduce manual work, save time, and simplify management",
-        "tryNow": "Try it now – 7 days free!",
+        "tryNow": "Get a free consultation now",
         "salesDept": "Sales Department"
     },
     "clients": {

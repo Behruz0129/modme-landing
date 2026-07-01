@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 
 export const heroButtonStyles = {
     primary: cn(
+        "inline-flex items-center justify-center gap-2 whitespace-nowrap",
         "bg-gradient-to-r from-[#ffd03d] to-[#ff9831]",
         "hover:opacity-90 active:opacity-95",
         "text-[#080a0a] font-bold",
@@ -16,11 +17,11 @@ export const heroButtonStyles = {
         "transition-all"
     ),
     secondary: cn(
-        "border-[#ff8000] text-[#ff8000]",
+        "inline-flex items-center justify-center gap-2 whitespace-nowrap",
+        "border border-[#ff8000] text-[#ff8000]",
         "hover:bg-orange-50 active:bg-orange-100",
         "font-bold rounded-lg",
         "px-4 py-6 text-base",
-        "flex items-center justify-center gap-2",
         "w-full sm:w-auto h-auto",
         "cursor-pointer transition-all"
     ),

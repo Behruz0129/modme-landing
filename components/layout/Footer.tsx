@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Instagram, Youtube, Send } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import ConsultationButton from "@/components/consultation/ConsultationButton";
 
 export default function Footer() {
     const t = useTranslations("footer");
@@ -48,6 +49,7 @@ export default function Footer() {
                                         alt={t("androidAlt")}
                                         width={135}
                                         height={40}
+                                        style={{ width: "auto", height: "auto" }}
                                         className="object-contain"
                                     />
                                 </a>
@@ -62,6 +64,7 @@ export default function Footer() {
                                         alt={t("iosAlt")}
                                         width={135}
                                         height={40}
+                                        style={{ width: "auto", height: "auto" }}
                                         className="object-contain"
                                     />
                                 </a>
@@ -109,11 +112,9 @@ export default function Footer() {
                                 <Send className="w-6 h-6" />
                             </a>
                         </div>
-                        <Link href="https://t.me/modme_sales" target="_blank">
-                            <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white font-bold text-sm transition-all">
-                                {t("demo")}
-                            </button>
-                        </Link>
+                        <ConsultationButton className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90 text-white font-bold text-sm transition-all">
+                            {t("demo")}
+                        </ConsultationButton>
                         <div className="mt-3">
                             <a href="https://t.me/modmebillingbot?start=footer">
                                 <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90 text-white font-bold text-sm transition-all">

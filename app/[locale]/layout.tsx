@@ -8,6 +8,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import ClarityInit from "@/components/analytics/ClarityInit";
+import { ConsultationProvider } from "@/components/consultation/ConsultationProvider";
 import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
@@ -112,10 +113,6 @@ export async function generateMetadata({
                 "max-snippet": -1,
             },
         },
-        verification: {
-            google: "google-site-verification-code",
-            yandex: "yandex-verification-code",
-        },
     };
 }
 
@@ -150,9 +147,11 @@ fbq('track', 'PageView');`}
                             __html: '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=460779613477871&ev=PageView&noscript=1" />',
                         }}
                     />
-                    <Navbar />
-                    {children}
-                    <Footer />
+                    <ConsultationProvider>
+                        <Navbar />
+                        {children}
+                        <Footer />
+                    </ConsultationProvider>
                 </NextIntlClientProvider>
             </body>
         </html>

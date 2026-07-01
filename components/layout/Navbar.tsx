@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 import { usePathname, Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useConsultation } from "@/components/consultation/ConsultationProvider";
 
 const MenuButton = ({
     isOpen,
@@ -71,6 +72,7 @@ const Navbar = () => {
     const pathname = usePathname();
     const t = useTranslations("navbar");
     const tCommon = useTranslations("common");
+    const { open: openConsultation } = useConsultation();
     const isGamificationPage = pathname?.startsWith("/gamification");
 
     const navLinks = [
@@ -174,17 +176,16 @@ const Navbar = () => {
 
                         <LanguageSwitcher dark={!!isGamificationPage} />
 
-                        <Link href="https://t.me/modme_sales" target="_blank" className="cursor-pointer">
-                            <button
-                                className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 rounded-md px-6 has-[>svg]:px-4 ${
-                                    isGamificationPage
-                                        ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
-                                        : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
-                                } text-white cursor-pointer`}
-                            >
-                                {t("demo")}
-                            </button>
-                        </Link>
+                        <button
+                            onClick={openConsultation}
+                            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 rounded-md px-6 has-[>svg]:px-4 ${
+                                isGamificationPage
+                                    ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
+                                    : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
+                            } text-white cursor-pointer`}
+                        >
+                            {t("demo")}
+                        </button>
                     </div>
 
                     <div className="lg:hidden flex items-center gap-2">
@@ -257,20 +258,19 @@ const Navbar = () => {
                                     </div>
 
                                     <div className="mt-2">
-                                        <Link
-                                            href="https://t.me/modme_sales" target="_blank"
-                                            className="cursor-pointer"
+                                        <button
+                                            onClick={() => {
+                                                setIsMobileMenuOpen(false);
+                                                openConsultation();
+                                            }}
+                                            className={`w-full ${
+                                                isGamificationPage
+                                                    ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
+                                                    : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
+                                            } text-white py-3 px-6 rounded-md font-bold transition-all`}
                                         >
-                                            <button
-                                                className={`w-full ${
-                                                    isGamificationPage
-                                                        ? "bg-gradient-to-r from-[#ff8000] to-[#ff9831] hover:opacity-90"
-                                                        : "bg-gradient-to-r from-[#080909] to-[#596270] hover:opacity-90"
-                                                } text-white py-3 px-6 rounded-md font-bold transition-all`}
-                                            >
-                                                {t("demo")}
-                                            </button>
-                                        </Link>
+                                            {t("demo")}
+                                        </button>
                                     </div>
                                 </div>
                             </div>

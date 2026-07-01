@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import ConsultationButton from "@/components/consultation/ConsultationButton";
 
 const GamificationClient = () => {
     const t = useTranslations("gamification");
@@ -492,17 +493,10 @@ const GamificationClient = () => {
                                     {t("ctaTitle")}
                                 </h2>
                                 <p className="text-lg mb-8">{t("ctaText")}</p>
-                                <a
-                                    href="https://t.me/modme_sales"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-block"
-                                >
-                                    <button className="inline-flex items-center justify-center gap-2 bg-white text-[#ff8000] hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
-                                        <span>{t("ctaBtn")}</span>
-                                        <ArrowRight className="w-5 h-5" />
-                                    </button>
-                                </a>
+                                <ConsultationButton className="inline-flex items-center justify-center gap-2 bg-white text-[#ff8000] hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
+                                    <span>{t("ctaBtn")}</span>
+                                    <ArrowRight className="w-5 h-5" />
+                                </ConsultationButton>
                             </div>
                         </div>
                     </div>

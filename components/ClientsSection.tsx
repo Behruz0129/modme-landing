@@ -50,7 +50,12 @@ const LogoRow = ({
                                 alt={logo.name}
                                 width={logo.width}
                                 height={logo.height}
-                                className="max-h-[75px] w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                                style={{
+                                    width: "auto",
+                                    height: "auto",
+                                    maxHeight: "75px",
+                                }}
+                                className="object-contain opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                     ))}
@@ -83,7 +88,12 @@ const LogoRow = ({
                                 alt={logo.name}
                                 width={logo.width}
                                 height={logo.height}
-                                className="max-h-[75px] w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                                style={{
+                                    width: "auto",
+                                    height: "auto",
+                                    maxHeight: "75px",
+                                }}
+                                className="object-contain opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                     ))}

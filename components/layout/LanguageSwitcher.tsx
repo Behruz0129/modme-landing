@@ -4,18 +4,18 @@ import { useState, useEffect, useRef, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
-import { ChevronDown, Globe } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import FlagIcon from "./FlagIcon";
 
 type LocaleItem = {
     code: "uz" | "en" | "ru";
-    flag: string;
     shortName: string;
 };
 
 const LOCALES: LocaleItem[] = [
-    { code: "uz", flag: "🇺🇿", shortName: "UZ" },
-    { code: "en", flag: "🇬🇧", shortName: "EN" },
-    { code: "ru", flag: "🇷🇺", shortName: "RU" },
+    { code: "uz", shortName: "UZ" },
+    { code: "en", shortName: "EN" },
+    { code: "ru", shortName: "RU" },
 ];
 
 export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
@@ -74,8 +74,7 @@ export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${textColor} disabled:opacity-70`}
                 disabled={isPending}
             >
-                <Globe className="w-4 h-4" />
-                <span className="text-base leading-none">{current.flag}</span>
+                <FlagIcon code={current.code} />
                 <span>{current.shortName}</span>
                 <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform ${
@@ -98,9 +97,7 @@ export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
                                         : "text-[#181c23] hover:bg-gray-50"
                                 }`}
                             >
-                                <span className="text-base leading-none">
-                                    {item.flag}
-                                </span>
+                                <FlagIcon code={item.code} />
                                 <span>{t(item.code)}</span>
                             </button>
                         );
